@@ -29,6 +29,23 @@
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
 
 
+
+<!-- Source / Script /JS -->
+
+
+<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script type="text/javascript" src="js/lib/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.sidr.js"></script>
+<script type="text/javascript" src="js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/concept.js"></script>
+<script type="text/javascript" src="js/lib/markerwithlabel.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript"> 
+(function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://":"http://")+"";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})(); 
+</script>
+
 </head>
 
 
@@ -45,8 +62,7 @@
 
     <div id="vi">
         <img src="img/vi.png" class="style" alt="Landing Page by Eduard" />
-        <img src="img/vi_sp.png" class="sp" alt="Landing Page by Eduard" />
-        <img src="img/vi_bg.jpg" alt="" style="display:none;" />
+
       <div class="mailchimp">
         
       <div id="googleMap"></div>  
@@ -58,15 +74,7 @@
 	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>
-<div id="mc_embed_signup">
-<form action="http://hackaglobal.us8.list-manage.com/subscribe/post?u=c43a99e58fdcaa68e71a3728d&amp;id=9c6c401d27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-	<label for="mce-EMAIL">Subscribe to HackaGlobal to know more about the awesomeness that awaits you!</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
-	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_c43a99e58fdcaa68e71a3728d_9c6c401d27" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    
-</form><!--End mc_embed_signup--></div>
+
       </div>
 
     </div><!--#vi-->
@@ -88,7 +96,16 @@
         <br class="clr" />
     </div>
     
-
+<div id="mc_embed_signup">
+<form action="http://hackaglobal.us8.list-manage.com/subscribe/post?u=c43a99e58fdcaa68e71a3728d&amp;id=9c6c401d27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+  <label for="mce-EMAIL">Subscribe to HackaGlobal to know more about the awesomeness that awaits you!</label>
+  <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_c43a99e58fdcaa68e71a3728d_9c6c401d27" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    
+</form>
+</div>
     
     
     <div id="top_gnav_dummy" class="disnon style"></div>
@@ -429,24 +446,28 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 
 
 
-
-
-<!-- Source / Script /JS -->
-
+<!-----------------------Footer----------------------->
 
 
 
-<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="js/lib/jquery.colorbox-min.js"></script>
-<script type="text/javascript" src="js/lib/jquery.sidr.js"></script>
-<script type="text/javascript" src="js/lib/jquery.cycle2.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/concept.js"></script>
-<script type="text/javascript" src="js/lib/markerwithlabel.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript"> 
-(function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://":"http://")+"";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})(); 
-</script>
+<div id="footer">
+	<div>
+    	<div>
+        
+    
+        <ul class="fnavi style">
+        	<li><a href="privacypolicy/index.html" class="privacypolicy">Privacy policy</a></li>
+            <li><a href="legal/terms_of_use/index.html" class="terms_of_use">Terms of use</a></li>
+        </ul>
+        
+        <p class="cr">Copyright © Eduard Locota, Ltd. All rights reserved.</p>
+        </div>
+  	</div>
+</div>
+
+
+
+
 
 
 
@@ -457,4 +478,4 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
 </html>
 
 
-<!-- Copyright © Eduard Locota-->
+<!------------------- Copyright © Eduard Locota --------------------->

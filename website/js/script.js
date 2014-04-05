@@ -42,7 +42,7 @@ function makeCountryCall() {
         }
 
 
-            populateMap(data);
+           // populateMap(data);
      
 } 
 

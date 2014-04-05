@@ -96,13 +96,18 @@ a.btn_as:hover img{ opacity:1;}
 
 /* Mailchimp */ 
 
+#mc_embed_signup{
+	background:#fff; 
+	clear:left; 
+	font:14px Helvetica,Arial,sans-serif;
+}
 
 .mailchimp{
 	
 	background:#FFF;
 	padding:60px
 	text-align:center;
-	height:160px;
+	height:450px;
 	}
 	/* mailchimp description text */ 
 	#mc-embedded-subscribe-form.validate{

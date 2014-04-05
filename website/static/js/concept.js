@@ -141,14 +141,6 @@ $(function(){
 		if (scrollTop > Oabout.top + 200 && ww > 640){$(".flyout03").animate({left: "0px", opacity:"1"})};
 		if (scrollTop > Oabout.top + 400 && ww > 640){$(".flyout04, .flyout04+.credit").animate({right: "0px", opacity:"1"})};
 		
-		// #flow
-		var Oflow = $("#flow").offset();
-		if (scrollTop > Oflow.top - 400 && ww > 640){
-			$(".flow1 img").animate({opacity:"1"},800);
-			$(".flow2 img").delay(300).animate({opacity:"1"},800);
-			$(".flow3 img").delay(600).animate({opacity:"1"},800);
-			$("#flow h2").delay(900).animate({opacity:"1"},1200);
-		};
 		
 		// #gallery
 		var Ogallery = $("#gallery").offset();

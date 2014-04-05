@@ -11,6 +11,29 @@ a:hover{ text-decoration:none; color:#687D9F;}
 /*
 ------------------------------------------------------*/
 
+
+
+/**************** CUSTOM STYLES **************************/
+
+
+
+#googleMap{
+	width: 100%;
+	height:450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/****************** END CUSTOM STYLES *********************/
+
 #sidr ul li.bannerarea {
 	padding-top: 6px;
 	background-color: #404040;

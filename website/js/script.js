@@ -1,25 +1,24 @@
 var map;
+var markersArray = [];
 
 $(document).on('ready',function(){
-	//makeCall();
 	createMap();
 });
 
 
-function makeCall() {
+
+
+
+function makeCountryCall() {
     $.ajax({
-        url: '/hacka',
+        url: 'http://6f84083a.ngrok.com/api/country/',
         type: 'GET',
+        crossDomain: true,
         dataType: 'json',
-        data: {
-            region: country,
-            lat: latitude,
-            lng: longitude
-        },
+
         success: function (data) {
-           
+            console.log(data);
             createMap(data);
-     
         },
         error: function (response) {
             //console.log('error');
@@ -42,9 +41,9 @@ function makeCall() {
 
         }
 
-        if (data.results) {
+
             populateMap(data);
-        }
+     
 } 
 
 
@@ -65,18 +64,18 @@ function makeCall() {
 		}
 		markersArray.length = 0;
 
-        for (var u = 0; u < data.results.length; u++) {
+       for (var u = 0; u < data.results.length; u++) {
 
             resultsData = data.results[u];
 
             var letter = letters[u];
   
-            var locations = [resultsData.country, resultsData.latitude, resultsData.longitude];
+            var locations = ['mexic', resultsData.latitude, resultsData.longitude];
 
             var infowindow = new google.maps.InfoWindow();
             
 			marker = new MarkerWithLabel({
-				position: new google.maps.LatLng(locations[1], locations[2]),
+				position: new google.maps.LatLng(locations[0]),
 				map: map,
 				labelContent: letter,
 				labelClass: "labels",

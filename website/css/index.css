@@ -19,11 +19,20 @@ a:hover{ text-decoration:none; color:#687D9F;}
 
 #googleMap{
 	width: 100%;
-	height:450px;
+	height:550px;
+}
+
+.header {
+	min-height: 555px;
 }
 
 
-
+.header #vi{
+	position: absolute;
+	height: 151px;
+	z-index: 100;
+	width: 100%;
+}
 
 
 
@@ -103,9 +112,8 @@ a.btn_as:hover img{ opacity:1;}
 }
 
 .mailchimp{
-	
+
 	background:#FFF;
-	padding:60px
 	text-align:center;
 	height:450px;
 	}

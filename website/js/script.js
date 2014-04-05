@@ -31,12 +31,13 @@ function makeCountryCall() {
         if ($('#googleMap').length > 0) {
         
             map = new google.maps.Map(document.getElementById('googleMap'), {
-                zoom: 10,
+                zoom: 2,
                 center: new google.maps.LatLng(40.7562008, -73.9903784),
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
                 scrollwheel: false,
                 draggable: true,
-                mapTypeControl:  true
+                mapTypeControl:  false,
+                disableDefaultUI: true
             });
 
         }

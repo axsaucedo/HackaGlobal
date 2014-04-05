@@ -1,4 +1,5 @@
 var map;
+var locations = ['mexic', 'romania', 'england'];
 var markersArray = [];
 
 $(document).on('ready',function(){
@@ -7,11 +8,9 @@ $(document).on('ready',function(){
 
 
 
-
-
 function makeCountryCall() {
     $.ajax({
-        url: 'http://6f84083a.ngrok.com/api/country/',
+        url: 'https://22ba183c.ngrok.com/api/country/',
         type: 'GET',
         crossDomain: true,
         dataType: 'json',
@@ -28,81 +27,86 @@ function makeCountryCall() {
 
  function createMap(data) {
 
-        if ($('#googleMap').length > 0) {
-        
-            map = new google.maps.Map(document.getElementById('googleMap'), {
-                zoom: 10,
-                center: new google.maps.LatLng(40.7562008, -73.9903784),
-                mapTypeId: google.maps.MapTypeId.ROADMAP,
-                scrollwheel: false,
-                draggable: true,
-                mapTypeControl:  true
-            });
+    if ($('#googleMap').length > 0) {
+    
+        map = new google.maps.Map(document.getElementById('googleMap'), {
+            zoom: 2,
+            center: new google.maps.LatLng(40.7562008, -73.9903784),
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            disableDefaultUI: true,
+            scrollwheel: false
+        });
 
-        }
+    }
 
-
-           // populateMap(data);
-     
+    populateMap();  
 } 
 
 
- function populateMap(data) {
+  function populateMap() {
      
-        var resultsData;
-        var letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-
         var marker;
-        // end map
-        var infowindow = new google.maps.InfoWindow({
-            content: ''
-        });
-        var LatLngList = new Array();
-		
-		for (var i = 0; i < markersArray.length; i++ ) {
-			markersArray[i].setMap(null);
-		}
-		markersArray.length = 0;
+        var country;
+        
+        //var locations = ['mexic', 'romania', 'england'];
 
-       for (var u = 0; u < data.results.length; u++) {
+        for (var i = 0; i < markersArray.length; i++ ) {
+            markersArray[i].setMap(null);
+        }
+        markersArray.length = 0;
 
-            resultsData = data.results[u];
+        for (var u = 0; u < locations.length; u++) {
 
-            var letter = letters[u];
-  
-            var locations = ['mexic', resultsData.latitude, resultsData.longitude];
+            country = locations[u];
+            geocoder = new google.maps.Geocoder();
+            geocoder.geocode( { 'address': country }, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    marker = new MarkerWithLabel({
+                        map: map,
+                        position: results[0].geometry.location,         
+                        html: country,
+                    });
+                } else {
+                  alert("Geocode was not successful for the following reason: " + status);
+                }
 
-            var infowindow = new google.maps.InfoWindow();
+                markersArray[u] = marker;
+               
+                markersArray[u].addListener('click', function() {
+                    
+                    switch(parseInt(this.position.k)) {
+                    case 23 : {
+                        window.location = 'mexic/';
+                        break;
+                    }
+                    case 45 : {
+                        window.location = 'romania/';
+                        break;
+                    }
+                    case 52 : {
+                        window.location = 'england/';
+                        break;
+                    }
+                    default: {
+                        window.location = '404/';
+                    }
+                    
+                    }// end switch()
+                    
+                   // window.location.href = 'web/' + this.html;
+                }, false);
+
+                
+            });
             
-			marker = new MarkerWithLabel({
-				position: new google.maps.LatLng(locations[0]),
-				map: map,
-				labelContent: letter,
-				labelClass: "labels",
-				labelAnchor: new google.maps.Point(5, 29),                 
-				dealerName: retailer.name,
-				html: locations[0],
-				labelInBackground: false
-			});
-
-			google.maps.event.addListener(marker, 'click', function (e) {
-				window.location.href = '/country=' + this.html;
-				//infowindow.setContent(this.html);
-				//infowindow.open(map, this);
-				//map.setCenter(this.getPosition());
-			});
             
-			markersArray.push(marker);
-			
-			//  Make an array of the LatLng's of the markers you want to show
-            LatLngList.push(new google.maps.LatLng(locations[1], locations[2]));
-
-           
-        fitBounds(LatLngList);
-
-        $(window).on('resize',function () {
-            fitBounds(LatLngList);
-        });
-    }
-
+        }// end for 
+        
+        
+        
 }
+
+
+
+

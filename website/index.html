@@ -1,3 +1,4 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#">
 
@@ -5,27 +6,27 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
-<title>Landing Page, by Eduard Locota</title>
+<title>HackaGlobal - we facilitate passionate developers localy.</title>
 
 
 
-<meta name="description" content="A great landing page for you, By Locota Eduard." />
+<meta name="description" content="HackaGlobal - we facilitate passionate developers localy." />
 <meta name="keywords" content="360 degree,celestial,omnidirectional,sphere,spheral,globe,circle,empyrean,inovative,innovation,fish eye,panoramic,panorama,whole world,advanced" />
 
 
 
 <meta property="og:url" content="index.html" />
-<meta property="og:image" content="img/og2.jpg" />
+<meta property="og:image" content="static/img/og2.jpg" />
 <meta property="og:title" content="Landing Page Title" />
 <meta property="og:description" content="Landing Page content, type here" />
 
 
 
 
-<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/jquery.sidr.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/colorbox.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/reset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/index.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/jquery.sidr.css" rel="stylesheet" type="text/css" media="all" />
+<link href="static/css/colorbox.css" rel="stylesheet" type="text/css" media="all" />
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css" />
 
 
@@ -33,36 +34,48 @@
 <!-- Source / Script /JS -->
 
 
-<script type="text/javascript" src="js/lib/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="static/js/lib/jquery-1.10.2.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
-<script type="text/javascript" src="js/lib/jquery.colorbox-min.js"></script>
-<script type="text/javascript" src="js/lib/jquery.sidr.js"></script>
-<script type="text/javascript" src="js/lib/jquery.cycle2.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
-<script type="text/javascript" src="js/concept.js"></script>
-<script type="text/javascript" src="js/lib/markerwithlabel.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="static/js/lib/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="static/js/lib/jquery.sidr.js"></script>
+<script type="text/javascript" src="static/js/lib/jquery.cycle2.min.js"></script>
+<script type="text/javascript" src="static/js/common.js"></script>
+<script type="text/javascript" src="static/js/concept.js"></script>
+<script type="text/javascript" src="static/js/lib/markerwithlabel.js"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
 <script type="text/javascript"> 
 (function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://":"http://")+"";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})(); 
 </script>
 
 </head>
 
+
+
+
 <body>
-    <div class="header">
+
+
+
+<div class="header">
 
       <div id="vi">
-          <a href="index.html">
-            <img src="img/vi.png" class="style" alt="Landing Page by Eduard" />
-          </a>
+          <a href="/"><img alt="" class="style" src="static/img/vi.png"></a>
       </div>
+      
+      <div class="main-menu">
+          <ul>
+            <li> <a href="login.html"> Login</a></li>
+            <li> <a href="signup.html"> Signup</a></li>
+          </ul>
+      </div>
+
       <div class="mailchimp">
         
-        <div id="googleMap"></div>  
+         <div id="googleMap"></div>  
 
       </div>
 
-    </div><!--#header-->
+</div><!--#header-->
 
 
 
@@ -72,45 +85,43 @@
     <div id="top_gnav" class="style">
         <ul>
             <li><a href="#vi" class="about"><h2>Home</h2></a></li>
-            <li><a href="#main" class="about"><h2>Product</h2></a></li>
+             <li><a href="#main" class="info"><h2>Video</h2></a></li>
             <li><a href="#about" class="store"><h2>About</h2></a></li>
-            <li><a href="#googlelink" class="support"><h2>App</h2></a></li>
-            <li><a href="#app" class="info"><h2>Download</h2></a></li>
-            <li class="last"><a href="#gallery" class="log in"><h2>Gallery</h2></a></li>
+            <li><a href="#app" class="support"><h2>App</h2></a></li>
+           
+            
         </ul>
         <br class="clr" />
     </div>
+    
+    <div id="mc_embed_signup">
+        <form action="http://hackaglobal.us8.list-manage.com/subscribe/post?u=c43a99e58fdcaa68e71a3728d&amp;id=9c6c401d27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <label for="mce-EMAIL">Subscribe to HackaGlobal to know more about the awesomeness that awaits you!</label>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_c43a99e58fdcaa68e71a3728d_9c6c401d27" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+            
+      </form>
+    </div>
+    
+    
 
-<!-- Begin MailChimp Signup Form -->
-<div id="mc_embed_signup">
-  <form action="http://hackaglobal.us8.list-manage.com/subscribe/post?u=c43a99e58fdcaa68e71a3728d&amp;id=9c6c401d27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <label for="mce-EMAIL">Subscribe to HackaGlobal to know more about the awesomeness that awaits you!</label>
-    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;"><input type="text" name="b_c43a99e58fdcaa68e71a3728d_9c6c401d27" value=""></div>
-      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-      
-  </form>
-</div>
-    
-    
-    <div id="top_gnav_dummy" class="disnon style"></div>
-</div>
 
 <div id="sidr" style="display: none;">
   <ul>
     <li class="bannerarea">
       <div class="side_banner">
         <p class="iphone">
-          <img src="img/side_banner_for_iphone.png" alt="Startup for iPhone" class="for_iphone" />
+          <img src="static/img/side_banner_for_iphone.png" alt="Startup for iPhone" class="for_iphone" />
           <a class="btn_as" href="#gallery">
-            <img src="img/side_banner_appstore.png" alt="App Store" />
+            <img src="static/img/side_banner_appstore.png" alt="App Store" />
           </a>
         </p>
         <p class="android">
-          <img src="img/side_banner_for_android.png" alt="Startup for Android" class="for_android" />
+          <img src="static/img/side_banner_for_android.png" alt="Startup for Android" class="for_android" />
           <a class="btn_gp" href="#gallery">
-            <img src="img/side_banner_googleplay.png" alt="Google play" />
+            <img src="static/img/side_banner_googleplay.png" alt="Google play" />
           </a>
         </p>
       </div>
@@ -151,16 +162,12 @@
     <h1>&nbsp;</h1>
    
    	  <div>
-            <a href="http://www.youtube.com/embed/oHg5SJYRHA0?rel=0&amp;fs=0&amp;autoplay=1" class="video1"><img src="img/movie_01.jpg" class="style" /></a>
+            <a href="http://www.youtube.com/embed/oHg5SJYRHA0?rel=0&amp;fs=0&amp;autoplay=1" class="video1"><img src="static/img/movie_01.jpg" class="style" /></a>
             <iframe class="sp" width="200" height="120" src="http://www.youtube.com/embed/oHg5SJYRHA0?theme=light&amp;showinfo=0" frameborder="0" allowfullscreen style="width: 100%; margin: 0px 0px;"></iframe>
-            <p>Rick Rolled</p>
+            <p>About HackaGlobal</p>
       </div>
         
-        <div>
-            <a href="http://www.youtube.com/embed/YNqpyHFzfAw?rel=0&amp;fs=0&amp;autoplay=1" class="video2"><img src="img/movie_02.jpg" class="style" /></a>
-            <iframe class="sp" width="200" height="120" src="http://www.youtube.com/embed/YNqpyHFzfAw?theme=light&amp;showinfo=0" frameborder="0" allowfullscreen style="width: 100%; margin: 0px 0px;"></iframe>
-            <p>Lololo Song</p>
-        </div>
+       
         <br class="clr" />
     </div>
     
@@ -174,21 +181,18 @@
         
     
             
-                
-        
-        
-        
+  
 
-                <li><a href="#gallery"><img src="img/gallery_16.jpg" /><div><p><span>Coco Peila<br />Oakland</span><br />@AISHAFUKUSHIMA celebrating @COCOPEILA's #bday</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_17.jpg" /><div><p><span>HITOMI<br />Hatsushima island</span><br />Spring has come</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_18.jpg" /><div><p><span>Eve Higashi<br />Tokyo</span><br />Lost in White Bamboo</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_19.jpg" /><div><p><span>TokyoDex<br />New York</span><br />"Beauty Beyond Boundaries" Startup Launch Party in New York</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_20.jpg" /><div><p><span>HITOMI<br />New York</span><br />The fifth Avenue</p></div></a></li>
-            	<li><a href="#gallery"><img src="img/gallery_01.jpg" /><div><p><span>San Francisco, CA</span><br />Startup Concept Video Blank</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_02.jpg" /><div><p><span>Naoko Katsuura (TokyoDex)<br />Arts Maebashi, Gunma</span><br />Arts Maebashi Pre-Open Exhibition</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_03.jpg" /><div><p><span>Soichiro Nakajima (IFO)<br />Kugenuma Beach Skatepark, Kanagawa</span><br />Identified Flying Object</p></div></a></li>
-                <li"><a href="#gallery"><img src="img/gallery_04.jpg" /><div><p><span>D.H. Rosen (TokyoDex)<br />Yoyogi Park, Tokyo</span><br />Dancer Nanami Chinatsu<br />in Yoyogi Park</p></div></a></li>
-                <li><a href="#gallery"><img src="img/gallery_05.jpg" /><div><p><span>San Francisco, CA</span><br />Startup Concept Video Behind the scenes</p></div></a></li>         
+                <li><a href="#gallery"><img src="static/img/gallery_16.jpg" /><div><p><span>Coco Peila<br />Oakland</span><br />@AISHAFUKUSHIMA celebrating @COCOPEILA's #bday</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_17.jpg" /><div><p><span>HITOMI<br />Hatsushima island</span><br />Spring has come</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_18.jpg" /><div><p><span>Eve Higashi<br />Tokyo</span><br />Lost in White Bamboo</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_19.jpg" /><div><p><span>TokyoDex<br />New York</span><br />"Beauty Beyond Boundaries" Startup Launch Party in New York</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_20.jpg" /><div><p><span>HITOMI<br />New York</span><br />The fifth Avenue</p></div></a></li>
+            	<li><a href="#gallery"><img src="static/img/gallery_01.jpg" /><div><p><span>San Francisco, CA</span><br />Startup Concept Video Blank</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_02.jpg" /><div><p><span>Naoko Katsuura (TokyoDex)<br />Arts Maebashi, Gunma</span><br />Arts Maebashi Pre-Open Exhibition</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_03.jpg" /><div><p><span>Soichiro Nakajima (IFO)<br />Kugenuma Beach Skatepark, Kanagawa</span><br />Identified Flying Object</p></div></a></li>
+                <li"><a href="#gallery"><img src="static/img/gallery_04.jpg" /><div><p><span>D.H. Rosen (TokyoDex)<br />Yoyogi Park, Tokyo</span><br />Dancer Nanami Chinatsu<br />in Yoyogi Park</p></div></a></li>
+                <li><a href="#gallery"><img src="static/img/gallery_05.jpg" /><div><p><span>San Francisco, CA</span><br />Startup Concept Video Behind the scenes</p></div></a></li>         
            
             
             
@@ -199,14 +203,8 @@
 
             <li class="morebtn"><a id="gallery_more_btn" href="#">more</a></li>
         </ul>
-        <!--<a href="#" class="btn_gray"><h2>more</h2></a>-->
     </div>
 
-    <div id="tumblr">
-        <div id="imgbg"></div>
-        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-    </div>
-    
 
 
 
@@ -222,69 +220,42 @@
     	<h1>An amazing page created <br class="sp"/> with Product Lorem Ipsum.</h1>
     	
         <div class="aboutbox01">
-          <div class="aboutimg"><img src="img/circle1.png" class="flyout01" /></div>
+          <div class="aboutimg"><img src="static/img/circle1.png" class="flyout01" /></div>
             <div class="abouttext">
-                <h2>A new way to Troll.</h2>
-                <p>
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+                <h2>Connect with developers by registrating your HackaCity!</h2>
+                <p>Connect and network with developers who love the same thing you love. Coding and having the time of their lives while networking with other passionate programmers!
+ </p>
             </div>
         </div>
         <br class="clr" />
             
         <div class="aboutbox02">
-            <div class="aboutimg"><img src="img/circle2.png" class="flyout02" /></div>
+            <div class="aboutimg"><img src="static/img/circle4.png" class="flyout02" /></div>
             <div class="abouttext">
-                <h2>The next best thing to actually being there.</h2>
-                <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. </p>
+                <h2>Travel around the world .</h2>
+                <p>Take part to our HackaTrips, going around the world visiting HackaCities and taking part in the anual HackaGlobal events! </p>
             </div>
         </div>
         <br class="clr" />
             
         <div class="aboutbox03">
-			<div class="aboutimg"><img src="img/circle3.png" width="215" height="247" class="flyout03" /></div>
+			<div class="aboutimg"><img src="static/img/circle3.png" width="215" height="247" class="flyout03" /></div>
             <div class="abouttext">
-                <h2>Start sharing the world around you.</h2>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                <h2>Compete in mad Hackathons</h2>
+                <p>Participate to the most awsome hackathons around the world meeting programmers who ar as interested in codeing and learning new thing just as you are.
+                </p>
                 <p class="note">* In the Android<span class="tm">TM</span> app, images can be shared on Facebook/Twitter.</p>
             </div>
     	</div>
         <br class="clr" />
             
-        <div class="aboutbox04">
-			<div class="aboutimg"><img src="img/circle5.png" class="flyout04"  />
-		  <p class="credit">Courtesy of Google</p></div>
-            <div class="abouttext">
-                <h2>Share your own Lorem  startup</h2>
-                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
-                <div id="googlelink"><a href="google/index.html">Learn more<img src="img/top_bullet_green.png" alt=""></a></div>
-		  </div>
-    	</div>
-        <br class="clr" />
-  </div>
+        
 
 
 <!------------ App Page ------------>
 
     
-    <div class="btn_area">
-    <a href="#app" class="btn_g buynow"><h1>Buy now<img src="img/top_bullet_btn_g.png"/></h1></a>
-    </div>
-
-  <div id="flow">
-      <div>
-        <div class="flow1"> <img src="img/flow_01.png"/>
-          <h2>Geek</h2>
-        </div>
-        <div class="flow2"> <img src="img/flow_02.png"/>
-          <h2>Smart Device</h2>
-        </div>
-        <div class="flow3"> <img src="img/flow_03.png"/>
-          <h2>The Real Terminator</h2>
-        </div>
-      </div>
-      <br class="clr" />
-  </div>
-
+    
   <!----------------- Download Itunes, Google Play ------------->     
     
     
@@ -306,17 +277,17 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
                     <li class="left">
                         <div>
                             <h2>Startup for iPhone</h2>
-                            <p class="appbtn"><a href="#googlelink"" class="btn_as"><img src="img/appstore.png"/></a></p>
+                            <p class="appbtn"><a href="#googlelink"" class="btn_as"><img src="static/img/appstore.png"/></a></p>
                         </div>
                     </li>
                     <li class="right">
                         <div>
                             <h2>Startup for Android</h2>
-                            <p class="appbtn"><a href="#googlelink"a" class="btn_gp"><img src="img/googleplay.png" /></a></p>
+                            <p class="appbtn"><a href="#googlelink"a" class="btn_gp"><img src="static/img/side_banner_googleplay.png" /></a></p>
                         </div>
                     </li>
                 </ul>
-                <p class="official_apptext">Startup for iPhone and Startup for Android are dedicated apps for enjoying (taking, viewing and sharing) spherical images captured with Startup. You can also enjoy sample images with just the app.</p>
+                <p class="official_apptext">Comming soon to mobile. Bringing the ultimate Hackathon finder to you in the near future on dedicated app !</p>
             </div>
         </div>
         
@@ -332,136 +303,10 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
         <div id="leftctrl" class="ctrl"></div>
         
         
-        <div class="gallerytitle">
-          <h1>Gallery Title</h1>
-        </div> 
-
-      
         
-        <div id="gallery_list" class="cycle-slideshow" data-cycle-fx="scrollHorz" data-cycle-timeout=0 data-cycle-speed="500" data-cycle-slides="> div" data-cycle-prev="#leftctrl" data-cycle-next="#rightctrl" data-cycle-log="false">
-          <!------- First gallery page ------>
-          <div>
-            <div class="g1 galleryitem"><a href="#gallery"><img src="img/gallery_16.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>Coco Peila<br />
-                  Oakland</span><br />
-                  @AISHAFUKUSHIMA celebrating @COCOPEILA's #bday</a></p>
-              </div>
-            </div>
-            <div class="g2 galleryitem"><a href="#gallery"><img src="img/gallery_17.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>HITOMI<br />
-                  Hatsushima island</span><br />
-                  Spring has come</a></p>
-              </div>
-            </div>
-            <div class="g3 galleryitem"><a href="#gallery"><img src="img/gallery_18.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>Eve Higashi<br />
-                  Tokyo</span><br />
-                  Lost in White Bamboo</a></p>
-              </div>
-            </div>
-            <div class="g4 galleryitem"><a href="#gallery"><img src="img/gallery_19.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>TokyoDex<br />
-                  New York</span><br />
-                  "Beauty Beyond Boundaries" Startup Launch Party in New York</a></p>
-              </div>
-            </div>
-            <div class="g5 galleryitem"><a href="#gallery"><img src="img/gallery_20.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>HITOMI<br />
-                  New York</span><br />
-                  The fifth Avenue</a></p>
-              </div>
-            </div>
-          </div>
-          <h1>&nbsp;</h1>
-          <h1>&nbsp;</h1>
-          <!------- Second gallery page ------>
-          <div>
-            <div class="gother galleryitem"><a href="#gallery"><img src="img/gallery_01.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>San Francisco, CA</span><br />
-                  Startup Concept Video Blank</a></p>
-              </div>
-            </div>
-            <div class="gother galleryitem"><a href="#gallery"><img src="img/gallery_02.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>Naoko Katsuura (TokyoDex)<br />
-                  Arts Maebashi, Gunma</span><br />
-                  Arts Maebashi Pre-Open Exhibition</a></p>
-              </div>
-            </div>
-            <div class="gother galleryitem"><a href="#gallery"><img src="img/gallery_03.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>Soichiro Nakajima (IFO)<br />
-                  Kugenuma Beach Skatepark, Kanagawa</span><br />
-                  Identified Flying Object</a></p>
-              </div>
-            </div>
-            <div class="gother galleryitem"><a href="#gallery"><img src="img/gallery_04.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>D.H. Rosen (TokyoDex)<br />
-                  Yoyogi Park, Tokyo</span><br />
-                  Dancer Nanami Chinatsu<br />
-                  in Yoyogi Park</a></p>
-              </div>
-            </div>
-            <div class="gother galleryitem"><a href="#gallery"><img src="img/gallery_05.jpg" /></a>
-              <div>
-                <p><a href="#gallery"><span>San Francisco, CA</span><br />
-                  Startup Concept Video Behind the scenes</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="rightctrl" class="ctrl"></div>
-      </div>
-      <h1>&nbsp;</h1>
-    </div>
-  </div>
-  <div id="contents_foot">
-      <a href="#vi" target="_blank" class="logo"><img src="img/logo.png"/></a>
-    </div>
-</div>
-
-
-
-
-
-
-<!-----------------------Footer----------------------->
-
-
-
-<div id="footer">
-	<div>
-    	<div>
-        
-    
-        <ul class="fnavi style">
-        	<li><a href="privacypolicy/index.html" class="privacypolicy">Privacy policy</a></li>
-            <li><a href="legal/terms_of_use/index.html" class="terms_of_use">Terms of use</a></li>
-        </ul>
-        
-        <p class="cr">Copyright © Eduard Locota, Ltd. All rights reserved.</p>
-        </div>
-  	</div>
-</div>
-
-
-
-
-
-
-
 
 
 
 </body>
 </html>
 
-
-<!------------------- Copyright © Eduard Locota --------------------->

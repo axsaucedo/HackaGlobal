@@ -7,7 +7,7 @@
 
 {% block content %}
     {% load ef_tags %}
-    <div id="view-event-info" data-user_username="{{ request.user.username }}" data-user_firstname="{{ request.user.first_name }}" data-user_lastname="{{ request.user.last_name }}" data-event_id="{{ event.id }}" data-attend-event_url="{% url 'eventsfinder.ajax.attend_event' %}" data-track-event_url=""></div>
+    <div id="view-event-info" data-user_username="{{ request.user.username }}" data-user_firstname="{{ request.user.first_name }}" data-user_lastname="{{ request.user.last_name }}" data-event_id="{{ event.id }}" data-attend-event_url="{% url 'hackaglobal.ajax.attend_event' %}" data-track-event_url=""></div>
     <div id="view-event" class="container">
         <div class="row">
             <h1 class="page-header">{{ event.name }}</h1>

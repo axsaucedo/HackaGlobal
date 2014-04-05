@@ -93,22 +93,43 @@ $(function(){
 	
 	//スクロール時の処理
 	$(window).scroll(function(){		
+		var myHeader = document.getElementById('vi'),
+		myHeaderTopOffset = myHeader.getBoundingClientRect().top * -1;
+	
+		
 		var scrollTop = parseInt($(this).scrollTop()); //スクロール量;
 		var Hvi = $("#vi").height(); //メインビジュアルの高さ
 		var OtopGnav = $("#top_gnav").offset(); //グロナビの位置
 		var ww = $(window).width();
 		
+		if (myHeaderTopOffset > 500) {
+			$('#top_gnav').addClass('transition-header');
+		} else {
+			$('#top_gnav').removeClass('transition-header');
+		}
+		
+		// end else
+		
 		// main 動作固定
+		/*
 		if (scrollTop < Hvi && ww > 640 ){ 
 			$("#top_gnav").css({ position:"relative"});
 			$("#top_gnav_dummy").addClass("disnon");
 			$("#main").css("marginTop","" + scrollTop/2 + "px");
 		} else if(scrollTop > Hvi && ww > 640 ){
-			$("#top_gnav").css({position : "fixed",top:"0"});
+			
+			$("#top_gnav").css({
+				'width': "100%",
+				'max-width': "100%",
+				'position' : "fixed",
+				'top':"0",
+			});
+			
 			$("#top_gnav_dummy").removeClass("disnon");
 		} else if( ww <= 640 ){
 			$("#main").css("marginTop","0px");
 		}
+		*/
 		
 		//vi_bg
 		if(ww > 640){$("#vi_bg").css({ backgroundPosition:"0px -"+(scrollTop/10)+"px"});};

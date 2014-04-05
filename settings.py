@@ -97,7 +97,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 )
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'hackaglobal.urls'
 
@@ -120,16 +123,19 @@ INSTALLED_APPS = (
 
     'hackaglobal',
 
+    'corsheaders',
     'rest_framework',
     'social.apps.django_app.default',
 )
 
+CORS_ORIGIN_ALLOW_ALL = True
+
 REST_FRAMEWORK = {
     'PAGINATE_BY': 10,
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-        'rest_framework.permissions.DjangoModelPermissions',
-        ),
+#    'DEFAULT_PERMISSION_CLASSES': (
+#        'rest_framework.permissions.IsAuthenticated',
+#        'rest_framework.permissions.DjangoModelPermissions',
+#        ),
 }
 
 

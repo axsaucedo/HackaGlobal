@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block head-includes %}
+    <script type="text/javascript" src="/static/js/find_events.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/find_events.css">
+{% endblock %}
+
+{% block content %}
+    {% load ef_tags %}
+    <div class="container">
+        <div class="row">
+            <h1 class="page-header">Find events...</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-offset-1 col-md-3">
+                <h3>Available Tags</h3>
+                <div>
+                    {% for tag in tags %}{% if forloop.first %}<tag class="available-tag-label">{{ tag }}</tag>{% else %}, <tag class="available-tag-label">{{ tag }}</tag>{% endif %}{% endfor %}
+                </div>
+            </div>
+            <div class="col-md-5 container">
+                <form id="nav-bar-search-form" class="navbar-form row" method="POST" role="search">
+                    {% csrf_token %}
+                    <input id="find-event-tags" class="form-control hidden" type="text" name="tags">
+                    <div id="find-events-bar" class="col-md-10">
+                        <ul style="border-radius: 5px; padding: 5px 10px 5px 10px;" id="find-event-search" data-name="nameOfSelect">
+                            {% split request.POST.tags as post_tags %}
+                            {% for tag in post_tags %}
+                                <li class="tagit-choice ui-widget-content ui-state-default" tagvalue="{{ tag }}"><div class="tagit-label">{{ tag }}</div></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <button id="find-event-search-btn" type="submit" class="btn btn-default col-md-2">Find</button>
+                </form>
+                <div class="row">
+                    <h4>{{ info }}</h4>
+                    {% if events %}
+                        {% for event in events %}
+                            {% include 'layouts/event.html' with event=event %}
+                        {% endfor %}
+                    {% else %}
+                        {% if request.method == "POST" %}
+                            No matches were found with the tags given.
+                        {% endif %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

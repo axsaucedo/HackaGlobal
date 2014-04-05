@@ -1,0 +1,27 @@
+.row {
+    position: relative
+}
+
+.add-attendee-form {
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*width: 500px;*/
+    float: right;
+}
+
+.add-staff-btn {
+    padding: 3px 10px 3px 10px;
+}
+
+.remove-staff-btn {
+    color: red;
+    position: absolute;
+    top: 0px;
+    right: 5px;
+}
+
+#map-frame {
+    color: black;
+    width: 100%;
+    height:250px
+}

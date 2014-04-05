@@ -1,0 +1,25 @@
+<a href="/{% if created %}manage{% else %}event{% endif %}/{{ event.id }}">
+<div style="color: white" class="event-container">
+    <div class="row">
+        <div style="color: #d3d3d3" class="col-md-5">
+            <strong>{{ event.name|truncatechars:20 }}</strong>
+        </div>
+        <div class="col-md-7">
+            <div class="col-md-6">
+                {{ event.start|date:"d/m/y H:i" }}
+            </div>
+            <div class="col-md-6">
+                {{ event.end|date:"H:i d/m/y" }}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            {{ event.description|truncatechars:50 }}
+        </div>
+        <div class="col-md-5">
+            {{ event.get_short_address }}
+        </div>
+    </div>
+</div>
+</a>

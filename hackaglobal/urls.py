@@ -1,17 +1,41 @@
-from django.conf.urls import patterns, include, url
+from django.conf.urls.defaults import *
+from hackaglobal import views, ajax
+from django.contrib import admin
+from django.conf.urls import patterns
+
+handler500 = 'djangotoolbox.errorviews.server_error'
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+admin.autodiscover()
+
+handler404 = 'hackaglobal.views.handler404'
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'hackaglobal.views.home', name='home'),
-    # url(r'^hackaglobal/', include('hackaglobal.foo.urls')),
 
-    # Uncomment the admin/doc line below to enable admin documentation:
-    # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
+    url(r'^$', views.home, name='home'),
+    url(r'^find/$', views.find_events, name='find_events'),
+    url(r'^create/$', views.add_event, name='add_event'),
+    url(r'^manage/$', views.manage_events, name='manage_events'),
+    url(r'^delete/(?P<event_id>.+)/$', views.delete_event, name='delete_event'),
+    url(r'^manage/(?P<event_id>.+)/$', views.edit_event, name='edit_event'),
+    url(r'^event/(?P<event_id>.+)/$', views.view_event, name='manage_events'),
 
-    # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    # Handling all AJAX calls
+    url(r'^attend_event/$', ajax.attend_event, name='attend_event'),
+    url(r'^add_staff/$', ajax.add_staff, name='add_staff'),
+    url(r'^remove_staff/$', ajax.remove_staff, name='remove_staff'),
+
+    # Account authentication
+    (r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),
+    (r'^logout/$', 'django.contrib.auth.views.logout', {'next_page' : '/'}),
+    url(r'^signup/$', views.signup),
+
+    # Account management
+    url(r'^accounts/edit/password/$', views.edit_password, name='edit_password'),
+    url(r'^accounts/edit/$', views.edit_account, name='edit_account'),
+    url(r'^accounts/view/(?P<username>.+)/$', views.view_account, name='view_account'),
+
+
+    ('^admin/', include(admin.site.urls)),
 )

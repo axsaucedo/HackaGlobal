@@ -91,7 +91,7 @@ a.btn_g img, a.more img{
 	-webkit-transition:opacity 0s ease-in-out;
 	-moz-transition:opacity 0s ease-in-out;
 	}
-a:hover img{opacity:0.5;}
+
 a.logo:hover img,
 a.btn_gp:hover img,
 a.btn_as:hover img{ opacity:1;}

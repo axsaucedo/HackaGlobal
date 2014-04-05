@@ -120,13 +120,13 @@ a.more:hover{color:#64c832;}
 a.pagetop{
 	margin:15px 15px 15px 0;
 	float:right;
-	background:url(../../../intl/common/img/bullet_top.png) no-repeat;
+	background:url(../../../intl/common/static/img/bullet_top.png) no-repeat;
 	background-position-x:right;
 	background-position-y:8px;
 	}
 a.more{
 	width:25px;
-	background:url(../../../intl/common/img/bullet_right_g.png) no-repeat;
+	background:url(../../../intl/common/static/img/bullet_right_g.png) no-repeat;
 	background-position-x:right;
 	background-position-y:6px;
 	}
@@ -138,7 +138,7 @@ a.more{
 a.blank{
 	padding-right:15px;
 	position:relative;
-	background:url(../../../intl/common/img/arr.png) no-repeat;
+	background:url(../../../intl/common/static/img/arr.png) no-repeat;
 	background-position:right;
 	background-position-y:4px;
 	}
@@ -146,7 +146,7 @@ a.blank{
 a.btn_as{
 	width:200px;
 	height:59px;
-	background:url(../img/appstore.png) no-repeat;
+	background:url(../static/img/appstore.png) no-repeat;
 	background-size:contain;
 	text-indent:-9999px;
 	}
@@ -154,13 +154,13 @@ a.btn_as{
 a.btn_gp{
 	width:175px;
 	height:61px;
-	background:url(../img/googleplay.png) no-repeat;
+	background:url(../static/img/googleplay.png) no-repeat;
 	background-size:contain;
 	text-indent:-9999px;
 	}
 	
 a.pdf{
-	background:url(../../../intl/common/img/pdf_sp.png) no-repeat;
+	background:url(../../../intl/common/static/img/pdf_sp.png) no-repeat;
 	background-size:14px 14px;
 	background-position:0 2px;
 	padding-left:21px;
@@ -190,7 +190,7 @@ a.pdf{
 		content:" ";
 		display:block;
 		position:absolute;
-		background: url(../../../intl/common/img/bullet_top_down.png) no-repeat;
+		background: url(../../../intl/common/static/img/bullet_top_down.png) no-repeat;
 		background-size:contain;
 		width:9px;
 		height: 17px;
@@ -221,7 +221,7 @@ a.pdf{
 		}
 	.logo a{
 		display:block;
-		background:url(../../../intl/common/img/logo.png) no-repeat;
+		background:url(../../../intl/common/static/img/logo.png) no-repeat;
 		background-size:contain;
 		width:87px;
 		height:38px;
@@ -232,7 +232,7 @@ a.pdf{
                 }
         .ss_menu a{
                 display:block;
-                background:url(../../../intl/common/img/ss_menu_sp.png) no-repeat;
+                background:url(../../../intl/common/static/img/ss_menu_sp.png) no-repeat;
                 background-size: 23px;
                 height: 50px;
                 width: 50px;
@@ -339,7 +339,7 @@ a.pdf{
 	#FFFFFF;
 	border: none;
 	cursor: pointer;
-	background: #64c832 url(../../../intl/common/img/bullet_top_down.png) no-repeat;
+	background: #64c832 url(../../../intl/common/static/img/bullet_top_down.png) no-repeat;
 	background-size: 9px 17px;
 	background-position: 95% center;
 	margin: 15px 0px 0px 25px;
@@ -372,7 +372,7 @@ a.pdf{
 span.blank{
 	padding-right:18px;
 	position:relative;
-	background:url(../../../intl/common/img/arr.png) no-repeat;
+	background:url(../../../intl/common/static/img/arr.png) no-repeat;
 	background-position:right 3px;
 	background-position-x:right;
 	background-position-y:3px;
@@ -398,7 +398,7 @@ span.blank{
 		right:25px;
 		width:15px;
 		height:9px;
-		background: url(../../../intl/common/img/global_open_normal_sp.png) no-repeat;
+		background: url(../../../intl/common/static/img/global_open_normal_sp.png) no-repeat;
 		background-size:contain;
 		}
 .faq_top li ul{
@@ -615,7 +615,7 @@ a.about_buynow{
 		vertical-align:middle;
 		width:18px;
 		height:22px;
-		background:url(../../../intl/common/img/bullet_btn.png) no-repeat;
+		background:url(../../../intl/common/static/img/bullet_btn.png) no-repeat;
 		background-size:contain;
 		}
 		
@@ -624,7 +624,7 @@ a.about_buynow{
 		color:#808080;
 		}
 	.google_tab li.current a span{
-		background:url(../../../intl/common/img/bullet_btn_gray.png) no-repeat;
+		background:url(../../../intl/common/static/img/bullet_btn_gray.png) no-repeat;
 		background-size:contain;
 		}
 		

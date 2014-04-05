@@ -2,168 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/static/img/marker.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/appstore.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/appstore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/appstore.png" afterPath="$PROJECT_DIR$/website/static/img/appstore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/arr.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/arr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/arr.png" afterPath="$PROJECT_DIR$/website/static/img/arr.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/arrow_right_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/arrow_right_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/arrow_right_sp.png" afterPath="$PROJECT_DIR$/website/static/img/arrow_right_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/background.psd" afterPath="$PROJECT_DIR$/hackaglobal/static/img/background.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/background.psd" afterPath="$PROJECT_DIR$/website/static/img/background.psd" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/banner.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/banner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/banner.png" afterPath="$PROJECT_DIR$/website/static/img/banner.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_btn.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_btn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_btn.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_btn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_btn_gray.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_btn_gray.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_btn_gray.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_btn_gray.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_right.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_right.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right_g.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right_g.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_right_g.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_right_g.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right_top.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right_top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_right_top.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_right_top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_top.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_top.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_top.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/bullet_top_down.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_top_down.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/bullet_top_down.png" afterPath="$PROJECT_DIR$/website/static/img/bullet_top_down.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle1.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle1.png" afterPath="$PROJECT_DIR$/website/static/img/circle1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle10.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle10.png" afterPath="$PROJECT_DIR$/website/static/img/circle10.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle11.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle11.png" afterPath="$PROJECT_DIR$/website/static/img/circle11.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle2.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle2.png" afterPath="$PROJECT_DIR$/website/static/img/circle2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle3.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle3.png" afterPath="$PROJECT_DIR$/website/static/img/circle3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle4.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle4.png" afterPath="$PROJECT_DIR$/website/static/img/circle4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle5.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle5.png" afterPath="$PROJECT_DIR$/website/static/img/circle5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle6.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle6.png" afterPath="$PROJECT_DIR$/website/static/img/circle6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle7.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle7.png" afterPath="$PROJECT_DIR$/website/static/img/circle7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle8.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle8.png" afterPath="$PROJECT_DIR$/website/static/img/circle8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/circle9.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/circle9.png" afterPath="$PROJECT_DIR$/website/static/img/circle9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/closebtn.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/closebtn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/closebtn.png" afterPath="$PROJECT_DIR$/website/static/img/closebtn.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/controls.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/controls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/img/controls.png" afterPath="$PROJECT_DIR$/website/static/css/img/controls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/controls.png" afterPath="$PROJECT_DIR$/website/static/img/controls.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/flow_01.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/flow_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/flow_01.png" afterPath="$PROJECT_DIR$/website/static/img/flow_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/flow_02.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/flow_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/flow_02.png" afterPath="$PROJECT_DIR$/website/static/img/flow_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/flow_03.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/flow_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/flow_03.png" afterPath="$PROJECT_DIR$/website/static/img/flow_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_01.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_02.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_02.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_03.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_03.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_04.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_04.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_05.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_05.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_16.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_16.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_16.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_17.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_17.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_17.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_18.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_18.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_18.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_19.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_19.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_19.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/gallery_20.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/gallery_20.jpg" afterPath="$PROJECT_DIR$/website/static/img/gallery_20.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/global_close_normal_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/global_close_normal_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/global_close_normal_sp.png" afterPath="$PROJECT_DIR$/website/static/img/global_close_normal_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/global_open_normal_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/global_open_normal_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/global_open_normal_sp.png" afterPath="$PROJECT_DIR$/website/static/img/global_open_normal_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/globalicon_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/globalicon_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/globalicon_sp.png" afterPath="$PROJECT_DIR$/website/static/img/globalicon_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/globe.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/globe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/globe.png" afterPath="$PROJECT_DIR$/website/static/img/globe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/googleplay.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/googleplay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/googleplay.png" afterPath="$PROJECT_DIR$/website/static/img/googleplay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/loading.gif" afterPath="$PROJECT_DIR$/hackaglobal/static/img/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/loading.gif" afterPath="$PROJECT_DIR$/website/static/img/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/logo.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/logo.png" afterPath="$PROJECT_DIR$/website/static/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/movie_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/movie_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/movie_01.jpg" afterPath="$PROJECT_DIR$/website/static/img/movie_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/movie_02.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/movie_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/movie_02.jpg" afterPath="$PROJECT_DIR$/website/static/img/movie_02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/pdf.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/pdf.png" afterPath="$PROJECT_DIR$/website/static/img/pdf.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/pdf_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/pdf_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/pdf_sp.png" afterPath="$PROJECT_DIR$/website/static/img/pdf_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/samsung_tablet_tab2_base.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/samsung_tablet_tab2_base.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/samsung_tablet_tab2_base.jpg" afterPath="$PROJECT_DIR$/website/static/img/samsung_tablet_tab2_base.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_appstore.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_appstore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/side_banner_appstore.png" afterPath="$PROJECT_DIR$/website/static/img/side_banner_appstore.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_for_android.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_for_android.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/side_banner_for_android.png" afterPath="$PROJECT_DIR$/website/static/img/side_banner_for_android.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_for_iphone.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_for_iphone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/side_banner_for_iphone.png" afterPath="$PROJECT_DIR$/website/static/img/side_banner_for_iphone.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_googleplay.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_googleplay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/side_banner_googleplay.png" afterPath="$PROJECT_DIR$/website/static/img/side_banner_googleplay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/ss_menu_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/ss_menu_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/ss_menu_sp.png" afterPath="$PROJECT_DIR$/website/static/img/ss_menu_sp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_btn_g.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_btn_g.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_btn_g.png" afterPath="$PROJECT_DIR$/website/static/img/top_bullet_btn_g.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_btn_more.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_btn_more.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_btn_more.png" afterPath="$PROJECT_DIR$/website/static/img/top_bullet_btn_more.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_gd.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_gd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_gd.png" afterPath="$PROJECT_DIR$/website/static/img/top_bullet_gd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_green.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_green.png" afterPath="$PROJECT_DIR$/website/static/img/top_bullet_green.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_wd.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_wd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_wd.png" afterPath="$PROJECT_DIR$/website/static/img/top_bullet_wd.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_global.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_global.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_global.png" afterPath="$PROJECT_DIR$/website/static/img/top_global.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/vi.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/vi.png" afterPath="$PROJECT_DIR$/website/static/img/vi.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/vi2.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/vi2.png" afterPath="$PROJECT_DIR$/website/static/img/vi2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/vi_bg.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/img/vi_bg.jpg" afterPath="$PROJECT_DIR$/website/static/css/img/vi_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/vi_bg.jpg" afterPath="$PROJECT_DIR$/website/static/img/vi_bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/vi_bg2.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi_bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/img/vi_bg2.jpg" afterPath="$PROJECT_DIR$/website/static/css/img/vi_bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/vi_bg2.jpg" afterPath="$PROJECT_DIR$/website/static/img/vi_bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/base.css" afterPath="$PROJECT_DIR$/website/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/colorbox.css" afterPath="$PROJECT_DIR$/website/static/css/colorbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/common.js" afterPath="$PROJECT_DIR$/website/static/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/concept.js" afterPath="$PROJECT_DIR$/website/static/js/concept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/index.css" afterPath="$PROJECT_DIR$/website/static/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/index.html" afterPath="$PROJECT_DIR$/website/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/website/static/js/lib/jquery-1.10.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.colorbox-min.js" afterPath="$PROJECT_DIR$/website/static/js/lib/jquery.colorbox-min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.cycle2.min.js" afterPath="$PROJECT_DIR$/website/static/js/lib/jquery.cycle2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.selectbox-0.2.min.js" afterPath="$PROJECT_DIR$/website/static/js/lib/jquery.selectbox-0.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/jquery.selectbox.css" afterPath="$PROJECT_DIR$/website/static/css/jquery.selectbox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/jquery.sidr.css" afterPath="$PROJECT_DIR$/website/static/css/jquery.sidr.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.sidr.js" afterPath="$PROJECT_DIR$/website/static/js/lib/jquery.sidr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/markerwithlabel.js" afterPath="$PROJECT_DIR$/website/static/js/lib/markerwithlabel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/reset.css" afterPath="$PROJECT_DIR$/website/static/css/reset.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/script.js" afterPath="$PROJECT_DIR$/website/static/js/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/css/sp.css" afterPath="$PROJECT_DIR$/website/static/css/sp.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/spinimg.js" afterPath="$PROJECT_DIR$/website/static/js/spinimg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/js/lib/spritespin.js" afterPath="$PROJECT_DIR$/website/static/js/lib/spritespin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_br.html" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_br.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_br.html" afterPath="$PROJECT_DIR$/website/static/img/top_bullet_br.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/urls.py" afterPath="$PROJECT_DIR$/hackaglobal/urls.py" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694281928" ignored="false" />
-    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694397364" ignored="false" />
-    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396695129548" ignored="false" />
-    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396687732553" ignored="false" />
+    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396701997491" ignored="false" />
+    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700634852" ignored="false" />
+    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700883142" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/app.yaml" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -175,15 +24,16 @@
     <file path="$PROJECT_DIR$/../eventsfinder/djangoappengine/settings_base.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="/manage.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683572675" ignored="false" />
     <file path="/admin.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683865635" ignored="false" />
-    <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396684170230" ignored="false" />
-    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686587420" ignored="false" />
+    <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700769353" ignored="false" />
+    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396702174208" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686538055" ignored="false" />
     <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396687036348" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693888874" ignored="false" />
     <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396689608908" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
-    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694411667" ignored="false" />
-    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396695129548" ignored="false" />
+    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700524020" ignored="false" />
+    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700658286" ignored="false" />
+    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396699594772" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +95,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="17" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-37.076923">
+            <state line="112" column="69" selection-start="3253" selection-end="3253" vertical-scroll-proportion="-6.769231">
               <folding />
             </state>
           </provider>
@@ -262,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="52" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0">
+            <state line="57" column="53" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.41904762">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -273,10 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="68" selection-start="4775" selection-end="4775" vertical-scroll-proportion="0.66386557">
+            <state line="90" column="75" selection-start="4256" selection-end="4256" vertical-scroll-proportion="-3.24">
               <folding>
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -306,7 +156,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="15" column="22" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -337,9 +187,6 @@
         <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
         <option value="$PROJECT_DIR$/hackaglobal/templatetags/ef_tags.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/website/index.html" />
         <option value="$PROJECT_DIR$/website/css/index.css" />
         <option value="$PROJECT_DIR$/hackaglobal/static/css/external/Bootstrap.css" />
@@ -348,6 +195,9 @@
         <option value="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.js" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
       </list>
     </option>
   </component>
@@ -950,31 +800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="17" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-37.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="52" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="44" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-5.1923075">
@@ -1035,10 +860,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="68" selection-start="4775" selection-end="4775" vertical-scroll-proportion="0.66386557">
+        <state line="90" column="75" selection-start="4256" selection-end="4256" vertical-scroll-proportion="-3.24">
           <folding>
             <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="112" column="69" selection-start="3253" selection-end="3253" vertical-scroll-proportion="-6.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="22" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="53" selection-start="1557" selection-end="1557" vertical-scroll-proportion="0.41904762">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>

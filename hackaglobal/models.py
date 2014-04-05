@@ -55,7 +55,7 @@ class Tag(models.TextField):
 
 # TODO add sponsors!!
 class Event(models.Model):
-    creator = models.OneToOneField(User, unique=True)
+    creator = models.OneToOneField(User, unique=False)
     name = models.CharField(_("Event Name"), max_length=50)
     description = models.TextField(_("Event Description"), null=True, blank=True)
     address = models.CharField(max_length=100)

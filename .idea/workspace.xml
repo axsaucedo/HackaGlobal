@@ -2,74 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/images/fb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/images/man-placeholder.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/images/party.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/images/tw.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/images/woman-placeholder.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/Bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/templatetags/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/tools/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account_edit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account_edit_password.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/account_view.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/add_event.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/add_event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/add_event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/ajax.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/amelia.bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/base.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap-glyphicons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/edit_event.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/edit_event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/ef_context.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/templatetags/ef_tags.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layouts/event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/find_events.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/find_events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/find_events.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layouts/generic_attendee.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/generic_message.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layouts/generic_staff.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/home.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/home.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.themeswitcher.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/manage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/manage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/manage_events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/signup.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/tagit-themeroller.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/tagit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/tagit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/tools/toolbox.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/transition.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/view.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/view_event.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/views.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hackaglobal/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/urls.py" afterPath="$PROJECT_DIR$/hackaglobal/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.extensions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.full.min.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/colorbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/jquery.selectbox.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/jquery.sidr.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/reset.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/css/sp.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/controls.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/vi_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/img/vi_bg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/concept.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/jquery-1.10.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/jquery.colorbox-min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/jquery.cycle2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/jquery.selectbox-0.2.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/jquery.sidr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/markerwithlabel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/lib/spritespin.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website/js/spinimg.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hackaglobal/static/css/external/Bootstrap.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/css/img/controls.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/controls.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/css/img/vi_bg.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi_bg.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/css/img/vi_bg2.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi_bg2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/appstore.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/appstore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/arr.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/arr.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/arrow_right_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/arrow_right_sp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/background.psd" afterPath="$PROJECT_DIR$/hackaglobal/static/img/background.psd" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/banner.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/banner.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_btn.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_btn.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_btn_gray.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_btn_gray.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_right.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_right_g.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right_g.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_right_top.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_right_top.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_top.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_top.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/bullet_top_down.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/bullet_top_down.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle1.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle1.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle10.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle10.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle11.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle11.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle2.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle2.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle3.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle3.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle4.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle4.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle5.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle5.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle6.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle6.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle7.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle7.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle8.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle8.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/circle9.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/circle9.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/closebtn.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/closebtn.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/flow_01.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/flow_01.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/flow_02.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/flow_02.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/flow_03.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/flow_03.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_02.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_03.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_03.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_04.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_04.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_05.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_05.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_16.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_16.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_17.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_17.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_18.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_18.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_19.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_19.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/gallery_20.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/gallery_20.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/global_close_normal_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/global_close_normal_sp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/global_open_normal_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/global_open_normal_sp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/globalicon_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/globalicon_sp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/globe.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/globe.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/googleplay.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/googleplay.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/loading.gif" afterPath="$PROJECT_DIR$/hackaglobal/static/img/loading.gif" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/logo.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/logo.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/movie_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/movie_01.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/movie_02.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/movie_02.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/pdf.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/pdf.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/pdf_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/pdf_sp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/samsung_tablet_tab2_base.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/img/samsung_tablet_tab2_base.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/side_banner_appstore.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_appstore.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/side_banner_for_android.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_for_android.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/side_banner_for_iphone.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_for_iphone.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/side_banner_googleplay.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/side_banner_googleplay.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/ss_menu_sp.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/ss_menu_sp.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_bullet_br.html" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_br.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_bullet_btn_g.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_btn_g.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_bullet_btn_more.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_btn_more.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_bullet_gd.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_gd.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_bullet_green.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_green.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_bullet_wd.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_bullet_wd.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/top_global.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/top_global.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/vi.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/website/img/vi2.png" afterPath="$PROJECT_DIR$/hackaglobal/static/img/vi2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap-glyphicons.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap-glyphicons.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/wsgi.py" afterPath="$PROJECT_DIR$/hackaglobal/wsgi.py" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396684170193" ignored="false" />
-    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683155423" ignored="false" />
-    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683904140" ignored="false" />
-    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396684677426" ignored="false" />
+    <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694281928" ignored="false" />
+    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694397364" ignored="false" />
+    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396695129548" ignored="false" />
+    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396687732553" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/app.yaml" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -84,6 +120,12 @@
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396684170230" ignored="false" />
     <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686587420" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686538055" ignored="false" />
+    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396687036348" ignored="false" />
+    <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693888874" ignored="false" />
+    <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396689608908" ignored="false" />
+    <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
+    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694411667" ignored="false" />
+    <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396695129548" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +187,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="20" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-13.192307">
+            <state line="74" column="17" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-37.076923">
               <folding />
             </state>
           </provider>
@@ -154,16 +196,18 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="2.3076923">
-              <folding />
+            <state line="27" column="44" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-5.1923075">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="52" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.41904762">
+            <state line="57" column="52" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -171,10 +215,40 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="68" selection-start="4775" selection-end="4775" vertical-scroll-proportion="0.66386557">
+              <folding>
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="64" selection-start="727" selection-end="727" vertical-scroll-proportion="6.9">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/css/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="799" column="6" selection-start="14776" selection-end="14781" vertical-scroll-proportion="-3.8846154">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="44" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+            <state line="6" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -200,18 +274,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hackaglobal/settings.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/ajax.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/wsgi.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/eventsfinder/ajax.py" />
         <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
         <option value="$PROJECT_DIR$/hackaglobal/templatetags/ef_tags.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/website/index.html" />
+        <option value="$PROJECT_DIR$/website/css/index.css" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/css/external/Bootstrap.css" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap-glyphicons.css" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.extensions.js" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.js" />
+        <option value="$PROJECT_DIR$/templates/home.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -276,6 +354,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -290,6 +400,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="hackaglobal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -308,7 +436,103 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templatetags" />
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="external" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="external" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,25 +544,29 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tmpHackaGlobal" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/hackaglobal" />
+      <recent name="$PROJECT_DIR$/hackaglobal/static" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/hackaglobal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/website" />
       <recent name="$PROJECT_DIR$/hackaglobal" />
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/eventsfinder" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -551,7 +779,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -571,7 +799,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.110210694" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -634,58 +862,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="0" selection-start="8410" selection-end="8410" vertical-scroll-proportion="0.33174226">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="53" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/ajax.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/template/context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="153" column="0" selection-start="5063" selection-end="5063" vertical-scroll-proportion="0.33147633">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="16" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="55" selection-start="1978" selection-end="1984" vertical-scroll-proportion="0.46706587">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="64" selection-start="3667" selection-end="3679" vertical-scroll-proportion="0.31092438">
           <folding />
         </state>
       </provider>
@@ -706,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="20" selection-start="1433" selection-end="1433" vertical-scroll-proportion="-13.192307">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/django/db/models/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="545" column="0" selection-start="24081" selection-end="24081" vertical-scroll-proportion="0.33169532">
@@ -727,27 +899,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="34" selection-start="549" selection-end="549" vertical-scroll-proportion="2.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="44" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+        <state line="6" column="0" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="17" selection-start="2103" selection-end="2103" vertical-scroll-proportion="-37.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="52" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.41904762">
+        <state line="57" column="52" selection-start="1556" selection-end="1556" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="44" selection-start="1012" selection-end="1012" vertical-scroll-proportion="-5.1923075">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="99962" selection-end="99962" vertical-scroll-proportion="0.25798526">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap-glyphicons.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="403" column="0" selection-start="22084" selection-end="22084" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="799" column="6" selection-start="14776" selection-end="14781" vertical-scroll-proportion="-3.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.extensions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="13" selection-start="4535" selection-end="4535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.full.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3911" selection-start="3958" selection-end="3958" vertical-scroll-proportion="0.0390625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="64" selection-start="727" selection-end="727" vertical-scroll-proportion="6.9">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="68" selection-start="4775" selection-end="4775" vertical-scroll-proportion="0.66386557">
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

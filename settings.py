@@ -52,8 +52,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = BASE_DIR + '/templates/static/'
-print STATIC_ROOT
+STATIC_ROOT = ''
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -74,6 +73,9 @@ STATICFILES_FINDERS = (
 
 # Make this unique, and don't share it with anybody.
 SECRET_KEY = '0$f@0dfsd#o_^@r9m-@dk1!cz0e@m1f253kbmfed_6jlccc7=('
+
+
+TEMPLATE_DIRS = (BASE_DIR + '/templates',)
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -106,8 +108,6 @@ ROOT_URLCONF = 'hackaglobal.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'hackaglobal.wsgi.application'
-
-TEMPLATE_DIRS = ('/Users/axsauze/IdeaProjects/HackaGlobal/templates',)
 
 INSTALLED_APPS = (
     'django.contrib.admin',

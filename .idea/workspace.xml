@@ -186,7 +186,7 @@
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700769353" ignored="false" />
     <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745692666" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686538055" ignored="false" />
-    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396756199565" ignored="false" />
+    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396764543444" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749465784" ignored="false" />
     <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396755774237" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
@@ -321,11 +321,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="52" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-0.75949365">
+            <state line="186" column="138" selection-start="8119" selection-end="8119" vertical-scroll-proportion="5.89939">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -339,10 +340,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="35" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07371008">
+            <state line="2" column="35" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -398,8 +399,8 @@
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -803,6 +804,13 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1052,10 +1060,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="35" selection-start="49" selection-end="49" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="52" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-0.75949365">
+        <state line="186" column="138" selection-start="8119" selection-end="8119" vertical-scroll-proportion="5.89939">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1065,13 +1081,6 @@
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07371008">
-          <folding />
         </state>
       </provider>
     </entry>

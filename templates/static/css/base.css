@@ -71,6 +71,7 @@ body {
     margin-bottom: -10px;
     overflow-x: hidden;
     overflow-y: auto;
+    background-color: black !important;
 }
 
 .staff-container {

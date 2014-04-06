@@ -27,10 +27,9 @@ function apiGetCountries() {
 	xhr.open('GET', apiURL + '/api/country/', true);
 	
 	xhr.onload = function() {
-		var rsp = JSON.parse(xhr.responseText);
-				
-		hgCountries = rsp.countries;
-		populateMap(); 
+		hgCountries = JSON.parse(xhr.responseText);
+
+		populateMap();
 	}// end xhr.onload()
 	
 	xhr.error = function() {
@@ -44,29 +43,31 @@ function apiGetCountries() {
 function apiGetEvents(country) {
 	var xhr = new XMLHttpRequest(),
 	container = document.getElementById('hg-list-wrapper');
-	
+
 	xhr.open('GET', apiURL + '/api/data/' + country, true);
 	xhr.onload = function() {
 		var rsp = JSON.parse(xhr.responseText),
 				n,
 				i,
 				html = [];
-		
-		if (rsp.events) {
-			n = rsp.events.length; 
+
+        console.log(rsp);
+
+		if (rsp) {
+			n = rsp.length;
 			
 			if (n > 0) {
 				html.push('<div class="hg-list-date-container">April 04 &middot; Friday</div>');
 				html.push('<ul class="hg-list-ul">');
-				console.log(rsp.events);
+				console.log(rsp);
 				for (i = 0; i < n; i++) {
 					html.push('<li class="hg-list-item-container">' + 
 						'<div class="hg-list-item-left"><div class="hg-list-item-title-container">'+
-						'<a class="hg-list-item-title" href="#" target="_blank">' + rsp.events[i].title + '</a>' + 
-						'</div><div class="hg-list-item-location">' + rsp.events[i].address + ' &middot;' + 
-						' organizer ' + rsp.events[i].organizer + '</div>' + 
-						'<div class="hg-list-item-info">' + rsp.events[i].description + '...</div></div>' + 
-						'<div class="hg-list-item-right">' + rsp.events[i].start + '</div></li>');
+						'<a class="hg-list-item-title" href="#" target="_blank">' + rsp[i].name + '</a>' +
+						'</div><div class="hg-list-item-location">' + rsp[i].address + ' &middot;' +
+						' organizer ' + rsp[i].creator + '</div>' +
+						'<div class="hg-list-item-info">' + rsp[i].description + '...</div></div>' +
+						'<div class="hg-list-item-right">' + rsp[i].start + '</div></li>');
 				}// end for
 				
 				html.push('</ul>');

@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <title>HackaGlobal</title>
+    <title>HackaGlobal - Connecting passionate hackers globally.</title>
 
     <script type="text/javascript" src="/static/js/external/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/external/jquery-ui.js"></script>
@@ -41,6 +40,7 @@
 <body>
 
 <div id="header">
+
     <nav id='events-finder-nav-bar' class="navbar navbar-default navbar-fixed-top" role="navigation">
 
         <div class="navbar-header">
@@ -69,61 +69,13 @@
                             <li><a href="/logout">Log Out</a></li>
                         </ul>
                     </li>
-                {% else %}
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/login">Log In</a></li>
-                        <li><a href="/signup">Sign Up</a></li>
-                    </ul>
-                {% endif %}
-            </ul>
-        </div>
-    </nav>
-</div>
-
-<div id="wrap">
-    <div id="content">
-        {% block content %}
-        {% endblock %}
-    </div>
-    <div id="push"></div>
-</div>
-
-<div id="footer">
-    <nav id='events-finder-footer' class="navbar navbar-default" role="navigation">
-
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="/">HackaGlobal</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-            <ul id="navbar-social-2" class="nav navbar-nav">
-                <li><a class="brand" href="https://www.facebook.com/groups/427307914040371/?fref=ts"><i style="font-size: 1.5em !important;" class="icon-facebook"></i></a></li>
-                <li><a href="http://www.twitter.com/eventsfinder"><i style="font-size: 1.5em !important;" class="icon-twitter"></i></a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                {% if request.user.is_authenticated %}
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/accounts/view/{{ request.user.username }}">View Account</a></li>
-                            <li><a href="/accounts/edit">Edit Account</a></li>
-                            <li class="divider"></li>
-                            <li><a href="/logout">Log Out</a></li>
-                        </ul>
-                    </li>
                 {% endif %}
             </ul>
             <form id="nav-search-form" class="navbar-form navbar-right" method="POST" action="/find/" role="search">
                 {% csrf_token %}
                 <input id="nav-find-event-tags" class="form-control hidden" type="text" name="tags">
                 <div id="nav-find-events-bar" class="col-md-10">
-                    <ul id="nav-find-event-search" style="border-radius: 5px; padding: 5px 10px 5px 10px;" data-name="nameOfSelect"></ul>
+                    <ul id="nav-find-event-search" style="border-radius: 5px; padding: 5px 10px 5px 10px; background-color: #d3d3d3" data-name="nameOfSelect"></ul>
                 </div>
                 <button id="nav-find-event-search-btn" type="submit" class="btn btn-default col-md-2">Find</button>
             </form>
@@ -139,6 +91,13 @@
             </ul>
         </div>
     </nav>
+
+<div id="wrap">
+    <div id="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <div id="push"></div>
 </div>
 
 </body>

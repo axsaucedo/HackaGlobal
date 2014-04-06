@@ -170,7 +170,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694281928" ignored="false" />
     <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396772625875" ignored="false" />
-    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396773994407" ignored="false" />
+    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396775466205" ignored="false" />
     <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396774868714" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -204,7 +204,7 @@
     <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
     <file path="/login.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396770637781" ignored="false" />
     <file path="/signup.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396770934548" ignored="false" />
-    <file path="/apply.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396773523531" ignored="false" />
+    <file path="/apply.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396775492154" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -318,10 +318,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="42" selection-start="6206" selection-end="6448" vertical-scroll-proportion="0.6639785">
+            <state line="175" column="17" selection-start="6194" selection-end="6194" vertical-scroll-proportion="-8.923077">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -332,7 +332,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+            <state line="25" column="61" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -349,17 +349,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apply.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="apply.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/apply.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="55" selection-start="3253" selection-end="3253" vertical-scroll-proportion="-25.0">
+            <state line="34" column="78" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.767507">
               <folding>
                 <element signature="e#597#621#0" expanded="true" />
                 <element signature="e#783#804#0" expanded="true" />
                 <element signature="e#1400#1429#0" expanded="true" />
-                <element signature="e#1862#1891#0" expanded="true" />
-                <element signature="e#2340#2369#0" expanded="true" />
-                <element signature="e#2849#2878#0" expanded="true" />
+                <element signature="e#1858#1887#0" expanded="true" />
+                <element signature="e#2333#2362#0" expanded="true" />
+                <element signature="e#2842#2871#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -412,9 +412,9 @@
         <option value="$PROJECT_DIR$/templates/signup.html" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
-        <option value="$PROJECT_DIR$/templates/apply.html" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
+        <option value="$PROJECT_DIR$/templates/apply.html" />
       </list>
     </option>
   </component>
@@ -923,14 +923,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32874617" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.110210694" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.110210694" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1073,20 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/apply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="55" selection-start="3253" selection-end="3253" vertical-scroll-proportion="-25.0">
-          <folding>
-            <element signature="e#597#621#0" expanded="true" />
-            <element signature="e#783#804#0" expanded="true" />
-            <element signature="e#1400#1429#0" expanded="true" />
-            <element signature="e#1862#1891#0" expanded="true" />
-            <element signature="e#2340#2369#0" expanded="true" />
-            <element signature="e#2849#2878#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apihg/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="102" column="64" selection-start="2681" selection-end="2685" vertical-scroll-proportion="-4.1923075">
@@ -1115,13 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="36" selection-start="1412" selection-end="1412" vertical-scroll-proportion="-10.961538">
@@ -1131,11 +1110,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="61" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="42" selection-start="6206" selection-end="6448" vertical-scroll-proportion="0.6639785">
+        <state line="175" column="17" selection-start="6194" selection-end="6194" vertical-scroll-proportion="-8.923077">
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/apply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="78" selection-start="1967" selection-end="1967" vertical-scroll-proportion="0.767507">
+          <folding>
+            <element signature="e#597#621#0" expanded="true" />
+            <element signature="e#783#804#0" expanded="true" />
+            <element signature="e#1400#1429#0" expanded="true" />
+            <element signature="e#1858#1887#0" expanded="true" />
+            <element signature="e#2333#2362#0" expanded="true" />
+            <element signature="e#2842#2871#0" expanded="true" />
           </folding>
         </state>
       </provider>

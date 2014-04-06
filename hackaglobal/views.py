@@ -172,8 +172,13 @@ def apply(request):
         send_mail('New HackaCity Application!!', "Email: " + email + " from: " + name + ". Application for ["+ hackacity +"] Content: " + content, 'hackaglobal@gmail.com',
                             ['hackaglobal@gmail.com'], fail_silently=False)
 
-#        send_mail('New HackaCity Application!!', "Thank you for your application to kick start "+ hackacity +"! We'll get back to you as fast as we can! We're looking forward to have you in this awesome community!", 'hackaglobal@gmail.com',
-#            [email], fail_silently=False)
+        try:
+            print email
+            send_mail('Thanks for your application', "Thank you for your application to kick start "+ hackacity +"! We'll get back to you as fast as we can! We're looking forward to have you in this awesome community!", 'hackaglobal@gmail.com',
+                [email], fail_silently=False)
+        except:
+            print "email error"
+
 
 
     return render_to_response('apply.html', {}, context_instance=RequestContext(request))

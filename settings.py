@@ -19,10 +19,10 @@ MANAGERS = ADMINS
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = 'hackasoton@gmail.com'
-EMAIL_HOST_PASSWORD = 'HackaS0t0n'
+EMAIL_HOST_USER = 'hackaglobal@gmail.com'
+EMAIL_HOST_PASSWORD = 'hacka1234'
 
-DEFAULT_FROM_EMAIL = 'hackasoton@gmail.com'
+DEFAULT_FROM_EMAIL = 'hackaglobal@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 DATABASES = {

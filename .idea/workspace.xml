@@ -187,7 +187,7 @@
     <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745692666" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686538055" ignored="false" />
     <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396765853842" ignored="false" />
-    <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396765639380" ignored="false" />
+    <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396776890404" ignored="false" />
     <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396755774237" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396702391925" ignored="false" />
@@ -286,15 +286,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="61" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apihg/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -358,10 +349,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.9262899">
+            <state line="35" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.28108108">
               <folding />
             </state>
           </provider>
@@ -393,7 +393,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/add_event.html" />
@@ -408,6 +407,7 @@
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/templates/countrylist.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -987,23 +987,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="35" selection-start="2646" selection-end="2646" vertical-scroll-proportion="-2.38">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#span#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#a#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="22" selection-start="727" selection-end="727" vertical-scroll-proportion="8.4">
@@ -1125,7 +1108,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.9262899">
+        <state line="35" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.28108108">
           <folding />
         </state>
       </provider>

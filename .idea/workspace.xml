@@ -275,17 +275,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="27" selection-start="8546" selection-end="8546" vertical-scroll-proportion="-12.923077">
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apihg/urls.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -322,15 +311,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/screen.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="countrylist.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/countrylist.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -349,19 +329,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+            <state line="1047" column="0" selection-start="22427" selection-end="22427" vertical-scroll-proportion="0.72440946">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.28108108">
+            <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="-2.08">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/base.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="25" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -406,8 +404,8 @@
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/templates/countrylist.html" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
       </list>
     </option>
   </component>
@@ -987,13 +985,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="22" selection-start="727" selection-end="727" vertical-scroll-proportion="8.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="77" selection-start="3606" selection-end="3606" vertical-scroll-proportion="-13.458333">
@@ -1001,13 +992,6 @@
             <element signature="e#1185#1214#0" expanded="true" />
             <element signature="e#2125#2154#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="205" selection-end="205" vertical-scroll-proportion="-6.3461537">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1106,16 +1090,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0">
+        <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="-2.08">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="0.28108108">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1047" column="0" selection-start="22427" selection-end="22427" vertical-scroll-proportion="0.72440946">
           <folding />
         </state>
       </provider>

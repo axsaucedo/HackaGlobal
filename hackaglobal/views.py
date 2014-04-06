@@ -8,6 +8,7 @@ from django.template.context import RequestContext
 from django.contrib.auth.decorators import login_required
 from hackaglobal.models import Event, Attendee, Staff
 from django.http import HttpResponseRedirect
+from django.core.mail import send_mail
 import settings
 
 from hackaglobal.tools.forms import EventCreationForm, EFUserCreationForm, EFUserEditForm, EFPasswordChangeForm
@@ -161,8 +162,21 @@ def signup(request):
     return render_to_response('signup.html', { 'form': form, }, context_instance=RequestContext(request))
 
 def apply(request):
-    form = EFUserCreationForm() # An unbound form
-    return render_to_response('apply.html', { 'form': form, }, context_instance=RequestContext(request))
+    if request.method =='POST':
+        post = request.POST
+        name = post.get('name','')
+        email = post.get('email','')
+        hackacity = post.get('hackacity','')
+        content = post.get('content', '')
+
+        send_mail('New HackaCity Application!!', "Email: " + email + " from: " + name + ". Application for ["+ hackacity +"] Content: " + content, 'hackaglobal@gmail.com',
+                            ['hackaglobal@gmail.com'], fail_silently=False)
+
+        send_mail('New HackaCity Application!!', "Thank you for your application to kick start "+ hackacity +"! We'll get back to you as fast as we can! We're looking forward to have you in this awesome community!", 'hackaglobal@gmail.com',
+            [email], fail_silently=False)
+
+
+    return render_to_response('apply.html', {}, context_instance=RequestContext(request))
 
 def view_account(request, username):
 

@@ -21,44 +21,38 @@
                                     {{ form.errors }}
                                 </div>
                             {% endif %}
+
                             <div class="form-group">
-                                <label for="add-event-form-username" class="col-md-3 control-label">Email</label>
+                                <label for="contact-form-name" class="col-md-3 control-label">Name (Individual or Organization)</label>
                                 <div class="col-md-9" style="padding-bottom: 20px;">
-                                    <input id="add-event-form-username" name="username" class="form-control" type="text" placeholder="user@example.com">
+                                    <input id="contact-form-name" name="username" class="form-control" type="text" placeholder="Your Name">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="add-event-form-first-name" class="col-md-3 control-label">First Name</label>
-                                <div class="col-md-9">
-                                    <input id="add-event-form-first-name" name="first_name" class="form-control" type="text" placeholder="First Name">
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="add-event-form-last-name" class="col-md-3 control-label">Last Name</label>
+                                <label for="contact-form-email" class="col-md-3 control-label">Email</label>
                                 <div class="col-md-9" style="padding-bottom: 20px;">
-                                    <input id="add-event-form-last-name" name="last_name" class="form-control" type="text" placeholder="Last Name">
+                                    <input id="contact-form-email" name="username" class="form-control" type="text" placeholder="user@example.com">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="add-event-form-password" class="col-md-3 control-label">Password</label>
-                                <div class="col-md-9">
-                                    <input id="add-event-form-password" name="password1" class="form-control" type="password" placeholder="Password">
+                                <label for="contact-form-hackacity" class="col-md-3 control-label">HackaCity</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="contact-form-hackacity" name="hackacity" class="form-control" type="text" placeholder="HackaCITY">
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label for="add-event-form-confirmation" class="col-md-3 control-label">Confirm Password</label>
-                                <div class="col-md-9">
-                                    <input id="add-event-form-confirmation" name="password2" class="form-control" type="password" placeholder="Password">
+                                <label for="contact-form-content" class="col-md-3 control-label">Why would you like to launch your HackaCity?</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <textarea id="contact-form-content" cols="40" rows="5" name="content"></textarea>
                                 </div>
                             </div>
 
                             <div class="form-group">
                                 <div class="col-lg-10 col-lg-offset-2">
-                                    <button class="btn btn-primary" type="submit" value="login">Sign Up</button>
+                                    <button class="btn btn-primary" type="submit" value="login">Send Application</button>
                                 </div>
                             </div>
 

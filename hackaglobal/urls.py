@@ -20,6 +20,10 @@ urlpatterns = patterns('',
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     url(r'^$', views.home, name='home'),
+
+    #FrontEnd
+    url(r'^web/(?P<country>\w+)/$', views.getCountryListView, name='country_list_view'),
+
     url(r'^find/$', views.find_events, name='find_events'),
     url(r'^create/$', views.add_event, name='add_event'),
     url(r'^manage/$', views.manage_events, name='manage_events'),

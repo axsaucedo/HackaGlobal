@@ -14,6 +14,25 @@ a:hover{ text-decoration:none; color:#687D9F;}
 
 
 /**************** CUSTOM STYLES **************************/
+.ab-loader {
+    background-image: url("../img/ajax-loader.gif");
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.ab-events-container {
+    margin: 20px auto;
+    min-height: 31px;
+    width: 820px;
+}
+
+.ab-events-wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+
 
 /* .............................................................*/
 .hg-list-container {

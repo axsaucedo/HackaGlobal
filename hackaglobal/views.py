@@ -231,3 +231,9 @@ def edit_password(request):
 
 def handler404(request):
     return render(request, 'generic_message.html', { 'header' : '404 not found...', 'message': "Oops, we couldn't find what you were looking for..." })
+
+
+
+# FrontEnd
+def getCountryListView(request, country):
+    return render(request, 'countrylist.html', { 'country' : country })

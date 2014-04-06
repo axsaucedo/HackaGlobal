@@ -318,10 +318,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="38" selection-start="5914" selection-end="5914" vertical-scroll-proportion="-8.923077">
+            <state line="174" column="42" selection-start="6206" selection-end="6448" vertical-scroll-proportion="0.6639785">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -329,10 +329,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.729927">
+            <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -413,8 +413,8 @@
         <option value="$PROJECT_DIR$/apihg/urls.py" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/templates/apply.html" />
-        <option value="$PROJECT_DIR$/hackaglobal/views.py" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/views.py" />
       </list>
     </option>
   </component>
@@ -1096,15 +1096,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="36" selection-start="1412" selection-end="1412" vertical-scroll-proportion="-10.961538">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="28" selection-start="2292" selection-end="2344" vertical-scroll-proportion="-6.5833335">
@@ -1124,19 +1115,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
+    <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="38" selection-start="5914" selection-end="5914" vertical-scroll-proportion="-8.923077">
+        <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="36" selection-start="1412" selection-end="1412" vertical-scroll-proportion="-10.961538">
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
+    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.729927">
-          <folding />
+        <state line="174" column="42" selection-start="6206" selection-end="6448" vertical-scroll-proportion="0.6639785">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

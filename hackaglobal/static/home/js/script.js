@@ -1,6 +1,6 @@
 
 /* CONFIG */
-var apiURL = 'http://22ba183c.ngrok.com';
+var apiURL = 'http://hackaglobal.co';
 
 var map;
 var hgCountries = [],

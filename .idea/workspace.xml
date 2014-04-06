@@ -321,10 +321,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="52" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.18292683">
+            <state line="57" column="52" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-0.75949365">
               <folding>
                 <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -335,6 +335,15 @@
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="35" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07371008">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -375,7 +384,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/website/index.html" />
         <option value="$PROJECT_DIR$/templates/add_event.html" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
@@ -391,6 +399,7 @@
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
       </list>
     </option>
   </component>
@@ -981,13 +990,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.2113023">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="70" column="67" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
@@ -1052,7 +1054,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="52" selection-start="2575" selection-end="2575" vertical-scroll-proportion="0.18292683">
+        <state line="57" column="52" selection-start="2575" selection-end="2575" vertical-scroll-proportion="-0.75949365">
           <folding>
             <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1063,6 +1065,13 @@
             <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="35" selection-start="49" selection-end="49" vertical-scroll-proportion="0.07371008">
+          <folding />
         </state>
       </provider>
     </entry>

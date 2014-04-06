@@ -1,8 +1,8 @@
 html,
 body {
     height: 100%;
-    background-color: #108a93 !important;
-    color: white !important;
+    background-color: white !important;
+    color: black !important;
 }
 
 #wrap {
@@ -11,6 +11,11 @@ body {
     height: 100%;
     margin: 0 auto -60px;
     padding: 0 0 60px;
+}
+
+#nav-bar-logo {
+    width: 350px;
+    margin-top: -23px;
 }
 
 #content {

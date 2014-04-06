@@ -63,7 +63,7 @@ function apiGetEvents(country) {
 				for (i = 0; i < n; i++) {
 					html.push('<li class="hg-list-item-container">' + 
 						'<div class="hg-list-item-left"><div class="hg-list-item-title-container">'+
-						'<a class="hg-list-item-title" href="#" target="_blank">' + rsp[i].name + '</a>' +
+						'<a class="hg-list-item-title" href="" target="_blank">' + rsp[i].name + '</a>' +
 						'</div><div class="hg-list-item-location">' + rsp[i].address + ' &middot;' +
 						' organizer ' + rsp[i].creator + '</div>' +
 						'<div class="hg-list-item-info">' + rsp[i].description + '...</div></div>' +

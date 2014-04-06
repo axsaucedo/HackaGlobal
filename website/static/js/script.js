@@ -4,9 +4,9 @@ var apiURL = 'http://22ba183c.ngrok.com';
 
 var map;
 var hgCountries = [],
-		hgCountriesMetadata = [],
-		hgBody = document.getElementById('hg-body'),
-		hgOverlay = document.getElementById('hg-overlay');
+	hgCountriesMetadata = [],
+	hgBody = document.getElementById('hg-body'),
+	hgOverlay = document.getElementById('hg-overlay');
 
 var markersArray = [];
 var mainURL = window.location.href;
@@ -42,11 +42,10 @@ function apiGetCountries() {
 
 
 function apiGetEvents(country) {
-var xhr = new XMLHttpRequest(),
-		container = document.getElementById('hg-list-wrapper');
+	var xhr = new XMLHttpRequest(),
+	container = document.getElementById('hg-list-wrapper');
 	
 	xhr.open('GET', apiURL + '/api/data/' + country, true);
-	
 	xhr.onload = function() {
 		var rsp = JSON.parse(xhr.responseText),
 				n,
@@ -59,9 +58,15 @@ var xhr = new XMLHttpRequest(),
 			if (n > 0) {
 				html.push('<div class="hg-list-date-container">April 04 &middot; Friday</div>');
 				html.push('<ul class="hg-list-ul">');
-				
+				console.log(rsp.events);
 				for (i = 0; i < n; i++) {
-					html.push('<li class="hg-list-item-container"><div class="hg-list-item-left"><div class="hg-list-item-title-container"><a class="hg-list-item-title" href="#" target="_blank">' + rsp.events[i].title + '</a></div><div class="hg-list-item-location">' + rsp.events[i].address + ' &middot; organizer ' + rsp.events[i].organizer + '</div><div class="hg-list-item-info">' + rsp.events[i].description + '{<a class="hg-list-item-more" href="#" target="_blank">more</a>}</div></div><div class="hg-list-item-right">' + rsp.events[i].start + '</div></li>');
+					html.push('<li class="hg-list-item-container">' + 
+						'<div class="hg-list-item-left"><div class="hg-list-item-title-container">'+
+						'<a class="hg-list-item-title" href="#" target="_blank">' + rsp.events[i].title + '</a>' + 
+						'</div><div class="hg-list-item-location">' + rsp.events[i].address + ' &middot;' + 
+						' organizer ' + rsp.events[i].organizer + '</div>' + 
+						'<div class="hg-list-item-info">' + rsp.events[i].description + '...</div></div>' + 
+						'<div class="hg-list-item-right">' + rsp.events[i].start + '</div></li>');
 				}// end for
 				
 				html.push('</ul>');
@@ -89,6 +94,10 @@ var xhr = new XMLHttpRequest(),
 	xhr.send();
 }// end apiGetEvents()
 
+
+function apiEvent(){
+	var xhr = new XMLHttpRequest();
+}
 
 // get the countries from the API
 apiGetCountries();
@@ -170,11 +179,9 @@ function makeCountryCall() {
                 											hgCountriesMetadata[parseInt(this.position.k)].url);
                 		//console.log(hgCountriesMetadata[parseInt(this.position.k)]);
                 }, false);
-
-                
+    
             });
-            
-            
+                    
         }// end for 
         
        
@@ -184,7 +191,13 @@ function makeCountryCall() {
 // manipulate the URL changes
 window.onpopstate = function(event) {
 	console.log(event.state);
-	
+	var container = document.getElementById('hg-list-wrapper');
+	if(event.state == null){
+		hgOverlay.className = hgOverlay.className.replace('hg-on', 'hg-off');
+		container.innerHTML = "";
+		hgBody.className = hgBody.className.replace(' hg-no-scroll','');
+	}
+
 }// end window.onpopstate()
 
 

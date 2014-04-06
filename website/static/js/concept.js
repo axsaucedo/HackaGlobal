@@ -93,19 +93,25 @@ $(function(){
 	
 	//スクロール時の処理
 	$(window).scroll(function(){		
-		var myHeader = document.getElementById('vi'),
-		myHeaderTopOffset = myHeader.getBoundingClientRect().top * -1;
-	
+		var myHeader = document.getElementById('vi');
 		
 		var scrollTop = parseInt($(this).scrollTop()); //スクロール量;
 		var Hvi = $("#vi").height(); //メインビジュアルの高さ
 		var OtopGnav = $("#top_gnav").offset(); //グロナビの位置
 		var ww = $(window).width();
 		
-		if (myHeaderTopOffset > 500) {
+		if ($(window).scrollTop() > 500) {
 			$('#top_gnav').addClass('transition-header');
+			$('.main-menu').delay(1000)
+							.queue( function(next){ 
+							$(this).css('position','fixed'); 
+							next(); 
+							});
+			$('.globe-bracket').fadeIn('slow');
 		} else {
+			$('.globe-bracket').hide();
 			$('#top_gnav').removeClass('transition-header');
+			$('.main-menu').css('position','absolute');
 		}
 		
 		// end else
@@ -141,17 +147,6 @@ $(function(){
 		if (scrollTop > Oabout.top + 200 && ww > 640){$(".flyout03").animate({left: "0px", opacity:"1"})};
 		if (scrollTop > Oabout.top + 400 && ww > 640){$(".flyout04, .flyout04+.credit").animate({right: "0px", opacity:"1"})};
 		
-		
-		// #gallery
-		var Ogallery = $("#gallery").offset();
-		if(scrollTop > Ogallery.top - 800 && ww > 640){
-			$(".g1").animate({opacity:"1"},800);
-			$(".g2").delay(150).animate({opacity:"1"},800);
-			$(".g3").delay(300).animate({opacity:"1"},800);
-			$(".g4").delay(450).animate({opacity:"1"},800);
-			$(".g5").delay(600).animate({opacity:"1"},800);
-			$(".gother").delay(700).animate({opacity:"1"},800);
-		};
 		
 		// .global
 		$("ul.global_sub").hide();

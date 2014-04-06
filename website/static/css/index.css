@@ -113,6 +113,7 @@ a:hover{ text-decoration:none; color:#687D9F;}
   margin: 0 auto;
   min-height: 31px;
   width: 820px;
+  height: 100%;
 }
 
 /* .............................................................*/
@@ -169,7 +170,7 @@ a:hover{ text-decoration:none; color:#687D9F;}
 
 .header #vi{
 	position: absolute;
-	height: 151px;
+	height: 71px;
 	z-index: 100;
 	width: 100%;
 }
@@ -178,7 +179,7 @@ a:hover{ text-decoration:none; color:#687D9F;}
 .main-menu{
 	z-index: 1000;
 	position: absolute;
-	top: 15px;
+	top: 30px;
 	right: 20px;
 }
 
@@ -202,13 +203,27 @@ a:hover{ text-decoration:none; color:#687D9F;}
 }
 
 
+#movie #sp {
+	width: 1600px;
+	text-align:center;
+	}
+
 
 #main{
 	padding-top: 0 !important;
 	margin-top:0 !important;
 }
 
+.globe-bracket{
+	position: fixed;
+	top:0;
+	left: 0px;
+	z-index: 235;
+}
 
+.globe-bracket img{
+	height: 90px;
+}
 
 /*********************** SIGNUP ***************************/
 

@@ -202,6 +202,7 @@
     <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
     <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396755679542" ignored="false" />
     <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
+    <file path="/login.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396767997654" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,15 +281,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="67" selection-start="1847" selection-end="1847" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -339,13 +331,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_event.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="add_event.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/add_event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="139" selection-start="7838" selection-end="7838" vertical-scroll-proportion="0.33333334">
+            <state line="29" column="113" selection-start="1644" selection-end="1644" vertical-scroll-proportion="-1.78">
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#0;n#div#7;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="133" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.41253263">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -386,7 +387,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/apihg/urls.py" />
         <option value="$PROJECT_DIR$/templates/static/css/base.css" />
         <option value="$PROJECT_DIR$/website/static/js/script.js" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
@@ -402,6 +402,7 @@
         <option value="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/add_event.html" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
@@ -980,15 +981,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="40" selection-start="608" selection-end="608" vertical-scroll-proportion="0.32142857">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apihg/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="25" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
@@ -1107,10 +1099,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="139" selection-start="7838" selection-end="7838" vertical-scroll-proportion="0.33333334">
+        <state line="29" column="113" selection-start="1644" selection-end="1644" vertical-scroll-proportion="-1.78">
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#0;n#div#7;n#fieldset#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="133" selection-start="2397" selection-end="2397" vertical-scroll-proportion="0.41253263">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -13,7 +13,7 @@ import settings
 from hackaglobal.tools.forms import EventCreationForm, EFUserCreationForm, EFUserEditForm, EFPasswordChangeForm
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 @login_required(login_url='/login/')
 def add_event(request):

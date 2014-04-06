@@ -170,7 +170,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694281928" ignored="false" />
     <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745811332" ignored="false" />
-    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396740621443" ignored="false" />
+    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396750665079" ignored="false" />
     <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396739255614" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -186,7 +186,7 @@
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396700769353" ignored="false" />
     <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745692666" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686538055" ignored="false" />
-    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396731985100" ignored="false" />
+    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396750868463" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749465784" ignored="false" />
     <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396689608908" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
@@ -199,6 +199,7 @@
     <file path="/base.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749233263" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/templates/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749196608" ignored="false" />
     <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396750439580" ignored="false" />
+    <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,9 +281,20 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apihg/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="50" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+            <state line="29" column="25" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="40" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -313,7 +325,7 @@
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/static/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="40" selection-start="1147" selection-end="1187" vertical-scroll-proportion="-41.53846">
+            <state line="72" column="21" selection-start="1147" selection-end="1187" vertical-scroll-proportion="-41.53846">
               <folding />
             </state>
           </provider>
@@ -328,10 +340,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="129" column="137" selection-start="5602" selection-end="5602" vertical-scroll-proportion="-24.493671">
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="51" selection-start="392" selection-end="392" vertical-scroll-proportion="0.60714287">
               <folding />
             </state>
           </provider>
@@ -355,22 +380,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hackaglobal/static/css/external/bootstrap-glyphicons.css" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.extensions.js" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/js/external/jquery.ui.map.js" />
         <option value="$PROJECT_DIR$/templates/home.html" />
         <option value="$PROJECT_DIR$/templates/edit_event.html" />
         <option value="$PROJECT_DIR$/templates/view_event.html" />
         <option value="$PROJECT_DIR$/website/static/css/index.css" />
         <option value="$PROJECT_DIR$/website/index.html" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/templates/add_event.html" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
         <option value="$PROJECT_DIR$/templates/static/css/base.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/website/static/js/script.js" />
+        <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/views.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/common.js" />
       </list>
     </option>
   </component>
@@ -564,6 +589,62 @@
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -603,11 +684,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/hackaglobal/static/home" />
+      <recent name="$PROJECT_DIR$/hackaglobal/static/home/img" />
+      <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/hackaglobal/static" />
-      <recent name="$PROJECT_DIR$/hackaglobal" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/website" />
@@ -843,7 +924,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -863,7 +944,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.110210694" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -926,13 +1007,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/view_event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="14" selection-start="711" selection-end="711" vertical-scroll-proportion="-3.58">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/edit_event.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="212" selection-start="1216" selection-end="1216" vertical-scroll-proportion="0.47338936">
@@ -940,28 +1014,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="35" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_event.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="45" selection-start="4741" selection-end="4741" vertical-scroll-proportion="0.045307443">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="24" selection-start="967" selection-end="967" vertical-scroll-proportion="1.1711712">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -976,15 +1032,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="50" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1013,7 +1060,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="40" selection-start="1147" selection-end="1187" vertical-scroll-proportion="-41.53846">
+        <state line="72" column="21" selection-start="1147" selection-end="1187" vertical-scroll-proportion="-41.53846">
           <folding />
         </state>
       </provider>
@@ -1043,9 +1090,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="40" selection-start="608" selection-end="608" vertical-scroll-proportion="0.32142857">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="809" selection-end="809" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="40" selection-start="687" selection-end="687" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="129" column="137" selection-start="5602" selection-end="5602" vertical-scroll-proportion="-24.493671">
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="51" selection-start="392" selection-end="392" vertical-scroll-proportion="0.60714287">
           <folding />
         </state>
       </provider>

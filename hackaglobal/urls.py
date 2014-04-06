@@ -2,18 +2,9 @@ from django.conf.urls.defaults import *
 from hackaglobal import views, ajax
 from django.contrib import admin
 from django.conf.urls import patterns
-from rest_framework import viewsets
+from apihg import urls as apihgurls
 
 from models import Event
-
-from rest_framework.routers import DefaultRouter
-
-router = DefaultRouter()
-
-class EventViewSet(viewsets.ModelViewSet):
-    model = Event
-
-router.register(r'data', EventViewSet)
 
 handler500 = 'djangotoolbox.errorviews.server_error'
 
@@ -25,7 +16,7 @@ handler404 = 'hackaglobal.views.handler404'
 
 urlpatterns = patterns('',
 
-    url(r'^api/', include(router.urls)),
+    url(r'^api/', include(apihgurls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     url(r'^$', views.home, name='home'),

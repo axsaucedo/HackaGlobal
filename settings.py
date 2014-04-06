@@ -122,6 +122,7 @@ INSTALLED_APPS = (
     'djangotoolbox',
 
     'hackaglobal',
+    'apihg',
 
     'corsheaders',
     'rest_framework',

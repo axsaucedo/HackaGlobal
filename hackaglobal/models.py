@@ -75,6 +75,9 @@ class Event(models.Model):
     def get_short_address(self):
         return self.zip + " " + self.city + ", " + self.country
 
+    def get_creator(self):
+        return self.creator
+
 class Attendee(models.Model):
     attendee = models.ForeignKey(User)
     type = models.CharField(max_length=1, choices=ATTENDEE_TYPE_CHOICES, default='A')

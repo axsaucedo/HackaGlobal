@@ -1,97 +1,12 @@
-
-/* CONFIG */
-var apiURL = 'http://22ba183c.ngrok.com';
-
 var map;
-var hgCountries = [],
-		hgCountriesMetadata = [],
-		hgBody = document.getElementById('hg-body'),
-		hgOverlay = document.getElementById('hg-overlay');
-
+var locations = ['mexic', 'romania', 'england'];
 var markersArray = [];
-var mainURL = window.location.href;
 
 $(document).on('ready',function(){
 	createMap();
 });
 
 
-function capitaliseFirstLetter(string) {
-	return string.charAt(0).toUpperCase() + string.slice(1);
-}// end capitaliseFirstLetter()
-
-
-function apiGetCountries() {
-	var xhr = new XMLHttpRequest();
-	
-	xhr.open('GET', apiURL + '/api/country/', true);
-	
-	xhr.onload = function() {
-		var rsp = JSON.parse(xhr.responseText);
-				
-		hgCountries = rsp.countries;
-		populateMap(); 
-	}// end xhr.onload()
-	
-	xhr.error = function() {
-		console.log('could not get the coutries list from the API');
-	}// end xhr.error()
-	
-	xhr.send();
-}// end apiGetCountries()
-
-
-function apiGetEvents(country) {
-var xhr = new XMLHttpRequest(),
-		container = document.getElementById('hg-list-wrapper');
-	
-	xhr.open('GET', apiURL + '/api/data/' + country, true);
-	
-	xhr.onload = function() {
-		var rsp = JSON.parse(xhr.responseText),
-				n,
-				i,
-				html = [];
-		
-		if (rsp.events) {
-			n = rsp.events.length; 
-			
-			if (n > 0) {
-				html.push('<div class="hg-list-date-container">April 04 &middot; Friday</div>');
-				html.push('<ul class="hg-list-ul">');
-				
-				for (i = 0; i < n; i++) {
-					html.push('<li class="hg-list-item-container"><div class="hg-list-item-left"><div class="hg-list-item-title-container"><a class="hg-list-item-title" href="#" target="_blank">' + rsp.events[i].title + '</a></div><div class="hg-list-item-location">' + rsp.events[i].address + ' &middot; organizer ' + rsp.events[i].organizer + '</div><div class="hg-list-item-info">' + rsp.events[i].description + '{<a class="hg-list-item-more" href="#" target="_blank">more</a>}</div></div><div class="hg-list-item-right">' + rsp.events[i].start + '</div></li>');
-				}// end for
-				
-				html.push('</ul>');
-				
-				container.className = container.className.replace(' hg-loader', '');
-				container.innerHTML = html.join('');
-				
-			} else {
-				// no event found
-				
-			}// end else
-			
-		} else {
-			// no events found
-			
-		}// end else
-				
-		
-	}// end xhr.onload()
-	
-	xhr.error = function() {
-		console.log('could not get the coutries list from the API');
-	}// end xhr.error()
-	
-	xhr.send();
-}// end apiGetEvents()
-
-
-// get the countries from the API
-apiGetCountries();
 
 function makeCountryCall() {
     $.ajax({
@@ -124,7 +39,7 @@ function makeCountryCall() {
 
     }
 
-    //populateMap();  
+    populateMap();  
 } 
 
 
@@ -132,15 +47,17 @@ function makeCountryCall() {
      
         var marker;
         var country;
+        
+        //var locations = ['mexic', 'romania', 'england'];
 
         for (var i = 0; i < markersArray.length; i++ ) {
             markersArray[i].setMap(null);
         }
         markersArray.length = 0;
 
-        for (var u = 0; u < hgCountries.length; u++) {
+        for (var u = 0; u < locations.length; u++) {
 
-            country = hgCountries[u];
+            country = locations[u];
             geocoder = new google.maps.Geocoder();
             geocoder.geocode( { 'address': country }, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
@@ -150,25 +67,34 @@ function makeCountryCall() {
                         position: results[0].geometry.location,         
                         html: country,
                     });
-                    
-                    tmp = results[0].formatted_address.toLowerCase().replace(' ', '-');
-                    hgCountriesMetadata[parseInt(results[0].geometry.location.k)] = {stateName : tmp + '/', title: tmp, url: mainURL + tmp + '/'};
-                    
                 } else {
                   alert("Geocode was not successful for the following reason: " + status);
-                }// end else
+                }
 
                 markersArray[u] = marker;
-                
+               
                 markersArray[u].addListener('click', function() {
-                	hgBody.className = ' hg-no-scroll';
-                	hgOverlay.className = hgOverlay.className.replace('hg-off', 'hg-on');
-                	apiGetEvents(capitaliseFirstLetter(hgCountriesMetadata[parseInt(this.position.k)].title));
-                	
-                		history.pushState({stateName : hgCountriesMetadata[parseInt(this.position.k)].stateName}, 
-                											hgCountriesMetadata[parseInt(this.position.k)].title, 
-                											hgCountriesMetadata[parseInt(this.position.k)].url);
-                		//console.log(hgCountriesMetadata[parseInt(this.position.k)]);
+                    
+                    switch(parseInt(this.position.k)) {
+                    case 23 : {
+                        window.location = 'mexic/';
+                        break;
+                    }
+                    case 45 : {
+                        window.location = 'romania/';
+                        break;
+                    }
+                    case 52 : {
+                        window.location = 'england/';
+                        break;
+                    }
+                    default: {
+                        window.location = '404/';
+                    }
+                    
+                    }// end switch()
+                    
+                   // window.location.href = 'web/' + this.html;
                 }, false);
 
                 
@@ -177,15 +103,10 @@ function makeCountryCall() {
             
         }// end for 
         
-       
-}// end populateMap()
-  
-  
-// manipulate the URL changes
-window.onpopstate = function(event) {
-	console.log(event.state);
-	
-}// end window.onpopstate()
+        
+        
+}
+
 
 
 

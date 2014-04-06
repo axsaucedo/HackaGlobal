@@ -168,6 +168,8 @@ function populateMap() {
                 alert("Geocode was not successful for the following reason: " + status);
             }// end else
 
+
+
             markersArray[u] = marker;
 
             markersArray[u].addListener('click', function() {

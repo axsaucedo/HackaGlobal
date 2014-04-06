@@ -95,13 +95,9 @@ def getCountryCity(request, city):
     }
 
     if not city:
-        response = {
-            "countries" : citycountry.keys()
-        }
+        response = citycountry.keys()
     else:
-        response = {
-            "cities" : citycountry[city]
-        }
+        response = citycountry[city]
 
     return HttpResponse(json.dumps(response), content_type="application/json")
 

@@ -6,11 +6,24 @@ BASE_DIR = os.path.dirname(__file__)
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+
+ALLOWED_HOSTS = ['*']
+
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
-)
+    ('Alejandro Saucedo', 'hackasoton@gmail.com'),
+    )
 
 MANAGERS = ADMINS
+
+#Use email
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 25
+EMAIL_HOST_USER = 'hackaglobal@gmail.com'
+EMAIL_HOST_PASSWORD = 'hacka1234'
+
+DEFAULT_FROM_EMAIL = 'hackaglobal@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 DATABASES = {
     'default': {

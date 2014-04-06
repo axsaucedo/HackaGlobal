@@ -171,7 +171,7 @@
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396694281928" ignored="false" />
     <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396772625875" ignored="false" />
     <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396773994407" ignored="false" />
-    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396773739118" ignored="false" />
+    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396774868714" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/app.yaml" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -332,7 +332,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="61" selection-start="502" selection-end="502" vertical-scroll-proportion="0.91240877">
+            <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.729927">
               <folding />
             </state>
           </provider>
@@ -1135,7 +1135,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="61" selection-start="502" selection-end="502" vertical-scroll-proportion="0.91240877">
+        <state line="24" column="32" selection-start="428" selection-end="428" vertical-scroll-proportion="0.729927">
           <folding />
         </state>
       </provider>

@@ -99,8 +99,9 @@ $(function(){
 		var Hvi = $("#vi").height(); //メインビジュアルの高さ
 		var OtopGnav = $("#top_gnav").offset(); //グロナビの位置
 		var ww = $(window).width();
-		
-		if ($(window).scrollTop() > 500) {
+
+
+		if ($(window).scrollTop() > 590) {
 			$('#top_gnav').addClass('transition-header');
 			$('.main-menu').delay(1000)
 							.queue( function(next){ 
@@ -108,7 +109,8 @@ $(function(){
 							next(); 
 							});
 			$('.globe-bracket').fadeIn('slow');
-		} else {
+		}
+        else {
 			$('.globe-bracket').hide();
 			$('#top_gnav').removeClass('transition-header');
 			$('.main-menu').css('position','absolute');

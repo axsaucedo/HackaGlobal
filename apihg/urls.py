@@ -19,6 +19,7 @@ class EventListSerializer(serializers.ModelSerializer):
                     , 'description'
                     , 'address'
                     , 'country'
+                    , 'website'
                     , 'city'
                     , 'start'
                     , 'end')

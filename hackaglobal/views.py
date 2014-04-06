@@ -160,6 +160,10 @@ def signup(request):
 
     return render_to_response('signup.html', { 'form': form, }, context_instance=RequestContext(request))
 
+def apply(request):
+    form = EFUserCreationForm() # An unbound form
+    return render_to_response('apply.html', { 'form': form, }, context_instance=RequestContext(request))
+
 def view_account(request, username):
 
     user = User.objects.get(username=username)

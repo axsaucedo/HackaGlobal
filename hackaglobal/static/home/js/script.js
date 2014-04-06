@@ -105,7 +105,7 @@ apiGetCountries();
 
 function makeCountryCall() {
     $.ajax({
-        url: 'https://22ba183c.ngrok.com/api/country/',
+        url: apiURL + '/api/country/',
         type: 'GET',
         crossDomain: true,
         dataType: 'json',

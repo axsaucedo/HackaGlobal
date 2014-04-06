@@ -278,7 +278,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apihg/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="64" selection-start="2681" selection-end="2685" vertical-scroll-proportion="-4.1923075">
+            <state line="102" column="64" selection-start="2681" selection-end="2685" vertical-scroll-proportion="-17.461538">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -302,10 +302,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="40" selection-start="5379" selection-end="5379" vertical-scroll-proportion="0.0">
+            <state line="107" column="13" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.15228426">
               <folding />
             </state>
           </provider>
@@ -320,19 +320,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/screen.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="25" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1047" column="0" selection-start="22427" selection-end="22427" vertical-scroll-proportion="0.72440946">
+            <state line="1047" column="0" selection-start="22427" selection-end="22427" vertical-scroll-proportion="-10.615385">
               <folding />
             </state>
           </provider>
@@ -401,11 +392,11 @@
         <option value="$PROJECT_DIR$/templates/apply.html" />
         <option value="$PROJECT_DIR$/templates/CountryList.html" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/templates/countrylist.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
       </list>
     </option>
   </component>
@@ -1037,25 +1028,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="40" selection-start="5379" selection-end="5379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="18" selection-start="642" selection-end="642" vertical-scroll-proportion="-6.3461537">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="64" selection-start="2681" selection-end="2685" vertical-scroll-proportion="-4.1923075">
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -1113,7 +1088,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1047" column="0" selection-start="22427" selection-end="22427" vertical-scroll-proportion="0.72440946">
+        <state line="1047" column="0" selection-start="22427" selection-end="22427" vertical-scroll-proportion="-10.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="64" selection-start="2681" selection-end="2685" vertical-scroll-proportion="-17.461538">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="13" selection-start="2907" selection-end="2907" vertical-scroll-proportion="0.15228426">
           <folding />
         </state>
       </provider>

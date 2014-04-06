@@ -180,7 +180,12 @@ function populateMap() {
                  hgCountriesMetadata[parseInt(this.position.k)].title,
                  hgCountriesMetadata[parseInt(this.position.k)].url);
                  */
-                window.location = '/web/' + capitaliseFirstLetter(hgCountriesMetadata[parseInt(this.position.k)].title) + '/';
+                var c = hgCountriesMetadata[parseInt(this.position.k)].title;
+                if(c == "united-kingdom")
+                    c = "UK";
+                console.log(c);
+
+                window.location = '/web/' + capitaliseFirstLetter(c) + '/';
                 //console.log(hgCountriesMetadata[parseInt(this.position.k)]);
             }, false);
 

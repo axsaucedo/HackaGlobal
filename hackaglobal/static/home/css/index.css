@@ -605,15 +605,13 @@ a.btn_as:hover img{ opacity:1;}
 
 .tm { font-size: 60%; vertical-align: super;}
 
-@media screen and (min-width:641px) {
-
 .sp{ display:none !important;}
 
 body, div, dl, dt, dd, ul, ol, li,
 h1, h2, h3, h4, h5, h6,
 pre, code, form, fieldset, legend, input, textarea,
 p, blockquote, th, td {
-	font-family: 'Open Sans', Helvetica, Arial, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+	font-family: 'Open Sans';
 	font-weight:300;
 	font-size:18px;
 	line-height:1.8em; 
@@ -744,7 +742,7 @@ h2{ font-size:25px; line-height:1.25em;}
 			background-color:#687D9F;
 			}
 		
-#about{ margin-bottom:70px;}
+#about{ margin-bottom:0px;}
 	.aboutimg{ z-index:10;}
 	.aboutimg img{ 
 		width:310px;
@@ -769,7 +767,7 @@ h2{ font-size:25px; line-height:1.25em;}
 	.aboutbox01 .abouttext{ float:right; margin-top:70px;}
 	.aboutbox03 .abouttext{ float:right; margin-top:70px;}
 	.aboutbox02 .abouttext{ float:left; margin-top:92px;}
-	.aboutbox04 .abouttext{ float:left; margin-top:45px;}
+	.aboutbox04 .abouttext{ float:left; margin-top:105px;}
 	
 	.flyout01{ top:20px; left:-50px; max-width:245px;}
 	.flyout02{ top:20px; right:-50px; max-width:245px;}
@@ -1042,7 +1040,5 @@ h2{ font-size:25px; line-height:1.25em;}
 .enquete {
 	margin:50px auto;
 	width:650px;
-}
-
 }
 

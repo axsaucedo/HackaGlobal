@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" afterPath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,7 +36,7 @@
     <file path="$PROJECT_DIR$/../carsharehack/templates/carshare/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396748439712" ignored="false" />
     <file path="/base.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396765667330" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/templates/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749196608" ignored="false" />
-    <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396981242768" ignored="false" />
+    <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396992421084" ignored="false" />
     <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
     <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974212634" ignored="false" />
     <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
@@ -143,16 +140,16 @@
       <file leaf-file-name="concept.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/concept.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="42" selection-start="3223" selection-end="3223" vertical-scroll-proportion="-2.2727273">
+            <state line="117" column="28" selection-start="3254" selection-end="3256" vertical-scroll-proportion="-7.076923">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="330" selection-end="330" vertical-scroll-proportion="-8.076923">
+            <state line="134" column="27" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.9212598">
               <folding />
             </state>
           </provider>
@@ -185,10 +182,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="82" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.6694678">
+            <state line="69" column="82" selection-start="3118" selection-end="3118" vertical-scroll-proportion="-4.78">
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -231,12 +228,12 @@
         <option value="$PROJECT_DIR$/hackaglobal/templatetags/ef_tags.py" />
         <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
       </list>
     </option>
   </component>
@@ -832,13 +829,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/concept.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="42" selection-start="3223" selection-end="3223" vertical-scroll-proportion="-2.2727273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apihg/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="106" column="0" selection-start="2761" selection-end="2761" vertical-scroll-proportion="0.0">
@@ -878,20 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="188" selection-end="188" vertical-scroll-proportion="-1.9272727">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="330" selection-end="330" vertical-scroll-proportion="-8.076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="13" selection-start="1936" selection-end="1936" vertical-scroll-proportion="-7.5">
@@ -913,10 +889,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="82" selection-start="3118" selection-end="3118" vertical-scroll-proportion="0.6694678">
+        <state line="69" column="82" selection-start="3118" selection-end="3118" vertical-scroll-proportion="-4.78">
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="23" selection-start="188" selection-end="188" vertical-scroll-proportion="-1.9272727">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/concept.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="28" selection-start="3254" selection-end="3256" vertical-scroll-proportion="-7.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="27" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.9212598">
+          <folding />
         </state>
       </provider>
     </entry>

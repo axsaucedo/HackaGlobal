@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Black.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Black.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Bold.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Bold.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Light.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Medium.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Medium.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/map-replace.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.jpg" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.png" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/globe-bracket.png" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/globe-bracket.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" afterPath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="" />
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396856009441" ignored="false" />

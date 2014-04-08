@@ -36,7 +36,7 @@
     <file path="$PROJECT_DIR$/../carsharehack/templates/carshare/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396748439712" ignored="false" />
     <file path="/base.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396765667330" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/templates/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749196608" ignored="false" />
-    <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396992421084" ignored="false" />
+    <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396993525235" ignored="false" />
     <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
     <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974212634" ignored="false" />
     <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
@@ -149,7 +149,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="27" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.9212598">
+            <state line="137" column="241" selection-start="5051" selection-end="5051" vertical-scroll-proportion="0.45144358">
               <folding />
             </state>
           </provider>
@@ -912,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="27" selection-start="3695" selection-end="3695" vertical-scroll-proportion="0.9212598">
+        <state line="137" column="241" selection-start="5051" selection-end="5051" vertical-scroll-proportion="0.45144358">
           <folding />
         </state>
       </provider>

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" afterPath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
     </list>
     <ignored path="hackaglobal.iws" />
@@ -26,7 +27,7 @@
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396987210037" ignored="false" />
     <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396989395944" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979446699" ignored="false" />
-    <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396988909957" ignored="false" />
+    <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396994510730" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396702391925" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745699885" ignored="false" />
@@ -36,7 +37,7 @@
     <file path="$PROJECT_DIR$/../carsharehack/templates/carshare/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396748439712" ignored="false" />
     <file path="/base.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396765667330" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/templates/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749196608" ignored="false" />
-    <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396994418211" ignored="false" />
+    <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396994708612" ignored="false" />
     <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
     <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974212634" ignored="false" />
     <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
@@ -149,7 +150,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="139" column="12" selection-start="5846" selection-end="5846" vertical-scroll-proportion="0.6089239">
+            <state line="137" column="335" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.49081364">
               <folding />
             </state>
           </provider>
@@ -176,7 +177,7 @@
       <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="200" column="33" selection-start="3383" selection-end="3383" vertical-scroll-proportion="-3.7307692">
+            <state line="760" column="44" selection-start="16486" selection-end="16486" vertical-scroll-proportion="-4.8846154">
               <folding />
             </state>
           </provider>
@@ -231,8 +232,8 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
       </list>
     </option>
@@ -875,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="33" selection-start="3383" selection-end="3383" vertical-scroll-proportion="-3.7307692">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/img/full_logo_gray.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -910,9 +904,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="760" column="44" selection-start="16486" selection-end="16486" vertical-scroll-proportion="-4.8846154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="139" column="12" selection-start="5846" selection-end="5846" vertical-scroll-proportion="0.6089239">
+        <state line="137" column="335" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.49081364">
           <folding />
         </state>
       </provider>

@@ -758,7 +758,7 @@ h2{ font-size:25px; line-height:1.25em;}
 			background-color:#687D9F;
 			}
 		
-#about{ margin-bottom:0px;}
+#about{ margin-bottom:0px; padding-top: 50px}
 	.aboutimg{ z-index:10;}
 	.aboutimg img{ 
 		width:310px;

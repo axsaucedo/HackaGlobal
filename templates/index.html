@@ -42,6 +42,13 @@
 (function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://":"http://")+"";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)})(); 
 </script>
 
+
+{% load ef_tags %}
+{% base_url as BASE %}
+<script type='text/javascript'>
+    window.base_url = "{{ BASE }}";
+</script>
+
 </head>
 
 

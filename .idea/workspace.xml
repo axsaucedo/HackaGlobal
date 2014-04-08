@@ -2,107 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.jpg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/signup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/colorbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/img/controls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/img/vi_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/img/vi_bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/jquery.selectbox.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/jquery.sidr.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/reset.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/css/sp.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/appstore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/arr.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/arrow_right_sp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/background.psd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_btn_gray.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_right.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_right_g.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_right_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/bullet_top_down.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/circle9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/closebtn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/controls.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/flow_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/flow_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/flow_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_03.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_04.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_05.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/gallery_20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/global_close_normal_sp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/global_open_normal_sp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/globalicon_sp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/globe-bracket.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/globe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/googleplay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/hg-list-item-location-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/hg-list-item-location.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/marker.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/movie_01.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/movie_02.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/pdf.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/pdf_sp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/samsung_tablet_tab2_base.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/side_banner_appstore.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/side_banner_for_android.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/side_banner_for_iphone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/side_banner_googleplay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/ss_menu_sp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_br.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_btn_g.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_btn_more.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_gd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_bullet_wd.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/top_global.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/vi.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/vi2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/vi_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/vi_bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/vi_black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/img/windows_banner.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/concept.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/gmaps.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery-1.10.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.colorbox-min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.cycle2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.selectbox-0.2.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/jquery.sidr.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/markerwithlabel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/lib/spritespin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/script.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/static/js/spinimg.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Black.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Black.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Bold.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Bold.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Light.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Light.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Medium.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/css/fonts/Orbitron Medium.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/map-replace.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_03.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.png" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/circle2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/globe-bracket.png" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/globe-bracket.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_01.jpg" afterPath="$PROJECT_DIR$/hackaglobal/static/home/img/movie_01.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" afterPath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
@@ -125,9 +44,9 @@
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396795601453" ignored="false" />
     <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745692666" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396686538055" ignored="false" />
-    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396857594159" ignored="false" />
+    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974189258" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396776890404" ignored="false" />
-    <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396856590682" ignored="false" />
+    <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974266361" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396702391925" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745699885" ignored="false" />
@@ -139,12 +58,13 @@
     <file path="$PROJECT_DIR$/../eventsfinder/templates/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396749196608" ignored="false" />
     <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396780228192" ignored="false" />
     <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
-    <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396755679542" ignored="false" />
+    <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974212634" ignored="false" />
     <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
     <file path="/login.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396770637781" ignored="false" />
     <file path="/signup.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396770934548" ignored="false" />
     <file path="/apply.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396775492154" ignored="false" />
     <file path="/countrylist.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396776063594" ignored="false" />
+    <file path="/screen.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396961235795" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +144,7 @@
       <file leaf-file-name="apply.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/apply.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="78" selection-start="1967" selection-end="1967" vertical-scroll-proportion="-0.625">
+            <state line="34" column="78" selection-start="1967" selection-end="1967" vertical-scroll-proportion="-21.25">
               <folding />
             </state>
           </provider>
@@ -233,10 +153,28 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="49" selection-start="6745" selection-end="6745" vertical-scroll-proportion="0.49695122">
+            <state line="114" column="137" selection-start="5015" selection-end="5015" vertical-scroll-proportion="0.33333334">
               <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#span#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#iframe#0;n#div#0;n#a#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#3;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="concept.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/concept.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="116" column="42" selection-start="3223" selection-end="3223" vertical-scroll-proportion="-2.2727273">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -244,7 +182,7 @@
       <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="769" column="53" selection-start="16669" selection-end="16669" vertical-scroll-proportion="30.545454">
+            <state line="431" column="19" selection-start="7703" selection-end="7703" vertical-scroll-proportion="-3.6909091">
               <folding />
             </state>
           </provider>
@@ -254,15 +192,6 @@
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="57" column="79" selection-start="2940" selection-end="2940" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -302,8 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
         <option value="$PROJECT_DIR$/templates/add_event.html" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/signup.html" />
@@ -316,7 +243,9 @@
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
@@ -427,6 +356,10 @@
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -451,6 +384,76 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -493,10 +496,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hackaglobal/static/home/img" />
+      <recent name="$PROJECT_DIR$/hackaglobal/static/css/fonts" />
       <recent name="$PROJECT_DIR$/hackaglobal/static/home/js" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/hackaglobal/static/home" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hackaglobal/static/home/img" />
@@ -829,27 +832,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="28" selection-start="2292" selection-end="2344" vertical-scroll-proportion="-6.5833335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="44" selection-start="1644" selection-end="1644" vertical-scroll-proportion="26.16">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="61" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0">
@@ -871,9 +853,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="33" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/img/movie_02.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/screen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="25" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+        <state line="66" column="34" selection-start="1763" selection-end="1767" vertical-scroll-proportion="0.33248731">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/spinimg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="19" selection-start="335" selection-end="336" vertical-scroll-proportion="0.5329949">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="34" selection-start="44" selection-end="48" vertical-scroll-proportion="-1.1538461">
           <folding />
         </state>
       </provider>
@@ -892,30 +900,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/apply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="78" selection-start="1967" selection-end="1967" vertical-scroll-proportion="-21.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="18" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="33" selection-start="2993" selection-end="2993" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="17" selection-start="3508" selection-end="3510" vertical-scroll-proportion="0.33248731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/apply.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="78" selection-start="1967" selection-end="1967" vertical-scroll-proportion="-0.625">
           <folding />
         </state>
       </provider>
@@ -927,17 +921,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/concept.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="42" selection-start="3223" selection-end="3223" vertical-scroll-proportion="-2.2727273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="769" column="53" selection-start="16669" selection-end="16669" vertical-scroll-proportion="30.545454">
+        <state line="431" column="19" selection-start="7703" selection-end="7703" vertical-scroll-proportion="-3.6909091">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="49" selection-start="6745" selection-end="6745" vertical-scroll-proportion="0.49695122">
+        <state line="114" column="137" selection-start="5015" selection-end="5015" vertical-scroll-proportion="0.33333334">
           <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#span#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#a#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#3;n#div#2;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>

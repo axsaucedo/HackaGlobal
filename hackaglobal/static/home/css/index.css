@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
 a{ color:#222D3F; text-decoration:none;outline:0;}
 a:hover{ text-decoration:none; color:#687D9F;}
 
@@ -189,9 +190,24 @@ a:hover{ text-decoration:none; color:#687D9F;}
 
 .header #vi{
 	position: fixed;
-	height: 71px;
+	height: 81px;
 	z-index: 100;
 	width: 100%;
+    text-align: center;
+    background-color: white;
+}
+.header #vi_text {
+    font-family: Orbitron-light;
+    font-size: 60px;
+    line-height: 1.6em;
+    height: 100%
+}
+.header #vi_logo {
+    height: 120px;
+    width: 130px;
+    position: absolute;
+    left: 15%;
+    top: -20px;
 }
 
 
@@ -235,12 +251,14 @@ a:hover{ text-decoration:none; color:#687D9F;}
 .globe-bracket{
 	position: fixed;
 	top:0;
-	left: 0px;
+	left: 30px;
 	z-index: 235;
 }
 
 .globe-bracket img{
-	height: 90px;
+    margin-top: -10px;
+	height: 70px;
+    width: 80px;
 }
 
 /*********************** SIGNUP ***************************/
@@ -401,15 +419,32 @@ input:-moz-placeholder {
         to(#b9c5dd));
 }
 
+.no-list ul li
+{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    padding-left: 30px;
+}
+
+.transition-about{
+    padding-top: 100px !important;
+}
 
 .transition-header{
-	-webkit-transition: width 1s ease, height 1s ease;  
-    -moz-transition: width 1s ease, height 1s ease;  
-    -o-transition: width 1s ease, height 1s ease;  
-    transition: width 1s ease, height 1s ease; 
+	-webkit-transition: height 1s ease;
+    -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+    transition: height 1s ease;
 	position:fixed !important;
 	top:0;
 	width:100% !important;
+    height: 50px !important;
 	max-width:100% !important;
 	box-shadow: 1px 1px 2px #ccc;
 	padding: 0 !important;
@@ -417,6 +452,7 @@ input:-moz-placeholder {
 
 .transition-header ul{
 	width: 960px;
+    height: 50px !important;
 }
 
 #mc_embed_signup .email{
@@ -639,33 +675,9 @@ h2{ font-size:25px; line-height:1.25em;}
 	margin:0 auto;
 	position:relative;
 	}
-	
-#vi_bg{
-	width:100%;
-	height:3000px;
-	background:url(static/img/vi_bg.jpg) no-repeat;
-	background-size: contain;
-	position:fixed;
-        top:0;
-	z-index:-100;
-	overflow:hidden;
-	}
-	
-#vi_text{
-	position:absolute;
-	top:0px;
-	right:10px;
-	padding-top:10px;
-	color:#eef7ff;
-	text-align:right;
-	text-shadow:0px 0px 2px #2e455a;
-	font-size:10px;
-	font-weight:300;
-	}
-
 
 #top_gnav{
-	height:90px;
+    height:90px;
 	background-color:#fff;
 	z-index:101;
 	text-align:center;
@@ -674,7 +686,7 @@ h2{ font-size:25px; line-height:1.25em;}
 	#top_gnav ul{
 		display: inline-block;
 		margin:0 auto;
-		padding-top:28px;
+		padding-top:10px;
 		}
 	#top_gnav li{
 		display: inline-block;
@@ -682,7 +694,7 @@ h2{ font-size:25px; line-height:1.25em;}
 		}
 	#top_gnav ul li.last{ margin-right:0px;}
 	
-#top_gnav_dummy{ height:90px;}
+#top_gnav_dummy{ height:50px;}
 		
 		
 #main{ padding-top:50px;}

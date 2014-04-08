@@ -50,12 +50,12 @@
 
 
 
-
-<body id="hg-body">
+{#<style>body { background-image: url('/static/home/img/map-replace.png');" }</style>#}
+<body id="hg-body" >
 
   <div class="header">
 
-      <div style="position: fixed; top:7px; right: 40px; z-index: 1000">
+      <div id="account-buttons" style="position: fixed; top:7px; right: 40px; z-index: 1000">
           <ul>
               <li> <a href="/login"> Login</a></li>
               <li> <a href="/signup"> Signup</a></li>
@@ -63,15 +63,17 @@
       </div>
 
       <div id="vi">
-          <a href="/"><img alt="" class="style" src="/static/home/img/vi.png"></a>
+{#          <a href="/"><img alt="" class="style" src="/static/home/img/vi.png"></a>#}
+            <img id="vi_logo" src="/static/home/img/hacka-globe.png" alt="" />
+            <div id="vi_text">Hacka {Global} </div>
       </div>
       <div class="globe-bracket" style="display:none;">
-          <img src="/static/home/img/globe-bracket.png" alt="" />
+          <img src="/static/home/img/hacka-globe.png" alt="" />
       </div>
 
 
-      <div class="mailchimp"> 
-        <div id="googleMap"></div>  
+      <div class="mailchimp">
+        <div id="googleMap"></div>
       </div>
 
   </div><!--#header-->
@@ -158,7 +160,7 @@
       <br class="clr" />
 
       <div class="aboutbox04">
-          <div class="aboutimg"><img src="/static/home/img/circle2.jpg" class="flyout04" /></div>
+          <div class="aboutimg"><img src="/static/home/img/circle2.png" class="flyout04" /></div>
           <div class="abouttext">
               <h2>Open, simple and with an API!</h2>
               <p>We love openness and transparency, for this we're building a clean, awesome, open API to invite all devs to innovate and create!! Check out our <a href="http://hackaglobal.co/api/data/Romania/Timisoara/" style="color: #87ceeb">Events API Beta</a>!!</p>

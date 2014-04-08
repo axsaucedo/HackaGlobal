@@ -13,7 +13,7 @@ function getEvents(country) {
 	var xhr = new XMLHttpRequest();
 	
 	xhr.open('GET', apiURL + '/api/data/' + country + '/', true);
-	
+
 	xhr.onload = function() {
 		var rsp = JSON.parse(xhr.responseText),
 		n,

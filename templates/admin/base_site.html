@@ -1,0 +1,24 @@
+{% extends "admin/base.html" %}
+
+{% load ef_tags %}
+{% in_prod as PROD %}
+{% block title %}
+    {% if PROD %}
+        PROD - Admin
+    {% else %}
+        DEV - Admin
+    {% endif %}
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name"><a href="{% url 'admin:index' %}">
+        {% if PROD %}
+            <h1 style="font-size: 4em;">YOU ARE IN PROD! </h1>
+            <h1 style="font-size: 2em;">Welcome :)</h1>
+        {% else %}
+            <h1>Dev - feel free to break stuff ;)</h1>
+        {% endif %}
+    </a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}

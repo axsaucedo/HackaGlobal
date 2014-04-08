@@ -1,5 +1,6 @@
 from django import template
 from hackaglobal.models import Event, Attendee
+from settings import BASE_URL, DEBUG
 
 register = template.Library()
 
@@ -45,3 +46,12 @@ def all_tags():
 @register.assignment_tag()
 def split(value):
     return value.split(',')
+
+
+@register.assignment_tag()
+def base_url():
+    return BASE_URL
+
+@register.assignment_tag()
+def in_prod():
+    return not DEBUG

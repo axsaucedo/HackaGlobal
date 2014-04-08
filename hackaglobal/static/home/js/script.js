@@ -1,6 +1,6 @@
 
 /* CONFIG */
-var apiURL = 'http://www.hackaglobal.co';
+var apiURL = window.base_url;
 
 var map;
 var hgCountries = [],
@@ -12,6 +12,7 @@ var markersArray = [];
 var mainURL = window.location.href;
 
 $(document).on('ready',function(){
+    console.log(apiURL);
     createMap();
 });
 
@@ -183,11 +184,9 @@ function populateMap() {
                  hgCountriesMetadata[parseInt(this.position.k)].url);
                  */
                 var c = hgCountriesMetadata[parseInt(this.position.k)].title;
-                if(c == "united-kingdom")
-                    c = "UK";
                 console.log(c);
 
-                window.location = '/web/' + capitaliseFirstLetter(c) + '/';
+                window.location = '/web/' + c.toLowerCase() + '/';
                 //console.log(hgCountriesMetadata[parseInt(this.position.k)]);
             }, false);
 

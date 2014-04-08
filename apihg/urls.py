@@ -62,35 +62,35 @@ class EventDetail(APIView):
 def getCountryCity(request, city):
 
     citycountry = {
-            "Mexico" : [
-                  "MexicoCity"
-                , "Guadalajara"
+            "mexico" : [
+                  "mexico-city"
+                , "guadalajara"
                 ,
             ]
-            , "China" : [
-                "Shanghai"
+            , "china" : [
+                "shanghai"
                 ,
             ]
-            , "Russia" : [
-                 "Moscow"
-               , "SaintPetersburg"
+            , "russia" : [
+                 "moscow"
+               , "saint-petersburg"
                ,
             ]
-            , "Romania" : [
-                "Timisoara"
-                , "Cluj"
-                , "Bucharest"
-                , "Brasov"
-                , "Caransebes"
-                , "Arad"
-                , "Iasi"
+            , "romania" : [
+                 "timisoara"
+                , "cluj"
+                , "bucharest"
+                , "brasov"
+                , "caransebes"
+                , "arad"
+                , "iasi"
                 ,
             ]
-            , "UK" : [
-                  "Southampton"
-                , "Manchester"
-                , "Sheffield"
-                , "London"
+            , "united-kingdom" : [
+                  "southampton"
+                , "manchester"
+                , "sheffield"
+                , "london"
             ]
 
     }
@@ -107,7 +107,7 @@ handler404 = 'hackaglobal.views.handler404'
 
 urlpatterns = patterns('',
     url(r'^data/$', EventList.as_view()),
-    url(r'^data/(?P<country>\w+)(/(?P<city>\w+))?/$', EventFilteredList.as_view()),
+    url(r'^data/(?P<country>.+)(/(?P<city>.+))?/$', EventFilteredList.as_view()),
     url(r'^event/(?P<pk>[0-9]+)/$', EventDetail.as_view()),
     url(r'^country/(?P<city>.*)$', getCountryCity, name="country-list"),
 

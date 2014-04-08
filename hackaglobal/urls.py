@@ -3,6 +3,7 @@ from hackaglobal import views, ajax
 from django.contrib import admin
 from django.conf.urls import patterns
 from apihg import urls as apihgurls
+from settings import STATIC_ROOT
 
 from models import Event
 
@@ -22,7 +23,7 @@ urlpatterns = patterns('',
     url(r'^$', views.home, name='home'),
 
     #FrontEnd
-    url(r'^web/(?P<country>\w+)/$', views.getCountryListView, name='country_list_view'),
+    url(r'^web/(?P<country>.+)/$', views.getCountryListView, name='country_list_view'),
 
     url(r'^find/$', views.find_events, name='find_events'),
     url(r'^create/$', views.add_event, name='add_event'),
@@ -46,6 +47,8 @@ urlpatterns = patterns('',
     url(r'^accounts/edit/$', views.edit_account, name='edit_account'),
     url(r'^accounts/view/(?P<username>.+)/$', views.view_account, name='view_account'),
 
+
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT}),
 
     ('^admin/', include(admin.site.urls)),
 )

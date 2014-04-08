@@ -1,6 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@font-face {
+    font-family: "Levenim";
+    src: url('/static/css/fonts/levenim.ttf');
+}
 
 a{ color:#222D3F; text-decoration:none;outline:0;}
 a:hover{ text-decoration:none; color:#687D9F;}

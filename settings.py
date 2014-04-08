@@ -8,7 +8,7 @@ TEMPLATE_DEBUG = DEBUG
 
 if DEBUG:
     ALLOWED_HOSTS = ['*']
-    BASE_URL = '127.0.0.1:8000'
+    BASE_URL = 'http://127.0.0.1:8000'
 else:
     ALLOWED_HOSTS = ['.hackaglobal.co']
     BASE_URL = 'http://hackaglobal.co'

@@ -110,9 +110,9 @@
                             <div class="form-group">
                                 <label for="add-event-tags" class="col-md-3 control-label">Tags</label>
                                 <div class="col-md-9" style="padding-bottom: 20px;">
-                                    <input id="add-event-tags" name="tags" class="form-control hidden" value="{{ event.tags }}" type="text" placeholder="5 Required">
-                                    <ul id="add-event-tag-bar" style="border-radius: 5px; padding: 5px 10px 5px 10px;" data-name="nameOfSelect">
-                                        {% for tag in event.tags %}
+                                    <input id="add-event-tags" name="tags" class="form-control hidden" value="{% for tag in event.tags.names %}{{ tag }},{% endfor %}" type="text" placeholder="5 Required">
+                                    <ul id="add-event-tag-bar" style="border-radius: 5px; padding: 5px 10px 5px 10px; background-color: #d3d3d3" data-name="nameOfSelect">
+                                        {% for tag in event.tags.names %}
                                             <li class="tagit-choice ui-widget-content ui-state-default">
                                                 <div class="tagit-label">
                                                     {{ tag }}

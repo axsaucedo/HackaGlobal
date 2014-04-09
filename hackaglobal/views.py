@@ -26,6 +26,8 @@ def add_event(request):
             event = form.save(commit=False)
             event.creator = request.user
             event.save()
+            if request.POST['tags']: event.tags.add(*request.POST['tags'].split(','))
+            event.save()
             return redirect('manage_events')
     else:
         form = EventCreationForm()
@@ -83,13 +85,15 @@ def edit_event(request, event_id):
         if request.method =='POST':
             data['form'] = EventCreationForm(request.POST)
 
+            print request.POST['tags']
+
             if data['form'].is_valid():
                 event = data['form'].save(commit=False)
+                event.id = data['event'].id
                 event.creator = request.user
-                event_id = data['event'].id
+                if request.POST['tags']: event.tags.add(*request.POST['tags'].split(','))
+                event.save()
                 data['event'] = event
-                data['event'].id = event_id
-                data['event'].save()
         else:
             data['form'] = EventCreationForm()
 
@@ -113,7 +117,7 @@ def delete_event(request, event_id):
         # Event not found so raise an event not found
         return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': err if settings.DEBUG else "Oops, we couldn't find the event you were looking for..." })
 
-    return HttpResponseRedirect(reverse('hackaglobal.views.home'))
+    return HttpResponseRedirect(reverse('hackaglobal.views.manage_events'))
 
 def view_event(request, event_id):
     data = {}

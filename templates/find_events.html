@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block content %}
-    {% load ef_tags %}
+    {% load hg_tags %}
     <div class="container">
         <div class="row">
             <h1 class="page-header">Find events...</h1>
@@ -23,7 +23,7 @@
                     {% csrf_token %}
                     <input id="find-event-tags" class="form-control hidden" type="text" name="tags">
                     <div id="find-events-bar" class="col-md-10">
-                        <ul style="border-radius: 5px; padding: 5px 10px 5px 10px;" id="find-event-search" data-name="nameOfSelect">
+                        <ul style="border-radius: 5px; padding: 5px 10px 5px 10px;  background-color: #d3d3d3" id="find-event-search" data-name="nameOfSelect">
                             {% split request.POST.tags as post_tags %}
                             {% for tag in post_tags %}
                                 <li class="tagit-choice ui-widget-content ui-state-default" tagvalue="{{ tag }}"><div class="tagit-label">{{ tag }}</div></li>

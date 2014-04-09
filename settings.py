@@ -3,7 +3,7 @@
 import os
 BASE_DIR = os.path.dirname(__file__)
 
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 if DEBUG:
@@ -138,10 +138,12 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
 
     'djangotoolbox',
+    'south',
 
     'hackaglobal',
     'apihg',
 
+    'taggit',
     'corsheaders',
     'rest_framework',
     'social.apps.django_app.default',

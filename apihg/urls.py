@@ -44,7 +44,6 @@ class EventFilteredList(APIView):
         serializer = EventListSerializer(events, many=True)
         return Response(serializer.data)
 
-
 class EventDetail(APIView):
 
     def get_object(self, pk):
@@ -58,6 +57,13 @@ class EventDetail(APIView):
         serializer = EventSerializer(event)
         return Response(serializer.data)
 
+class EventTags(APIView):
+
+    def get(self, request, tags):
+        all_tags = tags.split(',')
+        events = Event.objects.filter(tags__name__in=all_tags)
+        serializer = EventListSerializer(events, many=True)
+        return Response(serializer.data)
 
 def getCountryCity(request, city):
 
@@ -102,6 +108,9 @@ def getCountryCity(request, city):
 
     return HttpResponse(json.dumps(response), content_type="application/json")
 
+def getTags(request, tags):
+    all_tags = tags.split(',')
+
 
 handler404 = 'hackaglobal.views.handler404'
 
@@ -110,6 +119,9 @@ urlpatterns = patterns('',
     url(r'^data/(?P<country>.+)(/(?P<city>.+))?/$', EventFilteredList.as_view()),
     url(r'^event/(?P<pk>[0-9]+)/$', EventDetail.as_view()),
     url(r'^country/(?P<city>.*)$', getCountryCity, name="country-list"),
+
+
+    url(r'^tags/(?P<tags>.*)/$', EventTags.as_view(), name="tag-filter"),
 
     url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
 )

@@ -88,10 +88,10 @@ var edit_event = {
         });
 
         function getTags(tags) {
-            var string = tags[0].value;
+            var string = tags[0].value.trim();
             for (var i in tags) {
                 if (i == 0) continue;
-                string += "," + tags[i].value;
+                string += "," + tags[i].value.trim();
             }
             return string.toLowerCase()
         }

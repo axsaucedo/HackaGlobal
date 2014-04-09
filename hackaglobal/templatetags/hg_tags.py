@@ -1,5 +1,6 @@
 from django import template
 from hackaglobal.models import Event, Attendee
+from taggit.models import Tag
 from settings import BASE_URL, DEBUG
 
 register = template.Library()
@@ -35,11 +36,10 @@ def is_tracking(context, event):
 @register.assignment_tag()
 def all_tags():
 
-    all_tags_set = set()
-    for event in Event.objects.all():
-        all_tags_set |= set(tuple(event.tags))
+    all_tags = []
 
-    all_tags = list(all_tags_set)
+    for tag in Tag.objects.all():
+        all_tags.append(tag.name)
 
     return all_tags
 

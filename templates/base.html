@@ -28,9 +28,10 @@
 
     {% load hg_tags %}
     {% all_tags as tags %}
+    {% base_url as BASE %}
     <script type='text/javascript'>
         window.availableTags = [{% for tag in tags %}{% if forloop.first %}'{{ tag }}'{% else %},'{{ tag }}'{% endif %}{% endfor %}];
-        window.base_url = {{ base_url }}
+        window.base_url = "{{ BASE }}";
     </script>
 
 
@@ -42,7 +43,6 @@
 <body>
 
 <div id="header">
-
     <nav id='events-finder-nav-bar' class="navbar navbar-default navbar-fixed-top" role="navigation">
 
         <div class="navbar-header">

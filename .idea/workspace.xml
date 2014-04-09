@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/base_site.html" afterPath="$PROJECT_DIR$/templates/admin/base_site.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
     </list>
     <ignored path="hackaglobal.iws" />
@@ -9,7 +10,7 @@
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979571163" ignored="false" />
     <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396980870553" ignored="false" />
     <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396776208533" ignored="false" />
-    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397033662294" ignored="false" />
+    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397034023124" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/app.yaml" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -47,7 +48,7 @@
     <file path="/screen.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396961235795" ignored="false" />
     <file path="/ef_tags.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979984891" ignored="false" />
     <file path="$PROJECT_DIR$/../wakeuproulette/wakeuproulette/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979688103" ignored="false" />
-    <file path="/base_site.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397032823342" ignored="false" />
+    <file path="/base_site.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397033998999" ignored="false" />
     <file path="/event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396996505525" ignored="false" />
     <file path="/manage.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396996536739" ignored="false" />
     <file path="/hg_tags.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397032661274" ignored="false" />
@@ -148,45 +149,25 @@
       <file leaf-file-name="base_site.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="18" selection-start="436" selection-end="436" vertical-scroll-proportion="-2.9113925">
+            <state line="13" column="21" selection-start="279" selection-end="279" vertical-scroll-proportion="-2.278481">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hg_tags.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="19" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-5.018182">
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hg_context.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/hg_context.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="43" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
+            <state line="5" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.18248175">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="18" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.37866667">
+            <state line="63" column="18" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -238,9 +219,9 @@
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/hackaglobal/hg_context.py" />
         <option value="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" />
+        <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/settings.py" />
       </list>
     </option>
@@ -911,43 +892,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="48" selection-start="1623" selection-end="1623" vertical-scroll-proportion="-1.56">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="18" selection-start="436" selection-end="436" vertical-scroll-proportion="-2.9113925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/hg_context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="19" selection-start="1140" selection-end="1140" vertical-scroll-proportion="-5.018182">
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="43" selection-start="128" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/screen.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -957,7 +901,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="18" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.37866667">
+        <state line="63" column="18" selection-start="1223" selection-end="1223" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="19" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.7752809">
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/hg_context.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="20" selection-start="96" selection-end="103" vertical-scroll-proportion="0.10948905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="48" selection-start="1623" selection-end="1623" vertical-scroll-proportion="-1.56">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/base_site.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="21" selection-start="279" selection-end="279" vertical-scroll-proportion="-2.278481">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="105" selection-end="105" vertical-scroll-proportion="0.18248175">
           <folding />
         </state>
       </provider>

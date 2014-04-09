@@ -1,9 +1,8 @@
 {% extends "admin/base.html" %}
 
 {% load hg_tags %}
-{% in_prod as PROD %}
 {% block title %}
-    {% if PROD %}
+    {% if IN_PROD %}
         PROD - Admin
     {% else %}
         DEV - Admin
@@ -12,7 +11,7 @@
 
 {% block branding %}
     <h1 id="site-name"><a href="{% url 'admin:index' %}">
-        {% if PROD %}
+        {% if IN_PROD %}
             <h1 style="font-size: 4em;">YOU ARE IN PROD! </h1>
             <h1 style="font-size: 2em;">Welcome :)</h1>
         {% else %}

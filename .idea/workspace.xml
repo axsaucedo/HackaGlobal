@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apihg/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/apihg/tests.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/admin.py" afterPath="$PROJECT_DIR$/hackaglobal/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/edit_event.html" afterPath="$PROJECT_DIR$/templates/edit_event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" afterPath="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/find_events.html" afterPath="$PROJECT_DIR$/templates/find_events.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" afterPath="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apihg/urls.py" afterPath="$PROJECT_DIR$/apihg/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/views.py" afterPath="$PROJECT_DIR$/hackaglobal/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -167,10 +156,19 @@
       <file leaf-file-name="urls.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apihg/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="29" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.64285713">
+            <state line="63" column="73" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.64285713">
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="53" selection-start="124" selection-end="149" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -246,7 +244,6 @@
         <option value="$PROJECT_DIR$/templates/admin/base_site.html" />
         <option value="$PROJECT_DIR$/hackaglobal/migrations/0001_initial.py" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
         <option value="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" />
         <option value="$PROJECT_DIR$/templates/find_events.html" />
@@ -255,6 +252,7 @@
         <option value="$PROJECT_DIR$/templates/edit_event.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
       </list>
     </option>
@@ -900,15 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="405" selection-end="405" vertical-scroll-proportion="0.33333334">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/tools/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="19" selection-start="521" selection-end="521" vertical-scroll-proportion="0.0">
@@ -966,9 +955,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="53" selection-start="124" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apihg/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="29" selection-start="3396" selection-end="3396" vertical-scroll-proportion="0.64285713">
+        <state line="63" column="73" selection-start="1889" selection-end="1889" vertical-scroll-proportion="0.64285713">
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>

@@ -61,7 +61,7 @@ class EventTags(APIView):
 
     def get(self, request, tags):
         all_tags = tags.split(',')
-        events = Event.objects.filter(tags__name__in=all_tags)
+        events = Event.objects.filter(tags__name__in=all_tags).distinct()
         serializer = EventListSerializer(events, many=True)
         return Response(serializer.data)
 

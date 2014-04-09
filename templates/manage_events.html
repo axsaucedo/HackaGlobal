@@ -31,25 +31,25 @@
                         </div>
                     </div>      
                 </div>
-                <div class="col-md-6">
-                    <div class="panel panel-danger">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Attending</h3>
-                        </div>
-                        <div class="panel-body">
-                            {% if attending %}
-                                {% for event in attending %}
-                                    {% include "layouts/event.html" with event=event created=False %}
-                                {% endfor %}
-                            {% else %}
-                                <div class="well">
-                                    <p>You're still not attending any events</p>
-                                    <p>Why don't you start by <a href="/find">finding one?</a></p>
-                                </div>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
+{#                <div class="col-md-6">#}
+{#                    <div class="panel panel-danger">#}
+{#                        <div class="panel-heading">#}
+{#                            <h3 class="panel-title">Attending</h3>#}
+{#                        </div>#}
+{#                        <div class="panel-body">#}
+{#                            {% if attending %}#}
+{#                                {% for event in attending %}#}
+{#                                    {% include "layouts/event.html" with event=event created=False %}#}
+{#                                {% endfor %}#}
+{#                            {% else %}#}
+{#                                <div class="well">#}
+{#                                    <p>You're still not attending any events</p>#}
+{#                                    <p>Why don't you start by <a href="/find">finding one?</a></p>#}
+{#                                </div>#}
+{#                            {% endif %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
             </div>
         </div>
     </div>

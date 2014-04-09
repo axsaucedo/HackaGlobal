@@ -26,7 +26,7 @@
     <script type="text/javascript" src="/static/js/external/transition.js"></script>
 
 
-    {% load ef_tags %}
+    {% load hg_tags %}
     {% all_tags as tags %}
     <script type='text/javascript'>
         window.availableTags = [{% for tag in tags %}{% if forloop.first %}'{{ tag }}'{% else %},'{{ tag }}'{% endif %}{% endfor %}];

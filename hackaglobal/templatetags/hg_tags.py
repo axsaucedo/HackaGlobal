@@ -51,7 +51,3 @@ def split(value):
 @register.assignment_tag()
 def base_url():
     return BASE_URL
-
-@register.assignment_tag()
-def in_prod():
-    return not DEBUG

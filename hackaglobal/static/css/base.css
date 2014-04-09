@@ -46,7 +46,8 @@ body {
     transition: background 0.5s linear;
 }
 .event-container:hover {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, .7);
+    color: white !important;
 }
 
 

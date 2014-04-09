@@ -6,12 +6,6 @@
     src:    url('fonts/levenim.ttf') format('truetype');
 }
 
-body,
-.mailchimp,
-#googleMap {
-    background-color: black;
-}
-
 a{ color:#222D3F; text-decoration:none;outline:0;}
 a:hover{ text-decoration:none; color:#687D9F;}
 

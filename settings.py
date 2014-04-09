@@ -107,7 +107,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.media',
     'social.apps.django_app.context_processors.login_redirect',
-    "hackaglobal.ef_context.in_prod",
+    "hackaglobal.templatetags.hg_tags.in_prod",
 )
 
 MIDDLEWARE_CLASSES = (

@@ -3,7 +3,7 @@
 import os
 BASE_DIR = os.path.dirname(__file__)
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 if DEBUG:
@@ -107,7 +107,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.media',
     'social.apps.django_app.context_processors.login_redirect',
-    "hackaglobal.templatetags.hg_tags.in_prod",
+    "hackaglobal.hg_context.in_prod",
 )
 
 MIDDLEWARE_CLASSES = (

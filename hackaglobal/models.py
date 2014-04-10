@@ -93,13 +93,13 @@ class HackaCity(models.Model):
     communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
-class City(models.Model):
-    name = models.CharField(max_length=35)
-    country_code = models.CharField(max_length=3)
-    district = models.CharField(max_length=20)
-    population = models.IntegerField(max_length=11, default=0)
-
-class Country(models.Model):
-    code = models.CharField(max_length=3, primary_key=True)
-    name = models.CharField(max_length=52)
-    continent
+#class City(models.Model):
+#    name = models.CharField(max_length=35)
+#    country_code = models.CharField(max_length=3)
+#    district = models.CharField(max_length=20)
+#    population = models.IntegerField(max_length=11, default=0)
+#
+#class Country(models.Model):
+#    code = models.CharField(max_length=3, primary_key=True)
+#    name = models.CharField(max_length=52)
+#    continent

@@ -76,6 +76,13 @@ class HackaContainer(models.Model):
 
     type = models.CharField(max_length=1, choices=CONTAINER_TYPE_CHOICES, default='C')
 
+class Cities(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=35L)
+    country_code = models.CharField(max_length=3L)
+    district = models.CharField(max_length=20L)
+    population = models.IntegerField()
+
 class HackaCity(models.Model):
     lead = models.ForeignKey(User, related_name="lead_of", unique=True)
     team = models.ManyToManyField(User, related_name="team_of", null=True, blank=True)
@@ -86,19 +93,11 @@ class HackaCity(models.Model):
     name = models.CharField(max_length=25)
     short_description = models.CharField(max_length=200)
     about = models.TextField()
-    country = models.CharField(max_length=40)
-    city = models.CharField(max_length=40)
+    city = models.OneToOneField(Cities)
 
     sponsors = models.ForeignKey(HackaContainer, related_name="sponsor_of", null=True, blank=True)
     communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
-
-class Cities(models.Model):
-    id = models.IntegerField(primary_key=True)
-    name = models.CharField(max_length=35L)
-    country_code = models.CharField(max_length=3L)
-    district = models.CharField(max_length=20L)
-    population = models.IntegerField()
 
 class Countries(models.Model):
     code = models.CharField(max_length=3L, primary_key=True)

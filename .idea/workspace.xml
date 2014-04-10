@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="" />
+    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
+    </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397071657400" ignored="false" />
@@ -20,7 +22,7 @@
     <file path="/manage.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683572675" ignored="false" />
     <file path="/admin.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397153921273" ignored="false" />
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396795601453" ignored="false" />
-    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397156405789" ignored="false" />
+    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397165158545" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397032566787" ignored="false" />
     <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397032252655" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397039271499" ignored="false" />
@@ -167,7 +169,7 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="48" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.8214286">
+            <state line="99" column="98" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.9285714">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -857,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="48" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.8214286">
+        <state line="99" column="98" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.9285714">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

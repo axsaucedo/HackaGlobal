@@ -180,7 +180,7 @@ AUTHENTICATION_BACKENDS = (
     'social_auth.backends.contrib.vk.VKOAuth2Backend',
     'social_auth.backends.OpenIDBackend',
     'django.contrib.auth.backends.ModelBackend',
-    'accounts.pipelines.get_user_avatar',
+#    'accounts.pipelines.get_user_avatar',
 )
 
 FACEBOOK_APP_ID             = '249501395190918'

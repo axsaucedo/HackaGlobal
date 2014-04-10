@@ -6,8 +6,7 @@ from uuid import uuid4
 from django.core.files.base import ContentFile
 from django.utils.text import slugify
 
-def get_user_avatar(backend, details, response, social_user, uid,\
-                    user, *args, **kwargs):
+def get_user_avatar(backend, details, response, social_user, uid,user, *args, **kwargs):
     url = None
     profile = user.get_profile()
     if backend.__class__ == FacebookBackend:

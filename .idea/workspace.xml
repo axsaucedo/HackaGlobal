@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AEHBusiness.pem" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db.final" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/0002_auto__del_field_event_tags.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/0003_auto__chg_field_event_website.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/__init__.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/pipelines.py" afterPath="$PROJECT_DIR$/accounts/pipelines.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -191,7 +198,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="29" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53571427">
+            <state line="183" column="28" selection-start="5330" selection-end="5330" vertical-scroll-proportion="0.5812183">
               <folding />
             </state>
           </provider>
@@ -200,7 +207,7 @@
       <file leaf-file-name="pipelines.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="37" selection-start="871" selection-end="871" vertical-scroll-proportion="-13.269231">
+            <state line="21" column="51" selection-start="799" selection-end="799" vertical-scroll-proportion="-8.807693">
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
@@ -239,7 +246,6 @@
         <option value="$PROJECT_DIR$/templates/view_event.html" />
         <option value="$PROJECT_DIR$/templates/account_view.html" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
-        <option value="$PROJECT_DIR$/accounts/pipelines.py" />
         <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
@@ -249,6 +255,7 @@
         <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/accounts/pipelines.py" />
       </list>
     </option>
   </component>
@@ -341,24 +348,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="apihg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -374,24 +363,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accounts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,15 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="37" selection-start="871" selection-end="871" vertical-scroll-proportion="-13.269231">
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apihg/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0023809525">
@@ -822,32 +784,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="164" selection-end="174" vertical-scroll-proportion="-1.7307693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/community_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="23" selection-start="266" selection-end="266" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="50" selection-start="2343" selection-end="2343" vertical-scroll-proportion="-10.653846">
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="80" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -861,12 +800,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="43" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+        <state line="64" column="50" selection-start="2343" selection-end="2343" vertical-scroll-proportion="-10.653846">
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#0#57#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="28" selection-start="164" selection-end="174" vertical-scroll-proportion="-1.7307693">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -879,9 +825,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="80" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="43" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="51" selection-start="799" selection-end="799" vertical-scroll-proportion="-8.807693">
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="29" selection-start="987" selection-end="987" vertical-scroll-proportion="0.53571427">
+        <state line="183" column="28" selection-start="5330" selection-end="5330" vertical-scroll-proportion="0.5812183">
           <folding />
         </state>
       </provider>

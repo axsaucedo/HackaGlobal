@@ -44,7 +44,7 @@ def find_events(request):
 
         if tags:
             try:
-                events = Event.objects.filter(tags=tags)
+                events = Event.objects.filter(tags__name__in=tags)
 
             except Exception:
                 pass

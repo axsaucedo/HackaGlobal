@@ -118,7 +118,7 @@ class Countries(models.Model):
     code2 = models.CharField(max_length=2L)
 
 class Languages(models.Model):
-    country_code = models.CharField(max_length=)
+    country_code = models.CharField(max_length=3)
     language = models.CharField(max_length=30)
     official = models.CharField(max_length=1)
     percentage = models.FloatField()

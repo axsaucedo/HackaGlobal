@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/world.sql" afterPath="$PROJECT_DIR$/world.sql" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -170,7 +169,7 @@
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="47" selection-start="4404" selection-end="4404" vertical-scroll-proportion="0.6785714">
+            <state line="120" column="48" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.71428573">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -860,7 +859,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="47" selection-start="4404" selection-end="4404" vertical-scroll-proportion="0.6785714">
+        <state line="120" column="48" selection-start="4405" selection-end="4405" vertical-scroll-proportion="0.71428573">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>

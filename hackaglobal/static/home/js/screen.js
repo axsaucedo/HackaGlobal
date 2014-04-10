@@ -4,9 +4,9 @@ function ge(id) {
 }// end ge()
 
 
-function capitaliseFirstLetter(string) {
-	return string.charAt(0).toUpperCase() + string.slice(1);
-}// end capitaliseFirstLetter()
+//function capitaliseFirstLetter(string) {
+//	return string.charAt(0).toUpperCase() + string.slice(1);
+//}// end capitaliseFirstLetter()
 
 
 function getEvents(country) {
@@ -71,7 +71,7 @@ var apiURL = 'http://www.hackaglobal.co',
 
 if (country != "") {
 	// get the events from the API
-	getEvents(capitaliseFirstLetter(country));
+	getEvents(country.toLowerCase());
 	
 	
 } else {

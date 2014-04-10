@@ -127,8 +127,8 @@ function createMap(data) {
 
         var rand = Math.random();
 
-//        //Normal theme
-//        var style;
+        //Normal theme
+        var style;
 //        //Dark theme
 //        if (rand < .3) style = [{"featureType":"all","stylers":[{"visibility":"off"}]},{featureType: "administrative.country",elementType: "labels","stylers": [ {visibility: "on"} ]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-100}]}];
 //        //White theme
@@ -139,7 +139,7 @@ function createMap(data) {
         //Dark Theme
 //        var style = [{"featureType":"all","stylers":[{"visibility":"off"}]},{featureType: "administrative.country",elementType: "labels","stylers": [ {visibility: "on"} ]},{featureType: "administrative.city",elementType: "labels","stylers": [ {visibility: "on"} ]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-100}]}];
 
-        var style;
+//        var style;
 
         map = new google.maps.Map(document.getElementById('googleMap'), {
             zoom: 2,

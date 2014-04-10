@@ -122,7 +122,7 @@ MIDDLEWARE_CLASSES = (
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-ROOT_URLCONF = 'hackaglobal.urls'
+ROOT_URLCONF = 'urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'hackaglobal.wsgi.application'
@@ -142,11 +142,12 @@ INSTALLED_APPS = (
 
     'hackaglobal',
     'apihg',
+    'accounts',
 
     'taggit',
     'corsheaders',
     'rest_framework',
-    'social.apps.django_app.default',
+    'social_auth',
 )
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -159,41 +160,25 @@ REST_FRAMEWORK = {
 #        ),
 }
 
+AUTH_PROFILE_MODULE = "accounts.UserProfile"
 
 AUTHENTICATION_BACKENDS = (
-    'social.backends.facebook.FacebookOAuth2',
-    #'userena.backends.UserenaAuthenticationBackend',
-    #'guardian.backends.ObjectPermissionBackend',
     'django.contrib.auth.backends.ModelBackend',
+
+    'social_auth.backends.twitter.TwitterBackend',
+    'social_auth.backends.facebook.FacebookBackend',
+    'social_auth.backends.google.GoogleOAuthBackend',
+    'social_auth.backends.google.GoogleOAuth2Backend',
+    'social_auth.backends.google.GoogleBackend',
+    'social_auth.backends.contrib.linkedin.LinkedinBackend',
+    'social_auth.backends.contrib.github.GithubBackend',
+    'social_auth.backends.contrib.vk.VKOAuth2Backend',
+    'social_auth.backends.OpenIDBackend',
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.pipelines.get_user_avatar',
 )
 
-SOCIAL_AUTH_PIPELINE = (
-    'social.pipeline.social_auth.social_details',
-    'social.pipeline.social_auth.social_uid',
-    'social.pipeline.social_auth.auth_allowed',
-    'social.pipeline.social_auth.social_user',
-    'social.pipeline.social_auth.associate_by_email',
-    'social.pipeline.user.get_username',
-    'social.pipeline.user.create_user',
-    'social.pipeline.social_auth.associate_user',
-    'social.pipeline.social_auth.load_extra_data',
-    'social.pipeline.user.user_details',
-    'auth_pipelines.pipelines.get_profile_data',  # custom
-    'auth_pipelines.pipelines.get_profile_avatar',  # custom
-)
+FACEBOOK_APP_ID             = '249501395190918'
+FACEBOOK_API_SECRET         = 'd495906733abc31181b4d57073a0f7b2'
 
-ANONYMOUS_USER_ID = -1
-
-AUTH_PROFILE_MODULE = 'hackaglobal.UserProfile'
-
-SOCIAL_AUTH_FACEBOOK_KEY              = '249501395190918'
-SOCIAL_AUTH_FACEBOOK_SECRET          = 'd495906733abc31181b4d57073a0f7b2'
-
-DISQUS_API_KEY = '6z7keq1mHdAS68b4Rq6Z4SnwyhWHxprrjqFQtYZK0wofnCRtS4MyjfQIjUI0sT0V'
-DISQUS_WEBSITE_SHORTNAME = 'Sokar'
-
-SITE_ID=1
-
-SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
-
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+SOCIAL_AUTH_USER_MODEL = AUTH_PROFILE_MODULE

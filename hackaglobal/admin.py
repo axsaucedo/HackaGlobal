@@ -1,5 +1,6 @@
 from django.contrib.admin import site, ModelAdmin
-from hackaglobal.models import Event, Attendee, Staff
+from hackaglobal.models import Event, Attendee, Staff, HackaCity, HackaContainer
+from accounts.models import UserProfile
 
 def tags(instance):
     tags = instance.tags.names()
@@ -10,5 +11,11 @@ class EventAdmin(ModelAdmin):
 
 
 site.register(Event, EventAdmin)
+
 site.register(Attendee)
 site.register(Staff)
+
+site.register(UserProfile)
+
+site.register(HackaCity)
+site.register(HackaContainer)

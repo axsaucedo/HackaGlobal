@@ -115,6 +115,9 @@ def getTags(request, tags):
 handler404 = 'hackaglobal.views.handler404'
 
 urlpatterns = patterns('',
+
+    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
+
     url(r'^data/$', EventList.as_view()),
     url(r'^data/(?P<country>.+)(/(?P<city>.+))?/$', EventFilteredList.as_view()),
     url(r'^event/(?P<pk>[0-9]+)/$', EventDetail.as_view()),

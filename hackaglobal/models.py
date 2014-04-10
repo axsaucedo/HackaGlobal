@@ -93,13 +93,32 @@ class HackaCity(models.Model):
     communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
-#class City(models.Model):
-#    name = models.CharField(max_length=35)
-#    country_code = models.CharField(max_length=3)
-#    district = models.CharField(max_length=20)
-#    population = models.IntegerField(max_length=11, default=0)
-#
-#class Country(models.Model):
-#    code = models.CharField(max_length=3, primary_key=True)
-#    name = models.CharField(max_length=52)
-#    continent
+class Cities(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=35L)
+    country_code = models.CharField(max_length=3L)
+    district = models.CharField(max_length=20L)
+    population = models.IntegerField()
+
+class Countries(models.Model):
+    code = models.CharField(max_length=3L, primary_key=True)
+    name = models.CharField(max_length=52L)
+    continent = models.CharField(max_length=13L)
+    region = models.CharField(max_length=26L)
+    surface_area = models.FloatField()
+    independence_year = models.IntegerField(null=True, blank=True)
+    population = models.IntegerField()
+    life_expectancy = models.FloatField(null=True, blank=True)
+    gnp = models.FloatField(null=True, blank=True)
+    gnp_old = models.FloatField(null=True, blank=True)
+    local_name = models.CharField(max_length=45L)
+    government_form = models.CharField(max_length=45L)
+    head_of_state = models.CharField(max_length=60L, blank=True)
+    capital = models.IntegerField(null=True, blank=True)
+    code2 = models.CharField(max_length=2L)
+
+class Languages(models.Model):
+    country_code = models.CharField(max_length=)
+    language = models.CharField(max_length=30)
+    official = models.CharField(max_length=1)
+    percentage = models.FloatField()

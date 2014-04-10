@@ -1,48 +1,6 @@
--- MySQL dump 10.11
---
--- to install this database, from a terminal, type:
--- mysql -u USERNAME -p -h SERVERNAME world < world.sql
---
--- Host: localhost    Database: world
--- ------------------------------------------------------
--- Server version   5.0.45-log
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
-/*!40103 SET TIME_ZONE='+00:00' */;
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-
-/* DROP DATABASE IF EXISTS world;
-CREATE DATABASE world;
-USE world; */
-
---
--- Table structure for table `cities`
---
-
-DROP TABLE IF EXISTS `cities`;
-CREATE TABLE `cities` (
-  `id` int(11) NOT NULL auto_increment,
-  `name` char(35) NOT NULL default '',
-  `country_code` char(3) NOT NULL default '',
-  `district` char(20) NOT NULL default '',
-  `population` int(11) NOT NULL default '0',
-  PRIMARY KEY  (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `cities`
---
-
-LOCK TABLES `cities` WRITE;
-/*!40000 ALTER TABLE `cities` DISABLE KEYS */;
-INSERT INTO `cities` VALUES (1,'Kabul','AFG','Kabol',1780000),
+INSERT INTO `hackaglobal_cities` VALUES 
+(1,'Kabul','AFG','Kabol',1780000),
 (2,'Qandahar','AFG','Qandahar',237500),
 (3,'Herat','AFG','Herat',186800),
 (4,'Mazar-e-Sharif','AFG','Balkh',127800),
@@ -4121,40 +4079,12 @@ INSERT INTO `cities` VALUES (1,'Kabul','AFG','Kabol',1780000),
 (4077,'Jabaliya','PSE','North Gaza',113901),
 (4078,'Nablus','PSE','Nablus',100231),
 (4079,'Rafah','PSE','Rafah',92020);
-/*!40000 ALTER TABLE `cities` ENABLE KEYS */;
-UNLOCK TABLES;
 
---
--- Table structure for table `countries`
---
+-- --
+-- -- Dumping data for table `countries`
+-- --
 
-DROP TABLE IF EXISTS `countries`;
-CREATE TABLE `countries` (
-  `code` char(3) NOT NULL default '',
-  `name` char(52) NOT NULL default '',
-  `continent` enum('Asia','Europe','North America','Africa','Oceania','Antarctica','South America') NOT NULL default 'Asia',
-  `region` char(26) NOT NULL default '',
-  `surface_area` float(10,2) NOT NULL default '0.00',
-  `independence_year` smallint(6) default NULL,
-  `population` int(11) NOT NULL default '0',
-  `life_expectancy` float(3,1) default NULL,
-  `gnp` float(10,2) default NULL,
-  `gnp_old` float(10,2) default NULL,
-  `local_name` char(45) NOT NULL default '',
-  `government_form` char(45) NOT NULL default '',
-  `head_of_state` char(60) default NULL,
-  `capital` int(11) default NULL,
-  `code2` char(2) NOT NULL default '',
-  PRIMARY KEY  (`code`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `countries`
---
-
-LOCK TABLES `countries` WRITE;
-/*!40000 ALTER TABLE `countries` DISABLE KEYS */;
-INSERT INTO `countries` VALUES ('AFG','Afghanistan','Asia','Southern and Central Asia',652090.00,1919,22720000,45.9,5976.00,NULL,'Afganistan/Afqanestan','Islamic Emirate','Mohammad Omar',1,'AF'),
+INSERT INTO `hackaglobal_countries` VALUES ('AFG','Afghanistan','Asia','Southern and Central Asia',652090.00,1919,22720000,45.9,5976.00,NULL,'Afganistan/Afqanestan','Islamic Emirate','Mohammad Omar',1,'AF'),
 ('NLD','Netherlands','Europe','Western Europe',41526.00,1581,15864000,78.3,371362.00,360478.00,'Nederland','Constitutional Monarchy','Beatrix',5,'NL'),
 ('ANT','Netherlands Antilles','North America','Caribbean',800.00,NULL,217000,74.7,1941.00,NULL,'Nederlandse Antillen','Nonmetropolitan Territory of The Netherlands','Beatrix',33,'AN'),
 ('ALB','Albania','Europe','Southern Europe',28748.00,1912,3401200,71.6,3205.00,2500.00,'ShqipÃ«ria','Republic','Rexhep Mejdani',34,'AL'),
@@ -4393,29 +4323,13 @@ INSERT INTO `countries` VALUES ('AFG','Afghanistan','Asia','Southern and Central
 ('HMD','Heard Island and McDonald Islands','Antarctica','Antarctica',359.00,NULL,0,NULL,0.00,NULL,'Heard and McDonald Islands','Territory of Australia','Elisabeth II',NULL,'HM'),
 ('ATF','French Southern territories','Antarctica','Antarctica',7780.00,NULL,0,NULL,0.00,NULL,'Terres australes franÃ§aises','Nonmetropolitan Territory of France','Jacques Chirac',NULL,'TF'),
 ('UMI','United States Minor Outlying Islands','Oceania','Micronesia/Caribbean',16.00,NULL,0,NULL,0.00,NULL,'United States Minor Outlying Islands','Dependent Territory of the US','George W. Bush',NULL,'UM');
-/*!40000 ALTER TABLE `countries` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `languages`
---
-
-DROP TABLE IF EXISTS `languages`;
-CREATE TABLE `languages` (
-  `country_code` char(3) NOT NULL default '',
-  `language` char(30) NOT NULL default '',
-  `official` enum('T','F') NOT NULL default 'F',
-  `percentage` float(4,1) NOT NULL default '0.0',
-  PRIMARY KEY  (`country_code`,`language`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `languages`
 --
 
-LOCK TABLES `languages` WRITE;
-/*!40000 ALTER TABLE `languages` DISABLE KEYS */;
-INSERT INTO `languages` VALUES ('AFG','Pashto','T',52.4),
+INSERT INTO `hackaglobal_languages` (country_code,language,official,percentage) VALUES 
+('AFG','Pashto','T',52.4),
 ('NLD','Dutch','T',95.6),
 ('ANT','Papiamento','T',86.2),
 ('ALB','Albaniana','T',97.9),
@@ -5399,16 +5313,3 @@ INSERT INTO `languages` VALUES ('AFG','Pashto','T',52.4),
 ('CHN','Dong','F',0.2),
 ('RUS','Belorussian','F',0.3),
 ('USA','Portuguese','F',0.2);
-/*!40000 ALTER TABLE `languages` ENABLE KEYS */;
-UNLOCK TABLES;
-/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
-/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
-/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
-/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
-
--- Dump completed on 2008-06-06 19:04:10

@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/models.py" afterPath="$PROJECT_DIR$/hackacities/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apihg/urls.py" afterPath="$PROJECT_DIR$/apihg/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/cities.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/countries.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/event.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/languages.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backup/hackacities.json" afterPath="$PROJECT_DIR$/backup/hackacities.json" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />

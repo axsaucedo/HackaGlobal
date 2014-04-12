@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/cities.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/countries.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/event.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/languages.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backup/hackacities.json" afterPath="$PROJECT_DIR$/backup/hackacities.json" />
-    </list>
+    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="" />
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397291295061" ignored="false" />

@@ -12,7 +12,7 @@ class Migration(SchemaMigration):
         db.create_table(u'accounts_userprofile', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
             ('user', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['auth.User'], unique=True)),
-            ('photo', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
+            ('photo', self.gf('django.db.models.fields.files.ImageField')(max_length=100, null=True, blank=True)),
         ))
         db.send_create_signal(u'accounts', ['UserProfile'])
 
@@ -26,7 +26,7 @@ class Migration(SchemaMigration):
         u'accounts.userprofile': {
             'Meta': {'object_name': 'UserProfile'},
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'photo': ('django.db.models.fields.files.ImageField', [], {'max_length': '100'}),
+            'photo': ('django.db.models.fields.files.ImageField', [], {'max_length': '100', 'null': 'True', 'blank': 'True'}),
             'user': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['auth.User']", 'unique': 'True'})
         },
         u'auth.group': {

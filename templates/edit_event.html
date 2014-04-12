@@ -48,23 +48,12 @@
                                     {% if debug %}<div class="alert alert-dismissable alert-info">Debug is on, so latitude and longitude are displayed (To disable debug, go to settings.py)</div>{% endif %}
                                     <input id="add-event-form-lat" name="latitude" value="{{ event.latitude }}" {% if not debug %}class="hidden"{% endif %} type="text">
                                     <input id="add-event-form-long" name="longitude" value="{{ event.longitude }}" {% if not debug %}class="hidden"{% endif %} type="text">
+                                    <input id="add-event-form-hackacity" name="hackacity" value="{{ event.hackacity.id }}" {% if not debug %}class="hidden"{% endif %} type="text">
 
                                     <div class="form-group">
                                         <label for="add-event-form-address" class="col-md-3 control-label">Address</label>
                                         <div class="col-md-9">
                                             <input id="add-event-form-address" class="form-control" value="{{ event.address }}" name="address" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="add-event-form-country" class="col-md-3 control-label">Country</label>
-                                        <div class="col-md-9">
-                                            <input id="add-event-form-country" name="country" class="form-control" value="{{ event.country }}" type="text" readonly>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="add-event-form-city" class="col-md-3 control-label">City</label>
-                                        <div class="col-md-9">
-                                            <input id="add-event-form-city" name="city" class="form-control" value="{{ event.city }}" type="text" readonly>
                                         </div>
                                     </div>
                                     <div class="form-group">

@@ -1,12 +1,9 @@
 from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse
-from django.shortcuts import redirect, render_to_response
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.models import User
-from django.template.context import RequestContext
+from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
-from hackaglobal.models import Event, Attendee, Staff
+from hackaglobal.models import Event, Attendee, Staff, Cities, HackaCity
 from django.http import HttpResponseRedirect
 import settings
 
@@ -15,10 +12,11 @@ from hackaglobal.tools.forms import EventCreationForm
 def home(request):
     return render(request, 'index.html')
 
-@login_required(login_url='/login/')
+@login_required(login_url='/accounts/login/')
 def add_event(request):
 
     if request.method =='POST':
+        print request.POST
         form = EventCreationForm(request.POST)
 
         if form.is_valid():
@@ -31,9 +29,11 @@ def add_event(request):
     else:
         form = EventCreationForm()
 
-    return render(request, 'add_event.html', { 'form' : form, 'debug' : False })
+    hackacities = HackaCity.objects.filter(team=request.user)
 
-@login_required(login_url='/login/')
+    return render(request, 'add_event.html', { 'form' : form, 'hackacities' : hackacities })
+
+@login_required(login_url='/accounts/login/')
 def find_events(request):
 
     events = None
@@ -50,9 +50,10 @@ def find_events(request):
 
     return render(request, 'find_events.html', { 'events' : events })
 
-@login_required(login_url='/login/')
+@login_required(login_url='/accounts/login/')
 def manage_events(request):
-    created = Event.objects.filter(creator=request.user)
+    created = Event.objects.filter(hackacity__team=request.user)
+
     attendee_all = Attendee.objects.filter(attendee=request.user)
     attending = []
     for a in attendee_all:
@@ -68,7 +69,7 @@ def edit_event(request, event_id):
     try:
         data['event'] = Event.objects.get(id=event_id)
 
-        if data['event'].creator != request.user:
+        if not data['event'].hackacity.team.filter(id=request.user.id).exists():
             return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': "Oops, we couldn't find the event you were looking for..." })
 
         all_attendees = Attendee.objects.filter(event=event_id)
@@ -86,7 +87,8 @@ def edit_event(request, event_id):
 
             print request.POST['tags']
 
-            if data['form'].is_valid():
+            # Check if form is valid and if the user is part of the event hackacity's team
+            if data['form'].is_valid() and Event.objects.get(id=data['event'].id).hackacity.team.filter(id=request.user.id).exists():
                 event = data['form'].save(commit=False)
                 event.id = data['event'].id
                 event.creator = request.user

@@ -64,12 +64,12 @@ APPEND_SLASH = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = ''
+MEDIA_ROOT = BASE_DIR + '/hackaglobal/media'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
 # Examples: "http://example.com/media/", "http://media.example.com/"
-MEDIA_URL = ''
+MEDIA_URL = '/media/'
 
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
@@ -111,7 +111,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.request',
     'django.core.context_processors.media',
-    'social.apps.django_app.context_processors.login_redirect',
     "hackaglobal.hg_context.in_prod",
 )
 
@@ -168,22 +167,28 @@ REST_FRAMEWORK = {
 AUTH_PROFILE_MODULE = "accounts.UserProfile"
 
 AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-
-    'social_auth.backends.twitter.TwitterBackend',
     'social_auth.backends.facebook.FacebookBackend',
-    'social_auth.backends.google.GoogleOAuthBackend',
-    'social_auth.backends.google.GoogleOAuth2Backend',
-    'social_auth.backends.google.GoogleBackend',
     'social_auth.backends.contrib.linkedin.LinkedinBackend',
     'social_auth.backends.contrib.github.GithubBackend',
     'social_auth.backends.contrib.vk.VKOAuth2Backend',
     'social_auth.backends.OpenIDBackend',
+
     'django.contrib.auth.backends.ModelBackend',
-#    'accounts.pipelines.get_user_avatar',
 )
 
-FACEBOOK_APP_ID             = '249501395190918'
-FACEBOOK_API_SECRET         = 'd495906733abc31181b4d57073a0f7b2'
+SOCIAL_AUTH_PIPELINE = (
+    'social_auth.backends.pipeline.social.social_auth_user',
+    'social_auth.backends.pipeline.user.get_username',
+    'social_auth.backends.pipeline.user.create_user',
+    'social_auth.backends.pipeline.social.associate_user',
+    'social_auth.backends.pipeline.social.load_extra_data',
+    'social_auth.backends.pipeline.user.update_user_details',
+    'accounts.pipelines.get_user_avatar',
+)
 
-SOCIAL_AUTH_USER_MODEL = AUTH_PROFILE_MODULE
+FACEBOOK_EXTENDED_PERMISSIONS = ['email']
+
+FACEBOOK_APP_ID             = '1471335216431010'
+FACEBOOK_API_SECRET         = '1f04b9e0639b57e7ce167ada194baab0'
+
+SOCIAL_AUTH_ENABLED_BACKENDS = ('facebook',)

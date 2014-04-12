@@ -28,25 +28,32 @@ CONTAINER_TYPE_CHOICES = (
 
 # TODO add sponsors!!
 class Event(models.Model):
-    creator = models.ForeignKey(User, unique=False)
+    hackacity = models.ForeignKey('HackaCity')
     name = models.CharField(_("Event Name"), max_length=50)
     description = models.TextField(_("Event Description"), null=True, blank=True)
     address = models.CharField(max_length=100)
-    country = models.CharField(max_length=50)
-    city = models.CharField(max_length=50)
-    zip = models.CharField(max_length=10)
-    latitude = models.FloatField()
-    longitude = models.FloatField()
+    zip = models.CharField(max_length=10, null=True, blank=True)
+    latitude = models.FloatField(null=True, blank=True)
+    longitude = models.FloatField(null=True, blank=True)
     website = models.URLField(null=True, blank=True)
     start = models.DateTimeField()
     end = models.DateTimeField(null=True, blank=True)
     tags = TaggableManager()
 
+    created = models.DateTimeField(auto_now=True)
+
+    def get_city(self):
+        return self.hackacity.city.name
+
     def get_address_array(self):
-        return [ self.address, self.country, self.city, self.zip ]
+        return [ self.address, self.hackacity.city.country_code, self.hackacity.city, self.zip ]
 
     def get_short_address(self):
-        return self.zip + " " + self.city + ", " + self.country
+        return self.zip + " " + self.hackacity.city.name + ", " + self.hackacity.city.country_code
+
+    def get_tags(self):
+        tags = self.tags.names()
+        return ', '.join(tags)
 
     def get_creator(self):
         return self.creator
@@ -76,15 +83,8 @@ class HackaContainer(models.Model):
 
     type = models.CharField(max_length=1, choices=CONTAINER_TYPE_CHOICES, default='C')
 
-class Cities(models.Model):
-    id = models.IntegerField(primary_key=True)
-    name = models.CharField(max_length=35L)
-    country_code = models.CharField(max_length=3L)
-    district = models.CharField(max_length=20L)
-    population = models.IntegerField()
-
 class HackaCity(models.Model):
-    lead = models.ForeignKey(User, related_name="lead_of", unique=True)
+    lead = models.ForeignKey(User, related_name="lead_of")
     team = models.ManyToManyField(User, related_name="team_of", null=True, blank=True)
     member = models.ManyToManyField(User, related_name="member_of", null=True, blank=True)
 
@@ -93,11 +93,24 @@ class HackaCity(models.Model):
     name = models.CharField(max_length=25)
     short_description = models.CharField(max_length=200)
     about = models.TextField()
-    city = models.OneToOneField(Cities)
+    city = models.OneToOneField('Cities')
 
     sponsors = models.ForeignKey(HackaContainer, related_name="sponsor_of", null=True, blank=True)
     communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
+
+    def __unicode__(self):
+        return self.city.name
+
+class Cities(models.Model):
+    id = models.IntegerField(primary_key=True)
+    name = models.CharField(max_length=35L)
+    country_code = models.CharField(max_length=3L)
+    district = models.CharField(max_length=20L)
+    population = models.IntegerField()
+
+    def __unicode__(self):
+        return self.name
 
 class Countries(models.Model):
     code = models.CharField(max_length=3L, primary_key=True)
@@ -116,8 +129,14 @@ class Countries(models.Model):
     capital = models.IntegerField(null=True, blank=True)
     code2 = models.CharField(max_length=2L)
 
+    def __unicode__(self):
+        return self.name
+
 class Languages(models.Model):
     country_code = models.CharField(max_length=3)
     language = models.CharField(max_length=30)
     official = models.CharField(max_length=1)
     percentage = models.FloatField()
+
+    def __unicode__(self):
+        return self.language

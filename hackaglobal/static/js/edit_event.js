@@ -1,5 +1,19 @@
 var edit_event = {
     init : function() {
+        $("#find-location-button").bind("click", function lookupGeoData() {
+            console.log("here");
+            myGeoPositionGeoPicker({
+                startAddress     : 'White House, Washington',
+                returnFieldMap   : {
+                    'add-event-form-lat' : '<LAT>',
+                    'add-event-form-long' : '<LNG>',
+//                    'add-event-form-city' : '<CITY>',
+//                    'add-event-form-country' : '<COUNTRY>',
+                    'add-event-form-zip' : ' <ZIP>',
+                    'add-event-form-address' : '<ADDRESS>'
+                }
+            });
+        });
 
         // Check if browser supports image upload
         if (window.File && window.FileReader && window.FileList && window.Blob) {

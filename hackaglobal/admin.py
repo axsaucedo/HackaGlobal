@@ -2,12 +2,12 @@ from django.contrib.admin import site, ModelAdmin
 from hackaglobal.models import Event, Attendee, Staff, HackaCity, HackaContainer
 from accounts.models import UserProfile
 
-def tags(instance):
-    tags = instance.tags.names()
-    return ', '.join(tags)
+
+class HackaCityAdmin(ModelAdmin):
+    list_display = ['city', 'lead', 'name', 'short_description']
 
 class EventAdmin(ModelAdmin):
-    list_display = ['name', 'description', 'creator', 'latitude', 'longitude', 'start', 'end', 'get_short_address', tags]
+    list_display = ['name', 'description', 'latitude', 'longitude', 'start', 'end', 'get_city', 'get_tags']
 
 
 site.register(Event, EventAdmin)
@@ -17,5 +17,5 @@ site.register(Staff)
 
 site.register(UserProfile)
 
-site.register(HackaCity)
+site.register(HackaCity, HackaCityAdmin)
 site.register(HackaContainer)

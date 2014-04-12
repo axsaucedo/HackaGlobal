@@ -3,7 +3,7 @@ from django.contrib.auth import login
 from django.contrib.auth.models import User
 from django.template.context import RequestContext
 from django.contrib.auth.decorators import login_required
-from hackaglobal.models import Event, Attendee
+from hackaglobal.models import Event, Attendee, HackaCity
 from django.core.mail import send_mail
 
 from hackaglobal.tools.forms import EFUserEditForm, EFPasswordChangeForm, EFUserCreationForm
@@ -28,7 +28,7 @@ def signup(request):
     else:
         form = EFUserCreationForm() # An unbound form
 
-    return render_to_response('signup.html', { 'form': form, }, context_instance=RequestContext(request))
+    return render_to_response('accounts/signup.html', { 'form': form, }, context_instance=RequestContext(request))
 
 def apply(request):
     if request.method =='POST':
@@ -50,21 +50,21 @@ def apply(request):
 
 
 
-    return render_to_response('apply.html', {}, context_instance=RequestContext(request))
+    return render_to_response('accounts/apply.html', {}, context_instance=RequestContext(request))
 
 def view_account(request, username):
 
     user = User.objects.get(username=username)
 
-    created = Event.objects.filter(creator=user)
+    hackacities = HackaCity.objects.filter(team=request.user)
     attendee_all = Attendee.objects.filter(attendee=user)
     attending = []
     for a in attendee_all:
         attending.append(a.event)
 
-    return render_to_response('community_view.html', { 'created': created, 'attending': attending, 'otheruser' : user }, context_instance=RequestContext(request))
+    return render_to_response('accounts/account_view.html', { 'hackacities': hackacities, 'attending': attending, 'otheruser' : user }, context_instance=RequestContext(request))
 
-@login_required(login_url='/login/')
+@login_required(login_url='/accounts/login/')
 def edit_account(request):
 
     if request.method == "POST":
@@ -79,9 +79,9 @@ def edit_account(request):
     else:
         form = EFUserEditForm(user=request.user)
 
-    return render_to_response('account_edit.html', { 'form': form, }, context_instance=RequestContext(request))
+    return render_to_response('accounts/account_edit.html', { 'form': form, }, context_instance=RequestContext(request))
 
-@login_required(login_url='/login/')
+@login_required(login_url='/accounts/login/')
 def edit_password(request):
 
     if request.method == "POST":
@@ -96,4 +96,4 @@ def edit_password(request):
     else:
         form = EFPasswordChangeForm(user=request.user)
 
-    return render_to_response('account_edit_password.html', { 'form': form, }, context_instance=RequestContext(request))
+    return render_to_response('accounts/account_edit_password.html', { 'form': form, }, context_instance=RequestContext(request))

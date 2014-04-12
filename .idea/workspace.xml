@@ -2,14 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/media/profiles/placeholder.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/hackacity/community_view.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layouts/hackacity.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/0002_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sqlite3-to-mysql.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/account_edit.html" afterPath="$PROJECT_DIR$/templates/accounts/account_edit.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/account_edit_password.html" afterPath="$PROJECT_DIR$/templates/accounts/account_edit_password.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/apply.html" afterPath="$PROJECT_DIR$/templates/accounts/apply.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/community_view.html" afterPath="$PROJECT_DIR$/templates/accounts/account_view.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/login.html" afterPath="$PROJECT_DIR$/templates/accounts/login.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/signup.html" afterPath="$PROJECT_DIR$/templates/accounts/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/hackaglobal/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/add_event.html" afterPath="$PROJECT_DIR$/templates/add_event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/js/add_event.js" afterPath="$PROJECT_DIR$/hackaglobal/static/js/add_event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/admin.py" afterPath="$PROJECT_DIR$/hackaglobal/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/css/base.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/edit_event.html" afterPath="$PROJECT_DIR$/templates/edit_event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" afterPath="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/tools/forms.py" afterPath="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/css/manage.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/manage.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/pipelines.py" afterPath="$PROJECT_DIR$/accounts/pipelines.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/urls.py" afterPath="$PROJECT_DIR$/accounts/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/views.py" afterPath="$PROJECT_DIR$/accounts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/views.py" afterPath="$PROJECT_DIR$/hackaglobal/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397071657400" ignored="false" />
-    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397152205152" ignored="false" />
-    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397124375216" ignored="false" />
-    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397160153992" ignored="false" />
+    <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397291295061" ignored="false" />
+    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397229690344" ignored="false" />
+    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227812928" ignored="false" />
+    <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397238227516" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/app.yaml" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -20,18 +52,18 @@
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/djangoappengine/settings_base.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="/manage.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683572675" ignored="false" />
-    <file path="/admin.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397153921273" ignored="false" />
+    <file path="/admin.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397211465332" ignored="false" />
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396795601453" ignored="false" />
-    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397165158545" ignored="false" />
-    <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397032566787" ignored="false" />
-    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397032252655" ignored="false" />
-    <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397039271499" ignored="false" />
+    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397238092887" ignored="false" />
+    <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397231956895" ignored="false" />
+    <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227835785" ignored="false" />
+    <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227749382" ignored="false" />
     <file path="/index.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396995006078" ignored="false" />
     <file path="/home.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396693377659" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396702391925" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396745699885" ignored="false" />
     <file path="$PROJECT_DIR$/../tmpHackaGlobal/hackaglobal/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396714840536" ignored="false" />
-    <file path="/edit_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397037909820" ignored="false" />
+    <file path="/edit_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397223609524" ignored="false" />
     <file path="/view_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397124466911" ignored="false" />
     <file path="$PROJECT_DIR$/../carsharehack/templates/carshare/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396748439712" ignored="false" />
     <file path="/base.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396997345698" ignored="false" />
@@ -39,10 +71,10 @@
     <file path="/script.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396995997947" ignored="false" />
     <file path="/common.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396751159017" ignored="false" />
     <file path="/concept.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396974212634" ignored="false" />
-    <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396766063273" ignored="false" />
-    <file path="/login.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396770637781" ignored="false" />
-    <file path="/signup.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396770934548" ignored="false" />
-    <file path="/apply.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396775492154" ignored="false" />
+    <file path="/add_event.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397219828988" ignored="false" />
+    <file path="/login.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397229887243" ignored="false" />
+    <file path="/signup.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227848769" ignored="false" />
+    <file path="/apply.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227820662" ignored="false" />
     <file path="/countrylist.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396776063594" ignored="false" />
     <file path="/screen.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397123050279" ignored="false" />
     <file path="/ef_tags.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979984891" ignored="false" />
@@ -55,8 +87,15 @@
     <file path="/base.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397038154444" ignored="false" />
     <file path="/edit_event.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397039574281" ignored="false" />
     <file path="/__dummy.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397043739345" ignored="false" />
-    <file path="/account_view.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397137570554" ignored="false" />
-    <file path="/pipelines.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397146132481" ignored="false" />
+    <file path="/account_view.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227118241" ignored="false" />
+    <file path="/pipelines.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397292791211" ignored="false" />
+    <file path="/0007_auto__del_field_event_creator__add_field_event_hackacity.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397233438675" ignored="false" />
+    <file path="/forms.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397213265688" ignored="false" />
+    <file path="/add_event.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397220357637" ignored="false" />
+    <file path="/manage_events.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397224314139" ignored="false" />
+    <file path="/profile_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397226345688" ignored="false" />
+    <file path="/community.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227034155" ignored="false" />
+    <file path="/hackacity.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227230434" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,81 +154,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
+      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/accounts/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="28" selection-start="164" selection-end="174" vertical-scroll-proportion="-1.7307693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="50" selection-start="2343" selection-end="2343" vertical-scroll-proportion="-10.653846">
-              <folding>
-                <element signature="e#0#57#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="35" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/accounts/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="43" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="80" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+            <state line="43" column="62" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+        <entry file="file://$PROJECT_DIR$/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="98" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.9285714">
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0002_initial.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/migrations/0002_initial.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="17" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
+            <state line="9" column="54" selection-start="408" selection-end="408" vertical-scroll-proportion="0.2857143">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.py">
+      <file leaf-file-name="account_view.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/accounts/account_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="28" selection-start="5330" selection-end="5330" vertical-scroll-proportion="-8.807693">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.5">
               <folding />
             </state>
           </provider>
@@ -198,10 +184,39 @@
       <file leaf-file-name="pipelines.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="51" selection-start="799" selection-end="799" vertical-scroll-proportion="-8.807693">
+            <state line="22" column="25" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#57#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="104" column="27" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="185" column="39" selection-start="5418" selection-end="5418" vertical-scroll-proportion="-7.076923">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="11" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -231,22 +246,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hackaglobal/static/js/edit_event.js" />
-        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
-        <option value="$PROJECT_DIR$/templates/view_event.html" />
-        <option value="$PROJECT_DIR$/templates/account_view.html" />
-        <option value="$PROJECT_DIR$/apihg/urls.py" />
-        <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/views.py" />
-        <option value="$PROJECT_DIR$/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
         <option value="$PROJECT_DIR$/accounts/views.py" />
-        <option value="$PROJECT_DIR$/accounts/models.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/views.py" />
+        <option value="$PROJECT_DIR$/templates/apply.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/migrations/0002_auto__add_field_userprofile_username__add_field_userprofile_last_login.py" />
+        <option value="$PROJECT_DIR$/templates/accounts/signup.html" />
+        <option value="$PROJECT_DIR$/templates/accounts/login.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/migrations/0007_auto__del_field_event_creator__add_field_event_hackacity.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/migrations/0010_auto__chg_field_event_created.py" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/accounts/pipelines.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/migrations/0002_initial.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
       </list>
     </option>
   </component>
@@ -283,6 +298,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,39 +341,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="apihg" />
+              <option name="myItemId" value="accounts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -377,7 +365,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -401,18 +388,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/hackaglobal/static/home/css/fonts" />
-      <recent name="$PROJECT_DIR$/hackaglobal/static/home/css" />
-      <recent name="$PROJECT_DIR$/static/css/fonts" />
+      <recent name="$PROJECT_DIR$/templates/layouts" />
+      <recent name="$PROJECT_DIR$/hackaglobal/media/profiles" />
+      <recent name="$PROJECT_DIR$/templates/community" />
+      <recent name="$PROJECT_DIR$/templates/accounts" />
       <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/hackaglobal/static/home/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/accounts" />
+      <recent name="$PROJECT_DIR$/templates/community" />
       <recent name="$PROJECT_DIR$/hackaglobal/static/home/img" />
       <recent name="$PROJECT_DIR$/website" />
       <recent name="$PROJECT_DIR$/hackaglobal" />
-      <recent name="$PROJECT_DIR$/templates" />
-      <recent name="$PROJECT_DIR$/eventsfinder" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.hackaglobal">
@@ -659,22 +646,22 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.68501526" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3149847" sideWeight="0.50405186" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3149847" sideWeight="0.50729334" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.110210694" sideWeight="0.68501526" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.49027553" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3149847" sideWeight="0.48703402" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -738,89 +725,102 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+    <entry file="file://$PROJECT_DIR$/templates/accounts/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="18" selection-start="3364" selection-end="3364" vertical-scroll-proportion="0.03685504">
+        <state line="43" column="62" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/hg_context.py">
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apihg/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0023809525">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="118" selection-end="118" vertical-scroll-proportion="0.10714286">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="21" selection-start="110" selection-end="110" vertical-scroll-proportion="0.035714287">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/community_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="23" selection-start="266" selection-end="266" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="35" selection-start="322" selection-end="322" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="50" selection-start="2343" selection-end="2343" vertical-scroll-proportion="-10.653846">
-          <folding>
-            <element signature="e#0#57#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="28" selection-start="164" selection-end="174" vertical-scroll-proportion="-1.7307693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="80" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+        <state line="22" column="21" selection-start="747" selection-end="764" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="51" selection-start="799" selection-end="799" vertical-scroll-proportion="-8.807693">
+        <state line="30" column="42" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="81" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="43" selection-start="5092" selection-end="5092" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="19" selection-start="324" selection-end="326" vertical-scroll-proportion="0.24193548">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="74" selection-start="688" selection-end="688" vertical-scroll-proportion="0.21551724">
+          <folding>
+            <element signature="e#405#429#0" expanded="true" />
+            <element signature="e#591#612#0" expanded="true" />
+            <element signature="e#1416#1445#0" expanded="true" />
+            <element signature="e#2356#2385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="62" selection-start="2539" selection-end="2539" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="27" selection-start="3517" selection-end="3517" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/media/profiles/df963d23bff34b8a91c97de7eea1228a_p.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/account_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="25" selection-start="831" selection-end="831" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#57#0" expanded="true" />
           </folding>
@@ -829,40 +829,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="28" selection-start="5330" selection-end="5330" vertical-scroll-proportion="-8.807693">
+        <state line="185" column="39" selection-start="5418" selection-end="5418" vertical-scroll-proportion="-7.076923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="11" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="43" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="230" selection-end="230" vertical-scroll-proportion="-3.3538084">
+        <state line="9" column="54" selection-start="408" selection-end="408" vertical-scroll-proportion="0.2857143">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/migrations/0002_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="17" selection-start="3248" selection-end="3248" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="98" selection-start="3458" selection-end="3458" vertical-scroll-proportion="0.9285714">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

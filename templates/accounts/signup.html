@@ -14,7 +14,8 @@
                     <form id="add-event-form" class="form-horizontal" method="POST">
                         {% csrf_token %}
                         <fieldset style="border: none;">
-                            <legend>Please fill in all the required fields.</legend>
+                            <legend>To login with Facebook click <a class="btn btn-primary" href='{% url 'socialauth_begin' 'facebook' %}'>here</a></legend>
+                            <legend>To login with VK click <a class="btn btn-primary" href="{% url 'socialauth_begin' 'vkontakte-oauth2' %}">here</a></legend>
                             {% if form.errors %}
                                 <div class="alert alert-dismissable alert-danger">
                                     {{ form.errors }}
@@ -61,7 +62,7 @@
                                 </div>
                             </div>
 
-                            <input type="hidden" name="next" value="/login/" />
+                            <input type="hidden" name="next" value="/accounts/login/" />
                         </fieldset>
                     </form>
                 </div>

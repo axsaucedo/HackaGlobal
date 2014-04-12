@@ -5,6 +5,16 @@ body {
     color: black !important;
 }
 
+.panel-body {
+    padding: 0px 0px 0px 0px;
+    height: 360px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#manage-events a {
+    color: orange !important;
+}
+
 #wrap {
     min-height: 100%;
     height: auto !important;

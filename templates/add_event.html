@@ -32,6 +32,19 @@
                                 {{ form.errors }}
                             </div>
                         {% endif %}
+
+                        <div class="form-group">
+                            <label for="add-event-form-hackacity" class="col-md-3 control-label">HackaCity</label>
+                            <div class="col-md-9">
+                                <input id="add-event-form-hackacity" name="hackacity" class="form-control hidden" type="text" placeholder="Required">
+                                <select id="add-event-form-hackacity-select" class="form-control">
+                                    {% for hackacity in hackacities %}
+                                        <option data-value="{{ hackacity.pk }}">{{ hackacity.city.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="form-group">
                             <label for="add-event-form-name" class="col-md-3 control-label">Event Name</label>
                             <div class="col-md-9">
@@ -61,18 +74,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="add-event-form-country" class="col-md-3 control-label">Country</label>
-                                    <div class="col-md-9">
-                                        <input id="add-event-form-country" name="country" class="form-control" type="text">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="add-event-form-city" class="col-md-3 control-label">City</label>
-                                    <div class="col-md-9">
-                                        <input id="add-event-form-city" name="city" class="form-control" type="text">
-                                    </div>
-                                </div>
-                                <div class="form-group">
                                     <label for="add-event-form-zip" class="col-md-3 control-label">Zip Code</label>
                                     <div class="col-md-9">
                                         <input id="add-event-form-zip" name="zip" class="form-control" type="text">
@@ -81,6 +82,8 @@
                             </fieldset>
                         </div>
 
+                        <br>
+                        <legend></legend>
                         <div class="form-group">
                             <label for="add-event-form-website" class="col-md-3 control-label">Website</label>
                             <div class="col-md-9" style="padding-bottom: 20px;">

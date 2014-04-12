@@ -14,7 +14,6 @@ class EventCreationForm(forms.ModelForm):
 
     class Meta:
         model = Event
-        exclude = ['creator']
 
     def clean_start(self):
         start_date = self.cleaned_data.get("start")

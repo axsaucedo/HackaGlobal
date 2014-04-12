@@ -1,0 +1,25 @@
+<a href="/hackacity/view/{{ hackacity.id }}">
+<div style="color: black" class="event-container">
+    <div class="row">
+        <div style="color: orange" class="col-md-5">
+            <strong>{{ hackacity.name|truncatechars:20 }}</strong>
+        </div>
+{#        <div class="col-md-7">#}
+{#            <div class="col-md-6">#}
+{#                {{ event.start|date:"d/m/y H:i" }}#}
+{#            </div>#}
+{#            <div class="col-md-6">#}
+{#                {{ event.end|date:"H:i d/m/y" }}#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+    <div class="row">
+        <div class="col-md-7">
+            {{ hackacity.about|truncatechars:50 }}
+        </div>
+        <div class="col-md-5">
+            {{ hackacity.city }}
+        </div>
+    </div>
+</div>
+</a>

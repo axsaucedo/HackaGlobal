@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url, include
-from settings import STATIC_ROOT
+from settings import STATIC_ROOT, MEDIA_ROOT
 
 from django.contrib import admin
 admin.autodiscover()
@@ -9,11 +9,14 @@ handler404 = 'hackaglobal.views.handler404'
 
 urlpatterns = patterns('',
 
-    #Login and API
+    #My Apps
     url(r'^api/', include('apihg.urls')),
-    url(r'', include('social_auth.urls')),
-    url(r'', include('accounts.urls')),
+    url(r'accounts/', include('accounts.urls')),
     url(r'', include('hackaglobal.urls')),
+
+
+    #External Apps
+    url(r'', include('social_auth.urls')),
 
 
     #Admin
@@ -22,5 +25,6 @@ urlpatterns = patterns('',
 
     #Static files
     (r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT}),
+    (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': MEDIA_ROOT}),
 
 )

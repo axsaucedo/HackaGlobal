@@ -7,8 +7,8 @@ var add_event = {
                 returnFieldMap   : {
                     'add-event-form-lat' : '<LAT>',
                     'add-event-form-long' : '<LNG>',
-                    'add-event-form-city' : '<CITY>',
-                    'add-event-form-country' : '<COUNTRY>',
+//                    'add-event-form-city' : '<CITY>',
+//                    'add-event-form-country' : '<COUNTRY>',
                     'add-event-form-zip' : ' <ZIP>',
                     'add-event-form-address' : '<ADDRESS>'
                 }
@@ -26,9 +26,14 @@ var add_event = {
             var tags = getTags($('#add-event-tag-bar').tagit('tags'));
             $("#add-event-tags").attr("value", tags);
 
+
+            var value = $("#add-event-form-hackacity-select option:selected").attr("data-value");
+            $("#add-event-form-hackacity").val(value);
         });
 
         function getTags(tags) {
+            if(!tags.length) return;
+
             var string = tags[0].value;
             for (var i in tags) {
                 if (i == 0) continue;

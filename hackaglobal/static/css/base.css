@@ -5,6 +5,12 @@ body {
     color: black !important;
 }
 
+@font-face {
+    font-family: "Levenim";
+    src:    url('fonts/levenim.ttf') format('truetype');
+}
+
+
 .panel-body {
     padding: 0px 0px 0px 0px;
     height: 360px;
@@ -19,8 +25,6 @@ body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
 }
 
 #nav-bar-logo {
@@ -29,7 +33,7 @@ body {
 }
 
 #content {
-    padding-top: 60px;
+    padding-top: 50px;
 }
 #content a {
     color: #87ceeb;

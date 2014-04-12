@@ -3,7 +3,8 @@ from django.contrib.auth.forms import UserCreationForm
 from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
-from hackaglobal.models import Event, Attendee, Staff, Cities, HackaCity
+from hackaglobal.models import Event, Attendee, Staff
+from hackacities.models import Cities, HackaCity
 from django.http import HttpResponseRedirect
 import settings
 

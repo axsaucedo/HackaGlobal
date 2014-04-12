@@ -11,7 +11,7 @@ class Migration(SchemaMigration):
         # Adding model 'Event'
         db.create_table(u'hackaglobal_event', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('hackacity', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['hackaglobal.HackaCity'])),
+            ('hackacity', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['hackacities.HackaCity'])),
             ('name', self.gf('django.db.models.fields.CharField')(max_length=50)),
             ('description', self.gf('django.db.models.fields.TextField')(null=True, blank=True)),
             ('address', self.gf('django.db.models.fields.CharField')(max_length=100)),
@@ -47,90 +47,6 @@ class Migration(SchemaMigration):
         ))
         db.send_create_signal(u'hackaglobal', ['Staff'])
 
-        # Adding model 'HackaContainer'
-        db.create_table(u'hackaglobal_hackacontainer', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('title', self.gf('django.db.models.fields.CharField')(max_length=50)),
-            ('description', self.gf('django.db.models.fields.CharField')(max_length=200)),
-            ('photo', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
-            ('url', self.gf('django.db.models.fields.URLField')(max_length=200)),
-            ('type', self.gf('django.db.models.fields.CharField')(default='C', max_length=1)),
-        ))
-        db.send_create_signal(u'hackaglobal', ['HackaContainer'])
-
-        # Adding model 'HackaCity'
-        db.create_table(u'hackaglobal_hackacity', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('lead', self.gf('django.db.models.fields.related.ForeignKey')(related_name='lead_of', to=orm['auth.User'])),
-            ('photo', self.gf('django.db.models.fields.files.ImageField')(max_length=100)),
-            ('name', self.gf('django.db.models.fields.CharField')(max_length=25)),
-            ('short_description', self.gf('django.db.models.fields.CharField')(max_length=200)),
-            ('about', self.gf('django.db.models.fields.TextField')()),
-            ('city', self.gf('django.db.models.fields.related.OneToOneField')(to=orm['hackaglobal.Cities'], unique=True)),
-            ('sponsors', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='sponsor_of', null=True, to=orm['hackaglobal.HackaContainer'])),
-            ('communities', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='community_of', null=True, to=orm['hackaglobal.HackaContainer'])),
-            ('partners', self.gf('django.db.models.fields.related.ForeignKey')(blank=True, related_name='partner_of', null=True, to=orm['hackaglobal.HackaContainer'])),
-        ))
-        db.send_create_signal(u'hackaglobal', ['HackaCity'])
-
-        # Adding M2M table for field team on 'HackaCity'
-        m2m_table_name = db.shorten_name(u'hackaglobal_hackacity_team')
-        db.create_table(m2m_table_name, (
-            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('hackacity', models.ForeignKey(orm[u'hackaglobal.hackacity'], null=False)),
-            ('user', models.ForeignKey(orm[u'auth.user'], null=False))
-        ))
-        db.create_unique(m2m_table_name, ['hackacity_id', 'user_id'])
-
-        # Adding M2M table for field member on 'HackaCity'
-        m2m_table_name = db.shorten_name(u'hackaglobal_hackacity_member')
-        db.create_table(m2m_table_name, (
-            ('id', models.AutoField(verbose_name='ID', primary_key=True, auto_created=True)),
-            ('hackacity', models.ForeignKey(orm[u'hackaglobal.hackacity'], null=False)),
-            ('user', models.ForeignKey(orm[u'auth.user'], null=False))
-        ))
-        db.create_unique(m2m_table_name, ['hackacity_id', 'user_id'])
-
-        # Adding model 'Cities'
-        db.create_table(u'hackaglobal_cities', (
-            ('id', self.gf('django.db.models.fields.IntegerField')(primary_key=True)),
-            ('name', self.gf('django.db.models.fields.CharField')(max_length=35L)),
-            ('country_code', self.gf('django.db.models.fields.CharField')(max_length=3L)),
-            ('district', self.gf('django.db.models.fields.CharField')(max_length=20L)),
-            ('population', self.gf('django.db.models.fields.IntegerField')()),
-        ))
-        db.send_create_signal(u'hackaglobal', ['Cities'])
-
-        # Adding model 'Countries'
-        db.create_table(u'hackaglobal_countries', (
-            ('code', self.gf('django.db.models.fields.CharField')(max_length=3L, primary_key=True)),
-            ('name', self.gf('django.db.models.fields.CharField')(max_length=52L)),
-            ('continent', self.gf('django.db.models.fields.CharField')(max_length=13L)),
-            ('region', self.gf('django.db.models.fields.CharField')(max_length=26L)),
-            ('surface_area', self.gf('django.db.models.fields.FloatField')()),
-            ('independence_year', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
-            ('population', self.gf('django.db.models.fields.IntegerField')()),
-            ('life_expectancy', self.gf('django.db.models.fields.FloatField')(null=True, blank=True)),
-            ('gnp', self.gf('django.db.models.fields.FloatField')(null=True, blank=True)),
-            ('gnp_old', self.gf('django.db.models.fields.FloatField')(null=True, blank=True)),
-            ('local_name', self.gf('django.db.models.fields.CharField')(max_length=45L)),
-            ('government_form', self.gf('django.db.models.fields.CharField')(max_length=45L)),
-            ('head_of_state', self.gf('django.db.models.fields.CharField')(max_length=60L, blank=True)),
-            ('capital', self.gf('django.db.models.fields.IntegerField')(null=True, blank=True)),
-            ('code2', self.gf('django.db.models.fields.CharField')(max_length=2L)),
-        ))
-        db.send_create_signal(u'hackaglobal', ['Countries'])
-
-        # Adding model 'Languages'
-        db.create_table(u'hackaglobal_languages', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('country_code', self.gf('django.db.models.fields.CharField')(max_length=3)),
-            ('language', self.gf('django.db.models.fields.CharField')(max_length=30)),
-            ('official', self.gf('django.db.models.fields.CharField')(max_length=1)),
-            ('percentage', self.gf('django.db.models.fields.FloatField')()),
-        ))
-        db.send_create_signal(u'hackaglobal', ['Languages'])
-
 
     def backwards(self, orm):
         # Deleting model 'Event'
@@ -141,27 +57,6 @@ class Migration(SchemaMigration):
 
         # Deleting model 'Staff'
         db.delete_table(u'hackaglobal_staff')
-
-        # Deleting model 'HackaContainer'
-        db.delete_table(u'hackaglobal_hackacontainer')
-
-        # Deleting model 'HackaCity'
-        db.delete_table(u'hackaglobal_hackacity')
-
-        # Removing M2M table for field team on 'HackaCity'
-        db.delete_table(db.shorten_name(u'hackaglobal_hackacity_team'))
-
-        # Removing M2M table for field member on 'HackaCity'
-        db.delete_table(db.shorten_name(u'hackaglobal_hackacity_member'))
-
-        # Deleting model 'Cities'
-        db.delete_table(u'hackaglobal_cities')
-
-        # Deleting model 'Countries'
-        db.delete_table(u'hackaglobal_countries')
-
-        # Deleting model 'Languages'
-        db.delete_table(u'hackaglobal_languages')
 
 
     models = {
@@ -201,14 +96,7 @@ class Migration(SchemaMigration):
             'model': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '100'})
         },
-        u'hackaglobal.attendee': {
-            'Meta': {'object_name': 'Attendee'},
-            'attendee': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"}),
-            'event': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['hackaglobal.Event']"}),
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'type': ('django.db.models.fields.CharField', [], {'default': "'A'", 'max_length': '1'})
-        },
-        u'hackaglobal.cities': {
+        u'hackacities.cities': {
             'Meta': {'object_name': 'Cities'},
             'country_code': ('django.db.models.fields.CharField', [], {'max_length': '3L'}),
             'district': ('django.db.models.fields.CharField', [], {'max_length': '20L'}),
@@ -216,55 +104,22 @@ class Migration(SchemaMigration):
             'name': ('django.db.models.fields.CharField', [], {'max_length': '35L'}),
             'population': ('django.db.models.fields.IntegerField', [], {})
         },
-        u'hackaglobal.countries': {
-            'Meta': {'object_name': 'Countries'},
-            'capital': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
-            'code': ('django.db.models.fields.CharField', [], {'max_length': '3L', 'primary_key': 'True'}),
-            'code2': ('django.db.models.fields.CharField', [], {'max_length': '2L'}),
-            'continent': ('django.db.models.fields.CharField', [], {'max_length': '13L'}),
-            'gnp': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
-            'gnp_old': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
-            'government_form': ('django.db.models.fields.CharField', [], {'max_length': '45L'}),
-            'head_of_state': ('django.db.models.fields.CharField', [], {'max_length': '60L', 'blank': 'True'}),
-            'independence_year': ('django.db.models.fields.IntegerField', [], {'null': 'True', 'blank': 'True'}),
-            'life_expectancy': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
-            'local_name': ('django.db.models.fields.CharField', [], {'max_length': '45L'}),
-            'name': ('django.db.models.fields.CharField', [], {'max_length': '52L'}),
-            'population': ('django.db.models.fields.IntegerField', [], {}),
-            'region': ('django.db.models.fields.CharField', [], {'max_length': '26L'}),
-            'surface_area': ('django.db.models.fields.FloatField', [], {})
-        },
-        u'hackaglobal.event': {
-            'Meta': {'object_name': 'Event'},
-            'address': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
-            'created': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
-            'description': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
-            'end': ('django.db.models.fields.DateTimeField', [], {'null': 'True', 'blank': 'True'}),
-            'hackacity': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['hackaglobal.HackaCity']"}),
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'latitude': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
-            'longitude': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
-            'name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
-            'start': ('django.db.models.fields.DateTimeField', [], {}),
-            'website': ('django.db.models.fields.URLField', [], {'max_length': '200', 'null': 'True', 'blank': 'True'}),
-            'zip': ('django.db.models.fields.CharField', [], {'max_length': '10', 'null': 'True', 'blank': 'True'})
-        },
-        u'hackaglobal.hackacity': {
+        u'hackacities.hackacity': {
             'Meta': {'object_name': 'HackaCity'},
             'about': ('django.db.models.fields.TextField', [], {}),
-            'city': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['hackaglobal.Cities']", 'unique': 'True'}),
-            'communities': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'community_of'", 'null': 'True', 'to': u"orm['hackaglobal.HackaContainer']"}),
+            'city': ('django.db.models.fields.related.OneToOneField', [], {'to': u"orm['hackacities.Cities']", 'unique': 'True'}),
+            'communities': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'community_of'", 'null': 'True', 'to': u"orm['hackacities.HackaContainer']"}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'lead': ('django.db.models.fields.related.ForeignKey', [], {'related_name': "'lead_of'", 'to': u"orm['auth.User']"}),
             'member': ('django.db.models.fields.related.ManyToManyField', [], {'blank': 'True', 'related_name': "'member_of'", 'null': 'True', 'symmetrical': 'False', 'to': u"orm['auth.User']"}),
             'name': ('django.db.models.fields.CharField', [], {'max_length': '25'}),
-            'partners': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'partner_of'", 'null': 'True', 'to': u"orm['hackaglobal.HackaContainer']"}),
+            'partners': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'partner_of'", 'null': 'True', 'to': u"orm['hackacities.HackaContainer']"}),
             'photo': ('django.db.models.fields.files.ImageField', [], {'max_length': '100'}),
             'short_description': ('django.db.models.fields.CharField', [], {'max_length': '200'}),
-            'sponsors': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'sponsor_of'", 'null': 'True', 'to': u"orm['hackaglobal.HackaContainer']"}),
+            'sponsors': ('django.db.models.fields.related.ForeignKey', [], {'blank': 'True', 'related_name': "'sponsor_of'", 'null': 'True', 'to': u"orm['hackacities.HackaContainer']"}),
             'team': ('django.db.models.fields.related.ManyToManyField', [], {'blank': 'True', 'related_name': "'team_of'", 'null': 'True', 'symmetrical': 'False', 'to': u"orm['auth.User']"})
         },
-        u'hackaglobal.hackacontainer': {
+        u'hackacities.hackacontainer': {
             'Meta': {'object_name': 'HackaContainer'},
             'description': ('django.db.models.fields.CharField', [], {'max_length': '200'}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
@@ -273,13 +128,27 @@ class Migration(SchemaMigration):
             'type': ('django.db.models.fields.CharField', [], {'default': "'C'", 'max_length': '1'}),
             'url': ('django.db.models.fields.URLField', [], {'max_length': '200'})
         },
-        u'hackaglobal.languages': {
-            'Meta': {'object_name': 'Languages'},
-            'country_code': ('django.db.models.fields.CharField', [], {'max_length': '3'}),
+        u'hackaglobal.attendee': {
+            'Meta': {'object_name': 'Attendee'},
+            'attendee': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['auth.User']"}),
+            'event': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['hackaglobal.Event']"}),
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'language': ('django.db.models.fields.CharField', [], {'max_length': '30'}),
-            'official': ('django.db.models.fields.CharField', [], {'max_length': '1'}),
-            'percentage': ('django.db.models.fields.FloatField', [], {})
+            'type': ('django.db.models.fields.CharField', [], {'default': "'A'", 'max_length': '1'})
+        },
+        u'hackaglobal.event': {
+            'Meta': {'object_name': 'Event'},
+            'address': ('django.db.models.fields.CharField', [], {'max_length': '100'}),
+            'created': ('django.db.models.fields.DateTimeField', [], {'auto_now': 'True', 'blank': 'True'}),
+            'description': ('django.db.models.fields.TextField', [], {'null': 'True', 'blank': 'True'}),
+            'end': ('django.db.models.fields.DateTimeField', [], {'null': 'True', 'blank': 'True'}),
+            'hackacity': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['hackacities.HackaCity']"}),
+            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
+            'latitude': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
+            'longitude': ('django.db.models.fields.FloatField', [], {'null': 'True', 'blank': 'True'}),
+            'name': ('django.db.models.fields.CharField', [], {'max_length': '50'}),
+            'start': ('django.db.models.fields.DateTimeField', [], {}),
+            'website': ('django.db.models.fields.URLField', [], {'max_length': '200', 'null': 'True', 'blank': 'True'}),
+            'zip': ('django.db.models.fields.CharField', [], {'max_length': '10', 'null': 'True', 'blank': 'True'})
         },
         u'hackaglobal.staff': {
             'Meta': {'object_name': 'Staff'},

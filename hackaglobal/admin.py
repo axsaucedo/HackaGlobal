@@ -1,5 +1,6 @@
 from django.contrib.admin import site, ModelAdmin
-from hackaglobal.models import Event, Attendee, Staff, HackaCity, HackaContainer
+from hackaglobal.models import Event, Attendee, Staff
+from hackacities.models import HackaCity, HackaContainer
 from accounts.models import UserProfile
 
 

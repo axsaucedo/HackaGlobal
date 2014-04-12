@@ -12,6 +12,7 @@ urlpatterns = patterns('',
     #My Apps
     url(r'^api/', include('apihg.urls')),
     url(r'accounts/', include('accounts.urls')),
+    url(r'hackacity/', include('hackacities.urls')),
     url(r'', include('hackaglobal.urls')),
 
 

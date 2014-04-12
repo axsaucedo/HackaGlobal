@@ -84,6 +84,7 @@ STATIC_URL = '/static/'
 # Additional locations of static files
 STATICFILES_DIRS = (
     BASE_DIR + '/hackaglobal/static',
+    BASE_DIR + '/hackacities/static',
 )
 
 # List of finder classes that know how to find static files in
@@ -147,6 +148,7 @@ INSTALLED_APPS = (
     'hackaglobal',
     'apihg',
     'accounts',
+    'hackacities',
 
     'taggit',
     'corsheaders',

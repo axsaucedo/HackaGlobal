@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block head-includes %}
+<link rel="stylesheet" type="text/css" href="/static/css/hackacity_view.css">
+    <script type="text/javascript" src="/static/js/hackacity_view.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+{% endblock %}
+
+{% block content %}
+<div id="hackacity-view">
+    <section class="hackacity-view-home hackacity-section" style="background: url(/static/img/timisoara.jpg) 50% 0 no-repeat fixed;">
+        <div class="hackacity-view-home-gradient">
+
+            <img class="hackacity-view-home-hackalogo" src="/static/img/hackatimis-white.png">
+
+            <h1 class="hackacity-view-home-text">
+                The biggest network of passionate and enthusiastic techies, coders and doers in Timisoara, Romania!
+            </h1>
+        </div>
+    </section>
+    <section class="hackacity-view-about hackacity-section" style="background: url(/static/img/code-wallpaper.png) 50% 0 no-repeat fixed;">
+        <div class="hackacity-view-title">{ About }</div>
+        <div class="col-md-offset-1 col-md-5">
+
+        </div>
+        <div class="col-md-6">
+            <iframe class="hackacity-view-about-video" width="560" height="315" src="//www.youtube.com/embed/z0J_AQXZcG4" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="hackacity-view-divider" style="background: url(/static/img/timis-map.png) 50% 0 no-repeat fixed;">
+
+    </section>
+    <section class="hackacity-view-events hackacity-section" style="background: url(/static/img/hacka-events.png) 50% 0 no-repeat fixed;">
+
+    </section>
+    <section class="hackacity-view-divider" style="background: url(/static/img/programmercode.jpg) 50% 0 no-repeat fixed; background-size: cover">
+
+    </section>
+    <section class="hackacity-view-communities hackacity-section" style="background: url(/static/img/hackacommunities.png) 50% 0 no-repeat fixed; background-size: cover">
+
+    </section>
+    <section class="" style="background: url(/static/img/twitter.png) fixed; position: relative; height:480px; padding: 50px 50px 50px 50px; overflow: hidden">
+        <div class="well col-md-offset-1 col-md-10" style="height:380px; padding: 50px 50px 50px 50px; overflow: scroll">
+            <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>
+            <div class="tintup" data-id="axsaucedo-1397315333" data-columns="4" data-expand="true" style="height:380px;width:100%; margin: auto auto; overflow: hidden;">
+                <a href="http://www.tintup.com" style="width:118px;height:31px;background-image:url(//d33w9bm0n1egwm.cloudfront.net/assets/logos/poweredbytintsmall.png);position:absolute;bottom:10px;right: 20px;text-indent: -9999px;z-index:9;">hashtag campaign</a>
+            </div>
+        </div>
+    </section>
+    <section class="hackacity-view-sponsors hackacity-section" style="background: url(/static/img/sponsors.png) 50% 0 no-repeat fixed;">
+
+    </section>
+    <section class="hackacity-view-divider" style="background: url(/static/img/android.jpg) 50% 0 no-repeat fixed; background-size: cover;">
+
+    </section>
+    <section class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">
+
+    </section>
+    <section class="hackacity-view-team hackacity-section" style="overflow-y: hidden;">
+        <iframe style="width: 100%; height: 100%; overflow: hidden;" scrolling="no" src="http://www.svc2uk.com/"></iframe>
+    </section>
+    <section class="" style="position: relative;">
+        <img style="width: 100%; height: 100%;" src="/static/img/contact.png">
+    </section>
+</div>
+{% endblock %}

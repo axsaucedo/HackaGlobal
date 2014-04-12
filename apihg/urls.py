@@ -9,18 +9,22 @@ from django.http import HttpResponse
 import json
 
 from hackaglobal.models import Event
+from hackacities.models import HackaCity, Countries, Cities
 
 class EventListSerializer(serializers.ModelSerializer):
+    country = serializers.Field(source='get_country')
+    city = serializers.Field(source='get_city')
+
     class Meta:
         model = Event
         fields = (    'id'
-                    , 'creator'
+                    , 'hackacity'
                     , 'name'
                     , 'description'
                     , 'address'
                     , 'country'
-                    , 'website'
                     , 'city'
+                    , 'website'
                     , 'start'
                     , 'end')
 
@@ -35,11 +39,14 @@ class EventList(APIView):
         return Response(serializer.data)
 
 class EventFilteredList(APIView):
-    def get(self, request, country, city, format=None):
-        if city:
-            events = Event.objects.filter(country=country, city=city)
-        else:
-            events = Event.objects.filter(country=country)
+    def get(self, request, countrycity, format=None):
+
+        clean_countrycity = countrycity.replace('-',' ')
+
+        events = Event.objects.filter(hackacity__city__name=clean_countrycity)
+
+        if not events:
+            events = Event.objects.filter(hackacity__city__country__name=clean_countrycity)
 
         serializer = EventListSerializer(events, many=True)
         return Response(serializer.data)
@@ -65,46 +72,12 @@ class EventTags(APIView):
         serializer = EventListSerializer(events, many=True)
         return Response(serializer.data)
 
-def getCountryCity(request, city):
+def getCountryCity(request, country):
 
-    citycountry = {
-            "mexico" : [
-                  "mexico-city"
-                , "guadalajara"
-                ,
-            ]
-            , "china" : [
-                "shanghai"
-                ,
-            ]
-            , "russia" : [
-                 "moscow"
-               , "saint-petersburg"
-               ,
-            ]
-            , "romania" : [
-                 "timisoara"
-                , "cluj"
-                , "bucharest"
-                , "brasov"
-                , "caransebes"
-                , "arad"
-                , "iasi"
-                ,
-            ]
-            , "united-kingdom" : [
-                  "southampton"
-                , "manchester"
-                , "sheffield"
-                , "london"
-            ]
-
-    }
-
-    if not city:
-        response = citycountry.keys()
+    if not country:
+        response = list(HackaCity.objects.values_list('city__country__name', flat="True").distinct())
     else:
-        response = citycountry[city]
+        response = list(HackaCity.objects.filter(city__country__name=country).values_list('city__name', flat="True"))
 
     return HttpResponse(json.dumps(response), content_type="application/json")
 
@@ -119,9 +92,9 @@ urlpatterns = patterns('',
     url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     url(r'^data/$', EventList.as_view()),
-    url(r'^data/(?P<country>.+)(/(?P<city>.+))?/$', EventFilteredList.as_view()),
+    url(r'^data/(?P<countrycity>.+)/$', EventFilteredList.as_view()),
     url(r'^event/(?P<pk>[0-9]+)/$', EventDetail.as_view()),
-    url(r'^country/(?P<city>.*)$', getCountryCity, name="country-list"),
+    url(r'^country/(?P<country>.*)$', getCountryCity, name="country-list"),
 
 
     url(r'^tags/(?P<tags>.*)/$', EventTags.as_view(), name="tag-filter"),

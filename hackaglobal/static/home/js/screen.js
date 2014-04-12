@@ -64,7 +64,7 @@ function getEvents(country) {
 }// end getEvents()
 
 
-var apiURL = 'http://www.hackaglobal.co',
+var apiURL = window.base_url,
 		abEvContainer = ge('ab-events-container'),
 		country = abEvContainer.getAttribute('data-country');
 

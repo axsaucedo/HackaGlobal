@@ -8,26 +8,26 @@
 
 {% block content %}
 <div id="hackacity-view">
-    <section class="hackacity-view-home hackacity-section" style="background: url(/static/img/timisoara.jpg) 50% 0 no-repeat fixed;">
+    <section class="hackacity-view-home hackacity-section" style="background: url(/static/img/{{ hackacity.name|lower }}-home.jpg) 50% 0 no-repeat fixed; background-size: cover;">
         <div class="hackacity-view-home-gradient">
 
-            <img class="hackacity-view-home-hackalogo" src="/static/img/hackatimis-white.png">
+            <img class="hackacity-view-home-hackalogo" src="{{ hackacity.photo.url }}">
 
             <h1 class="hackacity-view-home-text">
-                The biggest network of passionate and enthusiastic techies, coders and doers in Timisoara, Romania!
+                {{ hackacity.short_description }}
             </h1>
         </div>
     </section>
     <section class="hackacity-view-about hackacity-section" style="background: url(/static/img/code-wallpaper.png) 50% 0 no-repeat fixed;">
         <div class="hackacity-view-title">{ About }</div>
-        <div class="col-md-offset-1 col-md-5">
-
+        <div class="hackacity-view-about-text col-md-offset-1 col-md-5">
+            {% autoescape off %} {{ hackacity.about }} {% endautoescape %}
         </div>
         <div class="col-md-6">
             <iframe class="hackacity-view-about-video" width="560" height="315" src="//www.youtube.com/embed/z0J_AQXZcG4" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
-    <section class="hackacity-view-divider" style="background: url(/static/img/timis-map.png) 50% 0 no-repeat fixed;">
+    <section class="hackacity-view-divider" style="background: url(/static/img/{{ hackacity.name|lower }}-map.png) 50% 0 no-repeat fixed;">
 
     </section>
     <section class="hackacity-view-events hackacity-section" style="background: url(/static/img/hacka-events.png) 50% 0 no-repeat fixed;">
@@ -56,11 +56,124 @@
     <section class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">
 
     </section>
-    <section class="hackacity-view-team hackacity-section" style="overflow-y: hidden;">
-        <iframe style="width: 100%; height: 100%; overflow: hidden;" scrolling="no" src="http://www.svc2uk.com/"></iframe>
+    <section class="hackacity-view-team" style="overflow-y: hidden; position: relative; background-color: white;">
+        <div class="content">
+            <div class="wrapper">
+                <div class="block" id="theteam">
+                    <div class="hackacity-view-title" style="color: black; width: 100%; text-align: center">
+                        { Team }
+                    </div>
+                    <div class="wrapper">
+                        <ul class="people">
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://twitter.com/RGregoratti">@RGregoratti</a>
+                                    <a target="_blank" href="https://www.facebook.com/roberto.gregoratti">Facebook</a>
+                                    <a target="_blank" href="http://uk.linkedin.com/in/robertogregoratti">LinkedIn</a>
+                                    <a target="_blank" href="http://about.me/robertogregoratti">AboutMe</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/rob.jpg" title="Roberto Gregoratti"></div>
+                                <h2>Roberto Gregoratti</h2>
+                                <h3>President</h3>
+                            </li>
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://www.facebook.com/callum.spawforth">@Spoffeh</a>
+                                    <a target="_blank" href="https://twitter.com/spoffeh">Facebook</a>
+                                    <a target="_blank" href="http://www.linkedin.com/in/callumspawforth">LinkedIn</a>
+                                    <a target="_blank" href="http://github.com/spoffy">Github</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/callum.jpg" title="Callum Spawforth"></div>
+                                <h2>Callum Spawforth</h2>
+                                <h3>Vice-President</h3>
+                            </li>
+
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://twitter.com/amouzadeh">@Amouzadeh</a>
+                                    <a target="_blank" href="https://www.facebook.com/aliamouzadeh">Facebook</a>
+                                    <a target="_blank" href="http://uk.linkedin.com/in/amouzadeh">LinkedIn</a>
+                                    <a target="_blank" href="http://amouzadeh.info">Website</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/ali.jpg" title="Ali Amouzadeh"></div>
+                                <h2>Ali Amouzadeh</h2>
+                                <h3>Director of Events</h3>
+                            </li>
+
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://www.facebook.com/dorothy.filipczuk">Facebook</a>
+                                    <a target="_blank" href="http://www.linkedin.com/pub/dorota-filipczuk/8b/67a/621">LinkedIn</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/dorota.jpg" title="Dorota Filipczuk"></div>
+                                <h2>Dorota Filipczuk</h2>
+                                <h3>Secretary</h3>
+                            </li>
+
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://twitter.com/repraze">@Repraze</a>
+                                    <a target="_blank" href="http://wulty.com/">Website</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/tom.jpg" title="Thomas Dubosc"></div>
+                                <h2>Thomas Dubosc</h2>
+                                <h3>Webmaster</h3>
+                            </li>
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://twitter.com/vla_ve">@Vla_Ve</a>
+                                    <a target="_blank" href="https://www.facebook.com/vlad.velici">Facebook</a>
+                                    <a target="_blank" href="http://ro.linkedin.com/in/vladvelici">LinkedIn</a>
+                                    <a target="_blank" href="https://github.com/vladvelici">GitHub</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/vlad.jpg" title="Vlad Velici"></div>
+                                <h2>Vlad Velici</h2>
+                                <h3>Head of Google Developers Group</h3>
+                            </li>
+
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://twitter.com/sirichadalavada">@SiriChadalavada</a>
+                                    <a target="_blank" href="https://www.facebook.com/schadalavada95">Facebook</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/siri.jpg" title="Sri Ramya Chadalavada"></div>
+                                <h2>Sri Ramya Chadalavada</h2>
+                                <h3>Director of Marketing</h3>
+                            </li>
+
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://twitter.com/sabinmarcu">@SabinMarcu</a>
+                                    <a target="_blank" href="http://uk.linkedin.com/in/sabinmarcu">LinkedIn</a>
+                                    <a target="_blank" href="http://github.com/sabinmarcu">Github</a>
+                                    <a target="_blank" href="http://sabinmarcu.me/">Website</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/sabin.jpg" title="Sabin Marcu"></div>
+                                <h2>Sabin Marcu</h2>
+                                <h3>Director of Hackathons</h3>
+                            </li>
+
+                            <li>
+                                <nav>
+                                    <a target="_blank" href="https://www.facebook.com/farhaan.ali.83">Facebook</a>
+                                    <a target="_blank" href="uk.linkedin.com/pub/farhaan-ali/82/45a/a5b">LinkedIn</a>
+                                </nav>
+                                <div class="picture"><img src="/static/img/hackasoton/farhan.jpg" title="Farhan Ali"></div>
+                                <h2>Farhan Ali</h2>
+                                <h3>Director of Finance</h3>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section class="" style="position: relative;">
-        <img style="width: 100%; height: 100%;" src="/static/img/contact.png">
+    <section class="hackacity-view-contact hackacity-view-divider" style="position: relative; background: url(/static/img/contact.png); background-position: fixed; width: 100%; ">
+        <div class="hackacity-view-title" style="padding-top: 140px">
+            { Contact }
+        </div>
+        <a href="mailito:{{ hackacity.name }}@gmail.com"><h1 style="color: orange">{{ hackacity.name }}@gmail.com</h1></a>
     </section>
 </div>
 {% endblock %}

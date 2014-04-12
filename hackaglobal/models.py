@@ -39,6 +39,9 @@ class Event(models.Model):
     def get_city(self):
         return self.hackacity.city.name
 
+    def get_country(self):
+        return self.hackacity.city.country.name
+
     def get_address_array(self):
         return [ self.address, self.hackacity.city.country_code, self.hackacity.city, self.zip ]
 

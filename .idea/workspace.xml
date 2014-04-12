@@ -2,33 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackacities/urls.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/accounts.backup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/cities.backup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/countries.backup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/event.backup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/languages.backup" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dump.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/final.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/migrations/__init__.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/hackacity/community_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/admin.py" afterPath="$PROJECT_DIR$/hackaglobal/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/css/base.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" afterPath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/models.py" afterPath="$PROJECT_DIR$/hackacities/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/pipelines.py" afterPath="$PROJECT_DIR$/accounts/pipelines.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/views.py" afterPath="$PROJECT_DIR$/hackaglobal/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apihg/urls.py" afterPath="$PROJECT_DIR$/apihg/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397291295061" ignored="false" />
-    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397298006679" ignored="false" />
+    <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397323900195" ignored="false" />
     <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397297956088" ignored="false" />
     <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397298373457" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -43,7 +27,7 @@
     <file path="/manage.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683572675" ignored="false" />
     <file path="/admin.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397296407187" ignored="false" />
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396795601453" ignored="false" />
-    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397295605983" ignored="false" />
+    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397324775234" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397299576246" ignored="false" />
     <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227835785" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227749382" ignored="false" />
@@ -65,7 +49,7 @@
     <file path="/signup.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227848769" ignored="false" />
     <file path="/apply.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227820662" ignored="false" />
     <file path="/countrylist.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396776063594" ignored="false" />
-    <file path="/screen.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397123050279" ignored="false" />
+    <file path="/screen.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397324191171" ignored="false" />
     <file path="/ef_tags.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979984891" ignored="false" />
     <file path="$PROJECT_DIR$/../wakeuproulette/wakeuproulette/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396979688103" ignored="false" />
     <file path="/base_site.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397033998999" ignored="false" />
@@ -85,10 +69,11 @@
     <file path="/profile_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397226345688" ignored="false" />
     <file path="/community.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227034155" ignored="false" />
     <file path="/hackacity.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227230434" ignored="false" />
-    <file path="/hackacity_view.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397318271616" ignored="false" />
-    <file path="/hackacity_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397318091516" ignored="false" />
+    <file path="/hackacity_view.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397332862850" ignored="false" />
+    <file path="/hackacity_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397332439423" ignored="false" />
     <file path="/hackacity_view.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397313955909" ignored="false" />
     <file path="/*.regexp" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397299591662" ignored="false" />
+    <file path="/0002_auto__add_field_languages_country__add_field_cities_country.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397321648520" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,45 +132,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="39" selection-start="3651" selection-end="3651" vertical-scroll-proportion="-5.050633">
-              <folding>
-                <element signature="e#432#505#0" expanded="true" />
-                <element signature="e#929#1007#0" expanded="true" />
-                <element signature="e#1399#1472#0" expanded="true" />
-                <element signature="e#1551#1627#0" expanded="true" />
-                <element signature="e#1689#1790#0" expanded="true" />
-                <element signature="e#1874#1977#0" expanded="true" />
-                <element signature="e#2017#2153#0" expanded="true" />
-                <element signature="e#2207#2275#0" expanded="true" />
-                <element signature="e#2487#2556#0" expanded="true" />
-                <element signature="e#2606#2801#0" expanded="true" />
-                <element signature="e#2935#3007#0" expanded="true" />
-                <element signature="e#3069#3164#0" expanded="true" />
-                <element signature="e#3245#3317#0" expanded="true" />
-                <element signature="e#3394#3421#0" expanded="true" />
-                <element signature="e#3439#3491#0" expanded="true" />
-                <element signature="e#3583#3610#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="177" column="33" selection-start="7154" selection-end="7157" vertical-scroll-proportion="-5.1923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="hackacity_view.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="4" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.73730296">
+            <state line="9" column="16" selection-start="228" selection-end="228" vertical-scroll-proportion="0.225">
               <folding />
             </state>
           </provider>
@@ -194,7 +144,7 @@
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="17" selection-start="446" selection-end="446" vertical-scroll-proportion="-15.0">
+            <state line="30" column="17" selection-start="483" selection-end="483" vertical-scroll-proportion="21.923077">
               <folding />
             </state>
           </provider>
@@ -203,16 +153,53 @@
       <file leaf-file-name="hackacity_view.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_view.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="63" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-3.0181818">
+            <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.8181818">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="106" selection-start="3763" selection-end="3763" vertical-scroll-proportion="-5.240506">
+              <folding>
+                <element signature="e#432#551#0" expanded="true" />
+                <element signature="e#902#980#0" expanded="true" />
+                <element signature="e#1472#1566#0" expanded="true" />
+                <element signature="e#1645#1721#0" expanded="true" />
+                <element signature="e#1783#1884#0" expanded="true" />
+                <element signature="e#1968#2071#0" expanded="true" />
+                <element signature="e#2111#2247#0" expanded="true" />
+                <element signature="e#2301#2369#0" expanded="true" />
+                <element signature="e#2581#2650#0" expanded="true" />
+                <element signature="e#2700#2895#0" expanded="true" />
+                <element signature="e#3029#3101#0" expanded="true" />
+                <element signature="e#3163#3258#0" expanded="true" />
+                <element signature="e#3339#3411#0" expanded="true" />
+                <element signature="e#3470#3542#0" expanded="true" />
+                <element signature="e#3711#3764#0" expanded="true" />
+                <element signature="e#10716#10827#0" expanded="true" />
+                <element signature="e#10871#10897#0" expanded="true" />
+                <element signature="e#10999#11020#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_view.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/accounts/account_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackacities/models.py">
+        <entry file="file://$PROJECT_DIR$/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="32" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+            <state line="7" column="0" selection-start="235" selection-end="440" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -223,7 +210,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="29" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -234,7 +221,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="296" selection-end="303" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -267,21 +254,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/accounts/pipelines.py" />
-        <option value="$PROJECT_DIR$/hackacity/urls.py" />
-        <option value="$PROJECT_DIR$/urls.py" />
-        <option value="$PROJECT_DIR$/hackacity/models.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
         <option value="$PROJECT_DIR$/hackaglobal/views.py" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/hackacities/urls.py" />
         <option value="$PROJECT_DIR$/hackacities/views.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
-        <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
         <option value="$PROJECT_DIR$/hackacities/static/js/hackacity_view.js" />
         <option value="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
+        <option value="$PROJECT_DIR$/hackacities/migrations/0003_linking_cities_languages.py" />
+        <option value="$PROJECT_DIR$/hackacities/migrations/0002_auto__add_field_languages_country__add_field_cities_country.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/models.py" />
+        <option value="$PROJECT_DIR$/apihg/urls.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/screen.js" />
+        <option value="$PROJECT_DIR$/hackacities/models.py" />
+        <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
       </list>
     </option>
@@ -362,6 +349,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackacity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accounts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="hackaglobal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -381,76 +404,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,88 +426,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HackaGlobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hackaglobal" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fonts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -587,10 +458,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -634,7 +501,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackasoton" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apihg" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,6 +534,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="accounts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accounts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -677,18 +580,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/hackaglobal/static/css/fonts" />
       <recent name="$PROJECT_DIR$/hackacities/static/img" />
+      <recent name="$PROJECT_DIR$/hackaglobal/static/css/fonts" />
       <recent name="$PROJECT_DIR$/templates/layouts" />
       <recent name="$PROJECT_DIR$/hackaglobal/media/profiles" />
       <recent name="$PROJECT_DIR$/templates/community" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/hackacities/static/img" />
+      <recent name="$PROJECT_DIR$/hackacities/static" />
       <recent name="$PROJECT_DIR$/hackacities/static/img/timis-map.png" />
       <recent name="$PROJECT_DIR$/templates/accounts" />
       <recent name="$PROJECT_DIR$/templates/community" />
-      <recent name="$PROJECT_DIR$/hackaglobal/static/home/img" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.hackaglobal">
@@ -1018,135 +921,131 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.py">
+    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="28" selection-start="2481" selection-end="2481" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5905383">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="296" selection-end="303" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="134" selection-start="5375" selection-end="5375" vertical-scroll-proportion="-3.8181818">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2292192">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/static/img/code-wallpaper.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="38" selection-end="38" vertical-scroll-proportion="0.076271184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.38338658">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="235" selection-end="440" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="179" column="22" selection-start="3387" selection-end="3387" vertical-scroll-proportion="3.0159745">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/img/vi.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/concept.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="450" selection-end="452" vertical-scroll-proportion="0.28596187">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/img/top_global.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="33" selection-start="7154" selection-end="7157" vertical-scroll-proportion="-5.1923075">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/img/globalicon_sp.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/img/full_logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="39" selection-start="3651" selection-end="3651" vertical-scroll-proportion="-5.050633">
+        <state line="39" column="103" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.725">
           <folding>
-            <element signature="e#432#505#0" expanded="true" />
-            <element signature="e#929#1007#0" expanded="true" />
-            <element signature="e#1399#1472#0" expanded="true" />
-            <element signature="e#1551#1627#0" expanded="true" />
-            <element signature="e#1689#1790#0" expanded="true" />
-            <element signature="e#1874#1977#0" expanded="true" />
-            <element signature="e#2017#2153#0" expanded="true" />
-            <element signature="e#2207#2275#0" expanded="true" />
-            <element signature="e#2487#2556#0" expanded="true" />
-            <element signature="e#2606#2801#0" expanded="true" />
-            <element signature="e#2935#3007#0" expanded="true" />
-            <element signature="e#3069#3164#0" expanded="true" />
-            <element signature="e#3245#3317#0" expanded="true" />
-            <element signature="e#3394#3421#0" expanded="true" />
-            <element signature="e#3439#3491#0" expanded="true" />
-            <element signature="e#3583#3610#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/account_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="63" selection-start="1116" selection-end="1116" vertical-scroll-proportion="-3.0181818">
+        <state line="3" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="-0.8181818">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="17" selection-start="446" selection-end="446" vertical-scroll-proportion="-15.0">
+        <state line="30" column="17" selection-start="483" selection-end="483" vertical-scroll-proportion="21.923077">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="106" selection-start="3763" selection-end="3763" vertical-scroll-proportion="-5.240506">
+          <folding>
+            <element signature="e#432#551#0" expanded="true" />
+            <element signature="e#902#980#0" expanded="true" />
+            <element signature="e#1472#1566#0" expanded="true" />
+            <element signature="e#1645#1721#0" expanded="true" />
+            <element signature="e#1783#1884#0" expanded="true" />
+            <element signature="e#1968#2071#0" expanded="true" />
+            <element signature="e#2111#2247#0" expanded="true" />
+            <element signature="e#2301#2369#0" expanded="true" />
+            <element signature="e#2581#2650#0" expanded="true" />
+            <element signature="e#2700#2895#0" expanded="true" />
+            <element signature="e#3029#3101#0" expanded="true" />
+            <element signature="e#3163#3258#0" expanded="true" />
+            <element signature="e#3339#3411#0" expanded="true" />
+            <element signature="e#3470#3542#0" expanded="true" />
+            <element signature="e#3711#3764#0" expanded="true" />
+            <element signature="e#10716#10827#0" expanded="true" />
+            <element signature="e#10871#10897#0" expanded="true" />
+            <element signature="e#10999#11020#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="4" selection-start="1309" selection-end="1309" vertical-scroll-proportion="0.73730296">
+        <state line="9" column="16" selection-start="228" selection-end="228" vertical-scroll-proportion="0.225">
           <folding />
         </state>
       </provider>

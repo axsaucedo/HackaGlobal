@@ -36,6 +36,11 @@ class HackaCity(models.Model):
     communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
+    def image_tag(self):
+        return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.png')
+    image_tag.short_description = 'Image'
+    image_tag.allow_tags = True
+
     def __unicode__(self):
         return self.city.name
 
@@ -45,6 +50,7 @@ class Cities(models.Model):
     country_code = models.CharField(max_length=3L)
     district = models.CharField(max_length=20L)
     population = models.IntegerField()
+    country = models.ForeignKey('Countries')
 
     def __unicode__(self):
         return self.name
@@ -70,6 +76,7 @@ class Countries(models.Model):
         return self.name
 
 class Languages(models.Model):
+    country = models.ForeignKey('Countries')
     country_code = models.CharField(max_length=3)
     language = models.CharField(max_length=30)
     official = models.CharField(max_length=1)

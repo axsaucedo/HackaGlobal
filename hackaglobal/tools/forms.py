@@ -154,6 +154,11 @@ class EFUserEditForm(forms.Form):
 
 class HackaCityCreationForm(forms.ModelForm):
 
+    def __init__(self, *args, **kwargs):
+        super(HackaCityCreationForm, self).__init__(*args, **kwargs)
+
+        self.fields['image_logo'].required = False
+
     class Meta:
         model = HackaCity
         exclude = ("city","name","lead")

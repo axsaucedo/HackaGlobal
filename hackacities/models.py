@@ -26,8 +26,7 @@ class HackaCity(models.Model):
     team = models.ManyToManyField(User, related_name="team_of", null=True, blank=True)
     member = models.ManyToManyField(User, related_name="member_of", null=True, blank=True)
 
-
-    image_logo = models.ImageField(upload_to=path_and_rename('hackacities/logos/'), null=True, blank=True)
+    image_logo = models.ImageField(upload_to=path_and_rename('hackacities/logos/'))
     image_home = models.ImageField(upload_to=path_and_rename('hackacities/home/'), null=True, blank=True)
     image_about = models.ImageField(upload_to=path_and_rename('hackacities/about/'), null=True, blank=True)
     image_divider_1 = models.ImageField(upload_to=path_and_rename('hackacities/dividers/'), null=True, blank=True)

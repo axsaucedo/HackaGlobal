@@ -47,7 +47,8 @@
                                     <div class="form-group">
                                         <label for="add-event-form-image-logo" class="col-md-3 control-label">Logo</label>
                                         <div class="col-md-9">
-                                            <input id="add-event-form-image-logo" class="form-control" value="{{ hackacity.image_logo.url }}" name="image_logo" type="file">
+                                            <input id="add-event-form-image-logo" class="form-control" value="" name="image_logo" type="file">
+                                            <img style="width: 300px;" src="{% if hackacity.image_logo %}{{ hackacity.image_logo.url }}{% endif %}">
                                         </div>
                                     </div>
                                     <div class="form-group">

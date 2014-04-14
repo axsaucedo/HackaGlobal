@@ -76,6 +76,32 @@
 
 
 
+/* Events *//* Events *//* Events *//* Events */
+/* Events *//* Events *//* Events *//* Events */
+/* Events *//* Events *//* Events *//* Events */
+#myCarousel {
+    height: 100%;
+    width: 100%;
+}
+.carousel-inner .active.left { left: -50%; }
+.carousel-inner .next        { left:  50%; }
+.carousel-inner .prev		 { left: -50%; }
+.carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {
+    width: 150px;
+}
+.carousel-control:hover {
+}
+.carousel-control.right {
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0),rgba(0, 0, 0, .3));
+}.carousel-control.left {
+     background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0),rgba(0, 0, 0, .3));
+ }
+.carousel-control.right:hover {
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0),rgba(0, 0, 0, .5));
+}.carousel-control.left:hover {
+     background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0),rgba(0, 0, 0, .5));
+ }
 
 
 

@@ -1,6 +1,7 @@
 from django.db import models
 
 from django.contrib.auth.models import User
+from hackaglobal.tools.toolbox import  path_and_rename
 from django.utils.translation import ugettext as _
 
 
@@ -11,20 +12,6 @@ CONTAINER_TYPE_CHOICES = (
         ('P', 'Partner'),
         ('C', 'Community'),
     )
-
-import os
-from uuid import uuid4
-from django.utils.text import slugify
-
-
-def path_and_rename(path):
-    def wrapper(instance, filename):
-        ext = filename.split('.')[-1]
-        rstring = uuid4().get_hex()
-        fname = slugify(unicode(rstring) + u'_logo') + "." + ext
-
-        return os.path.join(path, fname)
-    return wrapper
 
 class HackaContainer(models.Model):
     title = models.CharField(max_length=50)
@@ -58,9 +45,16 @@ class HackaCity(models.Model):
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
     def image_tag(self):
-        return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.pngd')
+        return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.png')
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
+
+    def get_image_home(self): return self.image_home.url if self.image_home else '/static/defaultmedia/default-hackacity-home.jpg'
+    def get_image_about(self): return self.image_about.url if self.image_about else '/static/defaultmedia/default-hackacity-about.png'
+    def get_image_divider_1(self): return self.image_divider_1.url if self.image_divider_1 else '/static/defaultmedia/default-hackacity-divider-1.png'
+    def get_image_divider_2(self): return self.image_divider_2.url if self.image_divider_2 else '/static/defaultmedia/default-hackacity-divider-2.jpg'
+    def get_image_divider_3(self): return self.image_divider_3.url if self.image_divider_3 else '/static/defaultmedia/default-hackacity-divider-3.png'
+    def get_image_divider_4(self): return self.image_divider_4.url if self.image_divider_4 else '/static/defaultmedia/default-hackacity-divider-4.jpg'
 
     def __unicode__(self):
         return self.city.name

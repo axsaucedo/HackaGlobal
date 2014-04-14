@@ -8,10 +8,12 @@
 
 {% block content %}
 <style>
-    .hackacity-view-home {
-
-            background: {% if hackacity.image_about %}url({{ hackacity.image_about.url }}{% else %}/static/img/hackacity-home.jpg{% endif %}) 50% 0 no-repeat fixed; background-size: cover;
-    }
+    .hackacity-view-home{ background: url({{ hackacity.get_image_home }}) 50% 0 no-repeat fixed; background-size: cover; }
+    .hackacity-view-about{ background: url({{ hackacity.get_image_about }}) 50% 0 no-repeat fixed; background-size: cover; }
+    .hackacity-view-divider-1{ background: url({{ hackacity.get_image_divider_1 }}) 50% 0 no-repeat fixed; background-size: cover; }
+    .hackacity-view-divider-2{ background: url({{ hackacity.get_image_divider_2 }}) 50% 0 no-repeat fixed; background-size: cover; }
+    .hackacity-view-divider-3{ background: url({{ hackacity.get_image_divider_3 }}) 50% 0 no-repeat fixed; background-size: cover; }
+    .hackacity-view-divider-4{ background: url({{ hackacity.get_image_divider_4 }}) 50% 0 no-repeat fixed; background-size: cover; }
 </style>
 <div id="hackacity-view">
     <section class="hackacity-view-home hackacity-section">
@@ -24,7 +26,7 @@
             </h1>
         </div>
     </section>
-    <section class="hackacity-view-about hackacity-section" style="background: url(/static/img/code-wallpaper.png) 50% 0 no-repeat fixed;">
+    <section class="hackacity-view-about hackacity-section">
         <div class="hackacity-view-title">{ About }</div>
         <div class="hackacity-view-about-text col-md-offset-1 col-md-5">
             {% autoescape off %} {{ hackacity.about }} {% endautoescape %}
@@ -33,30 +35,68 @@
             <iframe class="hackacity-view-about-video" width="560" height="315" src="//www.youtube.com/embed/z0J_AQXZcG4" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
-    <section class="hackacity-view-divider" style="background: url(/static/img/{{ hackacity.name|lower }}-map.png) 50% 0 no-repeat fixed;">
+    <section class="hackacity-view-divider hackacity-view-divider-1">
 
     </section>
-    <section class="hackacity-view-events hackacity-section" style="background: url(/static/img/hacka-events.png) 50% 0 no-repeat fixed;">
-
+    <section class="hackacity-view-events hackacity-section">
+        <div class="hackacity-view-title" style="color: black">
+            { Events }
+        </div>
+        <div class="col-md-12">
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    {% for event in hackacity.event_set.all %}
+                        <div class="item {% if forloop.first %}active{% endif %}">
+                            <div class="col-xs-6">
+                                {% include 'layouts/hackacity_event.html' %}
+                            </div>
+                        </div>
+                    {% endfor %}
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/e477e4/fff&amp;text=2" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=3" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/f4f4f4&amp;text=4" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/f566f5/333&amp;text=5" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
+                    </div>
+                    <div class="item">
+                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=8" class="img-responsive"></a></div>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+            </div>
+        </div>
     </section>
-    <section class="hackacity-view-divider" style="background: url(/static/img/programmercode.jpg) 50% 0 no-repeat fixed; background-size: cover">
+    <section class="hackacity-view-divider hackacity-view-divider-2">
 
     </section>
     <section class="hackacity-view-communities hackacity-section" style="background: url(/static/img/hackacommunities.png) 50% 0 no-repeat fixed; background-size: cover">
 
     </section>
-    <section class="" style="background: url(/static/img/twitter.png) fixed; position: relative; height:480px; padding: 50px 50px 50px 50px; overflow: hidden">
-{#        <div class="well col-md-offset-1 col-md-10" style="height:380px; padding: 50px 50px 50px 50px; overflow: scroll">#}
-{#            <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>#}
-{#            <div class="tintup" data-id="axsaucedo-1397315333" data-columns="4" data-expand="true" style="height:380px;width:100%; margin: auto auto; overflow: hidden;">#}
-{#                <a href="http://www.tintup.com" style="width:118px;height:31px;background-image:url(//d33w9bm0n1egwm.cloudfront.net/assets/logos/poweredbytintsmall.png);position:absolute;bottom:10px;right: 20px;text-indent: -9999px;z-index:9;">hashtag campaign</a>#}
-{#            </div>#}
-{#        </div>#}
+    <section class="hackacity-view-divider-3" style="position: relative; height:480px; padding: 50px 50px 50px 50px; overflow: hidden">
+        <div class="well col-md-offset-1 col-md-10" style="height:380px; padding: 50px 50px 50px 50px; overflow: scroll">
+            <script async src="https://d36hc0p18k1aoc.cloudfront.net/public/js/modules/tintembed.js"></script>
+            <div class="tintup" data-id="axsaucedo-1397315333" data-columns="4" data-expand="true" style="height:380px;width:100%; margin: auto auto; overflow: hidden;">
+                <a href="http://www.tintup.com" style="width:118px;height:31px;background-image:url(//d33w9bm0n1egwm.cloudfront.net/assets/logos/poweredbytintsmall.png);position:absolute;bottom:10px;right: 20px;text-indent: -9999px;z-index:9;">hashtag campaign</a>
+            </div>
+        </div>
     </section>
     <section class="hackacity-view-sponsors hackacity-section" style="background: url(/static/img/sponsors.png) 50% 0 no-repeat fixed;">
 
     </section>
-    <section class="hackacity-view-divider" style="background: url(/static/img/android.jpg) 50% 0 no-repeat fixed; background-size: cover;">
+    <section class="hackacity-view-divider hackacity-view-divider-4">
 
     </section>
     <section class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">

@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block head-includes %}
-
+    <script type="text/javascript" src="/static/js/hackacity_edit.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/hackacity_edit.css">
 {% endblock %}
 
 {% block content %}
@@ -48,43 +49,50 @@
                                         <label for="add-event-form-image-logo" class="col-md-3 control-label">Logo</label>
                                         <div class="col-md-9">
                                             <input id="add-event-form-image-logo" class="form-control" value="" name="image_logo" type="file">
-                                            <img style="width: 300px;" src="{% if hackacity.image_logo %}{{ hackacity.image_logo.url }}{% endif %}">
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{% if hackacity.image_logo %}{{ hackacity.image_logo.url }}{% endif %}'/>" data-title="Logo - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="add-event-form-image-home" class="col-md-3 control-label">Home</label>
                                         <div class="col-md-9">
-                                            <input id="add-event-form-image-home" class="form-control" value="{{ hackacity.image_home }}" name="image_logo" type="file">
+                                            <input id="add-event-form-image-home" class="form-control" name="image_home" type="file">
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{{ hackacity.get_image_home }}'/>" data-title="About - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="add-event-form-image-about" class="col-md-3 control-label">About</label>
                                         <div class="col-md-9">
-                                            <input id="add-event-form-image-about" class="form-control" value="{{ hackacity.image_about }}" name="image_logo" type="file">
+                                            <input class="form-control" id="add-event-form-image-about" name="image_about" type="file">
+
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{{ hackacity.get_image_about }}'/>" data-title="Home - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="add-event-form-image-divider-1" class="col-md-3 control-label">Divider 1</label>
                                         <div class="col-md-9">
-                                            <input id="add-event-form-image-divider-1" class="form-control" value="{{ hackacity.image_placeholder_1 }}" name="image_divider_1" type="file">
+                                            <input id="add-event-form-image-divider-1" class="form-control" name="image_divider_1" type="file">
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{{ hackacity.get_image_divider_1 }}'/>" data-title="Divider 1 - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="add-event-form-image-divider-2" class="col-md-3 control-label">Divider 2</label>
                                         <div class="col-md-9">
                                             <input id="add-event-form-image-divider-2" class="form-control" value="{{ hackacity.image_placeholder_2 }}" name="image_divider_2" type="file">
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{{ hackacity.get_image_divider_2 }}'/>" data-title="Divider 2 - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="add-event-form-image-divider-3" class="col-md-3 control-label">Divider 3</label>
                                         <div class="col-md-9">
                                             <input id="add-event-form-image-divider-3" class="form-control" value="{{ hackacity.image_placeholder_3 }}" name="image_divider_3" type="file">
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{{ hackacity.get_image_divider_3 }}'/>" data-title="Divider 3 - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label for="add-event-form-image-divider-4" class="col-md-3 control-label">Divider 4</label>
                                         <div class="col-md-9">
                                             <input id="add-event-form-image-divider-4" class="form-control" value="{{ hackacity.image_placeholder_4 }}" name="image_divider_4" type="file">
+                                            <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{{ hackacity.get_image_divider_4 }}'/>" data-title="Divider 4 - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
                                 </fieldset>

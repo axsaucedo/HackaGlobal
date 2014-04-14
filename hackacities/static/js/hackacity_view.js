@@ -62,7 +62,6 @@ var hackacity_view = {
 
         }
 
-
 //        Carousel
         $('#myCarousel').carousel({
             interval: 4000

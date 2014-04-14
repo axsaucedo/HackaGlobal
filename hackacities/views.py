@@ -62,15 +62,17 @@ def edit_hackacity(request, hc):
                 new_hackacity.name = data['hackacity'].name
                 new_hackacity.city = data['hackacity'].city
                 new_hackacity.lead = data['hackacity'].lead
+
                 if not new_hackacity.image_logo: new_hackacity.image_logo = data['hackacity'].image_logo
-                if not new_hackacity.image_about: new_hackacity.image_logo = data['hackacity'].image_about
-                if not new_hackacity.image_home: new_hackacity.image_logo = data['hackacity'].image_home
-                if not new_hackacity.image_divider_1: new_hackacity.image_logo = data['hackacity'].image_divider_1
-                if not new_hackacity.image_divider_2: new_hackacity.image_logo = data['hackacity'].image_divider_2
-                if not new_hackacity.image_divider_3: new_hackacity.image_logo = data['hackacity'].image_divider_3
-                if not new_hackacity.image_divider_4: new_hackacity.image_logo = data['hackacity'].image_divider_4
-                print new_hackacity.image_logo
+                if not new_hackacity.image_about: new_hackacity.image_about = data['hackacity'].image_about
+                if not new_hackacity.image_home: new_hackacity.image_home = data['hackacity'].image_home
+                if not new_hackacity.image_divider_1: new_hackacity.image_divider_1 = data['hackacity'].image_divider_1
+                if not new_hackacity.image_divider_2: new_hackacity.image_divider_2 = data['hackacity'].image_divider_2
+                if not new_hackacity.image_divider_3: new_hackacity.image_divider_3 = data['hackacity'].image_divider_3
+                if not new_hackacity.image_divider_4: new_hackacity.image_divider_4 = data['hackacity'].image_divider_4
+
                 new_hackacity.save()
+
                 data['hackacity'] = new_hackacity
         else:
             data['form'] = HackaCityCreationForm()

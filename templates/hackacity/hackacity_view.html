@@ -42,7 +42,7 @@
         <div class="hackacity-view-title" style="color: black">
             { Events }
         </div>
-        <div class="col-md-12">
+        <div class="col-md-12" style="margin-top: -40px">
             <div class="carousel slide" id="myCarousel">
                 <div class="carousel-inner">
                     {% for event in hackacity.event_set.all %}
@@ -52,27 +52,6 @@
                             </div>
                         </div>
                     {% endfor %}
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/e477e4/fff&amp;text=2" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=3" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/f4f4f4&amp;text=4" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/f566f5/333&amp;text=5" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/f477f4/fff&amp;text=6" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/eeeeee&amp;text=7" class="img-responsive"></a></div>
-                    </div>
-                    <div class="item">
-                        <div class="col-xs-6"><a href="#"><img src="http://placehold.it/500/fcfcfc/333&amp;text=8" class="img-responsive"></a></div>
-                    </div>
                 </div>
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
                 <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>

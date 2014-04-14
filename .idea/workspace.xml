@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HackaLocal" afterPath="$PROJECT_DIR$/HackaLocal" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/js/hackacity_view.js" afterPath="$PROJECT_DIR$/hackacities/static/js/hackacity_view.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/views.py" afterPath="$PROJECT_DIR$/hackacities/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layouts/hackacity_event.html" afterPath="$PROJECT_DIR$/templates/layouts/hackacity_event.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" afterPath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,8 +67,8 @@
     <file path="/profile_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397226345688" ignored="false" />
     <file path="/community.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397227034155" ignored="false" />
     <file path="/hackacity.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397335824805" ignored="false" />
-    <file path="/hackacity_view.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397484267730" ignored="false" />
-    <file path="/hackacity_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397483900911" ignored="false" />
+    <file path="/hackacity_view.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397496837808" ignored="false" />
+    <file path="/hackacity_view.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397496600767" ignored="false" />
     <file path="/hackacity_view.js" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397313955909" ignored="false" />
     <file path="/*.regexp" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397299591662" ignored="false" />
     <file path="/0002_auto__add_field_languages_country__add_field_cities_country.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397321648520" ignored="false" />
@@ -140,7 +137,7 @@
       <file leaf-file-name="hackacity_edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="103" selection-start="5006" selection-end="5006" vertical-scroll-proportion="0.37974682">
+            <state line="66" column="103" selection-start="5006" selection-end="5006" vertical-scroll-proportion="-3.4810126">
               <folding>
                 <element signature="e#865#886#0" expanded="true" />
                 <element signature="e#1998#2027#0" expanded="true" />
@@ -164,31 +161,8 @@
       <file leaf-file-name="hackacity_edit.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="20" selection-start="724" selection-end="724" vertical-scroll-proportion="-5.7272725">
+            <state line="28" column="20" selection-start="724" selection-end="724" vertical-scroll-proportion="-4.7272725">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="39" selection-start="2352" selection-end="2352" vertical-scroll-proportion="-0.0">
-              <folding>
-                <element signature="e#2221#2241#0" expanded="true" />
-                <element signature="e#4785#4888#0" expanded="true" />
-                <element signature="e#4952#5040#0" expanded="true" />
-                <element signature="e#5094#5162#0" expanded="true" />
-                <element signature="e#5374#5443#0" expanded="true" />
-                <element signature="e#5493#5688#0" expanded="true" />
-                <element signature="e#5822#5894#0" expanded="true" />
-                <element signature="e#6061#6133#0" expanded="true" />
-                <element signature="e#6192#6264#0" expanded="true" />
-                <element signature="e#6433#6486#0" expanded="true" />
-                <element signature="e#13438#13549#0" expanded="true" />
-                <element signature="e#13593#13619#0" expanded="true" />
-                <element signature="e#13721#13742#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -215,19 +189,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_view.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
+      <file leaf-file-name="hackacity_event.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/layouts/hackacity_event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="18" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.91780823">
+            <state line="28" column="50" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-17.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_view.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_view.js">
+      <file leaf-file-name="hackacity_view.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="9" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.0">
+            <state line="46" column="42" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.5848564">
               <folding />
             </state>
           </provider>
@@ -264,16 +238,16 @@
         <option value="$PROJECT_DIR$/hackaglobal/tools/toolbox.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
-        <option value="$PROJECT_DIR$/templates/layouts/hackacity_event.html" />
         <option value="$PROJECT_DIR$/hackacities/models.py" />
         <option value="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
         <option value="$PROJECT_DIR$/hackacities/views.py" />
         <option value="$PROJECT_DIR$/hackacities/static/js/hackacity_view.js" />
         <option value="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css" />
+        <option value="$PROJECT_DIR$/templates/layouts/hackacity_event.html" />
+        <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
-        <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
       </list>
     </option>
   </component>
@@ -340,6 +314,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1043,29 +1035,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layouts/hackacity_event.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="373" selection-end="387" vertical-scroll-proportion="0.48387095">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h4#0;n#div#3;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/tools/toolbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="4" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="42" selection-start="936" selection-end="936" vertical-scroll-proportion="0.0">
@@ -1075,9 +1044,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="9" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="20" selection-start="724" selection-end="724" vertical-scroll-proportion="-4.7272725">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="103" selection-start="5006" selection-end="5006" vertical-scroll-proportion="0.37974682">
+        <state line="66" column="103" selection-start="5006" selection-end="5006" vertical-scroll-proportion="-3.4810126">
           <folding>
             <element signature="e#865#886#0" expanded="true" />
             <element signature="e#1998#2027#0" expanded="true" />
@@ -1097,44 +1080,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
+    <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="39" selection-start="2352" selection-end="2352" vertical-scroll-proportion="0.0">
+        <state line="1" column="27" selection-start="45" selection-end="48" vertical-scroll-proportion="0.04043127">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/tools/toolbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="4" selection-start="390" selection-end="390" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#2221#2241#0" expanded="true" />
-            <element signature="e#4785#4888#0" expanded="true" />
-            <element signature="e#4952#5040#0" expanded="true" />
-            <element signature="e#5094#5162#0" expanded="true" />
-            <element signature="e#5374#5443#0" expanded="true" />
-            <element signature="e#5493#5688#0" expanded="true" />
-            <element signature="e#5822#5894#0" expanded="true" />
-            <element signature="e#6061#6133#0" expanded="true" />
-            <element signature="e#6192#6264#0" expanded="true" />
-            <element signature="e#6433#6486#0" expanded="true" />
-            <element signature="e#13438#13549#0" expanded="true" />
-            <element signature="e#13593#13619#0" expanded="true" />
-            <element signature="e#13721#13742#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css">
+    <entry file="file://$PROJECT_DIR$/templates/layouts/hackacity_event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="20" selection-start="724" selection-end="724" vertical-scroll-proportion="-5.7272725">
+        <state line="28" column="50" selection-start="1043" selection-end="1043" vertical-scroll-proportion="-17.5">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_view.js">
+    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="9" selection-start="1882" selection-end="1882" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="18" selection-start="1726" selection-end="1726" vertical-scroll-proportion="0.91780823">
+        <state line="46" column="42" selection-start="2438" selection-end="2438" vertical-scroll-proportion="0.5848564">
           <folding />
         </state>
       </provider>

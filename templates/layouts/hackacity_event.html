@@ -26,7 +26,7 @@
         </div>
     </div>
     <div class="row well" style="margin: 30px 50px 10px 50px">
-            {{ event.description }}
+            {{ event.description|truncatechars:300 }}
     </div>
     <hr>
     <div class="row" style="padding: 0px 50px 0px 50px">

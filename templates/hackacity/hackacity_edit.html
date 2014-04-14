@@ -1,0 +1,177 @@
+{% extends "base.html" %}
+
+{% block head-includes %}
+
+{% endblock %}
+
+{% block content %}
+    <div id="edit-event-info" data-user_username="{{ request.user.username }}" data-hackacity_id="{{ hackacity.id }}" data-add_staff_url="{% url 'hackaglobal.ajax.add_staff' %}" data-remove_staff_url="{% url 'hackaglobal.ajax.remove_staff' %}"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="add-event-form-container" class="well">
+                    <form id="add-event-form" class="form-horizontal" method="POST" enctype="multipart/form-data"  data-ajax="false">
+                        {% csrf_token %}
+                        <fieldset style="border: none;">
+                            <legend>Please fill in all the required fields.</legend>
+                            {% if form.errors %}
+                                <div class="alert alert-dismissable alert-danger">
+                                    {{ form.errors }}
+                                </div>
+                            {% endif %}
+{#                            <div class="form-group">#}
+{#                                <label for="add-event-form-name" class="col-md-3 control-label">HackaCity Name</label>#}
+{#                                <div class="col-md-9">#}
+{#                                    <input id="add-event-form-name" name="name" value="{{ event.name }}" class="form-control" type="text" {% if is_lead %}placeholder="Required" disabled{% endif %}>#}
+{#                                </div>#}
+{#                            </div>#}
+
+                            <div class="form-group">
+                                <label for="add-event-form-short-description" class="col-md-3 control-label">Description</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="add-event-form-short-description" name="short_description" class="form-control" type="text" placeholder="Optional" value="{{ hackacity.short_description }}">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="add-event-form-about" class="col-md-3 control-label">About</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <textarea id="add-event-form-about" name="about" class="form-control" type="text" rows="6" placeholder="[HTML Tags are Allowed]">{{ hackacity.about }}</textarea>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>Images for HackaSite:</legend>
+
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-logo" class="col-md-3 control-label">Logo</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-logo" class="form-control" value="{{ hackacity.image_logo.url }}" name="image_logo" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-home" class="col-md-3 control-label">Home</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-home" class="form-control" value="{{ hackacity.image_home }}" name="image_logo" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-about" class="col-md-3 control-label">About</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-about" class="form-control" value="{{ hackacity.image_about }}" name="image_logo" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-divider-1" class="col-md-3 control-label">Divider 1</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-divider-1" class="form-control" value="{{ hackacity.image_placeholder_1 }}" name="image_divider_1" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-divider-2" class="col-md-3 control-label">Divider 2</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-divider-2" class="form-control" value="{{ hackacity.image_placeholder_2 }}" name="image_divider_2" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-divider-3" class="col-md-3 control-label">Divider 3</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-divider-3" class="form-control" value="{{ hackacity.image_placeholder_3 }}" name="image_divider_3" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="add-event-form-image-divider-4" class="col-md-3 control-label">Divider 4</label>
+                                        <div class="col-md-9">
+                                            <input id="add-event-form-image-divider-4" class="form-control" value="{{ hackacity.image_placeholder_4 }}" name="image_divider_4" type="file">
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </fieldset>
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button id="add-event-submit-btn" type="submit" class="btn btn-primary">Save</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <div class="row">
+                        <h1 class="page-header">Edit {{ hackacity.name }}
+                            <a href="/delete/{{ event.id }}" class="btn btn-primary" style="float:right; font-size: 30px; color: white;">Delete</a>
+                        </h1>
+                    </div>
+                <style>
+                    .row {
+                        min-height: 100px;
+                    }
+                </style>
+                <div class="col-md-offset-1">
+                    <div class="row">
+                        <h4>Attendees</h4>
+                        <div id="event-attendees-container">
+                            {% for attendee in attendees %}
+                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4>Trackers</h4>
+                        <div id="event-trackers-container">
+                            {% for attendee in trackers %}
+                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h4>Speakers</h4>
+
+                        <div class="container col-md-12">
+                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">
+                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">
+                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">
+                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">
+                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>
+                        </div>
+
+                        {% for staff in speakers %}
+                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}
+                        {% endfor %}
+                    </div>
+                    <div class="row">
+                        <h4>Mentors</h4>
+
+                        <div class="container col-md-12">
+                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">
+                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">
+                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">
+                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">
+                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="M">Add</button>
+                        </div>
+
+                        {% for staff in mentors %}
+                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}
+                        {% endfor %}
+                    </div>
+                    <div class="row">
+                        <h4>Organizers</h4>
+
+                        <div class="container col-md-12">
+                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">
+                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">
+                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">
+                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">
+                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="O">Add</button>
+                        </div>
+
+                        {% for staff in organizers %}
+                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

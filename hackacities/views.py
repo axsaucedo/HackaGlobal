@@ -3,8 +3,12 @@ from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
 from django.http import HttpResponseRedirect
 
+from hackaglobal.tools.forms import HackaCityCreationForm
+
 from hackacities.models import HackaCity
 from django.db.models import Q
+
+import settings
 
 
 def view_hackacity(request, hc):
@@ -20,3 +24,54 @@ def view_hackacity(request, hc):
 
     return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity })
 
+
+def edit_hackacity(request, hc):
+
+    data = {}
+    data['form'] = request.POST.get("form", "")
+
+    try:
+        if hc.isdigit():
+            data['hackacity'] = HackaCity.objects.get(pk=hc, team=request.user)
+        else:
+            data['hackacity'] = HackaCity.objects.get(Q(name=hc) | Q(city__name=hc), team=request.user)
+
+    except HackaCity.DoesNotExist:
+        return render(request, 'generic_message.html', { 'header' : 'HackaCity not found', 'message': "Oops, we couldn't the HackaCity you were looking for..." })
+
+
+    try:
+
+#        all_attendees = Attendee.objects.filter(event=event_id)
+#        all_staff = Staff.objects.filter(event=event_id)
+#
+#        data['attendees'] = all_attendees.filter(type='A')
+#        data['trackers'] = all_attendees.filter(type='T')
+#
+#        data['organizers'] = all_staff.filter(type='O')
+#        data['mentors'] = all_staff.filter(type='M')
+#        data['speakers'] = all_staff.filter(type='S')
+
+        if request.method =='POST':
+            data['form'] = HackaCityCreationForm(request.POST, request.FILES)
+
+            # Check if form is valid and if the user is part of the event hackacity's team
+            if data['form'].is_valid():
+                new_hackacity = data['form'].save(commit=False)
+                new_hackacity.id = data['hackacity'].id
+                new_hackacity.name = data['hackacity'].name
+                new_hackacity.city = data['hackacity'].city
+                new_hackacity.lead = data['hackacity'].lead
+                new_hackacity.save()
+                data['hackacity'] = new_hackacity
+        else:
+            data['form'] = HackaCityCreationForm()
+
+    except Exception, err:
+        # Event not found so raise an event not found
+        return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': err if settings.DEBUG else "Oops, we couldn't find the event you were looking for..." })
+
+
+    data['is_lead'] = data['hackacity'].lead = request.user
+
+    return render(request, 'hackacity/hackacity_edit.html', data)

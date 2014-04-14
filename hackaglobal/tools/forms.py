@@ -2,6 +2,7 @@ from django import forms
 from django.utils.translation import ugettext, ugettext_lazy as _
 from django.contrib.auth.models import User
 from hackaglobal.models import Event, Staff
+from hackacities.models import HackaCity
 import datetime
 
 
@@ -150,3 +151,15 @@ class EFUserEditForm(forms.Form):
         if commit:
             self.user.save()
         return self.user
+
+class HackaCityCreationForm(forms.ModelForm):
+
+    class Meta:
+        model = HackaCity
+        exclude = ("city","name","lead")
+
+    def save(self, commit=True):
+        hc = super(HackaCityCreationForm, self).save(commit=False)
+        if commit:
+            hc.save()
+        return hc

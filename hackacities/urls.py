@@ -5,4 +5,7 @@ urlpatterns = patterns('',
 
     # Hackacity management
     url(r'^view/(?P<hc>\w+)/$', views.view_hackacity, name='hackacity'),
+
+    # Hackacity management
+    url(r'^edit/(?P<hc>\w+)/$', views.edit_hackacity, name='hackacity'),
 )

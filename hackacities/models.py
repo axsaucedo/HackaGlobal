@@ -12,6 +12,20 @@ CONTAINER_TYPE_CHOICES = (
         ('C', 'Community'),
     )
 
+import os
+from uuid import uuid4
+from django.utils.text import slugify
+
+
+def path_and_rename(path):
+    def wrapper(instance, filename):
+        ext = filename.split('.')[-1]
+        rstring = uuid4().get_hex()
+        fname = slugify(unicode(rstring) + u'_logo') + "." + ext
+
+        return os.path.join(path, fname)
+    return wrapper
+
 class HackaContainer(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=200)
@@ -25,7 +39,14 @@ class HackaCity(models.Model):
     team = models.ManyToManyField(User, related_name="team_of", null=True, blank=True)
     member = models.ManyToManyField(User, related_name="member_of", null=True, blank=True)
 
-    photo = models.ImageField(upload_to='profiles/')
+
+    image_logo = models.ImageField(upload_to=path_and_rename('hackacities/logos/'), null=True, blank=True)
+    image_home = models.ImageField(upload_to=path_and_rename('hackacities/home/'), null=True, blank=True)
+    image_about = models.ImageField(upload_to=path_and_rename('hackacities/about/'), null=True, blank=True)
+    image_divider_1 = models.ImageField(upload_to=path_and_rename('hackacities/dividers/'), null=True, blank=True)
+    image_divider_2 = models.ImageField(upload_to=('hackacities/dividers/'), null=True, blank=True)
+    image_divider_3 = models.ImageField(upload_to=path_and_rename('hackacities/dividers/'), null=True, blank=True)
+    image_divider_4 = models.ImageField(upload_to=path_and_rename('hackacities/dividers/'), null=True, blank=True)
 
     name = models.CharField(max_length=25)
     short_description = models.CharField(max_length=200)
@@ -37,7 +58,7 @@ class HackaCity(models.Model):
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
     def image_tag(self):
-        return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.png')
+        return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.pngd')
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
 

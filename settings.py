@@ -188,6 +188,10 @@ SOCIAL_AUTH_PIPELINE = (
     'accounts.pipelines.get_user_avatar',
 )
 
+LOGIN_URL          = '/login/'
+LOGIN_REDIRECT_URL = '/manage/'
+LOGIN_ERROR_URL    = '/login/'
+
 FACEBOOK_EXTENDED_PERMISSIONS = ['email']
 
 FACEBOOK_APP_ID             = '1471335216431010'

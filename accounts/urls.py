@@ -4,8 +4,8 @@ import views
 urlpatterns = patterns('',
 
     # Account authentication
-    (r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'accounts/login.html'}),
-    (r'^logout/$', 'django.contrib.auth.views.logout', {'next_page' : '/'}),
+    url(r'^login/$', 'django.contrib.auth.views.login', {'template_name': 'accounts/login.html'}, name="login"),
+    url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page' : '/'}, name="logout"),
     url(r'^signup/$', views.apply),
 
     # Account management

@@ -55,4 +55,4 @@ def base_url():
 
 @register.assignment_tag()
 def all_hackacities_terminations_js_print():
-    return ('"'+'","'.join([item for sublist in HackaCity.objects.all().values_list('name', 'city__name') for item in sublist])+'"').replace("Hacka","")
+    return ('"'+'","'.join([item for sublist in HackaCity.objects.all().values_list('name', 'city__name') for item in sublist])+'","HackaGlobal"').replace("Hacka","")

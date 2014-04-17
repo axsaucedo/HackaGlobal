@@ -13,6 +13,9 @@ import settings
 
 def view_hackacity(request, hc):
 
+    if hc.lower() == "global":
+        return HttpResponseRedirect(reverse('home'))
+
     try:
         print "here"
         hackacity = HackaCity.objects.get(name=hc)

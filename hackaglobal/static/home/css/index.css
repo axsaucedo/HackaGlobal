@@ -42,7 +42,8 @@ a:hover{ text-decoration:none; color:#687D9F;}
 }
 
 
-.hg-list-date-container { 
+
+.hg-list-date-container {
   background-color: #f3f3f3;
   color: #222d3f;
   font-size: 16px;
@@ -62,7 +63,7 @@ a:hover{ text-decoration:none; color:#687D9F;}
 
 .hg-list-item-container:hover .hg-list-item-location {
   background-image: url("../img/hg-list-item-location-hover.png");
-} 
+}
 
 .hg-list-item-info {
   font-size: 13px;
@@ -167,7 +168,7 @@ a:hover{ text-decoration:none; color:#687D9F;}
 }
 
 .hg-overlay-container {
-  
+
   margin: 0 auto;
   position: relative;
   width: 1000px;
@@ -184,9 +185,6 @@ a:hover{ text-decoration:none; color:#687D9F;}
 	height:100%;
 }
 
-.header {
-	min-height: 590px;
-}
 
 .header #vi{
 	position: fixed;
@@ -273,8 +271,8 @@ a:hover{ text-decoration:none; color:#687D9F;}
 	margin-top: 100px;
     padding: 0px 25px 25px;
     background: #fff;
-    box-shadow: 
-        0px 0px 0px 5px rgba( 255,255,255,0.4 ), 
+    box-shadow:
+        0px 0px 0px 5px rgba( 255,255,255,0.4 ),
         0px 4px 20px rgba( 0,0,0,0.33 );
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -345,7 +343,7 @@ input:-moz-placeholder {
 #signup .inputs .email:focus, #signup .inputs .password:focus {
     background: #fff;
     box-shadow: 0px 0px 0px 3px #fff38e, inset 0px 2px 3px rgba( 0,0,0,0.2 ), 0px 5px 5px rgba( 0,0,0,0.15 );
-    outline: none;   
+    outline: none;
 }
 
 #signup .inputs .checkboxy {
@@ -384,7 +382,7 @@ input:-moz-placeholder {
         #b9c5dd 0%,
         #a4b0cb);
     background: -webkit-gradient(
-        linear, left top, left bottom, 
+        linear, left top, left bottom,
         from(#b9c5dd),
         to(#a4b0cb));
     -moz-border-radius: 5px;
@@ -414,7 +412,7 @@ input:-moz-placeholder {
         #a4b0cb 0%,
         #b9c5dd);
     background: -webkit-gradient(
-        linear, left top, left bottom, 
+        linear, left top, left bottom,
         from(#a4b0cb),
         to(#b9c5dd));
 }
@@ -442,7 +440,7 @@ input:-moz-placeholder {
     -o-transition: height 1s ease;
     transition: height 1s ease;
 	position:fixed !important;
-	top:0;
+	top:55px;
 	width:100% !important;
     height: 50px !important;
 	max-width:100% !important;
@@ -472,10 +470,10 @@ input:-moz-placeholder {
 }
 
 #mc_embed_signup #mc-embedded-subscribe:hover{
-	-webkit-transition: background .5s ease, height .5s ease;  
-    -moz-transition: background .5s ease, height .5s ease;  
-    -o-transition: background .5s ease, height .5s ease;  
-    transition: background .5s ease, height .5s ease; 
+	-webkit-transition: background .5s ease, height .5s ease;
+    -moz-transition: background .5s ease, height .5s ease;
+    -o-transition: background .5s ease, height .5s ease;
+    transition: background .5s ease, height .5s ease;
 	background:#bddfff;
 }
 
@@ -567,11 +565,11 @@ a.btn_as:hover img{ opacity:1;}
 	}
 
 
-/* Mailchimp */ 
+/* Mailchimp */
 
 #mc_embed_signup{
-	background:#fff; 
-	clear:left; 
+	background:#fff;
+	clear:left;
 	font:14px Helvetica,Arial,sans-serif;
 }
 
@@ -581,31 +579,31 @@ a.btn_as:hover img{ opacity:1;}
 	text-align:center;
 	height:555px;
 	}
-	/* mailchimp description text */ 
+	/* mailchimp description text */
 	#mc-embedded-subscribe-form.validate{
 	color:#222D3F;
         width: 100%;
 	text-align:center;
 	}
-	/* Send "Email box" */	
+	/* Send "Email box" */
 	#mce-EMAIL{
 		width: 300px;
 		margin-left:22%;
 		margin-right:22%;
 		text-align:center;
 		}
-	/* subscribe button */ 
+	/* subscribe button */
 	#mc-embedded-subscribe{
 		width: 304px;
 		margin-left:22%;
 		margin-right:22%;
 		text-align:center;
-		}	
-	
+		}
+
 #top_gnav a h2{ color:#222D3F;}
 #top_gnav a:hover h2{ color:#687D9F;}
 
-	
+
 .btn_g{
 	display:block;
 	background:#222D3F;
@@ -645,12 +643,12 @@ a.btn_as:hover img{ opacity:1;}
 
 body, div, dl, dt, dd, ul, ol, li,
 h1, h2, h3, h4, h5, h6,
-pre, code, form, fieldset, legend, input, textarea,
+pre, code, form, fieldset, legend, textarea,
 p, blockquote, th, td {
 	font-family: 'Open Sans';
 	font-weight:300;
 	font-size:18px;
-	line-height:1.8em; 
+	line-height:1.8em;
 	color:#404040;
 	margin:0;
 	padding:0;
@@ -693,14 +691,14 @@ h2{ font-size:25px; line-height:1.25em;}
 		margin-right:40px;
 		}
 	#top_gnav ul li.last{ margin-right:0px;}
-	
+
 #top_gnav_dummy{ height:50px;}
-		
-		
+
+
 #main{ padding-top:50px;}
 #movie { margin-bottom: 50px; }
 
-	
+
 #info{ margin-bottom:70px;}
 	#info ul{
 		padding-top:50px;
@@ -721,7 +719,7 @@ h2{ font-size:25px; line-height:1.25em;}
 	.infodate{ width:25.42%;}
 	.infotitle{}
 	.infobtn{ width: 95px; padding-left:5%;}
-	
+
 	.more{
 		display:block;
 		width:95px;
@@ -753,15 +751,15 @@ h2{ font-size:25px; line-height:1.25em;}
 			color:#fff;
 			background-color:#687D9F;
 			}
-		
+
 #about{ margin-bottom:0px; padding-top: 50px}
 	.aboutimg{ z-index:10;}
-	.aboutimg img{ 
+	.aboutimg img{
 		width:310px;
 		position:absolute;
 		z-index:10;
 		}
-	#about h2{ 
+	#about h2{
 		color:#222D3F;
 		font-weight:400;
 		margin-bottom:10px;
@@ -774,21 +772,21 @@ h2{ font-size:25px; line-height:1.25em;}
 		width:100%;
 		position:relative;
 		}
-		
+
 	.abouttext{ width:58%; margin-top:35px; z-index:20;}
 	.aboutbox01 .abouttext{ float:right; margin-top:70px;}
 	.aboutbox03 .abouttext{ float:right; margin-top:70px;}
 	.aboutbox02 .abouttext{ float:left; margin-top:92px;}
 	.aboutbox04 .abouttext{ float:left; margin-top:105px;}
-	
+
 	.flyout01{ top:20px; left:-50px; max-width:245px;}
 	.flyout02{ top:20px; right:-50px; max-width:245px;}
 	.flyout03{ top:37px; left:-50px; max-width:245px;}
 	.flyout04{ top:80px; right:-50px; max-width:245px;}
 	.credit{ font-size:small; position: absolute; right: -50px; top:242px;}
-	
+
 	.note{ font-size:60%;}
-	
+
 #flow{ margin-bottom:70px;}
 	#flow h2{ margin-top:0px;}
 	#flow > div{ width:100%; position:relative;}
@@ -799,7 +797,7 @@ h2{ font-size:25px; line-height:1.25em;}
 	.flow2{ width:27.2%;}
 	.flow3{ width:34.3%;}
 	.flow3 h2{ text-indent:10%;}
-	
+
 	#flow .flow_arrow1,
 	#flow .flow_arrow2{
 		background:url(static/img/top_bullet_br.html) no-repeat;
@@ -812,7 +810,7 @@ h2{ font-size:25px; line-height:1.25em;}
 	.flow_arrow1{left:32.42%;}
 	.flow_arrow2{left:60%;}
 
-	
+
 #app{
 	margin-bottom:70px;
 	}
@@ -834,7 +832,7 @@ h2{ font-size:25px; line-height:1.25em;}
 	.appbox > ul.apps .appbtn .btn_gp img { width:175px;}
 	.appbox > .official_apptext{ text-align: center; margin: 10px 5%;}
 	.appbox > div{ position:relative; display:table; padding:20px 0;}
-	
+
 	.appbox > div .appimg,
 	.appbox > div .apptext,
 	.appbox > div .appbtn{ display:table-cell; vertical-align:middle;}
@@ -842,20 +840,20 @@ h2{ font-size:25px; line-height:1.25em;}
 	.appbox > div .apptext{}
 	.appbox > div .appbtn{ width:200px; padding-left:20px;}
 	.appbox > div .appbtn img{ width:200px;}
-	
+
 #gallery{ margin-top:50px;  /*display: table;*/}
 	#gallery_list{ overflow: hidden; }
 	#gallery_list div{
 		 width:100%;
 	}
-	
+
 
 .gallerytitle h1{
 	padding: 20px;
 		color:#222D3F;
 		font-weight:600;
 		}
-		
+
 	#gallery .galleryitem{
 		width:20%;
 		height:100%;
@@ -867,7 +865,7 @@ h2{ font-size:25px; line-height:1.25em;}
 		-webkit-transition: none;
 		-moz-transition: none;
 	}
-	
+
 	#gallery .galleryitem div{
 		width:101%;
 		opacity:0;
@@ -903,16 +901,16 @@ h2{ font-size:25px; line-height:1.25em;}
 		height: 32px;
 	}
 
-	
+
 #contents_foot{ text-align:center; padding-bottom:10px;}
 	.logo img{ width:130px;}
-	
+
 	#contents_foot ul{
 		width:390px;
 		margin:0 auto;
 		height:10px;
 		}
-	#contents_foot li{ 
+	#contents_foot li{
 		float:left;
 		margin-left:40px;
 		height:14px;
@@ -946,14 +944,14 @@ h2{ font-size:25px; line-height:1.25em;}
 	#contents_foot li.global:after{}
 	#contents_foot a{ color:#404040;}
 	#contents_foot a:hover{ color:#222D3F;}
-	
+
 #footer{
 	height:60px;
 	background:#f7f7f7;
 	position:relative;
 	}
 	#footer > div > div{ position:relative;}
-	
+
 	.global,
 	.fnavi,
 	.cr{position:absolute;}
@@ -989,14 +987,14 @@ h2{ font-size:25px; line-height:1.25em;}
 			top:0;
 			left:0;
 			background: url(static/img/globe.png) no-repeat;
-			}	
+			}
 		a.global_main:after{
 			width:4px;
 			height:7px;
 			top:4px;
 			left:65px;
 			background: url(static/img/bullet_right.png) no-repeat;
-			}	
+			}
 		.global .global_sub {
 			bottom: 16px;
 			left: 0;
@@ -1017,7 +1015,7 @@ h2{ font-size:25px; line-height:1.25em;}
 				height:22px;
 				background:#f7f7f7;
 				}
-		
+
 	.fnavi{
 		padding-left:20px;
 		border-left:1px solid #c7c7c7;
@@ -1033,16 +1031,16 @@ h2{ font-size:25px; line-height:1.25em;}
 		display:block;
 		font-size:11px;
 		color:#404040;
-		
+
 		}
 	.fnavi a:hover{ color:#222D3F;}
-	
+
 	.cr{
 		font-size:11px;
 		top:21px;
 		right:0%;
 		}
-	
+
 .btn_area{
 	margin-bottom:70px;
 	overflow:hidden;

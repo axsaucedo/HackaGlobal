@@ -27,9 +27,19 @@ body {
     height: 100%;
 }
 
+#hackaglobal-nav-bar, .dropdown-menu {
+    font-family: 'Open Sans';
+    font-weight:300;
+    font-size:18px;
+    line-height:1.8em;
+    color:#404040;
+    margin:0;
+    padding:0;
+}
+
 #nav-bar-logo {
     width: 65px;
-    margin-top: -20px;
+    margin-top: -18px;
 }
 
 .nav-bar-hackaglobal-text {
@@ -37,7 +47,7 @@ body {
     color: black !important;
     font-size: 35px;
     margin-top: 7px;
-    padding: 0px 0px 0px 0px;
+    padding: 0px 30px 0px 0px;
 }
 .icon-calendar {
     color: black;

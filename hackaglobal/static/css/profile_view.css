@@ -1,6 +1,10 @@
 .mainuserclass {
     font-size: 18px;
 }
+.mainuserclass div {
+    line-height: 2em;
+
+}
 .profilepicture img {
     width: 200px;
 }

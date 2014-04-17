@@ -88,13 +88,16 @@
 .carousel-inner .next        { left:  50%; }
 .carousel-inner .prev		 { left: -50%; }
 .carousel-control 			 { width:  4%; }
-.carousel-control.right {
-    width: 150px;
-    background: radial-gradient(ellipse at center right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
+
+.carousel-control.right, .carousel-control.left {
+    width: 200px;
+    background: transparent;
 }
-.carousel-control.left {
-    width: 150px;
-    background: radial-gradient(ellipse at center left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 70%);
+.carousel-control.right:hover {
+    background: radial-gradient(ellipse at center right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 70%);
+}
+.carousel-control.left:hover {
+    background: radial-gradient(ellipse at center left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 70%);
 }
 /*.carousel-control:hover {*/
 /*}*/

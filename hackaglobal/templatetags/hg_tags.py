@@ -1,5 +1,6 @@
 from django import template
 from hackaglobal.models import Event, Attendee
+from hackacities.models import HackaCity
 from taggit.models import Tag
 from settings import BASE_URL, DEBUG
 
@@ -51,3 +52,7 @@ def split(value):
 @register.assignment_tag()
 def base_url():
     return BASE_URL
+
+@register.assignment_tag()
+def all_hackacities_terminations_js_print():
+    return ('"'+'","'.join([item for sublist in HackaCity.objects.all().values_list('name', 'city__name') for item in sublist])+'"').replace("Hacka","")

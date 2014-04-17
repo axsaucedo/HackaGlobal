@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HackaGlobal - Connecting passionate hackers globally.</title>
 
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta name="keywords" content="hacka,hackaglobal,hackasoton,hackatimis,community,developers,programmers,alejandro saucedo,hackatrip,hackatrips" />
+    <meta property="og:url" content="http://hackaglobal.co/" />
+    <meta property="og:image" content="http://hackaglobal.co/static/home/img/hacka-globe.png" />
+    <meta property="og:title" content="HackaGlobal" />
+    <meta property="og:description" content="The largest and most Epic global community of developers!" />
+    <title>HackaGlobal - The biggest and most epic global community of developers!</title>
+
+
+    <!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery-->
     <script type="text/javascript" src="/static/js/external/jquery.min.js"></script>
+    <!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery--><!--JQuery-->
+
+    <!--JQuery UI-->
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <script type="text/javascript" src="/static/js/external/jquery-ui.js"></script>
     <!--Following libraries used for the TagIt external library-->
     <script type="text/javascript" src="/static/js/external/tagit-themeroller.js"></script>
     <script type="text/javascript" src="/static/js/external/jquery.themeswitcher.js"></script>
+
     <link rel="stylesheet" type="text/css" href="/static/css/external/Bootstrap.css">
     <!--Google Maps and JQuery maps UI APIs-->
     <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
     <script type="text/javascript" src="/static/js/external/jquery.ui.map.full.min.js"></script>
     <script type="text/javascript" src="/static/js/external/jquery.ui.map.extensions.js"></script>
+
 
 
     <!--Bootstrap amelia theme-->
@@ -30,9 +47,13 @@
     {% load hg_tags %}
     {% all_tags as tags %}
     {% base_url as BASE %}
+    {% all_hackacities_terminations_js_print as HACKACITIES %}
     <script type='text/javascript'>
         window.availableTags = [{% for tag in tags %}{% if forloop.first %}'{{ tag }}'{% else %},'{{ tag }}'{% endif %}{% endfor %}];
         window.base_url = "{{ BASE }}";
+        {% autoescape off %}
+            window.availableHackaCities = [{{ HACKACITIES }}]
+        {% endautoescape %}
     </script>
 
 
@@ -53,7 +74,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/"><img id="nav-bar-logo" src="/static/home/img/full_logo.png"></a>
+            <a class="navbar-brand" href="/"><img id="nav-bar-logo" src="/static/home/img/globe-bracket.png"></a>
+            <div class="navbar-brand nav-bar-hackaglobal-text">
+{#                <form id="nav-bar-hackaglobal-text-form">#}
+                    Hacka { <input id="nav-bar-hackaglobal-text-input" type="text" value="{% if hackacity %}{{ hackacity.get_hacka }}{% else %}Global{% endif %}"> }
+{#                </form>#}
+            </div>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -74,17 +100,17 @@
                     </li>
                 {% endif %}
             </ul>
-            <form id="nav-search-form" class="navbar-form navbar-right" method="POST" action="/find/" role="search">
-                {% csrf_token %}
-                <input id="nav-find-event-tags" class="form-control hidden" type="text" name="tags">
-                <div id="nav-find-events-bar" class="col-md-10">
-                    <ul id="nav-find-event-search" style="border-radius: 5px; padding: 5px 10px 5px 10px; background-color: #d3d3d3" data-name="nameOfSelect"></ul>
-                </div>
-                <button id="nav-find-event-search-btn" type="submit" class="btn btn-default col-md-2">Find</button>
-            </form>
-            <ul class="nav navbar-nav navbar-right">
+{#            <form id="nav-search-form" class="navbar-form navbar-right" method="POST" action="/find/" role="search">#}
+{#                {% csrf_token %}#}
+{#                <input id="nav-find-event-tags" class="form-control hidden" type="text" name="tags">#}
+{#                <div id="nav-find-events-bar" class="col-md-10">#}
+{#                    <ul id="nav-find-event-search" style="border-radius: 5px; padding: 5px 10px 5px 10px; background-color: #d3d3d3" data-name="nameOfSelect"></ul>#}
+{#                </div>#}
+{#                <button id="nav-find-event-search-btn" type="submit" class="btn btn-default col-md-2">Find</button>#}
+{#            </form>#}
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 50px">
                 {% if request.user.is_authenticated %}
-                    <li><a href="/find">Find</a></li>
+                    <li><a href="/find">Events</a></li>
                     <li><a href="/create">Create</a></li>
                     <li><a href="/manage">Manage</a></li>
                 {% else %}

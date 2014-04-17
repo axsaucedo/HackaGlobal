@@ -4,6 +4,7 @@ from settings import STATIC_ROOT, MEDIA_ROOT
 from django.contrib import admin
 admin.autodiscover()
 
+
 handler500 = 'djangotoolbox.errorviews.server_error'
 handler404 = 'hackaglobal.views.handler404'
 

@@ -28,8 +28,25 @@ body {
 }
 
 #nav-bar-logo {
-    width: 350px;
-    margin-top: -23px;
+    width: 65px;
+    margin-top: -20px;
+}
+
+.nav-bar-hackaglobal-text {
+    font-family: levenim;
+    color: black !important;
+    font-size: 35px;
+    margin-top: 7px;
+    padding: 0px 0px 0px 0px;
+}
+.icon-calendar {
+    color: black;
+}
+#nav-bar-hackaglobal-text-input {
+    margin: 0px 0px 0px 0px;
+    height: 45px;
+    resize: horizontal;
+    /*width: 125px;*/
 }
 
 #content {

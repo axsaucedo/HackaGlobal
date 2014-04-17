@@ -43,10 +43,11 @@ class HackaCity(models.Model):
     communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
     partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
-    def image_tag(self):
-        return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.png')
+    def image_tag(self): return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.png')
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
+
+    def get_hacka(self): return self.name.replace("Hacka","")
 
     def get_image_home(self): return self.image_home.url if self.image_home else '/static/defaultmedia/default-hackacity-home.jpg'
     def get_image_about(self): return self.image_about.url if self.image_about else '/static/defaultmedia/default-hackacity-about.png'

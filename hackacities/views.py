@@ -14,13 +14,21 @@ import settings
 def view_hackacity(request, hc):
 
     try:
-        if hc.isdigit():
-            hackacity = HackaCity.objects.get(pk=hc)
-        else:
-            hackacity = HackaCity.objects.get(Q(name=hc) | Q(city__name=hc))
+        print "here"
+        hackacity = HackaCity.objects.get(name=hc)
 
     except HackaCity.DoesNotExist:
-        return render(request, 'generic_message.html', { 'header' : 'HackaCity not found', 'message': "Oops, we couldn't the HackaCity you were looking for..." })
+        try:
+            if hc.isdigit():
+                hackacity = HackaCity.objects.get(pk=hc)
+                print hackacity.name
+            else:
+                hackacity = HackaCity.objects.get(Q(city__name=hc) | Q(name="Hacka"+hc))
+
+            return HttpResponseRedirect(reverse('view_hackacity', args=[hackacity.name]))
+
+        except HackaCity.DoesNotExist:
+            return render(request, 'generic_message.html', { 'header' : 'HackaCity not found', 'message': "Oops, we couldn't the HackaCity you were looking for..." })
 
     return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity })
 

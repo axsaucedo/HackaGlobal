@@ -46,6 +46,49 @@ var base_events = {
                 }
             }
         });
+
+        // This Function Tells you the width of the value in an input box
+        $.fn.textWidth = function () {
+            $body = $('body');
+            $this =  $(this);
+            $text = $this.text();
+            if($text=='') $text = $this.val();
+            var calc = '<div style="clear:both;display:block;visibility:hidden;"><span style="width;inherit;margin:0;font-family:'  + $this.css('font-family') + ';font-size:'  + $this.css('font-size') + ';font-weight:' + $this.css('font-weight') + '">' + $text + '</span></div>';
+            $body.append(calc);
+            var width = $('body').find('span:last').width();
+            $body.find('span:last').parent().remove();
+            return width;
+        };
+
+        var nav_input = $('#nav-bar-hackaglobal-text-input');
+        nav_input.css("width", nav_input.textWidth()+15);
+        console.log(nav_input.val().length*10);
+        nav_input.keydown(function(e) {
+            //When the user presses enter
+            if(e.which == 13) {
+                var hackacity = nav_input.val();
+                console.log(window.availableHackaCities.toString().toLowerCase().indexOf(hackacity.toLowerCase()))
+                if (window.availableHackaCities.toString().toLowerCase().indexOf(hackacity.toLowerCase()) > -1)
+                    window.location = "/hackacity/view/" + hackacity;
+            }
+        });
+
+        nav_input.autocomplete({
+            source: window.availableHackaCities,
+            select: function(event, ui) {
+                console.log(event, ui)
+                window.location = "/hackacity/view/" + ui.item.value;
+            },
+            minLength: 0,
+            minChars: 0,
+            max: 12,
+            autoFill: true,
+            mustMatch: true,
+            matchContains: false,
+        }).on('focus', function(event) {
+                var self = this;
+                $(self).autocomplete( "search", "");
+        });
     }
 };
 

@@ -4,8 +4,8 @@ from hackacities import views
 urlpatterns = patterns('',
 
     # Hackacity management
-    url(r'^view/(?P<hc>\w+)/$', views.view_hackacity, name='hackacity'),
+    url(r'^view/(?P<hc>\w+)/$', views.view_hackacity, name='view_hackacity'),
 
     # Hackacity management
-    url(r'^edit/(?P<hc>\w+)/$', views.edit_hackacity, name='hackacity'),
+    url(r'^edit/(?P<hc>\w+)/$', views.edit_hackacity, name='edit_hackacity'),
 )

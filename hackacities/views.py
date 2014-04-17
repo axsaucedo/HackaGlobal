@@ -13,6 +13,8 @@ import settings
 
 def view_hackacity(request, hc):
 
+    print hc
+
     if hc.lower() == "global":
         return HttpResponseRedirect(reverse('home'))
 

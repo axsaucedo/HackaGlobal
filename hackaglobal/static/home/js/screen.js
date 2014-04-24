@@ -12,7 +12,7 @@ function ge(id) {
 function getEvents(country) {
 	var xhr = new XMLHttpRequest();
 	
-	xhr.open('GET', apiURL + '/api/data/' + country + '/', true);
+	xhr.open('GET', apiURL + '/api/data/' + country + '/?format=json', true);
 
 	xhr.onload = function() {
 		var rsp = JSON.parse(xhr.responseText),

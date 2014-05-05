@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" afterPath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -179,7 +178,7 @@
       <file leaf-file-name="hackacity_view.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="200" column="13" selection-start="4387" selection-end="4387" vertical-scroll-proportion="0.30861723">
+            <state line="213" column="16" selection-start="4651" selection-end="4651" vertical-scroll-proportion="0.6993988">
               <folding />
             </state>
           </provider>
@@ -979,7 +978,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="13" selection-start="4387" selection-end="4387" vertical-scroll-proportion="0.30861723">
+        <state line="213" column="16" selection-start="4651" selection-end="4651" vertical-scroll-proportion="0.6993988">
           <folding />
         </state>
       </provider>

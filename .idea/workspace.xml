@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/layouts/team_member.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/accounts/account_edit.html" afterPath="$PROJECT_DIR$/templates/accounts/account_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/accounts/account_view.html" afterPath="$PROJECT_DIR$/templates/accounts/account_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/css/base.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/tools/forms.py" afterPath="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/models.py" afterPath="$PROJECT_DIR$/hackacities/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/models.py" afterPath="$PROJECT_DIR$/hackaglobal/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/css/profile_view.css" afterPath="$PROJECT_DIR$/hackaglobal/static/css/profile_view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/tools/toolbox.py" afterPath="$PROJECT_DIR$/hackaglobal/tools/toolbox.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/urls.py" afterPath="$PROJECT_DIR$/hackacities/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/views.py" afterPath="$PROJECT_DIR$/accounts/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="" />
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399276989004" ignored="false" />

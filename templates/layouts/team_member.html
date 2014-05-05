@@ -1,11 +1,12 @@
 <li>
     <nav>
-        <a target="_blank" href="{{ team_member.twitter }}">Twitter</a>
-        <a target="_blank" href="{{ team_member.facebook }}">Facebook</a>
-        <a target="_blank" href="{{ team_member.github }}">GitHub</a>
-        <a target="_blank" href="{{ team_member.linkedin }}">LinkedIn</a>
+        <a target="_blank" href="mailito:{{ team_member.user.email }}">Email</a>
+        {% if team_member.twitter %}<a target="_blank" href="{{ team_member.twitter }}">Twitter</a>{% endif %}
+        {% if team_member.facebook %}<a target="_blank" href="{{ team_member.facebook }}">Facebook</a>{% endif %}
+        {% if team_member.github %}<a target="_blank" href="{{ team_member.github }}">GitHub</a> {% endif %}
+        {% if team_member.linkedin %}<a target="_blank" href="{{ team_member.linkedin }}">LinkedIn</a> {% endif %}
     </nav>
     <div class="picture"><img src="{{ team_member.get_photo }}"></div>
     <h2>{{ team_member.get_full_name }}</h2>
-    <h3>{{ team_member.title }}</h3>
+    {% if team_member.title %}<h3>{{ team_member.title }}</h3> {% endif %}
 </li>

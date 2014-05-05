@@ -51,43 +51,61 @@
                                 <input id="add-event-form-last-name" name="last_name" class="form-control" type="text" placeholder="Last Name" value="{{ request.user.last_name }}">
                             </div>
                         </div>
-                    </fieldset>
-                    <br>
-                    <fieldset>
-                        <legend>Contact</legend>
+
+
 
                         <div class="form-group">
-                            <label for="add-event-form-email" class="col-md-3 control-label">Email</label>
-                            <div class="col-md-9" style="padding-bottom: 20px;">
-                                <input id="add-event-form-email" name="username" class="form-control"  value="{{ request.user.username }}" disabled>
+                            <label for="add-event-form-title" class="col-md-3 control-label">Title/Position</label>
+                            <div class="col-md-9">
+                                <input id="add-event-form-title" name="title" class="form-control" type="text" placeholder="e.g. Software engineer, evangelist, etc." value="{{ request.user.last_name }}">
                             </div>
+                        </div>
 
-                            <label for="add-event-form-facebook" class="col-md-3 control-label">Facebook URL</label>
-                            <div class="col-md-9" style="padding-bottom: 20px;">
-                                <input id="add-event-form-facebook" name="facebook" class="form-control"  value="{{ request.user.profile.facebook }}">
-                            </div>
 
-                            <label for="add-event-form-twitter" class="col-md-3 control-label">Twitter URL</label>
-                            <div class="col-md-9" style="padding-bottom: 20px;">
-                                <input id="add-event-form-twitter" name="twitter" class="form-control"  value="{{ request.user.profile.twitter }}">
-                            </div>
-
-                            <label for="add-event-form-github" class="col-md-3 control-label">Github URL</label>
-                            <div class="col-md-9" style="padding-bottom: 20px;">
-                                <input id="add-event-form-github" name="github" class="form-control"  value="{{ request.user.profile.github }}">
-                            </div>
-
-                            <label for="add-event-form-linkedin" class="col-md-3 control-label">Linkedin URL</label>
-                            <div class="col-md-9" style="padding-bottom: 20px;">
-                                <input id="add-event-form-linkedin" name="linkedin" class="form-control"  value="{{ request.user.profile.linkedin }}">
-                            </div>
-
-                            <div class="col-lg-10 col-lg-offset-2">
-                                <button class="btn btn-primary" type="submit" value="login" style="float: left;">Update</button>
-                                <a class="btn btn-danger" type="submit" value="login" href="/accounts/edit/password/" style="color: white; float: right;">Change Password</a>
+                        <div class="form-group">
+                            <label for="add-event-form-description" class="col-md-3 control-label">Short Description</label>
+                            <div class="col-md-9">
+                                <input id="add-event-form-description" name="description" class="form-control" type="text" placeholder="I am a passionate and enthusiastic..." value="{{ request.user.last_name }}">
                             </div>
                         </div>
                     </fieldset>
+                    <br>
+                        <fieldset>
+                            <legend>Contact</legend>
+
+                            <div class="form-group">
+                                <label for="add-event-form-email" class="col-md-3 control-label">Email</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="add-event-form-email" name="username" class="form-control"  value="{{ request.user.username }}" disabled>
+                                </div>
+
+                                <label for="add-event-form-facebook" class="col-md-3 control-label">Facebook URL</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="add-event-form-facebook" name="facebook" class="form-control"  value="{{ request.user.profile.facebook }}">
+                                </div>
+
+                                <label for="add-event-form-twitter" class="col-md-3 control-label">Twitter URL</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="add-event-form-twitter" name="twitter" class="form-control"  value="{{ request.user.profile.twitter }}">
+                                </div>
+
+                                <label for="add-event-form-github" class="col-md-3 control-label">Github URL</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="add-event-form-github" name="github" class="form-control"  value="{{ request.user.profile.github }}">
+                                </div>
+
+                                <label for="add-event-form-linkedin" class="col-md-3 control-label">Linkedin URL</label>
+                                <div class="col-md-9" style="padding-bottom: 20px;">
+                                    <input id="add-event-form-linkedin" name="linkedin" class="form-control"  value="{{ request.user.profile.linkedin }}">
+                                </div>
+
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button class="btn btn-primary" type="submit" value="login" style="float: left;">Update</button>
+                                    <a class="btn btn-danger" type="submit" value="login" href="/accounts/edit/password/" style="color: white; float: right;">Change Password</a>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
                 </form>
             </div>
         </div>

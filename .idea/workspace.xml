@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/accounts/account_edit.html" afterPath="$PROJECT_DIR$/templates/accounts/account_edit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layouts/team_member.html" afterPath="$PROJECT_DIR$/templates/layouts/team_member.html" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +24,7 @@
     <file path="/manage.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396683572675" ignored="false" />
     <file path="/admin.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397296407187" ignored="false" />
     <file path="$PROJECT_DIR$/../carsharehack/dietzcar/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396795601453" ignored="false" />
-    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399289729618" ignored="false" />
+    <file path="/models.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399292806260" ignored="false" />
     <file path="/a.dummy" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397299576246" ignored="false" />
     <file path="/index.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397773250639" ignored="false" />
     <file path="/base.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397772761078" ignored="false" />
@@ -76,9 +78,9 @@
     <file path="/screen.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397498955889" ignored="false" />
     <file path="/add_event.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397768095440" ignored="false" />
     <file path="/0006_change_russia_mexico.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397774585762" ignored="false" />
-    <file path="/account_edit.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399287582871" ignored="false" />
+    <file path="/account_edit.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399293352340" ignored="false" />
     <file path="/toolbox.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399286482405" ignored="false" />
-    <file path="/team_member.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399289617973" ignored="false" />
+    <file path="/team_member.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399293079778" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,10 +150,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_view.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="98" selection-start="5295" selection-end="5295" vertical-scroll-proportion="0.7794118">
+            <state line="92" column="54" selection-start="5251" selection-end="5251" vertical-scroll-proportion="-6.3333335">
               <folding>
                 <element signature="e#2134#2154#0" expanded="true" />
                 <element signature="e#2225#2250#0" expanded="true" />
@@ -172,10 +174,39 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="account_edit.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="20" selection-start="6509" selection-end="6509" vertical-scroll-proportion="0.7235023">
+              <folding>
+                <element signature="e#1560#1581#0" expanded="true" />
+                <element signature="e#4183#4212#0" expanded="true" />
+                <element signature="e#4582#4611#0" expanded="true" />
+                <element signature="e#4981#5010#0" expanded="true" />
+                <element signature="e#5375#5404#0" expanded="true" />
+                <element signature="e#5770#5799#0" expanded="true" />
+                <element signature="e#6164#6184#0" expanded="true" />
+                <element signature="e#6323#6358#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="team_member.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/layouts/team_member.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="32" selection-start="419" selection-end="419" vertical-scroll-proportion="-5.0">
+            <state line="10" column="71" selection-start="743" selection-end="743" vertical-scroll-proportion="-1.8987342">
               <folding />
             </state>
           </provider>
@@ -193,7 +224,7 @@
       <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/accounts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
+            <state line="15" column="132" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -237,11 +268,11 @@
         <option value="$PROJECT_DIR$/hackacities/models.py" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
-        <option value="$PROJECT_DIR$/templates/accounts/account_edit.html" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
-        <option value="$PROJECT_DIR$/templates/layouts/team_member.html" />
-        <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+        <option value="$PROJECT_DIR$/templates/layouts/team_member.html" />
+        <option value="$PROJECT_DIR$/templates/accounts/account_edit.html" />
       </list>
     </option>
   </component>
@@ -825,13 +856,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/accounts/account_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="75" selection-start="128" selection-end="128" vertical-scroll-proportion="0.05514706">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/accounts/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="75" selection-start="656" selection-end="668" vertical-scroll-proportion="0.0">
@@ -889,23 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="89" selection-start="5377" selection-end="5377" vertical-scroll-proportion="4.242647">
-          <folding>
-            <element signature="e#627#648#0" expanded="true" />
-            <element signature="e#1560#1581#0" expanded="true" />
-            <element signature="e#3168#3197#0" expanded="true" />
-            <element signature="e#3551#3580#0" expanded="true" />
-            <element signature="e#3934#3963#0" expanded="true" />
-            <element signature="e#4312#4341#0" expanded="true" />
-            <element signature="e#4691#4720#0" expanded="true" />
-            <element signature="e#5069#5089#0" expanded="true" />
-            <element signature="e#5224#5259#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="180" column="24" selection-start="9260" selection-end="13336" vertical-scroll-proportion="0.7169118">
@@ -940,10 +947,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/accounts/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.625">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="132" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -956,25 +981,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="84" selection-start="743" selection-end="743" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layouts/team_member.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="32" selection-start="419" selection-end="419" vertical-scroll-proportion="-5.0">
+        <state line="10" column="71" selection-start="743" selection-end="743" vertical-scroll-proportion="-1.8987342">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="98" selection-start="5295" selection-end="5295" vertical-scroll-proportion="0.7794118">
+        <state line="92" column="54" selection-start="5251" selection-end="5251" vertical-scroll-proportion="-6.3333335">
           <folding>
             <element signature="e#2134#2154#0" expanded="true" />
             <element signature="e#2225#2250#0" expanded="true" />
@@ -990,6 +1006,22 @@
             <element signature="e#5585#5696#0" expanded="true" />
             <element signature="e#5740#5766#0" expanded="true" />
             <element signature="e#5868#5889#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="20" selection-start="6509" selection-end="6509" vertical-scroll-proportion="0.7235023">
+          <folding>
+            <element signature="e#1560#1581#0" expanded="true" />
+            <element signature="e#4183#4212#0" expanded="true" />
+            <element signature="e#4582#4611#0" expanded="true" />
+            <element signature="e#4981#5010#0" expanded="true" />
+            <element signature="e#5375#5404#0" expanded="true" />
+            <element signature="e#5770#5799#0" expanded="true" />
+            <element signature="e#6164#6184#0" expanded="true" />
+            <element signature="e#6323#6358#0" expanded="true" />
           </folding>
         </state>
       </provider>

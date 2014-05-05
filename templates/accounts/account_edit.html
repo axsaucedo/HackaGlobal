@@ -57,7 +57,7 @@
                         <div class="form-group">
                             <label for="add-event-form-title" class="col-md-3 control-label">Title/Position</label>
                             <div class="col-md-9">
-                                <input id="add-event-form-title" name="title" class="form-control" type="text" placeholder="e.g. Software engineer, evangelist, etc." value="{{ request.user.title }}">
+                                <input id="add-event-form-title" name="title" class="form-control" type="text" placeholder="e.g. Software engineer, evangelist, etc." value="{{ request.title }}">
                             </div>
                         </div>
 
@@ -65,7 +65,7 @@
                         <div class="form-group">
                             <label for="add-event-form-description" class="col-md-3 control-label">Short Description</label>
                             <div class="col-md-9">
-                                <input id="add-event-form-description" name="description" class="form-control" type="text" placeholder="I am a passionate and enthusiastic..." value="{{ request.user.description }}">
+                                <input id="add-event-form-description" name="description" class="form-control" type="text" placeholder="I am a passionate and enthusiastic..." value="{{ request.description }}">
                             </div>
                         </div>
                     </fieldset>

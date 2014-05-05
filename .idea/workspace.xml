@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/accounts/account_edit.html" afterPath="$PROJECT_DIR$/templates/accounts/account_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -149,43 +148,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="54" selection-start="5251" selection-end="5251" vertical-scroll-proportion="-6.3333335">
-              <folding>
-                <element signature="e#2134#2154#0" expanded="true" />
-                <element signature="e#2225#2250#0" expanded="true" />
-                <element signature="e#3248#3351#0" expanded="true" />
-                <element signature="e#3415#3503#0" expanded="true" />
-                <element signature="e#3557#3625#0" expanded="true" />
-                <element signature="e#3837#3906#0" expanded="true" />
-                <element signature="e#3956#4151#0" expanded="true" />
-                <element signature="e#4299#4371#0" expanded="true" />
-                <element signature="e#4552#4624#0" expanded="true" />
-                <element signature="e#4693#4765#0" expanded="true" />
-                <element signature="e#4934#4987#0" expanded="true" />
-                <element signature="e#5585#5696#0" expanded="true" />
-                <element signature="e#5740#5766#0" expanded="true" />
-                <element signature="e#5868#5889#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="account_edit.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="194" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.23963134">
+            <state line="67" column="192" selection-start="3723" selection-end="3723" vertical-scroll-proportion="0.79262674">
               <folding>
                 <element signature="e#1560#1581#0" expanded="true" />
-                <element signature="e#4181#4210#0" expanded="true" />
-                <element signature="e#4580#4609#0" expanded="true" />
-                <element signature="e#4979#5008#0" expanded="true" />
-                <element signature="e#5373#5402#0" expanded="true" />
-                <element signature="e#5768#5797#0" expanded="true" />
-                <element signature="e#6162#6182#0" expanded="true" />
-                <element signature="e#6321#6356#0" expanded="true" />
+                <element signature="e#4171#4200#0" expanded="true" />
+                <element signature="e#4570#4599#0" expanded="true" />
+                <element signature="e#4969#4998#0" expanded="true" />
+                <element signature="e#5363#5392#0" expanded="true" />
+                <element signature="e#5758#5787#0" expanded="true" />
+                <element signature="e#6152#6172#0" expanded="true" />
+                <element signature="e#6311#6346#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -962,28 +937,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/accounts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="132" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/tools/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="154" column="24" selection-start="5649" selection-end="5649" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layouts/team_member.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="71" selection-start="743" selection-end="743" vertical-scroll-proportion="-1.8987342">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,18 +968,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="132" selection-start="878" selection-end="878" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layouts/team_member.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="71" selection-start="743" selection-end="743" vertical-scroll-proportion="-1.8987342">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="194" selection-start="3237" selection-end="3237" vertical-scroll-proportion="0.23963134">
+        <state line="67" column="192" selection-start="3723" selection-end="3723" vertical-scroll-proportion="0.79262674">
           <folding>
             <element signature="e#1560#1581#0" expanded="true" />
-            <element signature="e#4181#4210#0" expanded="true" />
-            <element signature="e#4580#4609#0" expanded="true" />
-            <element signature="e#4979#5008#0" expanded="true" />
-            <element signature="e#5373#5402#0" expanded="true" />
-            <element signature="e#5768#5797#0" expanded="true" />
-            <element signature="e#6162#6182#0" expanded="true" />
-            <element signature="e#6321#6356#0" expanded="true" />
+            <element signature="e#4171#4200#0" expanded="true" />
+            <element signature="e#4570#4599#0" expanded="true" />
+            <element signature="e#4969#4998#0" expanded="true" />
+            <element signature="e#5363#5392#0" expanded="true" />
+            <element signature="e#5758#5787#0" expanded="true" />
+            <element signature="e#6152#6172#0" expanded="true" />
+            <element signature="e#6311#6346#0" expanded="true" />
           </folding>
         </state>
       </provider>

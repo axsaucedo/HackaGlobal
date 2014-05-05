@@ -14,7 +14,7 @@
     .hackacity-view-divider-3{ background: url({{ hackacity.get_image_divider_3 }}) 50% 0 no-repeat fixed; background-size: cover; }
     .hackacity-view-divider-4{ background: url({{ hackacity.get_image_divider_4 }}) 50% 0 no-repeat fixed; background-size: cover; }
 </style>
-<div id="hackacity-view">
+<div id="home">
     <section class="hackacity-view-home hackacity-section">
         <div class="hackacity-view-home-gradient">
 
@@ -25,7 +25,7 @@
             </h1>
         </div>
     </section>
-    <section class="hackacity-view-about hackacity-section">
+    <section id="about" class="hackacity-view-about hackacity-section">
         <div class="hackacity-view-title">{ About }</div>
         <div class="hackacity-view-about-text col-md-offset-1 col-md-5">
             {% autoescape off %} {{ hackacity.about }} {% endautoescape %}
@@ -37,7 +37,7 @@
     <section class="hackacity-view-divider hackacity-view-divider-1">
 
     </section>
-    <section class="hackacity-view-events hackacity-section">
+    <section id="events" class="hackacity-view-events hackacity-section">
         <div class="hackacity-view-title" style="color: black">
             { Events }
         </div>
@@ -60,7 +60,7 @@
     <section class="hackacity-view-divider hackacity-view-divider-2">
 
     </section>
-    <section class="hackacity-view-communities hackacity-section" style="background: url(/static/img/hackacommunities.png) 50% 0 no-repeat fixed; background-size: cover">
+    <section id="communities" class="hackacity-view-communities hackacity-section" style="background: url(/static/img/hackacommunities.png) 50% 0 no-repeat fixed; background-size: cover">
 
     </section>
     <section class="hackacity-view-divider-3" style="position: relative; height:480px; padding: 50px 50px 50px 50px; overflow: hidden">
@@ -71,16 +71,16 @@
             </div>
         </div>
     </section>
-    <section class="hackacity-view-sponsors hackacity-section" style="background: url(/static/img/sponsors.png) 50% 0 no-repeat fixed;">
+    <section id="sponsors" class="hackacity-view-sponsors hackacity-section" style="background: url(/static/img/sponsors.png) 50% 0 no-repeat fixed;">
 
     </section>
     <section class="hackacity-view-divider hackacity-view-divider-4">
 
     </section>
-    <section class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">
+    <section id="partners" class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">
 
     </section>
-    <section class="hackacity-view-team" style="overflow-y: hidden; position: relative; background-color: white;">
+    <section id="team" class="hackacity-view-team" style="overflow-y: hidden; position: relative; background-color: white;">
         <div class="content">
             <div class="wrapper">
                 <div class="block" id="theteam">
@@ -89,103 +89,9 @@
                     </div>
                     <div class="wrapper">
                         <ul class="people">
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://twitter.com/RGregoratti">@RGregoratti</a>
-                                    <a target="_blank" href="https://www.facebook.com/roberto.gregoratti">Facebook</a>
-                                    <a target="_blank" href="http://uk.linkedin.com/in/robertogregoratti">LinkedIn</a>
-                                    <a target="_blank" href="http://about.me/robertogregoratti">AboutMe</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/rob.jpg" title="Roberto Gregoratti"></div>
-                                <h2>Roberto Gregoratti</h2>
-                                <h3>President</h3>
-                            </li>
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://www.facebook.com/callum.spawforth">@Spoffeh</a>
-                                    <a target="_blank" href="https://twitter.com/spoffeh">Facebook</a>
-                                    <a target="_blank" href="http://www.linkedin.com/in/callumspawforth">LinkedIn</a>
-                                    <a target="_blank" href="http://github.com/spoffy">Github</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/callum.jpg" title="Callum Spawforth"></div>
-                                <h2>Callum Spawforth</h2>
-                                <h3>Vice-President</h3>
-                            </li>
-
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://twitter.com/amouzadeh">@Amouzadeh</a>
-                                    <a target="_blank" href="https://www.facebook.com/aliamouzadeh">Facebook</a>
-                                    <a target="_blank" href="http://uk.linkedin.com/in/amouzadeh">LinkedIn</a>
-                                    <a target="_blank" href="http://amouzadeh.info">Website</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/ali.jpg" title="Ali Amouzadeh"></div>
-                                <h2>Ali Amouzadeh</h2>
-                                <h3>Director of Events</h3>
-                            </li>
-
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://www.facebook.com/dorothy.filipczuk">Facebook</a>
-                                    <a target="_blank" href="http://www.linkedin.com/pub/dorota-filipczuk/8b/67a/621">LinkedIn</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/dorota.jpg" title="Dorota Filipczuk"></div>
-                                <h2>Dorota Filipczuk</h2>
-                                <h3>Secretary</h3>
-                            </li>
-
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://twitter.com/repraze">@Repraze</a>
-                                    <a target="_blank" href="http://wulty.com/">Website</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/tom.jpg" title="Thomas Dubosc"></div>
-                                <h2>Thomas Dubosc</h2>
-                                <h3>Webmaster</h3>
-                            </li>
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://twitter.com/vla_ve">@Vla_Ve</a>
-                                    <a target="_blank" href="https://www.facebook.com/vlad.velici">Facebook</a>
-                                    <a target="_blank" href="http://ro.linkedin.com/in/vladvelici">LinkedIn</a>
-                                    <a target="_blank" href="https://github.com/vladvelici">GitHub</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/vlad.jpg" title="Vlad Velici"></div>
-                                <h2>Vlad Velici</h2>
-                                <h3>Head of Google Developers Group</h3>
-                            </li>
-
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://twitter.com/sirichadalavada">@SiriChadalavada</a>
-                                    <a target="_blank" href="https://www.facebook.com/schadalavada95">Facebook</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/siri.jpg" title="Sri Ramya Chadalavada"></div>
-                                <h2>Sri Ramya Chadalavada</h2>
-                                <h3>Director of Marketing</h3>
-                            </li>
-
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://twitter.com/sabinmarcu">@SabinMarcu</a>
-                                    <a target="_blank" href="http://uk.linkedin.com/in/sabinmarcu">LinkedIn</a>
-                                    <a target="_blank" href="http://github.com/sabinmarcu">Github</a>
-                                    <a target="_blank" href="http://sabinmarcu.me/">Website</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/sabin.jpg" title="Sabin Marcu"></div>
-                                <h2>Sabin Marcu</h2>
-                                <h3>Director of Hackathons</h3>
-                            </li>
-
-                            <li>
-                                <nav>
-                                    <a target="_blank" href="https://www.facebook.com/farhaan.ali.83">Facebook</a>
-                                    <a target="_blank" href="uk.linkedin.com/pub/farhaan-ali/82/45a/a5b">LinkedIn</a>
-                                </nav>
-                                <div class="picture"><img src="/static/img/hackasoton/farhan.jpg" title="Farhan Ali"></div>
-                                <h2>Farhan Ali</h2>
-                                <h3>Director of Finance</h3>
-                            </li>
+                            {% for u in hackacity.team.all %}
+                                {% include 'layouts/team_member.html' with team_member=u.profile %}
+                            {% endfor %}
                         </ul>
                         <div class="clear"></div>
                     </div>

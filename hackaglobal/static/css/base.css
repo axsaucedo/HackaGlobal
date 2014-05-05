@@ -127,3 +127,7 @@ body {
     height: 180px;
     position: relative;
 }
+
+.profilepicture img {
+    width: 200px;
+}

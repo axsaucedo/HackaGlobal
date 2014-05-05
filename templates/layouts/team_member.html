@@ -1,0 +1,11 @@
+<li>
+    <nav>
+        <a target="_blank" href="{{ team_member.twitter }}">Twitter</a>
+        <a target="_blank" href="{{ team_member.facebook }}">Facebook</a>
+        <a target="_blank" href="{{ team_member.github }}">GitHub</a>
+        <a target="_blank" href="{{ team_member.linkedin }}">LinkedIn</a>
+    </nav>
+    <div class="picture"><img src="{{ team_member.get_photo }}"></div>
+    <h2>{{ team_member.get_full_name }}</h2>
+    <h3>{{ team_member.title }}</h3>
+</li>

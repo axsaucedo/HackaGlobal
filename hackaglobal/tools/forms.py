@@ -2,6 +2,7 @@ from django import forms
 from django.utils.translation import ugettext, ugettext_lazy as _
 from django.contrib.auth.models import User
 from hackaglobal.models import Event, Staff
+from accounts.models import UserProfile
 from hackacities.models import HackaCity
 import datetime
 
@@ -40,7 +41,7 @@ class EventCreationForm(forms.ModelForm):
             event.save()
         return event
 
-class EFUserCreationForm(forms.ModelForm):
+class HGUserCreationForm(forms.ModelForm):
     error_messages = {
         'duplicate_username': _("A user with that username already exists."),
         'password_mismatch': _("The two password fields didn't match."),
@@ -92,7 +93,7 @@ class EFUserCreationForm(forms.ModelForm):
         return password2
 
     def save(self, commit=True):
-        user = super(EFUserCreationForm, self).save(commit=False)
+        user = super(HGUserCreationForm, self).save(commit=False)
         user.set_password(self.cleaned_data["password1"])
         if commit:
             user.save()
@@ -129,28 +130,35 @@ class EFPasswordChangeForm(forms.Form):
         return self.user
 
 
-class EFUserEditForm(forms.Form):
+class HGUserEditForm(forms.ModelForm):
 
-    first_name = forms.RegexField(label=_("First Name"), max_length=30,
-        regex=r'^[a-zA-Z]+$',
-        help_text=_("Required. 30 characters or fewer. Letters only."),
-        error_messages={'invalid': _("This value may contain only letters.")})
+    def __init__(self, *args, **kwargs):
+        super(HGUserEditForm, self).__init__(*args, **kwargs)
 
-    last_name = forms.RegexField(label=("Last Name"), max_length=30,
-        regex=r'^[a-zA-Z]+$',
-        help_text=_("Required. 30 characters or fewer. Letters only."),
-        error_messages={'invalid': _("This value may contain only letters.")})
-
-    def __init__(self, user, *args, **kwargs):
-        self.user = user
-        super(EFUserEditForm, self).__init__(*args, **kwargs)
+    class Meta:
+        model = User
+        fields = ('first_name', 'last_name')
 
     def save(self, commit=True):
-        self.user.first_name = self.cleaned_data["first_name"]
-        self.user.last_name = self.cleaned_data["last_name"]
+        user = super(HGUserEditForm, self).save(commit=False)
         if commit:
-            self.user.save()
-        return self.user
+            user.save()
+        return user
+
+class HGProfileEditForm(forms.ModelForm):
+
+    def __init__(self, *args, **kwargs):
+        super(HGProfileEditForm, self).__init__(*args, **kwargs)
+
+    class Meta:
+        model = UserProfile
+        exclude = ('user',)
+
+    def save(self, commit=True):
+        profile = super(HGProfileEditForm, self).save(commit=False)
+        if commit:
+            profile.save()
+        return profile
 
 class HackaCityCreationForm(forms.ModelForm):
 

@@ -52,6 +52,7 @@
                                             <a style="float: right;" href="" class="hacka-popover-text" rel="popover" data-html="true" data-content="<img src='{% if hackacity.image_logo %}{{ hackacity.image_logo.url }}{% endif %}'/>" data-title="Logo - Image Preview" data-trigger="hover">Preview</a>
                                         </div>
                                     </div>
+
                                     <div class="form-group">
                                         <label for="add-event-form-image-home" class="col-md-3 control-label">Home</label>
                                         <div class="col-md-9">
@@ -115,69 +116,69 @@
                         min-height: 100px;
                     }
                 </style>
-                <div class="col-md-offset-1">
-                    <div class="row">
-                        <h4>Attendees</h4>
-                        <div id="event-attendees-container">
-                            {% for attendee in attendees %}
-                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4>Trackers</h4>
-                        <div id="event-trackers-container">
-                            {% for attendee in trackers %}
-                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <h4>Speakers</h4>
-
-                        <div class="container col-md-12">
-                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">
-                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">
-                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">
-                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">
-                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>
-                        </div>
-
-                        {% for staff in speakers %}
-                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}
-                        {% endfor %}
-                    </div>
-                    <div class="row">
-                        <h4>Mentors</h4>
-
-                        <div class="container col-md-12">
-                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">
-                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">
-                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">
-                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">
-                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="M">Add</button>
-                        </div>
-
-                        {% for staff in mentors %}
-                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}
-                        {% endfor %}
-                    </div>
-                    <div class="row">
-                        <h4>Organizers</h4>
-
-                        <div class="container col-md-12">
-                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">
-                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">
-                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">
-                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">
-                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="O">Add</button>
-                        </div>
-
-                        {% for staff in organizers %}
-                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}
-                        {% endfor %}
-                    </div>
-                </div>
+{#                <div class="col-md-offset-1">#}
+{#                    <div class="row">#}
+{#                        <h4>Attendees</h4>#}
+{#                        <div id="event-attendees-container">#}
+{#                            {% for attendee in attendees %}#}
+{#                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="row">#}
+{#                        <h4>Trackers</h4>#}
+{#                        <div id="event-trackers-container">#}
+{#                            {% for attendee in trackers %}#}
+{#                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}#}
+{#                            {% endfor %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    <div class="row">#}
+{#                        <h4>Speakers</h4>#}
+{##}
+{#                        <div class="container col-md-12">#}
+{#                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">#}
+{#                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">#}
+{#                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">#}
+{#                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">#}
+{#                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>#}
+{#                        </div>#}
+{##}
+{#                        {% for staff in speakers %}#}
+{#                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                    <div class="row">#}
+{#                        <h4>Mentors</h4>#}
+{##}
+{#                        <div class="container col-md-12">#}
+{#                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">#}
+{#                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">#}
+{#                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">#}
+{#                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">#}
+{#                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="M">Add</button>#}
+{#                        </div>#}
+{##}
+{#                        {% for staff in mentors %}#}
+{#                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                    <div class="row">#}
+{#                        <h4>Organizers</h4>#}
+{##}
+{#                        <div class="container col-md-12">#}
+{#                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">#}
+{#                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">#}
+{#                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">#}
+{#                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">#}
+{#                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="O">Add</button>#}
+{#                        </div>#}
+{##}
+{#                        {% for staff in organizers %}#}
+{#                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}#}
+{#                        {% endfor %}#}
+{#                    </div>#}
+{#                </div>#}
             </div>
         </div>
     </div>

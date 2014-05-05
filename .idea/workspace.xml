@@ -76,7 +76,7 @@
     <file path="/screen.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397498955889" ignored="false" />
     <file path="/add_event.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397768095440" ignored="false" />
     <file path="/0006_change_russia_mexico.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1397774585762" ignored="false" />
-    <file path="/account_edit.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399293728393" ignored="false" />
+    <file path="/account_edit.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399293889018" ignored="false" />
     <file path="/toolbox.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399286482405" ignored="false" />
     <file path="/team_member.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399293079778" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -151,16 +151,16 @@
       <file leaf-file-name="account_edit.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="192" selection-start="3723" selection-end="3723" vertical-scroll-proportion="0.79262674">
+            <state line="59" column="196" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.23963134">
               <folding>
                 <element signature="e#1560#1581#0" expanded="true" />
-                <element signature="e#4171#4200#0" expanded="true" />
-                <element signature="e#4570#4599#0" expanded="true" />
-                <element signature="e#4969#4998#0" expanded="true" />
-                <element signature="e#5363#5392#0" expanded="true" />
-                <element signature="e#5758#5787#0" expanded="true" />
-                <element signature="e#6152#6172#0" expanded="true" />
-                <element signature="e#6311#6346#0" expanded="true" />
+                <element signature="e#4197#4226#0" expanded="true" />
+                <element signature="e#4596#4625#0" expanded="true" />
+                <element signature="e#4995#5024#0" expanded="true" />
+                <element signature="e#5389#5418#0" expanded="true" />
+                <element signature="e#5784#5813#0" expanded="true" />
+                <element signature="e#6178#6198#0" expanded="true" />
+                <element signature="e#6337#6372#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -986,16 +986,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/accounts/account_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="192" selection-start="3723" selection-end="3723" vertical-scroll-proportion="0.79262674">
+        <state line="59" column="196" selection-start="3239" selection-end="3239" vertical-scroll-proportion="0.23963134">
           <folding>
             <element signature="e#1560#1581#0" expanded="true" />
-            <element signature="e#4171#4200#0" expanded="true" />
-            <element signature="e#4570#4599#0" expanded="true" />
-            <element signature="e#4969#4998#0" expanded="true" />
-            <element signature="e#5363#5392#0" expanded="true" />
-            <element signature="e#5758#5787#0" expanded="true" />
-            <element signature="e#6152#6172#0" expanded="true" />
-            <element signature="e#6311#6346#0" expanded="true" />
+            <element signature="e#4197#4226#0" expanded="true" />
+            <element signature="e#4596#4625#0" expanded="true" />
+            <element signature="e#4995#5024#0" expanded="true" />
+            <element signature="e#5389#5418#0" expanded="true" />
+            <element signature="e#5784#5813#0" expanded="true" />
+            <element signature="e#6178#6198#0" expanded="true" />
+            <element signature="e#6337#6372#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -198,10 +198,8 @@
     margin:25px 0 5px 23%;
     left:0%;
     width:50%;
-    min-width:100px;
-    min-height:100px;
-    max-width:200px;
-    max-height:200px;
+    height:170px;
+    width:170px;
     transition: all 0.25s ease-in 0s;
     z-index:5;
     position:relative;

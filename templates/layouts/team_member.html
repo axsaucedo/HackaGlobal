@@ -1,4 +1,5 @@
 <li>
+    {% if lead %}<h1 style="margin-top: -40px; color: #a9a9a9">HackaLead</h1>{% endif %}
     <nav>
         <a target="_blank" href="mailito:{{ team_member.user.email }}">Email</a>
         {% if team_member.twitter %}<a target="_blank" href="{{ team_member.twitter }}">Twitter</a>{% endif %}

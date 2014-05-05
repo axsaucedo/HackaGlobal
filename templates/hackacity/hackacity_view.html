@@ -89,8 +89,11 @@
                     </div>
                     <div class="wrapper">
                         <ul class="people">
+                            {% include 'layouts/team_member.html' with team_member=hackacity.lead.profile lead=True  %}
                             {% for u in hackacity.team.all %}
-                                {% include 'layouts/team_member.html' with team_member=u.profile  %}
+                                {% if u != hackacity.lead  %}
+                                    {% include 'layouts/team_member.html' with team_member=u.profile lead=False  %}
+                                {% endif %}
                             {% endfor %}
                         </ul>
                         <div class="clear"></div>

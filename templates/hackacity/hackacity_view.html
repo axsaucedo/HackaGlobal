@@ -90,7 +90,7 @@
                     <div class="wrapper">
                         <ul class="people">
                             {% for u in hackacity.team.all %}
-                                {% include 'layouts/team_member.html' with team_member=u.profile %}
+                                {% include 'layouts/team_member.html' with team_member=u.profile  %}
                             {% endfor %}
                         </ul>
                         <div class="clear"></div>

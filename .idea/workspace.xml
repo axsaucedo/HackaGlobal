@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="" />
+    <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
+    </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399276989004" ignored="false" />
@@ -149,7 +151,7 @@
       <file leaf-file-name="hackacity_view.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-3.1360295">
+            <state line="92" column="98" selection-start="5295" selection-end="5295" vertical-scroll-proportion="0.7794118">
               <folding>
                 <element signature="e#2134#2154#0" expanded="true" />
                 <element signature="e#2225#2250#0" expanded="true" />
@@ -162,9 +164,9 @@
                 <element signature="e#4552#4624#0" expanded="true" />
                 <element signature="e#4693#4765#0" expanded="true" />
                 <element signature="e#4934#4987#0" expanded="true" />
-                <element signature="e#5584#5695#0" expanded="true" />
-                <element signature="e#5739#5765#0" expanded="true" />
-                <element signature="e#5867#5888#0" expanded="true" />
+                <element signature="e#5585#5696#0" expanded="true" />
+                <element signature="e#5740#5766#0" expanded="true" />
+                <element signature="e#5868#5889#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -972,7 +974,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="1057" selection-end="1057" vertical-scroll-proportion="-3.1360295">
+        <state line="92" column="98" selection-start="5295" selection-end="5295" vertical-scroll-proportion="0.7794118">
           <folding>
             <element signature="e#2134#2154#0" expanded="true" />
             <element signature="e#2225#2250#0" expanded="true" />
@@ -985,9 +987,9 @@
             <element signature="e#4552#4624#0" expanded="true" />
             <element signature="e#4693#4765#0" expanded="true" />
             <element signature="e#4934#4987#0" expanded="true" />
-            <element signature="e#5584#5695#0" expanded="true" />
-            <element signature="e#5739#5765#0" expanded="true" />
-            <element signature="e#5867#5888#0" expanded="true" />
+            <element signature="e#5585#5696#0" expanded="true" />
+            <element signature="e#5740#5766#0" expanded="true" />
+            <element signature="e#5868#5889#0" expanded="true" />
           </folding>
         </state>
       </provider>

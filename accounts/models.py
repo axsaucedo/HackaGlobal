@@ -10,7 +10,7 @@ class UserProfile(models.Model):
     linkedin = models.URLField(null=True, blank=True, default="")
     twitter = models.URLField(null=True, blank=True, default="")
     facebook = models.URLField(null=True, blank=True, default="")
-    title = models.CharField(max_length=50, null=True, blank=True, default="")
+    title = models.CharField(max_length=20, null=True, blank=True, default="")
     description = models.CharField(max_length=200, null=True, blank=True, default="")
 
     def get_full_name(self): return self.user.first_name + " " + self.user.last_name if self.user.first_name else self.user.username

@@ -14,7 +14,7 @@
                     <form id="add-event-form" class="form-horizontal" method="POST" enctype="multipart/form-data"  data-ajax="false">
                         {% csrf_token %}
                         <fieldset style="border: none;">
-                            <legend>Please fill in all the required fields.</legend>
+                            <legend>Edit {{ hackacity.name }}</legend>
                             {% if form.errors %}
                                 <div class="alert alert-dismissable alert-danger">
                                     {{ form.errors }}
@@ -108,48 +108,60 @@
                 </div>
             </div>
             <div class="col-md-6">
-                    <div class="row">
-                        <h1 class="page-header">Edit {{ hackacity.name }}</h1>
-                    </div>
                 <style>
                     .row {
                         min-height: 100px;
+                        padding-top: 30px;
                     }
                 </style>
-{#                <div class="col-md-offset-1">#}
+                <div class="col-md-offset-1">
+                    <div class="row">
+                        <h2>HackaLead</h2>
+                        <div id="event-attendees-container">
+                            <ul class="people">
+                            {% include 'layouts/team_member_edit.html' with team_member=hackacity.lead.profile lead=True  %}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>HackaTeam</h2>
+                        <div>
+                            <ul class="people">
+                            {% for u in hackacity.team.all %}
+                                {% if u != hackacity.lead  %}
+                                    {% include 'layouts/team_member_edit.html' with team_member=u.profile %}
+                                {% endif %}
+                            {% endfor %}
+                            </ul>
+                            <div class="container col-md-12">
+                                <input class="input-name col-md-3" type="text" name="tags" placeholder="Username">
+                                <button style="float: left;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Members</h2>
+                        <div id="event-trackers-container">
+                            {% for member in hackacity.member.all %}
+                                {% include 'layouts/generic_attendee.html' with attendee=member %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Sponsors</h2>
+                        {% for sponsor in sponsors %}
+                            {% include 'layouts/generic_staff.html' with staff=sponsor edit=True %}
+                        {% endfor %}
+
+                        <div class="container col-md-12">
+                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name">
+                            <input class="input-imgurl col-md-3" type="text" name="tags" placeholder="img url">
+                            <input class="input-url col-md-3" type="text" name="tags" placeholder="link">
+                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>
+                        </div>
+                    </div>
 {#                    <div class="row">#}
-{#                        <h4>Attendees</h4>#}
-{#                        <div id="event-attendees-container">#}
-{#                            {% for attendee in attendees %}#}
-{#                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}#}
-{#                            {% endfor %}#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="row">#}
-{#                        <h4>Trackers</h4>#}
-{#                        <div id="event-trackers-container">#}
-{#                            {% for attendee in trackers %}#}
-{#                                {% include 'layouts/generic_attendee.html' with attendee=attendee.attendee %}#}
-{#                            {% endfor %}#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    <div class="row">#}
-{#                        <h4>Speakers</h4>#}
-{##}
-{#                        <div class="container col-md-12">#}
-{#                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">#}
-{#                            <input class="input-username col-md-3" type="text" name="tags" placeholder="Username">#}
-{#                            <input class="input-imgurl col-md-2" type="text" name="tags" placeholder="img url">#}
-{#                            <input class="input-url col-md-2" type="text" name="tags" placeholder="link">#}
-{#                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>#}
-{#                        </div>#}
-{##}
-{#                        {% for staff in speakers %}#}
-{#                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}#}
-{#                        {% endfor %}#}
-{#                    </div>#}
-{#                    <div class="row">#}
-{#                        <h4>Mentors</h4>#}
+{#                        <h4>Partners</h4>#}
 {##}
 {#                        <div class="container col-md-12">#}
 {#                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">#}
@@ -164,7 +176,7 @@
 {#                        {% endfor %}#}
 {#                    </div>#}
 {#                    <div class="row">#}
-{#                        <h4>Organizers</h4>#}
+{#                        <h4>Communities</h4>#}
 {##}
 {#                        <div class="container col-md-12">#}
 {#                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name (Required)">#}
@@ -178,7 +190,7 @@
 {#                            {% include 'layouts/generic_staff.html' with staff=staff edit=True %}#}
 {#                        {% endfor %}#}
 {#                    </div>#}
-{#                </div>#}
+                </div>
             </div>
         </div>
     </div>

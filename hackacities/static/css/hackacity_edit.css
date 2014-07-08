@@ -28,3 +28,106 @@
 .hacka-popover-text {
     font-size: 13px;
 }
+
+
+
+/*Team*//*Team*//*Team*//*Team*/
+/*Team*//*Team*//*Team*//*Team*/
+/*Team*//*Team*//*Team*//*Team*/
+
+ul.people{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    position:relative;
+}
+ul.people > li{
+    padding:0;
+    margin:0;
+    display:block;
+    float:left;
+    width:20%;
+    text-align:center;
+    position:relative;
+    min-width:100px;
+}
+ul.people > li h2{
+    padding:0 0 5px 0;
+    margin:0;
+    line-height:25px;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    color:#25272E;
+    transition: all 0.25s ease-in 0s;
+}
+ul.people > li:hover h2{
+    color:#326AB5;
+}
+ul.people h3{
+    padding:0 0 25px 0;
+    margin:0;
+    line-height:20px;
+    font-size:15px;
+    font-weight:bold;
+    text-align:center;
+    color:#a0a0a0;
+}
+ul.people .picture{
+    overflow:hidden;
+    border-radius:110px;
+    padding:5px;
+    background:#1c1c1c;
+    margin:25px 0 5px 0;
+    left:0%;
+    width:50%;
+    height:100px;
+    width:100px;
+    transition: all 0.25s ease-in 0s;
+    z-index:5;
+    position:relative;
+}
+ul.people > li:hover .picture{
+    background:#416596;
+    left:-20px;
+}
+ul.people .picture img{
+    width:100%;
+    height:90px;
+    width:90px;
+    display:block;
+    border-radius:100px;
+}
+ul.people nav{
+    position:absolute;
+    right:0%;
+    top:25px;
+    width:50%;
+    height:100px;
+    padding:15px 0;
+    margin:0;
+    list-style-type:none;
+    z-index:1;
+    opacity:0;
+    border-radius:110px;
+    transition: all 0.25s ease-in 0s;
+    background:#708090;
+    overflow:hidden;
+    width:110px;
+}
+ul.people > li:hover nav{
+    opacity:1;
+    color: red !important;
+}
+ul.people nav a{
+    text-align:right;
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+    line-height:20px;
+    padding-right: 20px;
+    transition: color 0.25s ease-in 0s;
+}
+ul.people nav a:hover{
+    color:#326AB5;
+}

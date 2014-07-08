@@ -57,10 +57,10 @@
             </div>
         </div>
     </section>
-    <section class="hackacity-view-divider hackacity-view-divider-2">
-
-    </section>
-    <section id="communities" class="hackacity-view-communities hackacity-section" style="background: url(/static/img/hackacommunities.png) 50% 0 no-repeat fixed; background-size: cover">
+{#    <section class="hackacity-view-divider hackacity-view-divider-2">#}
+{##}
+{#    </section>#}
+{#    <section id="communities" class="hackacity-view-communities hackacity-section" style="background: url(/static/img/hackacommunities.png) 50% 0 no-repeat fixed; background-size: cover">#}
 
     </section>
     <section class="hackacity-view-divider-3" style="position: relative; height:480px; padding: 50px 50px 50px 50px; overflow: hidden">
@@ -71,15 +71,44 @@
             </div>
         </div>
     </section>
-    <section id="sponsors" class="hackacity-view-sponsors hackacity-section" style="background: url(/static/img/sponsors.png) 50% 0 no-repeat fixed;">
-
+    <style>
+        #sponsors ul {
+            position: relative;
+            margin: auto auto;
+            width: 80%;
+        }
+        #sponsors ul > li{
+            padding:0;
+            margin:0;
+            display:block;
+            float:left;
+            width:50%;
+            text-align:center;
+            position:relative;
+            min-width:100px;
+        }
+        #sponsors ul > li img{
+            width:100%;
+            transition: all 0.25s ease-in 0s;
+        }
+    </style>
+    <section id="sponsors" class="hackacity-view-sponsors hackacity-section">
+        <div class="hackacity-view-title" style="padding-top: 140px; color: black">
+            { Sponsors }
+        </div>
+        <ul>
+            <li><img src="http://careereco.net/files/2014/01/bloomberg_logo.png"></li>
+            <li><img src="http://www.seomofo.com/downloads/new-google-logo-knockoff.png"></li>
+            <li><img src="http://blog.affordabletours.com/wp-content/uploads/2013/04/twitterlogo.jpg"></li>
+            <li><img src="http://library.corporate-ir.net/library/17/176/176060/mediaitems/93/a.com_logo_RGB.jpg"></li>
+        </ul>
     </section>
     <section class="hackacity-view-divider hackacity-view-divider-4">
 
     </section>
-    <section id="partners" class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">
-
-    </section>
+{#    <section id="partners" class="hackacity-view-partners hackacity-section" style="background: url(/static/img/partners.png) 50% 0 no-repeat fixed;">#}
+{##}
+{#    </section>#}
     <section id="team" class="hackacity-view-team" style="overflow-y: hidden; position: relative; background-color: white;">
         <div class="content">
             <div class="wrapper">

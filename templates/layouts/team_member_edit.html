@@ -1,0 +1,10 @@
+<li>
+    {% if not lead %}
+        <nav>
+            <a href="{{ team_member.user.email }}">X</a>
+        </nav>
+    {% endif %}
+
+    <div class="picture"><img src="{{ team_member.get_photo }}"></div>
+    <h2>{{ team_member.get_full_name }}</h2>
+</li>

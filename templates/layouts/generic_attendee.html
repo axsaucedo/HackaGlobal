@@ -1,6 +1,5 @@
 <div class="col-md-2 well">
     <a href="/accounts/view/{{ attendee.username }}/">
-        {{ attendee.first_name }}
-        {{ attendee.last_name }}
+        {{ attendee.get_full_name }}
     </a>
 </div>

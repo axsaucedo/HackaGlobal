@@ -55,12 +55,13 @@ def find_events(request):
 def manage_events(request):
     created = Event.objects.filter(hackacity__team=request.user)
 
+    hackacities = HackaCity.objects.filter(team=request.user)
     attendee_all = Attendee.objects.filter(attendee=request.user)
     attending = []
     for a in attendee_all:
         attending.append(a.event)
 
-    return render(request, 'manage_events.html', { 'created': created, 'attending': attending })
+    return render(request, 'manage_events.html', { 'hackacities': hackacities, 'created': created, 'attending': attending })
 
 def edit_event(request, event_id):
 

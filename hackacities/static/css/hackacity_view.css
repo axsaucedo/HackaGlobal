@@ -26,6 +26,7 @@
     overflow:hidden;
 }
 .hackacity-view-home-gradient {
+    position: relative;
     width: 100%;
     height: 80%;
     margin-top: 16%;
@@ -37,19 +38,20 @@
 }
 .hackacity-view-home-hackalogo {
     width: 70%;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
+    bottom: 60%;
     margin: 0 auto;
-    margin-bottom: -100px;
 }
 .hackacity-view-home-text {
-    position: fixed;
+    position: absolute;
     width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
     height: 0px;
+    bottom: 70%;
 
     padding-top: 160px;
     margin-bottom: -100px;

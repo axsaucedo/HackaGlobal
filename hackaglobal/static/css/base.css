@@ -10,6 +10,9 @@ body {
     src:    url('fonts/levenim.ttf') format('truetype');
 }
 
+.clear {
+    clear: both;
+}
 
 .panel-body {
     padding: 0px 0px 0px 0px;

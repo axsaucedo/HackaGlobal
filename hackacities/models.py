@@ -16,10 +16,14 @@ CONTAINER_TYPE_CHOICES = (
 class HackaContainer(models.Model):
     title = models.CharField(max_length=50)
     description = models.CharField(max_length=200)
-    photo = models.ImageField(upload_to='profiles/')
+    photo = models.ImageField(upload_to=path_and_rename('hackacities/sponsors/', u'sponsor'))
     url = models.URLField()
+    hackacity = models.ForeignKey("HackaCity", null=True, blank=True)
 
     type = models.CharField(max_length=1, choices=CONTAINER_TYPE_CHOICES, default='C')
+
+    def __unicode__(self):
+        return self.type + " - " + self.title
 
 class HackaCity(models.Model):
     lead = models.ForeignKey(User, related_name="lead_of")
@@ -39,9 +43,9 @@ class HackaCity(models.Model):
     about = models.TextField()
     city = models.OneToOneField('Cities')
 
-    sponsors = models.ForeignKey(HackaContainer, related_name="sponsor_of", null=True, blank=True)
-    communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
-    partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
+#    sponsors = models.ForeignKey(HackaContainer, related_name="sponsor_of", null=True, blank=True)
+#    communities = models.ForeignKey(HackaContainer, related_name="community_of", null=True, blank=True)
+#    partners = models.ForeignKey(HackaContainer, related_name="partner_of", null=True, blank=True)
 
     def image_tag(self): return u'<img src="%s" />' % (self.photo.url if self.photo else '/static/home/img/full_logo.png')
     image_tag.short_description = 'Image'

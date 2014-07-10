@@ -149,9 +149,16 @@
                     </div>
                     <div class="row">
                         <h2>Sponsors</h2>
-                        {% for sponsor in sponsors %}
-                            {% include 'layouts/generic_staff.html' with staff=sponsor edit=True %}
-                        {% endfor %}
+                        <ul class="people">
+                            {% for sponsor in hackacity.hackacontainer_set.all %}
+                                <li>
+                                    <nav>
+                                        <a href="{{ team_member.user.email }}">X</a>
+                                    </nav>
+                                    <a href="{{ sponsor.url }}"><img class="picture" src="{{ sponsor.photo.url }}"/></a>
+                                </li>
+                            {% endfor %}
+                        </ul>
 
                         <div class="container col-md-12">
                             <input class="input-name col-md-3" type="text" name="tags" placeholder="Name">

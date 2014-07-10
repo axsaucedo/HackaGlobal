@@ -114,6 +114,30 @@
 
 
 
+/*sponsors*//*sponsors*//*sponsors*/
+/*sponsors*//*sponsors*//*sponsors*/
+/*sponsors*//*sponsors*//*sponsors*/
+#sponsors ul {
+    position: relative;
+    margin: auto auto;
+    width: 80%;
+}
+#sponsors ul > li{
+    padding:0;
+    margin:0;
+    height: 200px;
+    display:block;
+    float:left;
+    width:50%;
+    text-align:center;
+    position:relative;
+    min-width:100px;
+}
+#sponsors ul > li img{
+    width:100%;
+    transition: all 0.25s ease-in 0s;
+}
+
 
 
 /*Team*//*Team*//*Team*//*Team*/

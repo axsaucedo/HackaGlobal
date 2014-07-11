@@ -13,7 +13,7 @@
 {% endblock %}
 
 {% block content %}
-    <div id="edit-event-info" data-user_username="{{ request.user.username }}" data-event_id="{{ event.id }}" data-add_staff_url="{% url 'hackaglobal.ajax.add_staff' %}" data-remove_staff_url="{% url 'hackaglobal.ajax.remove_staff' %}"></div>
+    <div id="edit-event-info" data-user_username="{{ request.user.username }}" data-event_id="{{ event.id }}" {# data-add_staff_url="{% url 'hackaglobal.ajax.add_staff' %}" data-remove_staff_url="{% url 'hackaglobal.ajax.remove_staff' %}"#}></div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">

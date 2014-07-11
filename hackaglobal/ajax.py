@@ -7,6 +7,7 @@ from hackaglobal.tools.toolbox import  send_async_mail
 import json
 
 from hackaglobal.models import Event, Attendee, Staff
+from hackacities.models import HackaContainer, HackaCity
 from django.contrib.auth.models import User
 
 import logging
@@ -58,50 +59,30 @@ def attend_event(request):
 
 @login_required
 @require_POST
-def add_staff(request):
+def add_container(request):
     response = {}
 
     try:
-        event_id = request.POST["event_id"]
-        staff_type = request.POST['staff_type']
-        username = request.POST['username']
-        name = request.POST['name']
-        url = request.POST['url']
-        imgurl = request.POST['imgurl']
+        hackacity = request.POST["hackacity"]
+        title = request.POST['title']
+        description = request.POST['description']
+        photo = request.POST['photo']
+        type = request.POST['type']
+        link = request.POST['staff_type']
 
-        event = Event.objects.get(id=event_id)
-        try:
-            user = User.objects.get(username=username)
-        except User.DoesNotExist:
-            user = None
+        hackacity = HackaCity.objects.get(name=hackacity)
 
-        staff = Staff()
-        staff.staff = user
-        staff.name = name
-        staff.url = url
-        staff.event = event
-        staff.type = staff_type
-        staff.imgurl = imgurl
+        container = HackaContainer()
+        container.hackacity = hackacity
+        container.title = title
+        container.description = description
+        container.photo = photo
+        container.type = type
+        container.link = link
 
-        staff.save()
+        container.save()
 
-
-        to = [event.creator.username]
-        for attendee in event.attendee_set.all():
-            if not to.__contains__(attendee.attendee.username):
-                to.append(attendee.attendee.username)
-
-        msg = EmailMultiAlternatives()
-        msg.from_email = "hackasoton@gmail.com"
-        msg.to = to
-        msg.subject = "New Attendee!"
-
-        body = "A new " + ("Organizer" if staff_type == "O" else ("Speaker" if staff_type == "S" else "Mentor")) + " has been added to the event <a href='http://events-finder.appspot.com/event/" + event_id + "'>" + event.name + "</a>!"
-        msg.body = body
-        msg.attach_alternative(body, 'text/html')
-        send_async_mail(msg)
-
-        response['staff_id'] = staff.id
+        response['container_id'] = container.id
 
     except Exception, err:
         response['error'] = err.__str__()
@@ -112,7 +93,39 @@ def add_staff(request):
 
 @login_required
 @require_POST
-def remove_staff(request):
+def remove_container(request):
+    response = {}
+
+    try:
+        container_id = request.POST["container_id"]
+
+        container = HackaContainer.objects.get(id=container_id)
+        container.delete()
+
+    except Exception, err:
+        response['error'] = err.__str__()
+
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+@login_required
+@require_POST
+def add_team(request):
+    response = {}
+
+    try:
+        staff_id = request.POST["staff_id"]
+
+        staff = Staff.objects.get(id=staff_id)
+        staff.delete()
+
+    except Exception, err:
+        response['error'] = err.__str__()
+
+    return HttpResponse(json.dumps(response), content_type="application/json")
+
+@login_required
+@require_POST
+def remove_team(request):
     response = {}
 
     try:

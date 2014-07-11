@@ -19,6 +19,8 @@ urlpatterns = patterns('',
 
     # Handling all AJAX calls
     url(r'^attend_event/$', ajax.attend_event, name='attend_event'),
-    url(r'^add_staff/$', ajax.add_staff, name='add_staff'),
-    url(r'^remove_staff/$', ajax.remove_staff, name='remove_staff'),
+    url(r'^add_container/$', ajax.add_container, name='add_container'),
+    url(r'^remove_container/$', ajax.remove_container, name='remove_container'),
+    url(r'^add_team/$', ajax.add_team, name='add_team'),
+    url(r'^remove_team/$', ajax.remove_team, name='remove_team'),
 )

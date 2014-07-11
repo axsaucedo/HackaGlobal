@@ -6,7 +6,10 @@
 {% endblock %}
 
 {% block content %}
-    <div id="edit-event-info" data-user_username="{{ request.user.username }}" data-hackacity_id="{{ hackacity.id }}" data-add_staff_url="{% url 'hackaglobal.ajax.add_staff' %}" data-remove_staff_url="{% url 'hackaglobal.ajax.remove_staff' %}"></div>
+    <div id="edit-hackacity-info"   data-add_container_url="{% url 'hackaglobal.ajax.add_container' %}"
+                                    data-remove_container_url="{% url 'hackaglobal.ajax.remove_container' %}"
+                                    data-add_team_url="{% url 'hackaglobal.ajax.add_team' %}"
+                                    data-remove_team_url="{% url 'hackaglobal.ajax.remove_team' %}"></div>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -151,9 +154,9 @@
                         <h2>Sponsors</h2>
                         <ul class="people">
                             {% for sponsor in hackacity.hackacontainer_set.all %}
-                                <li>
+                                <li data-container_id="{{ sponsor.id }}">
                                     <nav>
-                                        <a href="{{ team_member.user.email }}">X</a>
+                                        <a href="#" class="remove-sponsor-button">X</a>
                                     </nav>
                                     <a href="{{ sponsor.url }}"><img class="picture" src="{{ sponsor.photo.url }}"/></a>
                                 </li>
@@ -161,10 +164,11 @@
                         </ul>
 
                         <div class="container col-md-12">
-                            <input class="input-name col-md-3" type="text" name="tags" placeholder="Name">
-                            <input class="input-imgurl col-md-3" type="text" name="tags" placeholder="img url">
-                            <input class="input-url col-md-3" type="text" name="tags" placeholder="link">
-                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>
+                            <input class="input-name col-md-3" type="text" name="name" placeholder="Name">
+                            <input class="input-url col-md-3" type="text" name="url" placeholder="link">
+                            <input class="input-type col-md-3" type="text" name="type" placeholder="type">
+                            <input class="input-photo col-md-5" name="photo" type="file">
+                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-sponsor-btn">Add</button>
                         </div>
                     </div>
 {#                    <div class="row">#}

@@ -42,7 +42,7 @@ class Event(models.Model):
         if not self.photo:
             return '/static/defaultmedia/default-hackaevent-photo.jpg'
         else:
-            return self.photo
+            return '/media/' + self.photo
 
     def get_city(self):
         return self.hackacity.city.name

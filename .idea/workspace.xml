@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/hg_middleware.py" afterPath="$PROJECT_DIR$/hackaglobal/hg_middleware.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +84,7 @@
     <file path="/team_member_edit.html" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1404831758818" ignored="false" />
     <file path="/opensans.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1404980365739" ignored="false" />
     <file path="/ajax.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1404995387532" ignored="false" />
-    <file path="/hg_middleware.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405077351160" ignored="false" />
+    <file path="/hg_middleware.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405083118688" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,19 +164,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.21649484">
+            <state line="130" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="35.846153">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hg_middleware.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="hg_middleware.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackaglobal/hg_middleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="58" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
+            <state line="25" column="62" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.7463768">
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -297,9 +298,9 @@
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
         <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
-        <option value="$PROJECT_DIR$/hackaglobal/hg_middleware.py" />
         <option value="$PROJECT_DIR$/hackaglobal/models.py" />
         <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/hackaglobal/hg_middleware.py" />
       </list>
     </option>
   </component>
@@ -856,25 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="52" selection-start="3795" selection-end="3806" vertical-scroll-proportion="-3.9">
-          <folding>
-            <element signature="e#3431#3519#0" expanded="true" />
-            <element signature="e#3573#3641#0" expanded="true" />
-            <element signature="e#3844#3913#0" expanded="true" />
-            <element signature="e#3963#4158#0" expanded="true" />
-            <element signature="e#4349#4389#0" expanded="true" />
-            <element signature="e#4812#4880#0" expanded="true" />
-            <element signature="e#5458#5530#0" expanded="true" />
-            <element signature="e#5699#5752#0" expanded="true" />
-            <element signature="e#6591#6702#0" expanded="true" />
-            <element signature="e#6746#6772#0" expanded="true" />
-            <element signature="e#6874#6895#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apihg/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -900,15 +882,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/hg_middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="58" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="49" selection-start="778" selection-end="851" vertical-scroll-proportion="0.0">
@@ -927,10 +900,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="52" selection-start="3795" selection-end="3806" vertical-scroll-proportion="-3.9">
+          <folding>
+            <element signature="e#3431#3519#0" expanded="true" />
+            <element signature="e#3573#3641#0" expanded="true" />
+            <element signature="e#3844#3913#0" expanded="true" />
+            <element signature="e#3963#4158#0" expanded="true" />
+            <element signature="e#4349#4389#0" expanded="true" />
+            <element signature="e#4812#4880#0" expanded="true" />
+            <element signature="e#5458#5530#0" expanded="true" />
+            <element signature="e#5699#5752#0" expanded="true" />
+            <element signature="e#6591#6702#0" expanded="true" />
+            <element signature="e#6746#6772#0" expanded="true" />
+            <element signature="e#6874#6895#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="0.21649484">
+        <state line="130" column="6" selection-start="3943" selection-end="3943" vertical-scroll-proportion="35.846153">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/hg_middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="62" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.7463768">
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -24,4 +24,8 @@ class RedirectMiddleware(object):
             route = Subdomain.objects.get(name=subdomain).url
         except Subdomain.DoesNotExist:
             route = path
+
+        if route.startswith('http://') or route.startswith('https://'):
+            return HttpResponseRedirect(route)
+
         return HttpResponseRedirect("{0}://{1}{2}".format(scheme, default_domain.domain, route))

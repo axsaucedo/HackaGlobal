@@ -128,7 +128,7 @@ MIDDLEWARE_CLASSES = (
 
 
 #    HackaGlobal Custom Middleware
-if DEBUG:
+if not DEBUG:
     MIDDLEWARE_CLASSES += ('hackaglobal.hg_middleware.RedirectMiddleware',)
 
 CORS_ORIGIN_ALLOW_ALL = True

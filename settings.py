@@ -10,8 +10,8 @@ if DEBUG:
     ALLOWED_HOSTS = ['*']
     BASE_URL = 'http://127.0.0.1:8000'
 else:
-    ALLOWED_HOSTS = ['.hackaglobal.co']
-    BASE_URL = 'http://hackaglobal.co'
+    ALLOWED_HOSTS = ['.hackaglobal.com']
+    BASE_URL = 'http://hackaglobal.com'
 
 
 ADMINS = (
@@ -49,7 +49,7 @@ ALLOWED_HOSTS = ['*']
 TIME_ZONE = 'Europe/London'
 LANGUAGE_CODE = 'en-gb'
 
-SITE_ID = 1
+SITE_ID = 2
 
 # Use optimizations
 USE_I18N = True
@@ -125,6 +125,11 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 )
+
+
+#    HackaGlobal Custom Middleware
+if DEBUG:
+    MIDDLEWARE_CLASSES += ('hackaglobal.hg_middleware.RedirectMiddleware',)
 
 CORS_ORIGIN_ALLOW_ALL = True
 

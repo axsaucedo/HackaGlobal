@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/ajax.py" afterPath="$PROJECT_DIR$/hackaglobal/ajax.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/tools/forms.py" afterPath="$PROJECT_DIR$/hackaglobal/tools/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" afterPath="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layouts/team_member_edit.html" afterPath="$PROJECT_DIR$/templates/layouts/team_member_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" afterPath="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -89,6 +84,7 @@
     <file path="/opensans.css" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1404980365739" ignored="false" />
     <file path="/ajax.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405356156511" ignored="false" />
     <file path="/hg_middleware.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405083118688" ignored="false" />
+    <file path="/0008_change_tehran.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405357620535" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,10 +143,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hackacity_edit.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hackacity_edit.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="30" selection-start="3674" selection-end="3674" vertical-scroll-proportion="-1.117647">
+            <state line="90" column="30" selection-start="3674" selection-end="3674" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="34" selection-start="812" selection-end="812" vertical-scroll-proportion="15.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0008_change_tehran.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hackacities/migrations/0008_change_tehran.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="40" selection-start="373" selection-end="373" vertical-scroll-proportion="0.28235295">
               <folding />
             </state>
           </provider>
@@ -205,15 +219,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="23" selection-start="2035" selection-end="2041" vertical-scroll-proportion="-0.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -239,8 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
-        <option value="$PROJECT_DIR$/hackaglobal/admin.py" />
         <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/hackaglobal/hg_middleware.py" />
         <option value="$PROJECT_DIR$/templates/edit_event.html" />
@@ -255,6 +258,8 @@
         <option value="$PROJECT_DIR$/hackaglobal/ajax.py" />
         <option value="$PROJECT_DIR$/templates/layouts/team_member_edit.html" />
         <option value="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" />
+        <option value="$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py" />
+        <option value="$PROJECT_DIR$/hackacities/migrations/0008_change_tehran.py" />
       </list>
     </option>
   </component>
@@ -407,6 +412,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templatetags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -484,6 +507,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackacities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,29 +915,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackaglobal/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="17" selection-start="404" selection-end="410" vertical-scroll-proportion="0.3478261">
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/contrib/admin/static/admin/js/jquery.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4879" column="13" selection-start="126626" selection-end="126626" vertical-scroll-proportion="0.33254716">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/js/external/jquery-forms.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="14900" selection-start="15248" selection-end="15248" vertical-scroll-proportion="0.03529412">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="23" selection-start="2035" selection-end="2041" vertical-scroll-proportion="-0.625">
@@ -924,13 +942,6 @@
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="-8.75">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,7 +1000,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="30" selection-start="3674" selection-end="3674" vertical-scroll-proportion="-1.117647">
+        <state line="90" column="30" selection-start="3674" selection-end="3674" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/migrations/0006_change_russia_mexico.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="12" selection-start="478" selection-end="586" vertical-scroll-proportion="0.37313432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/templatetags/hg_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="10" selection-start="1237" selection-end="1237" vertical-scroll-proportion="1.546988">
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="34" selection-start="812" selection-end="812" vertical-scroll-proportion="15.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/migrations/0008_change_tehran.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="40" selection-start="373" selection-end="373" vertical-scroll-proportion="0.28235295">
           <folding />
         </state>
       </provider>

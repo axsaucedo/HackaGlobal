@@ -165,24 +165,25 @@ function createMap(data) {
 function populateMap() {
 
     var marker;
-    var country;
+    var city;
 
     for (var i = 0; i < markersArray.length; i++ ) {
         markersArray[i].setMap(null);
     }
     markersArray.length = 0;
 
-    for (var u = 0; u < hgCountries.length; u++) {
+    for (var u = 0; u < availableHackaCities.length; u++) {
 
-        country = hgCountries[u];
+        city = availableHackaCities[u];
+        console.log(city);
         geocoder = new google.maps.Geocoder();
-        geocoder.geocode( { 'address': country }, function(results, status) {
+        geocoder.geocode( { 'address': city }, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
                 marker = new MarkerWithLabel({
                     map: map,
                     position: results[0].geometry.location,
-                    html: country,
+                    html: city
                 });
 
                 tmp = results[0].formatted_address.toLowerCase().replace(' ', '-');
@@ -206,10 +207,10 @@ function populateMap() {
                  hgCountriesMetadata[parseInt(this.position.k)].title,
                  hgCountriesMetadata[parseInt(this.position.k)].url);
                  */
-                var c = hgCountriesMetadata[parseInt(this.position.k)].title;
+                var c = hgCountriesMetadata[parseInt(this.position.k)].title.split(',')[0];
                 console.log(c);
 
-                window.location = '/web/' + c.toLowerCase() + '/';
+                window.location = '/hackacity/view/' + c.toLowerCase() + '/';
                 //console.log(hgCountriesMetadata[parseInt(this.position.k)]);
             }, false);
 

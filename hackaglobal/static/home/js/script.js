@@ -207,7 +207,7 @@ function populateMap() {
                  hgCountriesMetadata[parseInt(this.position.k)].title,
                  hgCountriesMetadata[parseInt(this.position.k)].url);
                  */
-                var c = hgCountriesMetadata[parseInt(this.position.k)].title.replace(/-/g,'').split(',')[0];
+                var c = hgCountriesMetadata[parseInt(this.position.k)].title;
                 console.log(c);
 
 //                window.location = '/hackacity/view/' + c.toLowerCase() + '/';

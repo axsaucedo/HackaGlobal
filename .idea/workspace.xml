@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hackaglobal/static/js/external/jquery-forms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/ajax.py" afterPath="$PROJECT_DIR$/hackaglobal/ajax.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css" afterPath="$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" afterPath="$PROJECT_DIR$/hackacities/static/js/hackacity_edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" afterPath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -169,16 +163,25 @@
       <file leaf-file-name="hackacity_edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="103" selection-start="12827" selection-end="12827" vertical-scroll-proportion="-6.0">
+            <state line="178" column="103" selection-start="12827" selection-end="12827" vertical-scroll-proportion="-53.4">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_edit.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="0.52369076">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hackacity_edit.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="28" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.1775457">
+            <state line="79" column="28" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-1.2363636">
               <folding />
             </state>
           </provider>
@@ -239,7 +242,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/hackaglobal/static/css/opensans.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/hackacities/models.py" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
@@ -254,6 +256,7 @@
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_edit.html" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -873,15 +876,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="1435" selection-end="1435" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/hg_middleware.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="62" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.70709383" />
@@ -970,13 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="103" selection-start="12827" selection-end="12827" vertical-scroll-proportion="-6.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="138" column="27" selection-start="3324" selection-end="3324" vertical-scroll-proportion="0.6015424">
@@ -986,7 +973,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="28" selection-start="1604" selection-end="1604" vertical-scroll-proportion="0.1775457">
+        <state line="79" column="28" selection-start="1604" selection-end="1604" vertical-scroll-proportion="-1.2363636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="103" selection-start="12827" selection-end="12827" vertical-scroll-proportion="-53.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="0.52369076">
           <folding />
         </state>
       </provider>

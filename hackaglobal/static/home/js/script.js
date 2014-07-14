@@ -175,7 +175,8 @@ function populateMap() {
     for (var u = 0; u < availableHackaCities.length; u++) {
 
         city = availableHackaCities[u];
-//        console.log(city);
+        if(city == "Global") continue;
+
         geocoder = new google.maps.Geocoder();
         (function(c) {
             geocoder.geocode( { 'address': city }, function(results, status) {

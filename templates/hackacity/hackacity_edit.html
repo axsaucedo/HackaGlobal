@@ -7,7 +7,8 @@
 {% endblock %}
 
 {% block content %}
-    <div id="edit-hackacity-info"   data-remove_container_url="{% url 'hackaglobal.ajax.remove_container' %}"
+    <div id="edit-hackacity-info"   data-hackacity="{{ hackacity.name }}"
+                                    data-remove_container_url="{% url 'hackaglobal.ajax.remove_container' %}"
                                     data-add_team_url="{% url 'hackaglobal.ajax.add_team' %}"
                                     data-remove_team_url="{% url 'hackaglobal.ajax.remove_team' %}"></div>
     <div class="container">
@@ -129,16 +130,16 @@
                     <div class="row">
                         <h2>HackaTeam</h2>
                         <div>
-                            <ul class="people">
+                            <ul class="people team-container">
                             {% for u in hackacity.team.all %}
                                 {% if u != hackacity.lead  %}
                                     {% include 'layouts/team_member_edit.html' with team_member=u.profile %}
                                 {% endif %}
                             {% endfor %}
                             </ul>
-                            <div class="container col-md-12">
-                                <input class="input-name col-md-3" type="text" name="tags" placeholder="Username">
-                                <button style="float: left;" type="submit" class="btn btn-info col-md-2 add-staff-btn" data-staff_type="S">Add</button>
+                            <div class="container col-md-12 add-team-form-container">
+                                <input class="add-team-input-username col-md-3" type="text" name="username" placeholder="Username">
+                                <button style="float: left;" type="submit" class="btn btn-info col-md-2 add-team-btn" data-staff_type="S">Add</button>
                             </div>
                         </div>
                     </div>
@@ -169,6 +170,7 @@
                                 <input class="input-name col-md-3 hidden" type="text" name="hackacity" value="{{ hackacity.id }}">
 
                                 <input class="input-name col-md-3" type="text" name="title" placeholder="Title">
+                                <input class="input-url col-md-3" type="text" name="url" placeholder="URL">
                                 <div class="col-md-3">
                                     <select class="form-control" name="type">
                                         <option value="G">Golden</option>
@@ -176,7 +178,6 @@
                                         <option value="B">Bronze</option>
                                     </select>
                                 </div>
-                                <input class="input-url col-md-3" type="text" name="url" placeholder="Link">
                                 <input class="input-url col-md-3" type="text" name="description" placeholder="Short Description">
                                 <input class="input-photo col-md-5" type="file" name="photo">
 

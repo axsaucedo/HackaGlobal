@@ -3,14 +3,14 @@ from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
 from django.core.mail import EmailMultiAlternatives
 from hackaglobal.tools.toolbox import  send_async_mail
+from hackaglobal.tools.forms import HackaContainerCreationForm
 
 import json
 
-from hackaglobal.models import Event, Attendee, Staff
+from hackaglobal.models import Event, Attendee
 from hackacities.models import HackaContainer, HackaCity
 from django.contrib.auth.models import User
 
-import logging
 
 @login_required
 @require_POST
@@ -55,22 +55,6 @@ def attend_event(request):
 
     return HttpResponse(json.dumps(response), content_type="application/json")
 
-
-from django import forms
-class HackaContainerCreationForm(forms.ModelForm):
-
-    def __init__(self, *args, **kwargs):
-        super(HackaContainerCreationForm, self).__init__(*args, **kwargs)
-
-    class Meta:
-        model = HackaContainer
-        exclude = ("city","name","lead")
-
-    def save(self, commit=True):
-        hc = super(HackaContainerCreationForm, self).save(commit=False)
-        if commit:
-            hc.save()
-        return hc
 
 @login_required
 @require_POST
@@ -142,10 +126,22 @@ def add_team(request):
     response = {}
 
     try:
-        staff_id = request.POST["staff_id"]
+        username = request.POST["username"]
+        hackacity = request.POST["hackacity"]
 
-        staff = Staff.objects.get(id=staff_id)
-        staff.delete()
+        teammate = User.objects.get(username=username)
+        hc = HackaCity.objects.get(name=hackacity)
+
+        if hc.team.filter(username=username):
+            raise Exception("User is already in team.")
+
+        hc.team.add(teammate)
+
+        response['team'] = {
+            "username": teammate.username
+            , "photo": teammate.profile.get_photo()
+            , "name": teammate.profile.get_full_name()
+        }
 
     except Exception, err:
         response['error'] = err.__str__()
@@ -158,10 +154,13 @@ def remove_team(request):
     response = {}
 
     try:
-        staff_id = request.POST["staff_id"]
+        username = request.POST["username"]
+        hackacity = request.POST["hackacity"]
 
-        staff = Staff.objects.get(id=staff_id)
-        staff.delete()
+        teammate = User.objects.get(username=username)
+        hc = HackaCity.objects.get(name=hackacity)
+
+        hc.team.remove(teammate)
 
     except Exception, err:
         response['error'] = err.__str__()

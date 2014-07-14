@@ -1,10 +1,10 @@
-<li>
+<li data-team_username="{{ team_member.user.username }}">
     {% if not lead %}
         <nav>
-            <a href="{{ team_member.user.email }}">X</a>
+            <a class="remove-team-btn" href="#">X</a>
         </nav>
     {% endif %}
 
-    <div class="picture"><img src="{{ team_member.get_photo }}"></div>
+    <div class="picture"><a href="/accounts/view/{{ team_member.user.username }}"><img src="{{ team_member.get_photo }}"></a></div>
     <h2>{{ team_member.get_full_name }}</h2>
 </li>

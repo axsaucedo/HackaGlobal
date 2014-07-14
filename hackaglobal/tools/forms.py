@@ -3,7 +3,7 @@ from django.utils.translation import ugettext, ugettext_lazy as _
 from django.contrib.auth.models import User
 from hackaglobal.models import Event, Staff
 from accounts.models import UserProfile
-from hackacities.models import HackaCity
+from hackacities.models import HackaCity, HackaContainer
 import datetime
 
 
@@ -173,6 +173,22 @@ class HackaCityCreationForm(forms.ModelForm):
 
     def save(self, commit=True):
         hc = super(HackaCityCreationForm, self).save(commit=False)
+        if commit:
+            hc.save()
+        return hc
+
+
+class HackaContainerCreationForm(forms.ModelForm):
+
+    def __init__(self, *args, **kwargs):
+        super(HackaContainerCreationForm, self).__init__(*args, **kwargs)
+
+    class Meta:
+        model = HackaContainer
+        exclude = ("city","name","lead")
+
+    def save(self, commit=True):
+        hc = super(HackaContainerCreationForm, self).save(commit=False)
         if commit:
             hc.save()
         return hc

@@ -77,7 +77,7 @@ ul.people .picture{
     overflow:hidden;
     border-radius:110px;
     padding:5px;
-    background:#1c1c1c;
+    background-color: white;
     margin:25px 0 5px 0;
     left:0%;
     width:50%;
@@ -122,12 +122,12 @@ ul.people > li:hover nav{
 ul.people nav a{
     text-align:right;
     display:block;
-    font-size:18px;
+    font-size:20px;
     font-weight:bold;
     line-height:20px;
-    padding-right: 20px;
+    padding-right: 15px;
     transition: color 0.25s ease-in 0s;
 }
 ul.people nav a:hover{
-    color:#326AB5;
+    color:#ff4500 !important;
 }

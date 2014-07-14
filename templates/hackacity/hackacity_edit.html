@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 
 {% block head-includes %}
+    <script type="text/javascript" src="/static/js/external/jquery-forms.js"></script>
     <script type="text/javascript" src="/static/js/hackacity_edit.js"></script>
     <link rel="stylesheet" type="text/css" href="/static/css/hackacity_edit.css">
 {% endblock %}
 
 {% block content %}
-    <div id="edit-hackacity-info"   data-add_container_url="{% url 'hackaglobal.ajax.add_container' %}"
-                                    data-remove_container_url="{% url 'hackaglobal.ajax.remove_container' %}"
+    <div id="edit-hackacity-info"   data-remove_container_url="{% url 'hackaglobal.ajax.remove_container' %}"
                                     data-add_team_url="{% url 'hackaglobal.ajax.add_team' %}"
                                     data-remove_team_url="{% url 'hackaglobal.ajax.remove_team' %}"></div>
     <div class="container">
@@ -152,7 +152,7 @@
                     </div>
                     <div class="row">
                         <h2>Sponsors</h2>
-                        <ul class="people">
+                        <ul id="edit-hackacity-sponsors" class="people">
                             {% for sponsor in hackacity.hackacontainer_set.all %}
                                 <li data-container_id="{{ sponsor.id }}">
                                     <nav>
@@ -164,11 +164,24 @@
                         </ul>
 
                         <div class="container col-md-12">
-                            <input class="input-name col-md-3" type="text" name="name" placeholder="Name">
-                            <input class="input-url col-md-3" type="text" name="url" placeholder="link">
-                            <input class="input-type col-md-3" type="text" name="type" placeholder="type">
-                            <input class="input-photo col-md-5" name="photo" type="file">
-                            <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-sponsor-btn">Add</button>
+                            <form id="add-sponsor-form" action="{% url 'hackaglobal.ajax.add_container' %}" enctype="multipart/form-data" method="post">
+                                {% csrf_token %}
+                                <input class="input-name col-md-3 hidden" type="text" name="hackacity" value="{{ hackacity.id }}">
+
+                                <input class="input-name col-md-3" type="text" name="title" placeholder="Title">
+                                <div class="col-md-3">
+                                    <select class="form-control" name="type">
+                                        <option value="G">Golden</option>
+                                        <option value="S">Silver</option>
+                                        <option value="B">Bronze</option>
+                                    </select>
+                                </div>
+                                <input class="input-url col-md-3" type="text" name="url" placeholder="Link">
+                                <input class="input-url col-md-3" type="text" name="description" placeholder="Short Description">
+                                <input class="input-photo col-md-5" type="file" name="photo">
+
+                                <button style="float: right;" type="submit" class="btn btn-info col-md-2 add-sponsor-btn">Add</button>
+                            </form>
                         </div>
                     </div>
 {#                    <div class="row">#}

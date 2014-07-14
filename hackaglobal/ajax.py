@@ -56,35 +56,63 @@ def attend_event(request):
     return HttpResponse(json.dumps(response), content_type="application/json")
 
 
+from django import forms
+class HackaContainerCreationForm(forms.ModelForm):
+
+    def __init__(self, *args, **kwargs):
+        super(HackaContainerCreationForm, self).__init__(*args, **kwargs)
+
+    class Meta:
+        model = HackaContainer
+        exclude = ("city","name","lead")
+
+    def save(self, commit=True):
+        hc = super(HackaContainerCreationForm, self).save(commit=False)
+        if commit:
+            hc.save()
+        return hc
 
 @login_required
 @require_POST
 def add_container(request):
     response = {}
 
+#    if True:
+#        new_hc = HackaContainer.objects.all()[0]
+#        response['hc'] = {
+#            "id": new_hc.id
+#            , "title": new_hc.title
+#            , "url": new_hc.url
+#            , "photo": new_hc.photo.url
+#            , "type": new_hc.type
+#        }
+#        return HttpResponse(json.dumps(response), content_type="application/json")
+
     try:
-        hackacity = request.POST["hackacity"]
-        title = request.POST['title']
-        description = request.POST['description']
-        photo = request.POST['photo']
-        type = request.POST['type']
-        link = request.POST['staff_type']
+        #Check if user has right to add sponsor
+        if not HackaCity.objects.get(id=request.POST['hackacity']).lead == request.user:
+            raise Exception("User is not allowed to add sponsor")
 
-        hackacity = HackaCity.objects.get(name=hackacity)
+#        print request.POST['form']
+        print request.FILES
+        hc_form = HackaContainerCreationForm(request.POST, request.FILES)
 
-        container = HackaContainer()
-        container.hackacity = hackacity
-        container.title = title
-        container.description = description
-        container.photo = photo
-        container.type = type
-        container.link = link
-
-        container.save()
-
-        response['container_id'] = container.id
+        if hc_form.is_valid():
+            hc = hc_form.save()
+            response['hc'] = {
+                  "id": hc.id
+                , "title": hc.title
+                , "url": hc.url
+                , "photo": hc.photo.url
+                , "type": hc.type
+            }
+        else:
+            print hc_form.errors
+            raise Exception("Not Valid")
 
     except Exception, err:
+        print "ERROR"
+        print err
         response['error'] = err.__str__()
 
     return HttpResponse(json.dumps(response), content_type="application/json")
@@ -95,6 +123,7 @@ def add_container(request):
 @require_POST
 def remove_container(request):
     response = {}
+    print request.POST
 
     try:
         container_id = request.POST["container_id"]

@@ -207,10 +207,10 @@ function populateMap() {
                  hgCountriesMetadata[parseInt(this.position.k)].title,
                  hgCountriesMetadata[parseInt(this.position.k)].url);
                  */
-                var c = hgCountriesMetadata[parseInt(this.position.k)].title.split(',')[0];
+                var c = hgCountriesMetadata[parseInt(this.position.k)].title;
                 console.log(c);
 
-                window.location = '/hackacity/view/' + c.toLowerCase() + '/';
+//                window.location = '/hackacity/view/' + c.toLowerCase() + '/';
                 //console.log(hgCountriesMetadata[parseInt(this.position.k)]);
             }, false);
 

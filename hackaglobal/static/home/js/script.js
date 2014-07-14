@@ -175,46 +175,46 @@ function populateMap() {
     for (var u = 0; u < availableHackaCities.length; u++) {
 
         city = availableHackaCities[u];
-        console.log(city);
+//        console.log(city);
         geocoder = new google.maps.Geocoder();
-        geocoder.geocode( { 'address': city }, function(results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                map.setCenter(results[0].geometry.location);
-                marker = new MarkerWithLabel({
-                    map: map,
-                    position: results[0].geometry.location,
-                    html: city
-                });
+        (function(c) {
+            geocoder.geocode( { 'address': city }, function(results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location);
+                    marker = new MarkerWithLabel({
+                        map: map,
+                        position: results[0].geometry.location,
+                        html: city
+                    });
 
-                tmp = results[0].formatted_address.toLowerCase().replace(' ', '-');
-                hgCountriesMetadata[parseInt(results[0].geometry.location.k)] = {stateName : tmp + '/', title: city, url: mainURL + tmp + '/'};
+                    tmp = results[0].formatted_address.toLowerCase().replace(' ', '-');
+                    hgCountriesMetadata[parseInt(results[0].geometry.location.k)] = {stateName : tmp + '/', title: tmp, url: mainURL + tmp + '/', name: c};
 
-            } else {
-                alert("Geocode was not successful for the following reason: " + status);
-            }// end else
+                } else {
+                    alert("Geocode was not successful for the following reason: " + status);
+                }// end else
 
+                markersArray[u] = marker;
 
+                markersArray[u].addListener('click', function() {
+                    //hgBody.className = ' hg-no-scroll';
+                    //hgOverlay.className = hgOverlay.className.replace('hg-off', 'hg-on');
+                    //apiGetEvents(capitaliseFirstLetter(hgCountriesMetadata[parseInt(this.position.k)].title));
 
-            markersArray[u] = marker;
+                    /*
+                     history.pushState({stateName : hgCountriesMetadata[parseInt(this.position.k)].stateName},
+                     hgCountriesMetadata[parseInt(this.position.k)].title,
+                     hgCountriesMetadata[parseInt(this.position.k)].url);
+                     */
+                    var c = hgCountriesMetadata[parseInt(this.position.k)].name;
+                    console.log(c);
 
-            markersArray[u].addListener('click', function() {
-                //hgBody.className = ' hg-no-scroll';
-                //hgOverlay.className = hgOverlay.className.replace('hg-off', 'hg-on');
-                //apiGetEvents(capitaliseFirstLetter(hgCountriesMetadata[parseInt(this.position.k)].title));
+                    window.location = '/hackacity/view/' + c.toLowerCase() + '/';
+                    //console.log(hgCountriesMetadata[parseInt(this.position.k)]);
+                }, false);
 
-                /*
-                 history.pushState({stateName : hgCountriesMetadata[parseInt(this.position.k)].stateName},
-                 hgCountriesMetadata[parseInt(this.position.k)].title,
-                 hgCountriesMetadata[parseInt(this.position.k)].url);
-                 */
-                var c = hgCountriesMetadata[parseInt(this.position.k)].title;
-                console.log(c);
-
-                window.location = '/hackacity/view/' + c.toLowerCase() + '/';
-                //console.log(hgCountriesMetadata[parseInt(this.position.k)]);
-            }, false);
-
-        });
+            });
+        })(city);
 
     }// end for
 

@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71e61ff8-c94a-4375-8a8d-3b1a6672c558" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/views.py" afterPath="$PROJECT_DIR$/hackacities/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405327075982" ignored="false" />
     <file path="/urls.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1404995515926" ignored="false" />
-    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1399283765378" ignored="false" />
+    <file path="/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405347672906" ignored="false" />
     <file path="/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1405077755111" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/settings.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
     <file path="$PROJECT_DIR$/../eventsfinder/eventsfinder/views.py" changelist="71e61ff8-c94a-4375-8a8d-3b1a6672c558" time="1396682840973" ignored="false" />
@@ -163,16 +164,16 @@
       <file leaf-file-name="hackacity_edit.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="178" column="103" selection-start="12827" selection-end="12827" vertical-scroll-proportion="-53.4">
+            <state line="121" column="37" selection-start="9391" selection-end="9395" vertical-scroll-proportion="-3.7">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="0.52369076">
+            <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="-8.75">
               <folding />
             </state>
           </provider>
@@ -196,10 +197,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackacities/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="49" selection-start="2264" selection-end="2264" vertical-scroll-proportion="-3.3846154">
+            <state line="97" column="47" selection-start="3970" selection-end="3970" vertical-scroll-proportion="0.69924814">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -241,7 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/hackaglobal/static/css/opensans.css" />
         <option value="$PROJECT_DIR$/hackaglobal/urls.py" />
         <option value="$PROJECT_DIR$/hackacities/models.py" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
@@ -257,6 +257,7 @@
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
         <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/hackacities/views.py" />
       </list>
     </option>
   </component>
@@ -927,15 +928,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="49" selection-start="2264" selection-end="2264" vertical-scroll-proportion="-3.3846154">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="15" selection-start="224" selection-end="236" vertical-scroll-proportion="1.7307693">
@@ -978,17 +970,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="178" column="103" selection-start="12827" selection-end="12827" vertical-scroll-proportion="-53.4">
+        <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="-8.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="25" selection-start="1839" selection-end="2039" vertical-scroll-proportion="0.52369076">
+        <state line="121" column="37" selection-start="9391" selection-end="9395" vertical-scroll-proportion="-3.7">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackacities/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="47" selection-start="3970" selection-end="3970" vertical-scroll-proportion="0.69924814">
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

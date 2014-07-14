@@ -95,6 +95,6 @@ def edit_hackacity(request, hc):
         return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': err if settings.DEBUG else "Oops, we couldn't find the event you were looking for..." })
 
 
-    data['is_lead'] = data['hackacity'].lead = request.user
+    data['is_lead'] = data['hackacity'].lead == request.user
 
     return render(request, 'hackacity/hackacity_edit.html', data)

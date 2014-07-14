@@ -187,7 +187,7 @@ function populateMap() {
                 });
 
                 tmp = results[0].formatted_address.toLowerCase().replace(' ', '-');
-                hgCountriesMetadata[parseInt(results[0].geometry.location.k)] = {stateName : tmp + '/', title: tmp, url: mainURL + tmp + '/'};
+                hgCountriesMetadata[parseInt(results[0].geometry.location.k)] = {stateName : tmp + '/', title: city, url: mainURL + tmp + '/'};
 
             } else {
                 alert("Geocode was not successful for the following reason: " + status);
@@ -207,7 +207,7 @@ function populateMap() {
                  hgCountriesMetadata[parseInt(this.position.k)].title,
                  hgCountriesMetadata[parseInt(this.position.k)].url);
                  */
-                var c = hgCountriesMetadata[parseInt(this.position.k)].title.replace(/,/g,'').split('-')[0];
+                var c = hgCountriesMetadata[parseInt(this.position.k)].title;
                 console.log(c);
 
                 window.location = '/hackacity/view/' + c.toLowerCase() + '/';

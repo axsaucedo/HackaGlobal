@@ -4,6 +4,7 @@
     text-align: center;
     background-size: contain;
     font-family: "Open sans";
+    min-height: 500px;
 }
 .hackacity-view-title {
     font-family: "Levenim";
@@ -27,34 +28,31 @@
 }
 .hackacity-view-home-gradient {
     position: relative;
+    overflow: hidden;
     width: 100%;
-    height: 80%;
-    margin-top: 16%;
+    margin-top: 18%;
     color: white;
-    z-index: -10;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 1.0));
 
-    padding-top: 11%;
+    padding-top: 100px;
 }
 .hackacity-view-home-hackalogo {
-    width: 70%;
-    position: absolute;
+    width: 700px;
+    max-height: 150px;
     left: 0;
     right: 0;
     bottom: 60%;
     margin: 0 auto;
 }
 .hackacity-view-home-text {
-    position: absolute;
     width: 80%;
     left: 0;
     right: 0;
     margin: 0 auto;
-    height: 0px;
     bottom: 70%;
 
-    padding-top: 160px;
-    margin-bottom: -100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -136,7 +134,8 @@
     min-width:100px;
 }
 #sponsors ul > li img{
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
     transition: all 0.25s ease-in 0s;
 }
 

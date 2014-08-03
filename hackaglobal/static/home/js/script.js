@@ -128,7 +128,7 @@ function createMap(data) {
         var rand = Math.random();
 
         //Normal theme
-        var style;
+//        var style;
 //        //Dark theme
 //        if (rand < .3) style = [{"featureType":"all","stylers":[{"visibility":"off"}]},{featureType: "administrative.country",elementType: "labels","stylers": [ {visibility: "on"} ]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-100}]}];
 //        //White theme
@@ -137,7 +137,7 @@ function createMap(data) {
         //Custom theme
 //        var style = [{"featureType":"all","stylers":[{"visibility":"off"}]},{featureType: "administrative.country",elementType: "labels","stylers": [ {visibility: "on"} ]},{featureType: "administrative.city",elementType: "labels","stylers": [ {visibility: "on"} ]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-100}]},{"featureType":"road","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"visibility":"off"}]},{"featureType":"road.local","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"road.arterial","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","stylers":[{"weight":0.6},{"saturation":-85},{"lightness":61}]},{"featureType":"road"},{},{"featureType":"landscape","stylers":[{"hue":"#0066ff"},{"saturation":74},{"lightness":100}]}];
         //Dark Theme
-//        var style = [{"featureType":"all","stylers":[{"visibility":"off"}]},{featureType: "administrative.country",elementType: "labels","stylers": [ {visibility: "on"} ]},{featureType: "administrative.city",elementType: "labels","stylers": [ {visibility: "on"} ]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-100}]}];
+        var style = [{"featureType":"all","stylers":[{"visibility":"off"}]},{featureType: "administrative.country",elementType: "labels","stylers": [ {visibility: "on"} ]},{featureType: "administrative.city",elementType: "labels","stylers": [ {visibility: "on"} ]},{"featureType":"water","stylers":[{"visibility":"on"},{"lightness":-100}]}];
 
 //        var style;
 

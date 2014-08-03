@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block head-includes %}
+
+    <link href="/static/home/css/reset.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/static/home/css/index.css" rel="stylesheet" type="text/css" media="all" />
+
+    <script type="text/javascript" src="/static/home/js/lib/jquery.cycle2.min.js"></script>
+    <script type="text/javascript" src="/static/home/js/lib/jquery.colorbox-min.js"></script>
+    <script type="text/javascript" src="/static/home/js/lib/markerwithlabel.js"></script>
+    <script type="text/javascript" src="/static/home/js/concept.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<body id="hg-body" >
+
+  <div class="header">
+
+{#      <div id="account-buttons" style="position: fixed; top:7px; right: 40px; z-index: 1000">#}
+{#          <ul>#}
+{#              <li> <a href="/accounts/login"> Login</a></li>#}
+{#              <li> <a href="/accounts/signup"> Signup</a></li>#}
+{#          </ul>#}
+{#      </div>#}
+{##}
+{#      <div id="vi">#}
+{#          <a href="/"><img alt="" class="style" src="/static/home/img/vi.png"></a>#}
+{#            <img id="vi_logo" src="/static/home/img/hacka-globe.png" alt="" />#}
+{#            <div id="vi_text">Hacka {Global} </div>#}
+{#      </div>#}
+{#      <div class="globe-bracket" style="display:none;">#}
+{#          <img src="/static/home/img/hacka-globe.png" alt="" />#}
+{#      </div>#}
+
+
+      <div class="mailchimp">
+        <div style="margin-top: -50px;" id="googleMap"></div>
+      </div>
+
+  </div><!--#header-->
+
+  <!-- Navigation Menu -->
+  <div id="top_gnav" class="style">
+    <ul>
+      <li><a href="#vi" class="about hacka-scroll"><h2>Home</h2></a></li>
+      <li><a href="#main" class="info hacka-scroll"><h2>Video</h2></a></li>
+      <li><a href="#about" class="store hacka-scroll"><h2>About</h2></a></li>
+      <li><a href="#app" class="support hacka-scroll"><h2>App</h2></a></li>
+    </ul>
+    <br class="clr" />
+
+  </div>
+
+  <div id="mc_embed_signup">
+{##}
+{#    <form style="position: relative" action="http://hackaglobal.us8.list-manage.com/subscribe/post?u=c43a99e58fdcaa68e71a3728d&amp;id=9c6c401d27" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>#}
+{##}
+{#        <br>#}
+{#        <span style=" width: 50%"><h2 for="mce-EMAIL">Join our Beta, and connect with the world's most Awesome community!!</h2></span>#}
+{#      <span style="width: 50%">#}
+{#          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />#}
+{#      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->#}
+{#          <div style="position: absolute; left: -5000px;"><input type="text" name="b_c43a99e58fdcaa68e71a3728d_9c6c401d27" value=""></div>#}
+{#          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>#}
+{#      </span>#}
+{#    </form>#}
+  </div>
+    
+<!------------------------Video------------------------> 
+
+
+
+
+<div id="main">
+  <div id="movie">
+	  <h1>&nbsp;</h1>
+      <a href="http://www.youtube.com/embed/z0J_AQXZcG4?rel=0&amp;fs=0&amp;autoplay=1" class="video1"><img src="/static/home/img/movie_01.jpg" class="style" style="width: 100%" />
+	  <div>
+          <h1>Watch our video!</h1><br>
+	    <iframe class="sp" width="200" height="120" src="http://www.youtube.com/embed/z0J_AQXZcG4?theme=light&amp;showinfo=0" frameborder="0" allowfullscreen style="width: 100%; margin: 0px 0px;"></iframe>
+	   </div>
+	   <br class="clr" />
+      </a>
+   </div>
+    
+  <div class="btn_area style">
+    <a href="http://hackaglobal.us8.list-manage.com/subscribe/post?u=c43a99e58fdcaa68e71a3728d&id=9c6c401d27" class="btn_g pagedown"><h2>> Sign up</h2></a>
+  </div>
+    
+<!----------------- About Page ---------------> 
+
+  <div id="about" style="padding-bottom: 50px">
+    <h1>&nbsp;</h1>
+    <h1>&nbsp;</h1>
+    <h1>Create your local community, and connect with communities around the world!</h1>
+    	
+    <div class="aboutbox01">
+      <div class="aboutimg"><img src="/static/home/img/circle1.png" class="flyout01" /></div>
+      <div class="abouttext">
+        <h2>Register your HackaCity, and obtain unbelievable benefits!</h2>
+        <p>Connect and learn from like-minded, brilliant individuals who have the same interests. Organize events, and become the central point of contact for all the tech awesomeness in your area!</p>
+      </div>
+     </div>
+     <br class="clr" />
+            
+     <div class="aboutbox02">
+        <div class="aboutimg"><img src="/static/home/img/circle4.png" class="flyout02" /></div>
+        <div class="abouttext">
+          <h2>Travel around the world!</h2>
+           <p>Meet communities in different countries, take part in mind blowing tech events around the world, and meet Awesome, like-minded individuals!</p>
+        </div>
+      </div>
+      <br class="clr" />
+            
+      <div class="aboutbox03">
+			   <div class="aboutimg"><img src="/static/home/img/circle3.png" class="flyout03" /></div>
+         <div class="abouttext">
+           <h2>Compete in the annual HackaGlobal</h2>
+            <p>Winners of local HackaCity events will get the chance to travel and compete in our annual HackaGlobal hackathon and compete for unbelievable prizes!</p>
+         </div>
+    	</div>
+      <br class="clr" />
+
+      <div class="aboutbox04">
+          <div class="aboutimg"><img src="/static/home/img/circle2.png" class="flyout04" /></div>
+          <div class="abouttext">
+              <h2>Open, simple and with an API!</h2>
+              <p>We love openness and transparency, for this we're building a clean, awesome, open API to invite all devs to innovate and create!! Check out our <a href="http://hackaglobal.co/api/data/Romania/Timisoara/" style="color: #87ceeb">Events API Beta</a>!!</p>
+          </div>
+      </div>
+      <br class="clr" />
+      <br><br>
+  </div>
+  <!------------ App Page ------------>
+  <!----------------- Download Itunes, Google Play ------------->     
+
+  <div id="app">
+        <div class="appbox_wrap">
+        
+        
+        <h1>&nbsp;</h1>
+        
+       
+        
+          <h1>Download our Official App:</h1>
+            
+        	<div class="appbox">
+                <ul class="apps">
+                    <li class="left">
+                        <div>
+                            <h2>HackaGlobal for Windows Phone</h2>
+                            <p class="appbtn"><a href="#googlelink" class="btn_as"><img src="/static/home/img/appstore.png"/></a></p>
+                        </div>
+                    </li>
+                    <li class="right">
+                        <div>
+                            <h2>HackaGlobal for  Android</h2>
+                            <p class="appbtn"><a href="#googlelink" class="btn_gp"><img src="/static/home/img/side_banner_googleplay.png" /></a></p>
+                        </div>
+                    </li>
+                </ul>
+                <p class="official_apptext">Comming soon to mobile. Bringing the ultimate Hackathon finder to you in the near future on a dedicated app !</p>
+            </div>
+        </div>
+        
+        <div class="appbox_wrap last">
+            <h1>&nbsp;</h1>
+            
+        	<div class="appbox"></div>
+        </div>
+    </div>
+
+</div>        
+        
+        
+
+<div class="hg-overlay hg-off" id="hg-overlay">
+  <div class="hg-overlay-container" id="hg-overlay-container">
+    <img src="/static/home/img/vi.png" width="1000"/>
+    <div class="hg-list-wrapper hg-loader" id="hg-list-wrapper"></div>
+  </div>
+</div>        
+
+<script type="text/javascript" src="/static/home/js/script.js"></script>
+{% endblock %}

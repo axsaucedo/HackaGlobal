@@ -25,6 +25,7 @@
 /* HOME *//* HOME *//* HOME *//* HOME */
 .hackacity-view-home {
     overflow:hidden;
+    max-height: 600px;
 }
 .hackacity-view-home-gradient {
     position: relative;

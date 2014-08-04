@@ -16,6 +16,13 @@ $(document).on('ready',function(){
     createMap();
 });
 
+$(function(){
+    $('#wrapper').animate({
+        "margin-top": 50
+    }, 2000);
+    return false;
+});
+
 
 function capitaliseFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);

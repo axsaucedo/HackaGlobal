@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b132c8fe-07ec-44de-bd6c-ebe84714cff6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" afterPath="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/concept.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" afterPath="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hackaglobal.iws" />
@@ -11,6 +12,7 @@
     <file path="/Dummy.txt" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407098414074" ignored="false" />
     <file path="/hackacity_view.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407100025683" ignored="false" />
     <file path="/index.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407155829968" ignored="false" />
+    <file path="/script.js" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407156556827" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,16 +74,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="-9.375">
+            <state line="10" column="81" selection-start="529" selection-end="529" vertical-scroll-proportion="-5.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.2949438">
+            <state line="107" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-4.909091">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="24" selection-start="419" selection-end="419" vertical-scroll-proportion="0.75376886">
               <folding />
             </state>
           </provider>
@@ -107,8 +118,9 @@
       <list>
         <option value="$PROJECT_DIR$/hackacities/static/js/hackacity_view.js" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
       </list>
     </option>
   </component>
@@ -250,6 +262,10 @@
               <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -270,10 +286,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -576,14 +588,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="-9.375">
+        <state line="10" column="81" selection-start="529" selection-end="529" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="0.2949438">
+        <state line="107" column="0" selection-start="1637" selection-end="1637" vertical-scroll-proportion="-4.909091">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="24" selection-start="419" selection-end="419" vertical-scroll-proportion="0.75376886">
           <folding />
         </state>
       </provider>

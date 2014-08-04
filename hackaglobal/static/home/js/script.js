@@ -17,9 +17,10 @@ $(document).on('ready',function(){
 });
 
 $(function(){
-    $('#wrapper').animate({
-        "margin-top": 50
-    }, 2000);
+
+    $('html, body').animate({
+        "scrollTop": $( window ).height() *.5
+    }, 1000);
     return false;
 });
 

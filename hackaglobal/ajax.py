@@ -74,7 +74,7 @@ def add_container(request):
 
     try:
         #Check if user has right to add sponsor
-        if not HackaCity.objects.get(id=request.POST['hackacity']).lead == request.user:
+        if not HackaCity.objects.get(id=request.POST['hackacity']).team.all().filter(id=request.user.id).exists():
             raise Exception("User is not allowed to add sponsor")
 
 #        print request.POST['form']

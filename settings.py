@@ -198,14 +198,6 @@ LOGIN_URL          = '/login/'
 LOGIN_REDIRECT_URL = '/manage/'
 LOGIN_ERROR_URL    = '/login/'
 
-FACEBOOK_EXTENDED_PERMISSIONS = ['email']
-FACEBOOK_APP_ID             = '1471335216431010'
-FACEBOOK_API_SECRET         = '1f04b9e0639b57e7ce167ada194baab0'
-
-#VK_EXTRA_SCOPE             = ['email']
-VK_APP_ID                   = '4311608'
-VK_APP_SECRET               = 'WH9dQg836Y5GkrbEdTLr'
-
 GITHUB_APP_ID               = '24efcccb1598fff7c1e5'
 GITHUB_APP_SECRET           = '924aa90d8e323dd0b58f9ca88f5a6d3d972a39e1'
 

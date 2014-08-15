@@ -1,13 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b132c8fe-07ec-44de-bd6c-ebe84714cff6" name="Default" comment="" />
+    <list default="true" id="b132c8fe-07ec-44de-bd6c-ebe84714cff6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407313521756" ignored="false" />
+    <file path="/Dummy.txt" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1408098240298" ignored="false" />
     <file path="/hackacity_view.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407100025683" ignored="false" />
     <file path="/index.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407158165969" ignored="false" />
     <file path="/script.js" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407158410398" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/settings.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407592773104" ignored="false" />
+    <file path="/settings.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407758324138" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/urls.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407676923961" ignored="false" />
+    <file path="/urls.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407830139616" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/base.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835973769" ignored="false" />
+    <file path="/base.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835354135" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/signup.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407655158960" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/signin.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407592401185" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/static/js/base.js" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407592477940" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/views.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407830937255" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/wsgi.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407594354490" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/manage.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407592792848" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/urls.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407830145543" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/accounts/urls.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407836035192" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/settings.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407759816860" ignored="false" />
+    <file path="/signup.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407655158960" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/login.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407765232684" ignored="false" />
+    <file path="/login.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407765232684" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/accounts/views.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835935299" ignored="false" />
+    <file path="/views.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407830200269" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/tools/forms.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407836400181" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/accounts/models.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407604764427" ignored="false" />
+    <file path="/models.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407863699999" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/tools/__init__.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407598740704" ignored="false" />
+    <file path="/forms.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407836400181" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/accounts/pipelines.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407601358242" ignored="false" />
+    <file path="/pipelines.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407600437372" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/models.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407863710439" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/account_view.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407669518344" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/static/css/base.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407606819133" ignored="false" />
+    <file path="/base.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407606812852" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/accounts/static/js/account_view.js" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407633032542" ignored="false" />
+    <file path="/account_view.js" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407613239785" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/admin.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407864348758" ignored="false" />
+    <file path="/admin.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407863609838" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/accounts/static/css/account_view.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407678270739" ignored="false" />
+    <file path="/account_view.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407678253093" ignored="false" />
+    <file path="/account_view.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407669511480" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/layouts/badge.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407618474077" ignored="false" />
+    <file path="/badge.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407618333702" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/templatetags/__init__.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407617248325" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/templatetags/gh_tags.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407674518114" ignored="false" />
+    <file path="/gh_tags.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407674508124" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/tools/toolbox.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407651938002" ignored="false" />
+    <file path="/toolbox.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407651906278" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/home/index.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407756852466" ignored="false" />
+    <file path="/index.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407756810682" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/account_edit.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407653773591" ignored="false" />
+    <file path="/account_edit.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407653773591" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/404.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407667360607" ignored="false" />
+    <file path="/404.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407667352306" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/500.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407667379986" ignored="false" />
+    <file path="/500.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407667379986" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/__init__.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407673793199" ignored="false" />
+    <file path="/account_edit_password.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835205825" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/account_edit_password.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835209745" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/subdomains_middleware/__init__.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407675212667" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/subdomains_middleware.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407758143479" ignored="false" />
+    <file path="/subdomains_middleware.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407765897010" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/migrations/0004_auto__add_subdomain__add_field_gitscore_totalloc__add_field_gitscore_t.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407675445266" ignored="false" />
+    <file path="/0004_auto__add_subdomain__add_field_gitscore_totalloc__add_field_gitscore_t.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407675438866" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/home/download.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407677051120" ignored="false" />
+    <file path="/download.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407677051120" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/static/home/css/mystyle.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407756876180" ignored="false" />
+    <file path="/mystyle.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407756876180" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/githack_middleware.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835145809" ignored="false" />
+    <file path="/githack_middleware.py" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407835145809" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/templates/accounts/set_new_password.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407767613521" ignored="false" />
+    <file path="/set_new_password.html" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407767612837" ignored="false" />
+    <file path="$PROJECT_DIR$/../githack/githack/static/css/external/yeti.bootstrap.min.css" changelist="b132c8fe-07ec-44de-bd6c-ebe84714cff6" time="1407831199243" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +140,35 @@
     <favorites_list name="hackaglobal" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="44" selection-start="1863" selection-end="2069" vertical-scroll-proportion="26.208334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hackacity_view.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.5">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hackacity_view.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="269" column="29" selection-start="5722" selection-end="5722" vertical-scroll-proportion="4.227459">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -88,6 +191,10 @@
         <option value="$PROJECT_DIR$/hackaglobal/static/home/js/script.js" />
         <option value="$PROJECT_DIR$/hackaglobal/static/home/css/index.css" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
+        <option value="/Library/Python/2.7/site-packages/social_auth/migrations/0003_initial.py" />
+        <option value="$PROJECT_DIR$/apihg/urls.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -219,6 +326,28 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackacities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -242,10 +371,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hackaglobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HackaGlobal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apihg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,16 +398,45 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <PyConsoleSettings />
+    </option>
+    <option name="myDjangoConsoleState">
+      <PyConsoleSettings />
+    </option>
   </component>
   <component name="RunManager" selected="Django server.HackaGlobal">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="hackaglobal" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -352,6 +524,24 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="hackaglobal" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -405,6 +595,26 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b132c8fe-07ec-44de-bd6c-ebe84714cff6" name="Default" comment="" />
@@ -415,7 +625,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,7 +634,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -433,8 +643,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.6712538" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959481" sideWeight="0.78899086" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21100917" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -497,79 +707,42 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="81" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0">
+        <state line="28" column="44" selection-start="1863" selection-end="2069" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
+    <entry file="file://$PROJECT_DIR$/hackaglobal/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="30" selection-end="73" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="8" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_edit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-5.05615">
+        <state line="28" column="44" selection-start="1863" selection-end="2069" vertical-scroll-proportion="26.208334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hackacities/static/js/hackacity_view.js">
+    <entry file="file://$PROJECT_DIR$/templates/hackacity/hackacity_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="707" selection-end="707" vertical-scroll-proportion="0.33333334" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hackaglobal/static/home/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="41" selection-start="767" selection-end="767" vertical-scroll-proportion="0.41457286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="81" selection-start="529" selection-end="529" vertical-scroll-proportion="0.040106952">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="2.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="34" selection-start="157" selection-end="157" vertical-scroll-proportion="0.19480519">
+        <state line="269" column="29" selection-start="5722" selection-end="5722" vertical-scroll-proportion="4.227459">
           <folding />
         </state>
       </provider>

@@ -31,7 +31,9 @@
             {% autoescape off %} {{ hackacity.about }} {% endautoescape %}
         </div>
         <div class="col-md-6">
-            <video class="hackacity-view-about-video col-lg-2 col-md-6 col-sm-12 col-xs-12" src="http://www.youtube.com/embed/z0J_AQXZcG4" frameborder="0" allowfullscreen></video>
+            <div class="flex-video">
+                <iframe src="http://www.youtube.com/embed/z0J_AQXZcG4"></iframe>
+            </div>
         </div>
     </section>
     <section class="hackacity-view-divider hackacity-view-divider-1">
@@ -46,7 +48,7 @@
                 <div class="carousel-inner">
                     {% for event in hackacity.event_set.all %}
                         <div class="item {% if forloop.first %}active{% endif %}">
-                            <div class="col-xs-6">
+                            <div class="col-sm-12 col-md-6">
                                 {% include 'layouts/hackacity_event.html' %}
                             </div>
                         </div>
@@ -100,7 +102,7 @@
                     <div class="hackacity-view-title" style="color: black; width: 100%; text-align: center">
                         { Team }
                     </div>
-                    <div class="wrapper">
+                    <div class="people-wrapper">
                         <ul class="people">
                             {% include 'layouts/team_member.html' with team_member=hackacity.lead.profile lead=True  %}
                             {% for u in hackacity.team.all %}

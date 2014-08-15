@@ -4,7 +4,8 @@
     text-align: center;
     background-size: contain;
     font-family: "Open sans";
-    min-height: 500px;
+    overflow: auto;
+    clear: both;
 }
 .hackacity-view-title {
     font-family: "Levenim";
@@ -38,8 +39,8 @@
     padding-top: 120px;
 }
 .hackacity-view-home-hackalogo {
-    width: 700px;
-    max-height: 150px;
+    min-width: 400px;
+    width: 60%;
     left: 0;
     right: 0;
     bottom: 60%;
@@ -61,14 +62,19 @@
 /* About *//* About *//* About *//* About */
 /* About *//* About *//* About *//* About */
 .hackacity-view-about {
-
+    padding-bottom: 50px;;
 }
 .hackacity-view-about-video {
-
+    /*width: 100%;*/
+    /*min-width: 400px;*/
+    /*height: auto;*/
+    width: 100%    !important;
+    height: auto   !important;
 }
 .hackacity-view-about-text {
     color: white;
     font-size: 15px;
+    position: relative;
 
     border-radius: 15px;
     padding: 30px 30px 30px 30px;
@@ -173,7 +179,7 @@
 }
 
 .wrapper{
-    width:1000px;
+    width:80%;
     padding:0 20px;
     margin:0 auto;
     position:relative;

@@ -3,6 +3,7 @@ body {
     height: 100%;
     background-color: white !important;
     color: black !important;
+    min-width: 500px;
 }
 
 @font-face {
@@ -28,6 +29,10 @@ body {
     min-height: 100%;
     height: auto !important;
     height: 100%;
+}
+
+#hackaglobal-nav-bar {
+    min-width: 500px;
 }
 
 #hackaglobal-nav-bar, .dropdown-menu {

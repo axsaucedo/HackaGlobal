@@ -5,24 +5,6 @@ var hackacity_view = {
         var ratio = 1.6;
 
         var $window = $(window);
-        var width = $window.width();
-        var height = width/ratio;
-        var section = $('.hackacity-section');
-        section.css('width', width);
-        section.css('height', height);
-
-
-        $(window).resize(function(){
-            console.log(width)
-            var newwidth = $(this).width();
-
-            if(newwidth != width){
-                var height = width/ratio;
-                section.css('width', newwidth);
-                section.css('height', height);
-                width = newwidth;
-            }
-        });
 
 
 //        Parallax scrolling

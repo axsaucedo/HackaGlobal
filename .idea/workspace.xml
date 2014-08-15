@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b132c8fe-07ec-44de-bd6c-ebe84714cff6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" afterPath="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" afterPath="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/accounts/models.py" afterPath="$PROJECT_DIR$/accounts/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/layouts/team_member.html" afterPath="$PROJECT_DIR$/templates/layouts/team_member.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
     </list>
     <ignored path="hackaglobal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -165,10 +161,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hackacity_view.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="hackacity_view.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="12" selection-start="4810" selection-end="4810" vertical-scroll-proportion="0.46547884">
+            <state line="206" column="12" selection-start="4810" selection-end="4810" vertical-scroll-proportion="-8.038462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="42" selection-start="1861" selection-end="2059" vertical-scroll-proportion="0.52549887">
               <folding />
             </state>
           </provider>
@@ -207,13 +212,13 @@
         <option value="/Library/Python/2.7/site-packages/social_auth/migrations/0003_initial.py" />
         <option value="$PROJECT_DIR$/apihg/urls.py" />
         <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/hackaglobal/static/css/base.css" />
         <option value="$PROJECT_DIR$/hackacities/static/js/hackacity_view.js" />
         <option value="$PROJECT_DIR$/accounts/models.py" />
         <option value="$PROJECT_DIR$/templates/layouts/team_member.html" />
         <option value="$PROJECT_DIR$/templates/hackacity/hackacity_view.html" />
         <option value="$PROJECT_DIR$/hackacities/static/css/hackacity_view.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
       </list>
     </option>
   </component>
@@ -871,13 +876,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="1863" selection-end="2069" vertical-scroll-proportion="0.49889135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/layouts/team_member.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="30" selection-start="30" selection-end="30" vertical-scroll-proportion="0.0">
@@ -897,7 +895,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="12" selection-start="4810" selection-end="4810" vertical-scroll-proportion="0.46547884">
+        <state line="206" column="12" selection-start="4810" selection-end="4810" vertical-scroll-proportion="-8.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="42" selection-start="1861" selection-end="2059" vertical-scroll-proportion="0.52549887">
           <folding />
         </state>
       </provider>

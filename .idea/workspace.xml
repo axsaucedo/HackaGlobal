@@ -166,7 +166,7 @@
       <file leaf-file-name="hackacity_view.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.65800864">
+            <state line="186" column="0" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.9350649">
               <folding />
             </state>
           </provider>
@@ -817,7 +817,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hackacities/static/css/hackacity_view.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.65800864">
+        <state line="186" column="0" selection-start="1509" selection-end="1509" vertical-scroll-proportion="0.9350649">
           <folding />
         </state>
       </provider>

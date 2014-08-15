@@ -18,7 +18,7 @@ def add_event(request):
 
     if request.method =='POST':
         print request.POST
-        form = EventCreationForm(request.POST)
+        form = EventCreationForm(request.POST, request.FILES)
 
         if form.is_valid():
             event = form.save(commit=False)
@@ -110,8 +110,10 @@ def delete_event(request, event_id):
 
     try:
         event = Event.objects.get(id=event_id)
+        print event
+        print event.hackacity.team.filter(id=request.user.id).exists()
 
-        if event.creator != request.user:
+        if not event.hackacity.team.filter(id=request.user.id).exists():
             return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': "Oops, we couldn't find the event you were looking for..." })
 
         event.delete()

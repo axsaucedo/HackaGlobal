@@ -12,6 +12,7 @@
 
 #add-event-form-container {
     overflow-y: scroll !important;
+    overflow-x: hidden;
     height: 40em !important;
     margin-bottom: 0px !important;
 }

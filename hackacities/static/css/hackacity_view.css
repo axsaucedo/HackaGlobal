@@ -84,9 +84,10 @@
 /* Events *//* Events *//* Events *//* Events */
 /* Events *//* Events *//* Events *//* Events */
 #myCarousel {
-    height: 100%;
     width: 103.2%;
     margin-left: -2%;
+    height: 600px;
+    overflow: hidden;
 }
 .carousel-inner .active.left { left: -50%; }
 .carousel-inner .next        { left:  50%; }
@@ -103,18 +104,6 @@
 .carousel-control.left:hover {
     background: radial-gradient(ellipse at center left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 70%);
 }
-/*.carousel-control:hover {*/
-/*}*/
-/*.carousel-control.right {*/
-    /*background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0),rgba(0, 0, 0, .3));*/
-/*}.carousel-control.left {*/
-     /*background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0),rgba(0, 0, 0, .3));*/
- /*}*/
-/*.carousel-control.right:hover {*/
-    /*background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0),rgba(0, 0, 0, .5));*/
-/*}.carousel-control.left:hover {*/
-     /*background-image: -webkit-linear-gradient(right, rgba(255, 255, 255, 0),rgba(0, 0, 0, .5));*/
- /*}*/
 
 
 

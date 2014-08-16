@@ -16,6 +16,8 @@ def home(request):
 @login_required(login_url='/accounts/login/')
 def add_event(request):
 
+    print "printing files"
+    print request.FILES
     if request.method =='POST':
         print request.POST
         form = EventCreationForm(request.POST, request.FILES)

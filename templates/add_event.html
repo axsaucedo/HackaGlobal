@@ -23,7 +23,7 @@
         </div>
         <div class="col-md-6">
             <div id="add-event-form-container" class="well">
-                <form id="add-event-form" class="form-horizontal" method="POST">
+                <form id="add-event-form" class="form-horizontal"  enctype="multipart/form-data" method="POST">
                     {% csrf_token %}
                     <fieldset style="border: none;">
                         <legend>Please fill in all the required fields.</legend>
@@ -53,9 +53,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="add-event-form-name" class="col-md-3 control-label">Image</label>
+                            <label for="add-event-form-photo" class="col-md-3 control-label">Image</label>
                             <div class="col-md-9">
-                                <input id="add-event-form-image" name="photo" class="form-control" type="file" placeholder="Required">
+                                <input id="add-event-form-photo" name="photo" class="form-control" type="file" placeholder="Required">
                             </div>
                         </div>
 

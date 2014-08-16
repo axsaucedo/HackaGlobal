@@ -1,6 +1,6 @@
 from django import template
 from hackaglobal.models import Event, Attendee
-from hackacities.models import HackaCity
+from hackacities.models import HackaCity, HackaContainer
 from taggit.models import Tag
 from settings import BASE_URL, DEBUG
 
@@ -33,6 +33,16 @@ def is_tracking(context, event):
         pass
 
     return 1 if tracking else 0
+
+@register.assignment_tag()
+def get_hackacontainers(hackacity, type):
+
+    try:
+        hackacontainers = HackaContainer.objects.filter(hackacity=hackacity, type=type)
+        return hackacontainers
+
+    except Exception:
+        return
 
 @register.assignment_tag()
 def all_tags():

@@ -164,27 +164,10 @@
 /*sponsors*//*sponsors*//*sponsors*/
 /*sponsors*//*sponsors*//*sponsors*/
 /*sponsors*//*sponsors*//*sponsors*/
-#sponsors ul {
-    position: relative;
-    margin: auto auto;
-    width: 80%;
-}
-#sponsors ul > li{
-    padding:0;
-    margin:0;
-    height: 200px;
-    display:block;
-    float:left;
-    width:50%;
-    text-align:center;
-    position:relative;
-    min-width:100px;
-}
-#sponsors ul > li img{
-    max-height: 100%;
-    max-width: 100%;
-    transition: all 0.25s ease-in 0s;
-}
+.sponsors-S1 h1 { background-color: rgba( 225, 215 , 0 ,.5); }
+.sponsors-S2 h1 { background-color: rgba(192 , 192 , 192,.5); }
+.sponsors-S3 h1 { background-color: rgba(140 , 120 , 83,.5); }
+
 
 
 

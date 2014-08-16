@@ -39,7 +39,7 @@
     <section class="hackacity-view-divider hackacity-view-divider-1">
 
     </section>
-    <section id="events" class="hackacity-view-events hackacity-section" style="background-image: url(http://www.graphicxtras.com/images2/binary-code-pattern.png)">
+    <section id="events" class="hackacity-view-events hackacity-section" style="background-image: url(https://s.evbuc.com/https_proxy?url=http%3A%2F%2Fblog.ecollegefinder.org%2Fwp-content%2Fuploads%2F2012%2F01%2F101474454.jpg&sig=ADR2i78zbIVBa8kaMzYeLJetMCGfzGrzwg)">
         <div class="hackacity-view-title hackacity-view-title-event" style="color: black" title="{ Events }">
             { Events }
         </div>
@@ -69,15 +69,20 @@
         <div class="hackacity-view-title" style="padding-top: 140px; color: black">
             { Sponsors }
         </div>
-        {% if hackacity.hackacontainer_set.all %}
-            <ul>
-                {% for sponsor in hackacity.hackacontainer_set.all %}
-                    <li><a href="{{ sponsor.url }}"><img src="{{ sponsor.photo.url }}"/></a></li>
-                {% endfor %}
-            </ul>
-            <div class="clear"></div>
-            <a href="mailito:{{ hackacity.name }}@gmail.com" style="position: absolute;margin-left: -230px; left: 50%; bottom: 0"><h2>Become a {{ hackacity.name }} sponsor now!</h2></a>
-        {% else %}
+        {% load hg_tags %}
+        {% get_hackacontainers hackacity "S1" as s1_sponsors %}
+        {% get_hackacontainers hackacity "S2" as s2_sponsors %}
+        {% get_hackacontainers hackacity "S3" as s3_sponsors %}
+        {% if s1_sponsors %}
+            {% include 'layouts/hackacity_view_hackacontainer.html' with container_type="S1" sponsors=s1_sponsors %}
+        {% endif %}
+        {% if s2_sponsors %}
+            {% include 'layouts/hackacity_view_hackacontainer.html' with container_type="S2" sponsors=s2_sponsors %}
+        {% endif %}
+        {% if s3_sponsors %}
+            {% include 'layouts/hackacity_view_hackacontainer.html' with container_type="S3" sponsors=s3_sponsors %}
+        {% endif %}
+        {% if not hackacity.hackacontainer_set.all %}
             <a href="mailito:{{ hackacity.name }}@gmail.com"  class="btn btn-default"><h1>Become the first sponsor of {{ hackacity.name }}! </h1> </a>
         {% endif %}
     </section>

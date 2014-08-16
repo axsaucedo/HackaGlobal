@@ -1,0 +1,14 @@
+<div class="row sponsors sponsors-{{ container_type }}">
+    <div class="col-md-3 col-md-offset-1">
+        <h1>
+            {{ container_type }} Sponsors
+        </h1>
+    </div>
+    <div class="sponsors-container col-md-8">
+        {% for sponsor in sponsors %}
+            <span class="col-sm-{% if container_type == "S1" %}12{% elif container_type == "S2" %}6{% else %}4{% endif %}">
+                <a href="{{ sponsor.url }}"><img class="img-responsive" src="{{ sponsor.photo.url }}"/></a>
+            </span>
+        {% endfor %}
+    </div>
+</div>

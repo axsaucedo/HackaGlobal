@@ -6,11 +6,11 @@ from django.utils.translation import ugettext as _
 
 
 CONTAINER_TYPE_CHOICES = (
-        ('G', 'Gold Sponsor'),
-        ('S', 'Silver Sponsor'),
-        ('B', 'Bronze Sponsor'),
-        ('P', 'Partner'),
-        ('C', 'Community'),
+        ('S1', 'Gold Sponsor'),
+        ('S2', 'Silver Sponsor'),
+        ('S3', 'Bronze Sponsor'),
+        ('P1', 'Partner'),
+        ('P2', 'Media Partner'),
     )
 
 class HackaContainer(models.Model):
@@ -20,10 +20,10 @@ class HackaContainer(models.Model):
     url = models.URLField()
     hackacity = models.ForeignKey("HackaCity", null=True, blank=True)
 
-    type = models.CharField(max_length=1, choices=CONTAINER_TYPE_CHOICES, default='C')
+    type = models.CharField(max_length=2, choices=CONTAINER_TYPE_CHOICES, default='S1')
 
     def __unicode__(self):
-        return self.type + " - " + self.title
+        return self.title + ": " + self.type + " - " + self.hackacity.name
 
 class HackaCity(models.Model):
     lead = models.ForeignKey(User, related_name="lead_of")

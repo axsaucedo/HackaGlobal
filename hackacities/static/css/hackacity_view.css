@@ -83,26 +83,81 @@
 /* Events *//* Events *//* Events *//* Events */
 /* Events *//* Events *//* Events *//* Events */
 /* Events *//* Events *//* Events *//* Events */
-#myCarousel {
-    width: 103.2%;
-    margin-left: -2%;
-    overflow: hidden;
-}
-.carousel-inner .active.left { left: -50%; }
-.carousel-inner .next        { left:  50% }
-.carousel-inner .prev		 { left: -50%; }
-.carousel-control 			 { width:  4%; }
-
-.carousel-control.right, .carousel-control.left {
-    width: 200px;
+.hackacity-view-title {
+    position: relative;
     background: transparent;
 }
-.carousel-control.right:hover {
-    background: radial-gradient(ellipse at center right, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 70%);
+.hackacity-view-title-event:before {
+    content: attr(title);
+    position: absolute;
+    -webkit-text-stroke: 1em #fff;
+    z-index: -1;
 }
-.carousel-control.left:hover {
-    background: radial-gradient(ellipse at center left, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0) 70%);
+.hackacity-view-events-list
+{
+    overflow-x:scroll;
+    overflow-y:hidden;
+    height:600px;
+    width:100%;
+    padding: 0 15px;
 }
+
+.hackacity-view-events-list-inline {
+    white-space:nowrap;
+}
+
+.hackacity-view-events-list-item
+{
+    height: 580px;
+    width: 500px;
+}
+
+@media (min-width: 780px) {
+    .hackacity-view-events-list-item
+    {
+        height: 580px;
+        width: 1000px;
+    }
+}
+
+.hackacity-view-events-list-item .hackacity-event-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    white-space: normal;
+    padding: 20px 20px 20px 20px;
+}
+
+.hackacity-view-events-list-item .hackacity-event-information-container {
+    background-color: black;
+    color: white;
+    padding: 15px 30px 15px 30px
+}
+.hackacity-view-events-list-item .hackacity-event-title {
+    background-color: #2ec6f5;
+    color: black;
+    text-align: left;
+    font-size: 2em;
+    padding: 5px 15px 5px 15px;
+    line-height: 1em;
+}
+.hackacity-view-events-list-item .row {
+    margin-bottom: 15px;
+}
+.hackacity-view-events-list-item .hackacity-event-title a {
+    color: black !important;
+}
+.hackacity-view-events-list-item .hackacity-event-datetime {
+    font-size: 1.1em;
+    color: #e02b39;
+}
+.hackacity-view-events-list-item .hackacity-event-description {
+    text-align: left;
+    color: white;
+}
+
+
+
 
 
 

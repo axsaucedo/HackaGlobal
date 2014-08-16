@@ -39,24 +39,16 @@
     <section class="hackacity-view-divider hackacity-view-divider-1">
 
     </section>
-    <section id="events" class="hackacity-view-events hackacity-section">
-        <div class="hackacity-view-title" style="color: black">
+    <section id="events" class="hackacity-view-events hackacity-section" style="background-image: url(http://www.graphicxtras.com/images2/binary-code-pattern.png)">
+        <div class="hackacity-view-title hackacity-view-title-event" style="color: black" title="{ Events }">
             { Events }
         </div>
-        <div class="col-md-12" style="margin-top: -40px">
-            <div class="carousel slide" id="myCarousel">
-                <div class="carousel-inner">
-                    {% for event in hackacity.event_set.all %}
-                        <div class="item {% if forloop.first %}active{% endif %}">
-                            <div class="col-sm-12 col-md-6">
-                                {% include 'layouts/hackacity_event.html' %}
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
-            </div>
+        <div class="hackacity-view-events-list" style="margin-top: -40px">
+            <ul class="list-inline hackacity-view-events-list-inline">
+                {% for event in hackacity.event_set.all %}
+                    {% include 'layouts/hackacity_event.html' %}
+                {% endfor %}
+            </ul>
         </div>
     </section>
 {#    <section class="hackacity-view-divider hackacity-view-divider-2">#}

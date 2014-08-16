@@ -86,11 +86,10 @@
 #myCarousel {
     width: 103.2%;
     margin-left: -2%;
-    height: 600px;
     overflow: hidden;
 }
 .carousel-inner .active.left { left: -50%; }
-.carousel-inner .next        { left:  50%; }
+.carousel-inner .next        { left:  50% }
 .carousel-inner .prev		 { left: -50%; }
 .carousel-control 			 { width:  4%; }
 

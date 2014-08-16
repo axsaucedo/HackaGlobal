@@ -36,10 +36,18 @@ def is_tracking(context, event):
 
 @register.assignment_tag()
 def get_hackacontainers(hackacity, type):
-
     try:
         hackacontainers = HackaContainer.objects.filter(hackacity=hackacity, type=type)
         return hackacontainers
+
+    except Exception:
+        return
+
+@register.assignment_tag()
+def get_events(hackacity):
+    try:
+        events = Event.objects.filter(hackacity=hackacity)
+        return events
 
     except Exception:
         return

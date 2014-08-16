@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block content %}
+{% load hg_tags %}
 <style>
     .hackacity-view-home{ background: url({{ hackacity.get_image_home }}) 50% 0 no-repeat fixed; background-size: cover; }
     .hackacity-view-about{ background: url({{ hackacity.get_image_about }}) 50% 0 no-repeat fixed; background-size: cover; }
@@ -45,7 +46,8 @@
         </div>
         <div class="hackacity-view-events-list" style="margin-top: -40px">
             <ul class="list-inline hackacity-view-events-list-inline">
-                {% for event in hackacity.event_set.all %}
+                {% get_events hackacity as upcoming_events %}
+                {% for event in upcoming_events %}
                     {% include 'layouts/hackacity_event.html' %}
                 {% endfor %}
             </ul>
@@ -69,7 +71,6 @@
         <div class="hackacity-view-title" style="padding-top: 140px; color: black">
             { Sponsors }
         </div>
-        {% load hg_tags %}
         {% get_hackacontainers hackacity "S1" as s1_sponsors %}
         {% get_hackacontainers hackacity "S2" as s2_sponsors %}
         {% get_hackacontainers hackacity "S3" as s3_sponsors %}

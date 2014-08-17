@@ -6,7 +6,7 @@
     </div>
     <div class="hackacontainer-container col-md-8">
         {% for hackacontainer in hackacontainers %}
-            <span class="img-responsive-container col-sm-{% if container_type == "S1" %}12{% elif container_type == "S2" %}6{% else %}4{% endif %}">
+            <span class="img-responsive-container {% if container_type == "S1" %}col-xs-12 col-sm-6{% elif container_type == "S2" %}col-xs-6 col-sm-4{% else %}col-xs-4 col-sm-3{% endif %}">
                 <a href="{{ hackacontainer.url }}"><img class="img-responsive-hacka" src="{{ hackacontainer.photo.url }}"/></a>
             </span>
         {% endfor %}

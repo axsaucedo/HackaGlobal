@@ -1,13 +1,13 @@
-<div class="row sponsors sponsors-{{ container_type }}">
+<div class="row hackacontainer hackacontainer-{{ container_type }}">
     <div class="col-md-3 col-md-offset-1">
         <h1>
-            {{ container_type }} Sponsors
+            {{ container_name }}
         </h1>
     </div>
-    <div class="sponsors-container col-md-8">
-        {% for sponsor in sponsors %}
+    <div class="hackacontainer-container col-md-8">
+        {% for hackacontainer in hackacontainers %}
             <span class="img-responsive-container col-sm-{% if container_type == "S1" %}12{% elif container_type == "S2" %}6{% else %}4{% endif %}">
-                <a href="{{ sponsor.url }}"><img class="img-responsive-hacka" src="{{ sponsor.photo.url }}"/></a>
+                <a href="{{ hackacontainer.url }}"><img class="img-responsive-hacka" src="{{ hackacontainer.photo.url }}"/></a>
             </span>
         {% endfor %}
     </div>

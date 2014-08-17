@@ -161,12 +161,15 @@
 
 
 
-/*sponsors*//*sponsors*//*sponsors*/
-/*sponsors*//*sponsors*//*sponsors*/
-/*sponsors*//*sponsors*//*sponsors*/
-.sponsors-S1 h1 { background-color: rgba( 225, 215 , 0 ,.5); }
-.sponsors-S2 h1 { background-color: rgba(192 , 192 , 192,.5); }
-.sponsors-S3 h1 { background-color: rgba(140 , 120 , 83,.5); }
+/*hackacontainer*//*hackacontainer*//*hackacontainer*/
+/*hackacontainer*//*hackacontainer*//*hackacontainer*/
+/*hackacontainer*//*hackacontainer*//*hackacontainer*/
+.hackacontainer-S1 h1 { background-color: rgba( 225, 215 , 0 ,.5); }
+.hackacontainer-S2 h1 { background-color: rgba(192 , 192 , 192,.5); }
+.hackacontainer-S3 h1 { background-color: rgba(140 , 120 , 83,.5); }
+.hackacontainer {
+    padding: 20px 0px 20px 0px;
+}
 .img-responsive-container a {
     height: 200px;
     display: block;

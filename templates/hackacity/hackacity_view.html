@@ -75,13 +75,13 @@
         {% get_hackacontainers hackacity "S2" as s2_sponsors %}
         {% get_hackacontainers hackacity "S3" as s3_sponsors %}
         {% if s1_sponsors %}
-            {% include 'layouts/hackacity_view_hackacontainer.html' with container_type="S1" sponsors=s1_sponsors %}
+            {% include 'layouts/hackacity_view_hackacontainer.html' with container_name="Golden Sponsors" container_type="S1" hackacontainers=s1_sponsors %}
         {% endif %}
         {% if s2_sponsors %}
-            {% include 'layouts/hackacity_view_hackacontainer.html' with container_type="S2" sponsors=s2_sponsors %}
+            {% include 'layouts/hackacity_view_hackacontainer.html' with container_name="Silver Sponsors" container_type="S2" hackacontainers=s2_sponsors %}
         {% endif %}
         {% if s3_sponsors %}
-            {% include 'layouts/hackacity_view_hackacontainer.html' with container_type="S3" sponsors=s3_sponsors %}
+            {% include 'layouts/hackacity_view_hackacontainer.html' with container_name="Bronze Sponsors" container_type="S3" hackacontainers=s3_sponsors %}
         {% endif %}
         {% if not hackacity.hackacontainer_set.all %}
             <a href="mailito:{{ hackacity.name }}@gmail.com"  class="btn btn-default"><h1>Become the first sponsor of {{ hackacity.name }}! </h1> </a>

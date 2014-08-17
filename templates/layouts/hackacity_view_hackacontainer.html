@@ -6,8 +6,8 @@
     </div>
     <div class="sponsors-container col-md-8">
         {% for sponsor in sponsors %}
-            <span class="col-sm-{% if container_type == "S1" %}12{% elif container_type == "S2" %}6{% else %}4{% endif %}">
-                <a href="{{ sponsor.url }}"><img class="img-responsive" src="{{ sponsor.photo.url }}"/></a>
+            <span class="img-responsive-container col-sm-{% if container_type == "S1" %}12{% elif container_type == "S2" %}6{% else %}4{% endif %}">
+                <a href="{{ sponsor.url }}"><img class="img-responsive-hacka" src="{{ sponsor.photo.url }}"/></a>
             </span>
         {% endfor %}
     </div>

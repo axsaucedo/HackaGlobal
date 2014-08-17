@@ -31,9 +31,9 @@ body {
     height: 100%;
 }
 
-#hackaglobal-nav-bar {
-    min-width: 500px;
-}
+/*#hackaglobal-nav-bar {*/
+    /*min-width: 500px;*/
+/*}*/
 
 #hackaglobal-nav-bar, .dropdown-menu {
     font-family: 'Open Sans';
@@ -46,8 +46,7 @@ body {
 }
 
 #nav-bar-logo {
-    width: 65px;
-    margin-top: -18px;
+    display: none;
 }
 
 .nav-bar-hackaglobal-text {
@@ -57,6 +56,20 @@ body {
     margin-top: 7px;
     padding: 0px 30px 0px 0px;
 }
+
+@media (min-width: 600px){
+    #nav-bar-logo {
+        display: block;
+        width: 65px;
+        margin-top: -18px;
+    }
+}
+@media (min-width: 500px) {
+    .nav-bar-hackaglobal-text:before {
+        content: "Hacka";
+    }
+}
+
 .icon-calendar {
     color: black;
 }

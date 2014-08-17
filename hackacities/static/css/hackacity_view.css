@@ -5,7 +5,7 @@
     text-align: center;
     background-size: contain;
     font-family: "Open sans";
-    overflow: auto;
+    overflow: hidden;
     clear: both;
 }
 .hackacity-view-title {

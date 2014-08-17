@@ -1,6 +1,7 @@
 .hackacity-section {
     background-color: white;
     position: relative;
+    overflow-x: hidden;
     text-align: center;
     background-size: contain;
     font-family: "Open sans";
@@ -169,6 +170,7 @@
 .hackacontainer-S3 h1 { background-color: rgba(140 , 120 , 83,.5); }
 .hackacontainer {
     padding: 20px 0px 20px 0px;
+
 }
 .img-responsive-container a {
     height: 200px;

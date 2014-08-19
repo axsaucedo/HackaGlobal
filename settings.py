@@ -176,7 +176,7 @@ AUTH_PROFILE_MODULE = "accounts.UserProfile"
 
 AUTHENTICATION_BACKENDS = (
     'social_auth.backends.facebook.FacebookBackend',
-    'social_auth.backends.contrib.github.GithubBackend',
+#    'social_auth.backends.contrib.github.GithubBackend',
 #    'social_auth.backends.contrib.linkedin.LinkedinBackend',
 #    'social_auth.backends.contrib.vk.VKOAuth2Backend',
 #    'social_auth.backends.OpenIDBackend',
@@ -191,22 +191,27 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.associate_user',
     'social_auth.backends.pipeline.social.load_extra_data',
     'social_auth.backends.pipeline.user.update_user_details',
-    'accounts.pipelines.get_user_avatar',
+#    'accounts.pipelines.get_user_avatar',
 )
 
 LOGIN_URL          = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/accounts/view/'
 LOGIN_ERROR_URL    = '/accounts/error/'
 
-SOCIAL_AUTH_CREATE_USERS          = True
-SOCIAL_AUTH_FORCE_RANDOM_USERNAME = False
-SOCIAL_AUTH_ASSOCIATE_BY_MAIL     = True
+#SOCIAL_AUTH_CREATE_USERS          = True
+#SOCIAL_AUTH_FORCE_RANDOM_USERNAME = False
+#SOCIAL_AUTH_ASSOCIATE_BY_MAIL     = True
+#SOCIAL_AUTH_ERROR_KEY             = 'socialauth_error'
+#SOCIAL_AUTH_CREATE_USERS          = True
+#SOCIAL_AUTH_FORCE_RANDOM_USERNAME = False
+#SOCIAL_AUTH_DEFAULT_USERNAME      = 'socialauth_user'
+#LOGIN_ERROR_URL                   = '/login/error/'
 
 FACEBOOK_APP_SECRET = '1471335216431010'
 FACEBOOK_API_SECRET = 'c431a9791273a11a48328e45fa23fb27'
 
-GITHUB_APP_ID               = '85db5680254e344f7dfc'
-GITHUB_API_SECRET           = '97b66ef7bd04d33b3c3c29cd62a9e427a728a26e'
+#GITHUB_APP_ID               = '85db5680254e344f7dfc'
+#GITHUB_API_SECRET           = '97b66ef7bd04d33b3c3c29cd62a9e427a728a26e'
 
 #GITHUB_APP_ID               = '24efcccb1598fff7c1e5'
 #GITHUB_API_SECRET           = '924aa90d8e323dd0b58f9ca88f5a6d3d972a39e1'

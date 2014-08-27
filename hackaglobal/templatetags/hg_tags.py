@@ -46,7 +46,7 @@ def get_hackacontainers(hackacity, type):
 @register.assignment_tag()
 def get_events(hackacity):
     try:
-        events = Event.objects.filter(hackacity=hackacity)
+        events = Event.objects.filter(hackacity=hackacity).order_by('-start')
         return events
 
     except Exception:

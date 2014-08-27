@@ -113,6 +113,8 @@
     clear: both;
     height: 580px;
     width: 500px;
+
+    white-space:normal;
 }
 .hackaevent-photo {
     max-width: 100%;

@@ -200,7 +200,7 @@ LOGIN_ERROR_URL    = '/accounts/error/'
 SOCIAL_AUTH_CREATE_USERS          = True
 SOCIAL_AUTH_ASSOCIATE_BY_MAIL     = True
 
-SOCIAL_AUTH_ENABLED_BACKENDS = ('facebook', 'twitter')
+SOCIAL_AUTH_ENABLED_BACKENDS = ('facebook', 'vk-oauth', 'github',)
 SOCIAL_AUTH_COMPLETE_URL_NAME = 'socialauth_complete'
 SOCIAL_AUTH_EXTRA_DATA = False
 SOCIAL_AUTH_CHANGE_SIGNAL_ONLY = True
@@ -212,6 +212,3 @@ VK_APP_ID           = '4311608'
 VK_API_SECRET       = 'WH9dQg836Y5GkrbEdTLr'
 GITHUB_APP_ID       = '24efcccb1598fff7c1e5'
 GITHUB_API_SECRET   = '924aa90d8e323dd0b58f9ca88f5a6d3d972a39e1'
-
-SOCIAL_AUTH_ENABLED_BACKENDS = ('github','facebook','vk-oauth')
-

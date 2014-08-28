@@ -2,6 +2,20 @@
     background-color: #eeeeee;
     height: 100%;
 }
+
+.form-title {
+    font-size: 30px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.form-group {
+    background-color: white;
+
+    padding: 10px 30px 30px 30px;
+    margin-bottom: 30px;
+}
+
+
 #add-event-form-container {
     /*height: 40em !important;*/
 

@@ -1,10 +1,37 @@
 from django.http import HttpResponseRedirect
 from hackaglobal.models import Subdomain
+from django.shortcuts import redirect
 from django.contrib.sites.models import Site
 import settings
 
+class UsersRedirectMiddleware(object):
+    def process_request(self, request):
+        """
+            Redirects users that have not registered a password and requests them to do so.
+        """
 
-class RedirectMiddleware(object):
+        paths_login_required=[
+            "/accounts/view/",
+            ]
+
+        path = request.get_full_path()
+        user = request.user
+
+        if path=="/accounts/login/" or path=="/accounts/signup/":
+            if user.is_authenticated():
+                return redirect('/accounts/view/')
+        else:
+            if path in paths_login_required:
+                if user.is_anonymous():
+                    return redirect('/accounts/login/?next=%s' % path)
+                else:
+                    if not user.has_usable_password():
+                        return redirect('/accounts/edit/password/?next=%s' % path)
+
+        return None
+
+
+class SubdomainMiddleware(object):
     """Middleware class that redirects non "www" subdomain requests to a
     specified URL or business.
     """

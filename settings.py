@@ -130,7 +130,11 @@ MIDDLEWARE_CLASSES = (
 
 #    HackaGlobal Custom Middleware
 if not DEBUG:
-    MIDDLEWARE_CLASSES += ('hackaglobal.hg_middleware.RedirectMiddleware',)
+    MIDDLEWARE_CLASSES += ('hackaglobal.hg_middleware.SubdomainMiddleware',)
+MIDDLEWARE_CLASSES += (
+    'hackaglobal.hg_middleware.UsersRedirectMiddleware',
+)
+
 
 CORS_ORIGIN_ALLOW_ALL = True
 

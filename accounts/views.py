@@ -101,3 +101,4 @@ def edit_password(request):
         form = EFPasswordChangeForm(user=request.user)
 
     return render_to_response('accounts/account_edit_password.html', { 'form': form, }, context_instance=RequestContext(request))
+

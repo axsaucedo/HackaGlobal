@@ -35,7 +35,10 @@ def view_hackacity(request, hc):
         except HackaCity.DoesNotExist:
             return render(request, 'generic_message.html', { 'header' : 'HackaCity not found', 'message': "Oops, we couldn't the HackaCity you were looking for..." })
 
-    is_hackateam = HackaCity.objects.filter(id=hackacity.pk, team=request.user).exists()
+    try:
+        is_hackateam = HackaCity.objects.filter(id=hackacity.pk, team=request.user).exists()
+    except:
+        is_hackateam = False
 
     return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity, 'is_hackateam':True })
 

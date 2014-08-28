@@ -1,4 +1,4 @@
-from django.shortcuts import redirect, render_to_response
+from django.shortcuts import redirect, render_to_response, render
 from django.contrib.auth import login
 from django.contrib.auth.models import User
 from django.template.context import RequestContext
@@ -54,7 +54,13 @@ def apply(request):
 
 def view_account(request, username):
 
-    user = User.objects.get(username=username)
+    try:
+        if username:
+            user = User.objects.get(username=username)
+        else:
+            user = request.user
+    except:
+        return render(request, 'generic_message.html', { 'header' : 'User not found...', 'message': "Oops, we couldn't find the user you were looking for..." })
 
     hackacities = HackaCity.objects.filter(team=request.user)
     attendee_all = Attendee.objects.filter(attendee=user)

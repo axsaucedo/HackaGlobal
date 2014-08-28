@@ -34,7 +34,7 @@ def add_event(request):
 
     hackacities = HackaCity.objects.filter(team=request.user)
 
-    return render(request, 'add_event.html', { 'form' : form, 'hackacities' : hackacities })
+    return render(request, 'events/add_event.html', { 'form' : form, 'hackacities' : hackacities })
 
 @login_required(login_url='/accounts/login/')
 def find_events(request):
@@ -51,7 +51,7 @@ def find_events(request):
             except Exception:
                 pass
 
-    return render(request, 'find_events.html', { 'events' : events })
+    return render(request, 'events/find_events.html', { 'events' : events })
 
 @login_required(login_url='/accounts/login/')
 def manage_events(request):
@@ -63,7 +63,7 @@ def manage_events(request):
     for a in attendee_all:
         attending.append(a.event)
 
-    return render(request, 'manage_events.html', { 'hackacities': hackacities, 'created': created, 'attending': attending })
+    return render(request, 'events/manage_events.html', { 'hackacities': hackacities, 'created': created, 'attending': attending })
 
 def edit_event(request, event_id):
 
@@ -106,7 +106,7 @@ def edit_event(request, event_id):
         # Event not found so raise an event not found
         return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': err if settings.DEBUG else "Oops, we couldn't find the event you were looking for..." })
 
-    return render(request, 'edit_event.html', data)
+    return render(request, 'events/edit_event.html', data)
 
 def delete_event(request, event_id):
 
@@ -148,7 +148,7 @@ def view_event(request, event_id):
 
         return render(request, 'generic_message.html', { 'header' : 'Event not found...', 'message': err if settings.DEBUG else "Oops, we couldn't find the event you were looking for..." })
 
-    return render(request, 'view_event.html', data)
+    return render(request, 'events/view_event.html', data)
 
 def handler404(request):
     return render(request, 'generic_message.html', { 'header' : '404 not found...', 'message': "Oops, we couldn't find what you were looking for..." })

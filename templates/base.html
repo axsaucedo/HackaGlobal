@@ -110,9 +110,9 @@
 {#                </div>#}
 {#                <button id="nav-find-event-search-btn" type="submit" class="btn btn-default col-md-2">Find</button>#}
 {#            </form>#}
-            <ul class="nav navbar-nav navbar-right" style="margin-right: 50px">
+            <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
                 {% if request.user.is_authenticated %}
-                    <li><a href="/find">Events</a></li>
+                    <li><a href="/find">Find</a></li>
                     <li><a href="/create">Create</a></li>
                     <li><a href="/manage">Manage</a></li>
                 {% else %}

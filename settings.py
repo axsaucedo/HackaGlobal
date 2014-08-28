@@ -112,7 +112,8 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.core.context_processors.request',
     'django.core.context_processors.media',
-    'social_auth.context_processors.social_auth_by_name_backends',
+    'social_auth.context_processors.social_auth_by_type_backends',
+    'social_auth.context_processors.social_auth_login_redirect',
     "hackaglobal.hg_context.in_prod",
 )
 
@@ -148,7 +149,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'djangotoolbox',
+    'social_auth',
+    #    'djangotoolbox',
     'south',
 
     'hackaglobal',
@@ -159,30 +161,19 @@ INSTALLED_APPS = (
     'taggit',
     'corsheaders',
     'rest_framework',
-    'social_auth',
-)
+    )
 
-CORS_ORIGIN_ALLOW_ALL = True
-
-REST_FRAMEWORK = {
-    'PAGINATE_BY': 10,
-#    'DEFAULT_PERMISSION_CLASSES': (
-#        'rest_framework.permissions.IsAuthenticated',
-#        'rest_framework.permissions.DjangoModelPermissions',
-#        ),
-}
+#CORS_ORIGIN_ALLOW_ALL = True
+#
+#REST_FRAMEWORK = {
+#    'PAGINATE_BY': 10,
+##    'DEFAULT_PERMISSION_CLASSES': (
+##        'rest_framework.permissions.IsAuthenticated',
+##        'rest_framework.permissions.DjangoModelPermissions',
+##        ),
+#}
 
 AUTH_PROFILE_MODULE = "accounts.UserProfile"
-
-AUTHENTICATION_BACKENDS = (
-    'social_auth.backends.facebook.FacebookBackend',
-#    'social_auth.backends.contrib.github.GithubBackend',
-#    'social_auth.backends.contrib.linkedin.LinkedinBackend',
-#    'social_auth.backends.contrib.vk.VKOAuth2Backend',
-#    'social_auth.backends.OpenIDBackend',
-
-    'django.contrib.auth.backends.ModelBackend',
-)
 
 SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.social_auth_user',
@@ -191,29 +182,36 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.associate_user',
     'social_auth.backends.pipeline.social.load_extra_data',
     'social_auth.backends.pipeline.user.update_user_details',
-#    'accounts.pipelines.get_user_avatar',
+    'accounts.pipelines.get_user_avatar',
+)
+
+AUTHENTICATION_BACKENDS = (
+    'social_auth.backends.contrib.vk.VKOAuth2Backend',
+    'social_auth.backends.contrib.github.GithubBackend',
+    'social_auth.backends.facebook.FacebookBackend',
+
+    'django.contrib.auth.backends.ModelBackend',
 )
 
 LOGIN_URL          = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/accounts/view/'
 LOGIN_ERROR_URL    = '/accounts/error/'
 
-#SOCIAL_AUTH_CREATE_USERS          = True
-#SOCIAL_AUTH_FORCE_RANDOM_USERNAME = False
-#SOCIAL_AUTH_ASSOCIATE_BY_MAIL     = True
-#SOCIAL_AUTH_ERROR_KEY             = 'socialauth_error'
-#SOCIAL_AUTH_CREATE_USERS          = True
-#SOCIAL_AUTH_FORCE_RANDOM_USERNAME = False
-#SOCIAL_AUTH_DEFAULT_USERNAME      = 'socialauth_user'
-#LOGIN_ERROR_URL                   = '/login/error/'
+SOCIAL_AUTH_CREATE_USERS          = True
+SOCIAL_AUTH_ASSOCIATE_BY_MAIL     = True
 
-FACEBOOK_APP_SECRET = '1471335216431010'
+SOCIAL_AUTH_ENABLED_BACKENDS = ('facebook', 'twitter')
+SOCIAL_AUTH_COMPLETE_URL_NAME = 'socialauth_complete'
+SOCIAL_AUTH_EXTRA_DATA = False
+SOCIAL_AUTH_CHANGE_SIGNAL_ONLY = True
+
+
+FACEBOOK_APP_ID     = '1471335216431010'
 FACEBOOK_API_SECRET = 'c431a9791273a11a48328e45fa23fb27'
+VK_APP_ID           = '4311608'
+VK_API_SECRET       = 'WH9dQg836Y5GkrbEdTLr'
+GITHUB_APP_ID       = '24efcccb1598fff7c1e5'
+GITHUB_API_SECRET   = '924aa90d8e323dd0b58f9ca88f5a6d3d972a39e1'
 
-#GITHUB_APP_ID               = '85db5680254e344f7dfc'
-#GITHUB_API_SECRET           = '97b66ef7bd04d33b3c3c29cd62a9e427a728a26e'
+SOCIAL_AUTH_ENABLED_BACKENDS = ('github','facebook','vk-oauth')
 
-#GITHUB_APP_ID               = '24efcccb1598fff7c1e5'
-#GITHUB_API_SECRET           = '924aa90d8e323dd0b58f9ca88f5a6d3d972a39e1'
-#
-#SOCIAL_AUTH_ENABLED_BACKENDS = ('github','facebook',)

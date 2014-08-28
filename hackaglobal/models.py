@@ -27,6 +27,7 @@ class Event(models.Model):
     name = models.CharField(_("Event Name"), max_length=50)
     description = models.TextField(_("Event Description"), null=True, blank=True)
     photo = models.ImageField(_("Event Photo"),upload_to=path_and_rename('hackaglobal/events/', u'event'))
+    external = models.BooleanField(default=False)
     address = models.CharField(max_length=100)
     zip = models.CharField(max_length=10, null=True, blank=True)
     latitude = models.FloatField(null=True, blank=True)

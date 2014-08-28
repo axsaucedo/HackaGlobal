@@ -35,7 +35,9 @@ def view_hackacity(request, hc):
         except HackaCity.DoesNotExist:
             return render(request, 'generic_message.html', { 'header' : 'HackaCity not found', 'message': "Oops, we couldn't the HackaCity you were looking for..." })
 
-    return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity })
+    is_hackateam = HackaCity.objects.filter(id=hackacity.pk, team=request.user).exists()
+
+    return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity, 'is_hackateam':True })
 
 
 def edit_hackacity(request, hc):
@@ -49,21 +51,11 @@ def edit_hackacity(request, hc):
         else:
             data['hackacity'] = HackaCity.objects.get(Q(name=hc) | Q(city__name=hc), team=request.user)
 
-    except HackaCity.DoesNotExist:
+    except:
         return render(request, 'generic_message.html', { 'header' : 'HackaCity not found', 'message': "Oops, we couldn't the HackaCity you were looking for..." })
 
 
     try:
-
-#        all_attendees = Attendee.objects.filter(event=event_id)
-#        all_staff = Staff.objects.filter(event=event_id)
-#
-#        data['attendees'] = all_attendees.filter(type='A')
-#        data['trackers'] = all_attendees.filter(type='T')
-#
-#        data['organizers'] = all_staff.filter(type='O')
-#        data['mentors'] = all_staff.filter(type='M')
-#        data['speakers'] = all_staff.filter(type='S')
 
         if request.method =='POST':
             data['form'] = HackaCityCreationForm(request.POST, request.FILES)

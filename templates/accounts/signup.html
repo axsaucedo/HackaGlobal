@@ -14,8 +14,11 @@
                     <form id="add-event-form" class="form-horizontal" method="POST">
                         {% csrf_token %}
                         <fieldset style="border: none;">
-{#                            <legend>To login with Facebook click <a class="btn btn-primary" href='{% url 'socialauth_begin' 'facebook' %}'>here</a></legend>#}
-{#                            <legend>To login with VK click <a class="btn btn-primary" href="{% url 'socialauth_begin' 'vkontakte-oauth2' %}">here</a></legend>#}
+                            <legend>Login with:
+                                <a href="{% url 'socialauth_begin' 'facebook' %}" class="login-icon icon-facebook"></a>
+                                <a href="{% url 'socialauth_begin' 'github' %}" class="login-icon icon-github"></a>
+                                <a href="{% url 'socialauth_begin' 'vk-oauth' %}" class="login-icon icon-vk"></a>
+                            </legend>
                             {% if form.errors %}
                                 <div class="alert alert-dismissable alert-danger">
                                     {{ form.errors }}

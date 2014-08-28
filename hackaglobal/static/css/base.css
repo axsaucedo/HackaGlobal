@@ -49,6 +49,10 @@ body {
     display: none;
 }
 
+#navbar-social {
+    display: none;
+}
+
 .nav-bar-hackaglobal-text {
     font-family: levenim;
     color: black !important;
@@ -57,6 +61,11 @@ body {
     padding: 0px 30px 0px 0px;
 }
 
+@media (min-width: 900px) {
+    #navbar-social {
+        display: block;
+    }
+}
 @media (min-width: 600px){
     #nav-bar-logo {
         display: block;
@@ -178,4 +187,18 @@ body {
 }
 @media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
     .flex-video { padding-top: 0; }
+}
+
+.login-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #eeeeee;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 5px 0px 5px;
+    font-size: 1.5em !important;
+    color: black !important;
+}
+.login-icon:hover {
+    color: #2f4f4f !important;
 }

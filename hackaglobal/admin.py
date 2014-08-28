@@ -1,6 +1,6 @@
 from django.contrib.admin import site, ModelAdmin
 from hackaglobal.models import Event, Attendee, Staff, Subdomain
-from hackacities.models import HackaCity, HackaContainer
+from hackacities.models import HackaCity, HackaContainer, Cities, Countries
 from accounts.models import UserProfile
 
 
@@ -18,6 +18,9 @@ site.register(Staff)
 site.register(Subdomain)
 
 site.register(UserProfile)
+
+site.register(Countries)
+site.register(Cities)
 
 site.register(HackaCity, HackaCityAdmin)
 site.register(HackaContainer)

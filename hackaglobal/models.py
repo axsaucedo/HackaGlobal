@@ -52,10 +52,10 @@ class Event(models.Model):
         return self.hackacity.city.country.name
 
     def get_address_array(self):
-        return [ self.address, self.hackacity.city.country_code, self.hackacity.city, self.zip ]
+        return [ self.address, self.hackacity.city.country.name, self.hackacity.city, self.zip ]
 
     def get_short_address(self):
-        return self.zip + " " + self.hackacity.city.name + ", " + self.hackacity.city.country_code
+        return self.zip + " " + self.hackacity.city.name + ", " + self.hackacity.city.country.name
 
     def get_tags(self):
         tags = self.tags.names()

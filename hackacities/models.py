@@ -64,11 +64,7 @@ class HackaCity(models.Model):
         return self.city.name
 
 class Cities(models.Model):
-    id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=35L)
-    country_code = models.CharField(max_length=3L)
-    district = models.CharField(max_length=20L)
-    population = models.IntegerField()
     country = models.ForeignKey('Countries')
 
     def __unicode__(self):
@@ -78,28 +74,48 @@ class Countries(models.Model):
     code = models.CharField(max_length=3L, primary_key=True)
     name = models.CharField(max_length=52L)
     continent = models.CharField(max_length=13L)
-    region = models.CharField(max_length=26L)
-    surface_area = models.FloatField()
-    independence_year = models.IntegerField(null=True, blank=True)
-    population = models.IntegerField()
-    life_expectancy = models.FloatField(null=True, blank=True)
-    gnp = models.FloatField(null=True, blank=True)
-    gnp_old = models.FloatField(null=True, blank=True)
-    local_name = models.CharField(max_length=45L)
-    government_form = models.CharField(max_length=45L)
-    head_of_state = models.CharField(max_length=60L, blank=True)
-    capital = models.IntegerField(null=True, blank=True)
-    code2 = models.CharField(max_length=2L)
 
     def __unicode__(self):
         return self.name
 
-class Languages(models.Model):
-    country = models.ForeignKey('Countries')
-    country_code = models.CharField(max_length=3)
-    language = models.CharField(max_length=30)
-    official = models.CharField(max_length=1)
-    percentage = models.FloatField()
-
-    def __unicode__(self):
-        return self.language
+#
+#class Cities(models.Model):
+#    id = models.IntegerField(primary_key=True)
+#    name = models.CharField(max_length=35L)
+#    country_code = models.CharField(max_length=3L)
+#    district = models.CharField(max_length=20L)
+#    population = models.IntegerField()
+#    country = models.ForeignKey('Countries')
+#
+#    def __unicode__(self):
+#        return self.name
+#
+#class Countries(models.Model):
+#    code = models.CharField(max_length=3L, primary_key=True)
+#    name = models.CharField(max_length=52L)
+#    continent = models.CharField(max_length=13L)
+#    region = models.CharField(max_length=26L)
+#    surface_area = models.FloatField()
+#    independence_year = models.IntegerField(null=True, blank=True)
+#    population = models.IntegerField()
+#    life_expectancy = models.FloatField(null=True, blank=True)
+#    gnp = models.FloatField(null=True, blank=True)
+#    gnp_old = models.FloatField(null=True, blank=True)
+#    local_name = models.CharField(max_length=45L)
+#    government_form = models.CharField(max_length=45L)
+#    head_of_state = models.CharField(max_length=60L, blank=True)
+#    capital = models.IntegerField(null=True, blank=True)
+#    code2 = models.CharField(max_length=2L)
+#
+#    def __unicode__(self):
+#        return self.name
+#
+#class Languages(models.Model):
+#    country = models.ForeignKey('Countries')
+#    country_code = models.CharField(max_length=3)
+#    language = models.CharField(max_length=30)
+#    official = models.CharField(max_length=1)
+#    percentage = models.FloatField()
+#
+#    def __unicode__(self):
+#        return self.language

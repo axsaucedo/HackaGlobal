@@ -1,5 +1,7 @@
 from social_auth.backends.facebook import FacebookBackend
+from social_auth.backends.contrib.github import GithubBackend
 
+from django.http import HttpResponseRedirect
 from urllib2 import urlopen, HTTPError
 from uuid import uuid4
 from django.core.files.base import ContentFile
@@ -9,6 +11,10 @@ def get_user_avatar(backend, details, response, social_user, uid,user, *args, **
 
     url = None
     profile = user.profile
+
+    if backend.__class__ == GithubBackend:
+        url = "http://www.gravatar.com/avatar/%s/?s=200" % response['gravatar_id']
+
     if backend.__class__ == FacebookBackend:
         url = "http://graph.facebook.com/%s/picture?type=large" % response['id']
 

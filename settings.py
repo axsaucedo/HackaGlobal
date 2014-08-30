@@ -131,9 +131,9 @@ MIDDLEWARE_CLASSES = (
 #    HackaGlobal Custom Middleware
 if not DEBUG:
     MIDDLEWARE_CLASSES += ('hackaglobal.hg_middleware.SubdomainMiddleware',)
-MIDDLEWARE_CLASSES += (
-    'hackaglobal.hg_middleware.UsersRedirectMiddleware',
-)
+#MIDDLEWARE_CLASSES += (
+#    'hackaglobal.hg_middleware.UsersRedirectMiddleware',
+#)
 
 
 CORS_ORIGIN_ALLOW_ALL = True
@@ -183,9 +183,28 @@ SOCIAL_AUTH_PIPELINE = (
     'social_auth.backends.pipeline.social.social_auth_user',
     'social_auth.backends.pipeline.user.get_username',
     'social_auth.backends.pipeline.user.create_user',
-    'social_auth.backends.pipeline.social.associate_user',
     'social_auth.backends.pipeline.social.load_extra_data',
     'social_auth.backends.pipeline.user.update_user_details',
+    'social_auth.backends.pipeline.associate.associate_by_email',
+    'social_auth.backends.pipeline.social.associate_user',
+    'social_auth.backends.pipeline.misc.save_status_to_session',
+
+
+#    'social.pipeline.social_auth.social_details',
+#    'social.pipeline.social_auth.social_uid',
+#    'social.pipeline.social_auth.auth_allowed',
+#    'social_auth.backends.pipeline.social.social_auth_user',
+#    'social_auth.backends.pipeline.associate.associate_by_email',
+#    'social_auth.backends.pipeline.misc.save_status_to_session',
+
+#    'accounts.pipelines.redirect_to_username_form',
+
+#    'social_auth.backends.pipeline.user.create_user',
+#    'social_auth.backends.pipeline.social.associate_user',
+#    'social_auth.backends.pipeline.social.load_extra_data',
+#    'social_auth.backends.pipeline.user.update_user_details',
+#    'social_auth.backends.pipeline.misc.save_status_to_session',
+
     'accounts.pipelines.get_user_avatar',
 )
 
@@ -203,12 +222,16 @@ LOGIN_ERROR_URL    = '/accounts/error/'
 
 SOCIAL_AUTH_CREATE_USERS          = True
 SOCIAL_AUTH_ASSOCIATE_BY_MAIL     = True
+SOCIAL_AUTH_UUID_LENGTH           = 3
 
 SOCIAL_AUTH_ENABLED_BACKENDS = ('facebook', 'vk-oauth', 'github',)
 SOCIAL_AUTH_COMPLETE_URL_NAME = 'socialauth_complete'
 SOCIAL_AUTH_EXTRA_DATA = False
 SOCIAL_AUTH_CHANGE_SIGNAL_ONLY = True
 
+FACEBOOK_EXTENDED_PERMISSIONS = ['email']
+GITHUB_EXTENDED_PERMISSIONS = ['email']
+VK_EXTENDED_PERMISSIONS = ['email']
 
 FACEBOOK_APP_ID     = '1471335216431010'
 FACEBOOK_API_SECRET = 'c431a9791273a11a48328e45fa23fb27'
@@ -216,3 +239,11 @@ VK_APP_ID           = '4311608'
 VK_API_SECRET       = 'WH9dQg836Y5GkrbEdTLr'
 GITHUB_APP_ID       = '24efcccb1598fff7c1e5'
 GITHUB_API_SECRET   = '924aa90d8e323dd0b58f9ca88f5a6d3d972a39e1'
+
+if DEBUG:
+    VK_APP_ID           = '4528658'
+    VK_API_SECRET       = 'Boub2hzv7x5QZf30P8z5'
+    GITHUB_APP_ID       = '9710cc379c36e5557ed8'
+    GITHUB_API_SECRET   = '6d9f1953495d4f624fc9cc2fcf314cf56f0bb92e'
+    FACEBOOK_APP_ID     = '1543129689251562'
+    FACEBOOK_API_SECRET = '0c8172e5ee3eb3a48c335da81769c591'

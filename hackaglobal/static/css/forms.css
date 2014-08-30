@@ -1,6 +1,11 @@
+.form-background {
+    height:100%;
+    width:100%;
+    overflow:hidden;
+    background-color: #eeeeee;
+}
 
-
-#form-container {
+.form-container {
     /*height: 40em !important;*/
 
     background-color: transparent;

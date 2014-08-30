@@ -5,6 +5,8 @@ from django.template.context import RequestContext
 from django.contrib.auth.decorators import login_required
 from hackaglobal.models import Event, Attendee, HackaCity
 from django.core.mail import send_mail
+from django.http import HttpResponseRedirect
+
 
 from hackaglobal.tools.forms import HGUserEditForm, EFPasswordChangeForm, HGUserCreationForm, HGProfileEditForm
 
@@ -97,8 +99,14 @@ def edit_password(request):
             user.backend = 'django.contrib.auth.backends.ModelBackend'
 
             login(request, user)
+
+            next_link=request.GET.get('next')
+            if next:
+                return redirect('/accounts/view/')
+            else:
+                return redirect('view_account')
+
     else:
         form = EFPasswordChangeForm(user=request.user)
 
     return render_to_response('accounts/account_edit_password.html', { 'form': form, }, context_instance=RequestContext(request))
-

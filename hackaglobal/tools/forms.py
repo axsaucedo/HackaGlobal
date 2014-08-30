@@ -106,7 +106,7 @@ class EFPasswordChangeForm(forms.Form):
         }
 
     old_password = forms.CharField(label=_("Old Password"),
-        widget=forms.PasswordInput, max_length=20)
+        widget=forms.PasswordInput, max_length=20, required=False)
 
     new_password = forms.CharField(label=_("New Password"),
         widget=forms.PasswordInput, max_length=20)
@@ -116,19 +116,21 @@ class EFPasswordChangeForm(forms.Form):
         super(EFPasswordChangeForm, self).__init__(*args, **kwargs)
 
     def clean_new_password(self):
-        password = self.cleaned_data.get("old_password")
-        if not self.user.check_password(password):
-            raise forms.ValidationError(self.error_messages['invalid_password'])
+        if self.user.has_usable_password():
+            password = self.cleaned_data.get("old_password")
+            if not self.user.check_password(password):
+                raise forms.ValidationError(self.error_messages['invalid_password'])
 
         return self.cleaned_data.get("new_password")
 
     def save(self, commit=True):
-        if self.user.check_password(self.cleaned_data["old_password"]):
+        if not self.user.has_usable_password():
+            self.user.set_password(self.cleaned_data["new_password"])
+        elif self.user.check_password(self.cleaned_data["old_password"]):
             self.user.set_password(self.cleaned_data["new_password"])
         if commit:
             self.user.save()
         return self.user
-
 
 class HGUserEditForm(forms.ModelForm):
 
@@ -137,7 +139,7 @@ class HGUserEditForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name')
+        fields = ('username', 'first_name', 'last_name', 'email')
 
     def save(self, commit=True):
         user = super(HGUserEditForm, self).save(commit=False)

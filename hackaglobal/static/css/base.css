@@ -25,10 +25,17 @@ body {
     color: orange !important;
 }
 
-#wrap {
+#content-wrapper {
     min-height: 100%;
     height: auto !important;
     height: 100%;
+    padding-top: 50px;
+}
+#content-wrapper a {
+    color: #87ceeb;
+}
+#content-wrapper a:hover {
+    color: #add8e6;
 }
 
 /*#hackaglobal-nav-bar {*/
@@ -87,16 +94,6 @@ body {
     height: 45px;
     resize: horizontal;
     /*width: 125px;*/
-}
-
-#content {
-    padding-top: 50px;
-}
-#content a {
-    color: #87ceeb;
-}
-#content a:hover {
-    color: #add8e6;
 }
 
 #footer {

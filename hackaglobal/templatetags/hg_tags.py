@@ -3,6 +3,7 @@ from hackaglobal.models import Event, Attendee
 from hackacities.models import HackaCity, HackaContainer
 from taggit.models import Tag
 from settings import BASE_URL, DEBUG
+from datetime import datetime
 
 register = template.Library()
 
@@ -43,14 +44,19 @@ def get_hackacontainers(hackacity, type):
     except Exception:
         return
 
-@register.assignment_tag()
-def get_events(hackacity):
-    try:
-        events = Event.objects.filter(hackacity=hackacity).order_by('-start')
-        return events
+#@register.assignment_tag()
+#def get_events(hackacity):
+#
+#    if not hackacity:
+#        try:
+#            events =
+#            return events
+#
+#        except Exception:
+#            return
+#    else:
+#        Event.objects.filter(end=)
 
-    except Exception:
-        return
 
 @register.assignment_tag()
 def all_tags():

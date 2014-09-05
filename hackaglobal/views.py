@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
+from datetime import datetime
 from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required
@@ -11,7 +12,9 @@ import settings
 from hackaglobal.tools.forms import EventCreationForm
 
 def home(request):
-    return render(request, 'index.html')
+    upcoming_events = Event.objects.all().order_by('-start')
+
+    return render(request, 'index.html', { 'upcoming_events' : upcoming_events })
 
 @login_required(login_url='/accounts/login/')
 def add_event(request):

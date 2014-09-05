@@ -56,6 +56,14 @@ body {
     display: none;
 }
 
+.navbar-nav .btn {
+    color: white !important;
+    margin-top: 3px;
+} .navbar-nav .btn:hover {
+      color: red !important;
+      margin-top: 3px;
+  }
+
 #navbar-social {
     display: none;
 }

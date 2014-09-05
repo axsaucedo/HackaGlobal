@@ -6,6 +6,8 @@ from django.http import HttpResponseRedirect
 from hackaglobal.tools.forms import HackaCityCreationForm
 
 from hackacities.models import HackaCity
+from hackaglobal.models import Event
+
 from django.db.models import Q
 
 import settings
@@ -21,6 +23,7 @@ def view_hackacity(request, hc):
     try:
         print "here"
         hackacity = HackaCity.objects.get(name=hc)
+        upcoming_events = Event.objects.filter(hackacity=hackacity).order_by('-start')
 
     except HackaCity.DoesNotExist:
         try:
@@ -40,7 +43,7 @@ def view_hackacity(request, hc):
     except:
         is_hackateam = False
 
-    return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity, 'is_hackateam':True })
+    return render(request, 'hackacity/hackacity_view.html', { 'hackacity': hackacity, 'is_hackateam':is_hackateam, 'upcoming_events': upcoming_events })
 
 
 def edit_hackacity(request, hc):

@@ -11,10 +11,10 @@ urlpatterns = patterns('',
     #Backend
     url(r'^find/$', views.find_events, name='find_events'),
     url(r'^create/$', views.add_event, name='add_event'),
-    url(r'^manage/$', views.manage_events, name='manage_events'),
+    url(r'^manage/$', views.manage_events, name='manage_all'),
     url(r'^delete/(?P<event_id>.+)/$', views.delete_event, name='delete_event'),
     url(r'^manage/(?P<event_id>.+)/$', views.edit_event, name='edit_event'),
-    url(r'^event/(?P<event_id>.+)/$', views.view_event, name='manage_events'),
+    url(r'^event/(?P<event_id>.+)/$', views.view_event, name='manage_event'),
 
 
     # Handling all AJAX calls

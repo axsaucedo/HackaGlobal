@@ -31,7 +31,6 @@
     <script type="text/javascript" src="/static/js/external/jquery.ui.map.extensions.js"></script>
 
 
-
     <!--Bootstrap amelia theme-->
     <link rel="stylesheet" href="/static/css/external/bootstrap.css">
     <link rel="stylesheet" href="/static/css/external/font-awesome.min.css">
@@ -111,9 +110,10 @@
 {#            </form>#}
         <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
             {% if request.user.is_authenticated %}
-                <li><a href="/find">Find</a></li>
-                <li><a href="/create">Create</a></li>
-                <li><a href="/manage">Manage</a></li>
+                {% if is_hackateam %}<li><a href="/hackacity/edit/{{ hackacity.id }}/" class="btn btn-danger" style="">Edit</a></li>{% endif %}
+{#                <li><a href="/find">Find</a></li>#}
+                <li><a href="{% url 'add_event' %}">Create</a></li>
+                <li><a href="{% url 'manage_all' %}">Manage</a></li>
             {% else %}
                 <li><a href="/accounts/login">Log In</a></li>
                 <li><a href="/accounts/signup">Sign Up</a></li>

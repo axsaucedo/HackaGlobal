@@ -1,0 +1,87 @@
+/* events *//* events *//* events *//* events */
+/* events *//* events *//* events *//* events */
+/* events *//* events *//* events *//* events */
+.hackacity-view-title {
+    position: relative;
+    background: transparent;
+}
+.hackacity-view-title-event:before {
+    content: attr(title);
+    position: absolute;
+    height: 600px;
+    -webkit-text-stroke: 1em #fff;
+    z-index: -1;
+}
+.hackacity-view-events-list
+{
+    clear: both;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width:100%;
+    padding: 0 15px;
+}
+
+.hackacity-view-events-list-inline {
+    white-space:nowrap;
+}
+
+.hackacity-view-events-list-item
+{
+    clear: both;
+    height: 680px;
+    width: 500px;
+
+    white-space:normal;
+}
+.hackaevent-photo {
+    max-width: 100%;
+    max-height: 100%;
+
+    width: auto;
+}
+
+@media (min-width: 780px) {
+    .hackacity-view-events-list-item
+    {
+        height: 580px;
+        width: 1000px;
+    }
+    .hackacity-events-list {
+        height:600px;
+    }
+}
+
+.hackacity-view-events-list-item .hackacity-event-container {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    padding: 20px 20px 20px 20px;
+}
+
+.hackacity-view-events-list-item .hackacity-event-information-container {
+    background-color: black;
+    color: white;
+    padding: 15px 30px 15px 30px
+}
+.hackacity-view-events-list-item .hackacity-event-title {
+    background-color: white;
+    color: black;
+    text-align: left;
+    font-size: 2em;
+    padding: 5px 15px 5px 15px;
+    line-height: 1em;
+}
+.hackacity-view-events-list-item .row {
+    margin-bottom: 15px;
+}
+.hackacity-view-events-list-item .hackacity-event-title a {
+    color: black !important;
+}
+.hackacity-view-events-list-item .hackacity-event-datetime {
+    font-size: 1.1em;
+    color: #e02b39;
+}
+.hackacity-view-events-list-item .hackacity-event-description {
+    text-align: left;
+    color: white;
+}

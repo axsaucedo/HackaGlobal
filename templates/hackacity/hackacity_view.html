@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block head-includes %}
-<link rel="stylesheet" type="text/css" href="/static/css/hackacity_view.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/hackacity_view.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/events_container.css">
     <script type="text/javascript" src="/static/js/hackacity_view.js"></script>
 {% endblock %}
 
@@ -46,7 +47,6 @@
         </div>
         <div class="hackacity-view-events-list" style="margin-top: -40px">
             <ul class="list-inline hackacity-view-events-list-inline">
-                {% get_events hackacity as upcoming_events %}
                 {% for event in upcoming_events %}
                     {% include 'layouts/hackacity_event.html' %}
                 {% endfor %}

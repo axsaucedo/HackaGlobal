@@ -103,7 +103,7 @@ h2{ font-size:25px; line-height:1.25em;}
 .flashing-text {
     font-size: 70px;
     margin-bottom: 50px;
-    -webkit-animation: flashing-text-animation 5s cubic-bezier(0,.8,.1,1) infinite;
+    -webkit-animation: flashing-text-animation 2s cubic-bezier(0,.7,.2,1) infinite;
     -webkit-text-stroke: 2px #fff;
 }
 

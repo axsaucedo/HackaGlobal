@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="row" style="font-size: 13px; text-align: left;">
-                <span class="col-md-offset-1 col-md-1"><img src="http://wiki.alumni.net/wiki/images/c/cd/Wikimap-white-marker.png"></span>
+                <span class="col-md-offset-1 col-md-1"><img src="/static/images/white-maps-marker.png"></span>
                 <span class="col-md-9">{% for address in event.get_address_array %}{{ address }}, {% endfor %}</span>
             </div>
             <div class="row" style="padding: 0px 50px 0px 50px">
@@ -42,9 +42,12 @@
                 {{ event.get_tags }}
             </div>
         </div>
-        <br><br>
-        <div class="col-xs-8">
-            <div class="col-md-12">
+        <div class="col-sm-8 event-image-container">
+            <div class="row hackaevent-hackacity-logo-container">
+                <img class="img-responsive hackaevent-hackacity-logo" src="/media/{{ event.hackacity.image_logo }}">
+            </div>
+            <div style="height: 10%"></div>
+            <div class="col-md-12 row hackaevent-photo-container">
                 <img class="img-responsive col-md-12 hackaevent-photo" src="{{ event.get_photo }}">
             </div>
         </div>

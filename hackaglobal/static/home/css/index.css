@@ -20,12 +20,12 @@ body {
 h1{ font-size:38px; text-align:center; line-height:1.4em;}
 h2{ font-size:25px; line-height:1.25em;}
 
-#wrapper {
+.wrapper {
     width:80%;
     min-width: 800px;
     margin:0 auto;
     position:relative;
-    margin-top: 500px;
+    margin-top: 440px;
 }
 
 /*             LOGO             */
@@ -100,6 +100,34 @@ h2{ font-size:25px; line-height:1.25em;}
     background-color: black;
 }
 
+.flashing-text {
+    font-size: 70px;
+    margin-bottom: 50px;
+    -webkit-animation: flashing-text-animation 5s ease infinite;
+    -webkit-text-stroke: 2px #fff;
+}
+
+@media (min-width: 1100px) {
+    .flashing-text {
+        font-size: 90px;
+    }
+}
+
+@-webkit-keyframes flashing-text-animation {
+   0% {
+       color: black;
+       -webkit-text-stroke: 2px #fff;
+   }
+   50% {
+       color: white;
+       -webkit-text-stroke: 2px #000;
+   }
+
+    100% {
+        color: black;
+        -webkit-text-stroke: 2px #fff;
+    }
+}
 
 #footer {
     width:100%;
@@ -119,11 +147,12 @@ h2{ font-size:25px; line-height:1.25em;}
     background: transparent;
     position: absolute;
 }
+.footer-content {
+    padding-top: 100px;
+    background: white;
+}
 #hg_contact {
     width: 100%;
-
-    margin-top: 50px;
-
     position: relative;
 }
 

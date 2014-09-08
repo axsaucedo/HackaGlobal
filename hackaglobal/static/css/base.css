@@ -221,3 +221,25 @@ body {
 .login-icon:hover {
     color: #2f4f4f !important;
 }
+
+.hackaglobal-horizontal-list
+{
+    clear: both;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    width:100%;
+    padding: 0 15px;
+}
+
+.hackaglobal-horizontal-list-inline {
+    white-space:nowrap;
+}
+
+.hackaglobal-horizontal-list-item
+{
+    clear: both;
+    height: 750px;
+    width: 500px;
+
+    white-space:normal;
+}

@@ -17,8 +17,9 @@
 <body>
 <div style="margin-top: -50px;" id="googleMap"></div>
 
-<div id="wrapper">
+<div class="wrapper">
     <img id="logo-image" src="/static/home/images/hg_logo_bnw.png">
+{#    <div id="logo-image" style="font-size: 100px" class="hacka-h1 flashing-text">Hacka { Global }</div>#}
 
     <img id="about-image" style="width: 100%" src="/static/home/images/slide1.png">
 
@@ -45,8 +46,14 @@
             {% endfor %}
         </ul>
     </div>
-
 </div>
+
+<div style="margin: 0 auto; position:relative;">
+    <div class="hacka-h1 flashing-text">
+        Hacka { Events }
+    </div>
+</div>
+
 
 <div style="width: 100%;">
     <div class="hackacity-view-events-list">
@@ -60,7 +67,22 @@
 
 <div id="footer">
     <img id="grass-image" src="/static/home/images/hg_grass.png">
-    <img id="hg_contact" src="/static/home/images/hg_contact.png">
+
+    <div class="footer-content">
+        <div class="hacka-h1">
+            Global { Partners }
+        </div>
+        <br>
+        <div class="col-md-4 col-md-offset-4">
+            <img src="/static/images/sponsors/aws.jpg">
+        </div>
+
+        <img style="width: 100%; margin-top: 50px" src="/static/images/skyline.png">
+        <div class="hacka-h1" style="padding: 50px 0px 50px">
+            HackaGlobal@Gmail.com
+        </div>
+
+    </div>
 </div>
 
 <script type="text/javascript" src="/static/home/js/home.js"></script>

@@ -13,8 +13,9 @@ from hackaglobal.tools.forms import EventCreationForm
 
 def home(request):
     upcoming_events = Event.objects.all().order_by('-start')
+    hackacities = HackaCity.objects.all()
 
-    return render(request, 'index.html', { 'upcoming_events' : upcoming_events })
+    return render(request, 'index.html', { 'upcoming_events' : upcoming_events, 'hackacities': hackacities })
 
 @login_required(login_url='/accounts/login/')
 def add_event(request):

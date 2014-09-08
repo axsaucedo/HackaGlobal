@@ -44,7 +44,7 @@
         </div>
         <div class="col-sm-8 event-image-container">
             <div class="row hackaevent-hackacity-logo-container">
-                <img class="img-responsive hackaevent-hackacity-logo" src="/media/{{ event.hackacity.image_logo }}">
+                <a href="{% url 'view_hackacity' event.hackacity.name %}"><div class="hacka-font">{{ event.hackacity.name }}</div></a>
             </div>
             <div style="height: 10%"></div>
             <div class="col-md-12 row hackaevent-photo-container">

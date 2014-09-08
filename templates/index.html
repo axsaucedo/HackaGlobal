@@ -24,8 +24,26 @@
 
 
     <div id="now-section">
-        <img id="now-image" src="/static/home/images/hg_now.png">
+{#        <img id="now-image" src="/static/home/images/hg_now.png">#}
         <img id="skyline-image" src="/static/home/images/hg_skyline_bnw.png">
+        <div class="hacka-h1 home-date-now-title">Date . Now ()</div>
+        <ul class="home-date-now-hackacities-container hacka-font">
+            {% for hackacity in hackacities %}
+                <a href="{% url 'view_hackacity' hackacity.name %}">
+                    <li>
+                        <span class="col-md-4">
+                            {{ hackacity.city.country }}
+                        </span>
+                        <span class="col-md-4">
+                            {{ hackacity.city }}
+                        </span>
+                        <span class="col-md-4">
+                            {{ hackacity.name }}
+                        </span>
+                    </li>
+                </a>
+            {% endfor %}
+        </ul>
     </div>
 
 </div>
@@ -39,17 +57,6 @@
         </ul>
     </div>
 </div>
-
-{#    <div id="movie">#}
-{##}
-{#        <h1>&nbsp;</h1>#}
-{#        <a href="http://www.youtube.com/embed/z0J_AQXZcG4?rel=0&amp;fs=0&amp;autoplay=1" class="video1"><img src="/static/home/img/movie_01.jpg" class="style" style="width: 100%" />#}
-{#            <div>#}
-{#                <iframe class="sp" width="200" height="120" src="http://www.youtube.com/embed/z0J_AQXZcG4?theme=light&amp;showinfo=0" frameborder="0" allowfullscreen style="width: 100%; margin: 0px 0px;"></iframe>#}
-{#            </div>#}
-{#            <br class="clr" />#}
-{#        </a>#}
-{#    </div>#}
 
 <div id="footer">
     <img id="grass-image" src="/static/home/images/hg_grass.png">

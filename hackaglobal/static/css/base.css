@@ -10,9 +10,23 @@ body {
     font-family: "Levenim";
     src:    url('fonts/levenim.ttf') format('truetype');
 }
+@font-face {
+    font-family: "Orbitron";
+    src:    url('fonts/Orbitron Light.ttf') format('truetype');
+}
 
 .clear {
     clear: both;
+}
+
+.hacka-font {
+    font-family: Orbitron;
+}
+
+.hacka-h1 {
+    font-family: Orbitron;
+    text-align: center;
+    font-size: 70px;
 }
 
 .panel-body {

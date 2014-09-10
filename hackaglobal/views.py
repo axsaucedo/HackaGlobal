@@ -32,7 +32,7 @@ def add_event(request):
             event.save()
             if request.POST['tags']: event.tags.add(*request.POST['tags'].split(','))
             event.save()
-            return redirect('manage_events')
+            return redirect('edit_event', event_id=event.id)
     else:
         form = EventCreationForm()
 
